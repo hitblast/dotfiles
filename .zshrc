@@ -31,12 +31,10 @@ plugins=(
 	sudo
 )
 
+# Source Oh My Zsh.
 source $ZSH/oh-my-zsh.sh
 
 # Set user-specific configuration.
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Homebrew autocompletion.
 if type brew &>/dev/null
@@ -51,3 +49,6 @@ fi
 eval "$(zoxide init --cmd cd zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Source powerlevel10k theme.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
