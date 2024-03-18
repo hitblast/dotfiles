@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/zsh
 
 DOTFILES=(.gitignore .hushlogin .zprofile .zshrc .p10k.zsh)
 
