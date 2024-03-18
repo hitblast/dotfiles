@@ -1,4 +1,4 @@
-## Configuration
+## ⚡ Configuration
 
 Open a new terminal (must use `zsh` as primary shell), then run the following command:
 
