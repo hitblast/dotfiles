@@ -44,5 +44,5 @@ done
 
 # Add autocompletion plugin for zsh.
 echo "Adding autocompletion plugin for zsh..."
-cd ~ && mkdir Repos && cd Repos
-git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git
+mkdir ~/Repos
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/Repos/zsh-autocomplete
