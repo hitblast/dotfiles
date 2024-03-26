@@ -16,11 +16,11 @@
   },
   "Use Italic Font" : true,
   "Foreground Color" : {
-    "Red Component" : 0.834320068359375,
+    "Red Component" : 0.94509803921568625,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.834320068359375,
+    "Blue Component" : 0.9137254901960784,
     "Alpha Component" : 1,
-    "Green Component" : 0.834320068359375
+    "Green Component" : 0.94901960784313721
   },
   "Right Option Key Sends" : 0,
   "Character Encoding" : 4,
@@ -36,11 +36,11 @@
   "Mouse Reporting" : true,
   "Cursor Boost" : 0,
   "Ansi 4 Color" : {
-    "Red Component" : 0.73193359375,
+    "Red Component" : 0.6705882352941176,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.94136047363281272,
+    "Blue Component" : 0.7686274509803922,
     "Alpha Component" : 1,
-    "Green Component" : 1
+    "Green Component" : 0.79607843137254897
   },
   "Non-ASCII Anti Aliased" : true,
   "Sync Title" : false,
@@ -261,9 +261,9 @@
     "Red Component" : 0.87591359999999996
   },
   "Ansi 2 Color" : {
-    "Red Component" : 0.8279708603681144,
+    "Red Component" : 0.89411764705882357,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.62408447265625,
+    "Blue Component" : 0.7686274509803922,
     "Alpha Component" : 1,
     "Green Component" : 1
   },
@@ -282,11 +282,11 @@
   "Use Bold Font" : true,
   "Silence Bell" : false,
   "Ansi 12 Color" : {
-    "Red Component" : 0.86703964602202177,
+    "Red Component" : 0.821319580078125,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.95112618050188769,
+    "Blue Component" : 0.96091365814208984,
     "Alpha Component" : 1,
-    "Green Component" : 0.97467041015625
+    "Green Component" : 1
   },
   "Window Type" : 0,
   "Use Bright Bold" : false,
@@ -373,11 +373,11 @@
   "Transparency" : 0,
   "Initial Text" : "",
   "Background Color" : {
-    "Red Component" : 0.0078431372549019589,
+    "Red Component" : 0.035797119140625,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.011764705882352941,
+    "Blue Component" : 0.035030771512538195,
     "Alpha Component" : 1,
-    "Green Component" : 0.0078431372549019589
+    "Green Component" : 0.035030771512538195
   },
   "Screen" : -1,
   "Initial Use Transparency" : true,
