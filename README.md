@@ -1,10 +1,18 @@
+## 🛠️ Hardware/Software Used
+
+- **Computer**: MacBook Air M1 (Late 2020)
+- **OS (latest commit)**: macOS 14.4 Sonoma
+- **Shell**: zsh
+
+<br>
+
 ## ⚡ Configuration
 
 Open a new terminal (must use `zsh` as primary shell), then run the following command:
 
 ```sh
 # Grant execute permission to the script
-chmod +x ./setup.sh
+chmod +x setup.sh && chmod +x macos_cfg.sh
 
 # Run the script
 ./setup.sh

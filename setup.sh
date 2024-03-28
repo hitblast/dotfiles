@@ -46,3 +46,7 @@ done
 echo "Adding autocompletion plugin for zsh..."
 mkdir ~/Repos
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/Repos/zsh-autocomplete
+
+# Run macos_cfg.sh script to configure macOS settings.
+echo "Configuring macOS settings..."
+source macos_cfg.sh
