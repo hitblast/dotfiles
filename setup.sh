@@ -1,6 +1,5 @@
 #! /bin/zsh
 
-
 # Copy dotfiles.
 echo "Copying dotfiles..."
 DOTFILES=(.gitignore .hushlogin .zprofile .zshrc .p10k.zsh)
@@ -10,7 +9,6 @@ do
     cp $(echo $dotfile) ~
 done
 
-
 # Setup Homebrew variables beforehand.
 echo "Setting up Homebrew..."
 export HOMEBREW_BREW_GIT_REMOTE="git@github.com:Homebrew/brew.git"
@@ -18,7 +16,6 @@ export HOMEBREW_CORE_GIT_REMOTE="git@github.com:Homebrew/homebrew-core.git"
 
 # Install Homebrew.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
 
 # Load Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -29,7 +26,11 @@ FORMULAE=$(<names/formulae.txt)
 
 for formula in $(echo ${FORMULAE[*]});
 do
-    brew install $(echo $formula)
+    if [ "$DRY_RUN" = true ]; then
+        brew install --dry-run $(echo $formula)
+    else
+        brew install $(echo $formula)
+    fi
 done
 
 # Install Homebrew casks.
@@ -38,9 +39,12 @@ CASKS=$(<names/casks.txt)
 
 for cask in $(echo ${CASKS[*]});
 do
-    brew install --cask $(echo $cask)
+    if [ "$DRY_RUN" = true ]; then
+        brew install --cask --dry-run $(echo $cask)
+    else
+        brew install --cask $(echo $cask)
+    fi
 done
-
 
 # Add autocompletion plugin for zsh.
 echo "Adding autocompletion plugin for zsh..."
