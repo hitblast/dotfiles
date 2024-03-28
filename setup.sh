@@ -21,7 +21,7 @@ export HOMEBREW_CORE_GIT_REMOTE="git@github.com:Homebrew/homebrew-core.git"
 /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Load Homebrew.
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(`brew --prefix`/bin/brew shellenv)"
 
 # Install Homebrew formulae.
 echo "Installing Homebrew formulae..."
