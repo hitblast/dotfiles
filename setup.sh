@@ -1,5 +1,8 @@
 #! /bin/zsh
 
+# DRY_RUN environment variable is only used for CI pipelines
+# in order to test the integrity of the scripts.
+
 # Copy dotfiles.
 echo "Copying dotfiles..."
 DOTFILES=(.gitignore .hushlogin .zprofile .zshrc .p10k.zsh)
@@ -52,5 +55,10 @@ mkdir ~/Repos
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/Repos/zsh-autocomplete
 
 # Run macos_cfg.sh script to configure macOS settings.
-echo "Configuring macOS settings..."
-source macos_cfg.sh
+# This runs only if the system is darwin-based and the shell is interactive.
+if [[ "$OSTYPE" == "darwin"* && -t 0 ]]; then
+    echo "Configuring macOS settings..."
+    source macos_cfg.sh
+else
+    echo "Skipping macOS configuration script..."
+fi
