@@ -25,7 +25,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install Homebrew formulae.
 echo "Installing Homebrew formulae..."
-FORMULAE=(git xz pyenv zoxide fzf)
+FORMULAE=$(<names/formulae.txt)
 
 for formula in $(echo ${FORMULAE[*]});
 do
@@ -34,7 +34,7 @@ done
 
 # Install Homebrew casks.
 echo "Installing Homebrew casks..."
-CASKS=(appcleaner hyperkey orbstack steam discord iina protonvpn visual-studio-code handbrake iterm2 rectangle whatsapp hazeover itsycal spotify hiddenbar keyboardcleantool stats)
+CASKS=$(<names/casks.txt)
 
 for cask in $(echo ${CASKS[*]});
 do

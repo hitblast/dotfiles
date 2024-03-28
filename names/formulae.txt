@@ -1,0 +1,5 @@
+fzf
+git
+pyenv
+xz
+zoxide
