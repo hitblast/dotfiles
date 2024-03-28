@@ -18,7 +18,7 @@ export HOMEBREW_BREW_GIT_REMOTE="git@github.com:Homebrew/brew.git"
 export HOMEBREW_CORE_GIT_REMOTE="git@github.com:Homebrew/homebrew-core.git"
 
 # Install Homebrew.
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Load Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -48,6 +48,11 @@ do
         brew install --cask $(echo $cask)
     fi
 done
+
+# Install Oh My Zsh and Powerleve10k.
+echo "Setting up Oh My Zsh and Powerlevel10k..."
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Add autocompletion plugin for zsh.
 echo "Adding autocompletion plugin for zsh..."
