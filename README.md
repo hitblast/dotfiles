@@ -1,3 +1,5 @@
+[![Dry Run](https://github.com/hitblast/dotfiles/actions/workflows/dryrun.yml/badge.svg)](https://github.com/hitblast/dotfiles/actions/workflows/dryrun.yml)
+
 ## 🛠️ Used Configuration
 
 - **Computer**: MacBook Air M1 (Late 2020)
