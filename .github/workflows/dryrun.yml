@@ -1,0 +1,19 @@
+name: Dry Run
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v4
+
+    - name: Grant permissions
+      run: chmod +x setup.sh
+
+    - name: Run script
+      run: ./setup.sh
