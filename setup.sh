@@ -56,8 +56,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 # Add autocompletion plugin for zsh.
 echo "Adding autocompletion plugin for zsh..."
-mkdir ~/Repos
-git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git ~/Repos/zsh-autocomplete
+mkdir $HOME/Repos
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $HOME/Repos/zsh-autocomplete
 
 # Run macos_cfg.sh script to configure macOS settings.
 # This runs only if the system is darwin-based and the shell is interactive.
