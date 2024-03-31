@@ -25,11 +25,11 @@
   "Right Option Key Sends" : 0,
   "Character Encoding" : 4,
   "Selection Color" : {
-    "Red Component" : 0.271087646484375,
+    "Red Component" : 0.127349853515625,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.20933429757133126,
+    "Blue Component" : 0.127349853515625,
     "Alpha Component" : 1,
-    "Green Component" : 0.20933429757133126
+    "Green Component" : 0.127349853515625
   },
   "Blend" : 0.050000000000000003,
   "Show Mark Indicators" : false,
@@ -312,7 +312,7 @@
   },
   "Name" : "Default",
   "Blinking Cursor" : true,
-  "Guid" : "328CD179-9373-41C1-A356-9B7588DF4EDF",
+  "Guid" : "0CBC2209-77B4-4995-8EFB-769BD2FFB75F",
   "Idle Code" : 0,
   "Ansi 10 Color" : {
     "Red Component" : 0.89411764705882357,
