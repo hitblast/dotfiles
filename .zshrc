@@ -34,8 +34,6 @@ plugins=(
 # Source Oh My Zsh.
 source $ZSH/oh-my-zsh.sh
 
-# Set user-specific configuration.
-
 # Homebrew autocompletion.
 if type brew &>/dev/null
 then
@@ -48,7 +46,16 @@ fi
 # Enable zoxide bridge to cd.
 eval "$(zoxide init --cmd cd zsh)"
 
+# Source fzf.
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Source powerlevel10k theme.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+
+# Aliases and functions.
+tagauto() {
+  git tag --sign --message "$($2)" $1
+  git push origin --tags
+}
