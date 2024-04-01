@@ -56,6 +56,6 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Aliases and functions.
 tagauto() {
-  git tag --sign --message "$($2)" $1
+  git tag --sign --message $2 $1
   git push origin --tags
 }
