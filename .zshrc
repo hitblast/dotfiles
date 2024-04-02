@@ -46,6 +46,9 @@ fi
 # Enable zoxide bridge to cd.
 eval "$(zoxide init --cmd cd zsh)"
 
+# Enable thefuck alias.
+eval $(thefuck --alias)
+
 # Source fzf.
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
