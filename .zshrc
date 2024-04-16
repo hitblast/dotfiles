@@ -50,7 +50,7 @@ eval "$(zoxide init --cmd cd zsh)"
 eval $(thefuck --alias)
 
 # Source fzf.
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(fzf --zsh)"
 
 # Source powerlevel10k theme.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
