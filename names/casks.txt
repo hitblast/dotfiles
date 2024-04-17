@@ -1,5 +1,6 @@
 android-file-transfer
 appcleaner
+arc
 discord
 handbrake
 hazeover
@@ -16,5 +17,6 @@ rectangle
 spotify
 stats
 steam
+transmission
 visual-studio-code
 whatsapp
