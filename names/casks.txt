@@ -4,6 +4,7 @@ discord
 handbrake
 hazeover
 hiddenbar
+httpie
 hyperkey
 iina
 iterm2

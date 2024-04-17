@@ -5,6 +5,7 @@ gettext
 git
 m4
 mpdecimal
+nim
 openssl@3
 pcre2
 pkg-config
