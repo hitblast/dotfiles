@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Battery_state</key>
+	<false/>
+	<key>CPU_state</key>
+	<false/>
+	<key>Disk_state</key>
+	<false/>
+	<key>LaunchAtLoginNext</key>
+	<true/>
+	<key>NSNavLastRootDirectory</key>
+	<string>~/Documents</string>
+	<key>NSStatusItem Preferred Position Sensors_sensors</key>
+	<real>5354</real>
+	<key>NSToolbar Configuration eu.exelban.Stats.Settings.Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<true/>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame NSNavPanelAutosaveName</key>
+	<string>505 555 430 135 0 0 1440 875 </string>
+	<key>Network_state</key>
+	<false/>
+	<key>RAM_state</key>
+	<false/>
+	<key>Sensors_hid</key>
+	<true/>
+	<key>Sensors_state</key>
+	<true/>
+	<key>runAtLoginInitialized</key>
+	<true/>
+	<key>sensor_Average SOC</key>
+	<true/>
+	<key>setupProcess</key>
+	<true/>
+	<key>telemetry</key>
+	<false/>
+	<key>telemetry_id</key>
+	<string>5DAAFF44-F806-4B6A-A14D-1BA425428F25</string>
+	<key>update-interval</key>
+	<string>Silent</string>
+	<key>updater_check_ts</key>
+	<integer>1713244431</integer>
+	<key>version</key>
+	<string>2.10.9</string>
+</dict>
+</plist>
