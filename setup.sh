@@ -14,8 +14,6 @@ done
 
 # Setup Homebrew variables beforehand.
 echo "Setting up Homebrew..."
-export HOMEBREW_BREW_GIT_REMOTE="git@github.com:Homebrew/brew.git"
-export HOMEBREW_CORE_GIT_REMOTE="git@github.com:Homebrew/homebrew-core.git"
 
 # Install Homebrew.
 /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
