@@ -3,6 +3,10 @@ ca-certificates
 fzf
 gettext
 git
+libgit2
+libssh2
+llvm@17
+lz4
 m4
 mpdecimal
 nim
@@ -12,8 +16,10 @@ pkg-config
 pyenv
 python@3.12
 readline
+rust
 shpotify
 sqlite
 thefuck
 xz
 zoxide
+zstd
