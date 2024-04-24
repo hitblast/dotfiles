@@ -56,7 +56,6 @@ eval "$(fzf --zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-
 # Aliases and functions.
 tagauto() {
   git tag --sign --message $2 $1
