@@ -11,6 +11,7 @@ iina
 iterm2
 itsycal
 keyboardcleantool
+krita
 orbstack
 protonvpn
 rectangle
