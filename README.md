@@ -17,3 +17,9 @@ chmod +x setup.sh
 # Run the script
 ./setup.sh
 ```
+
+## Available Functions / Commands
+
+| Function                  | Description                                                    |
+| ------------------------- | -------------------------------------------------------------- |
+| `tagauto <ver-num> <msg>` | Automatically tag and sign latest commit, then push to origin. |

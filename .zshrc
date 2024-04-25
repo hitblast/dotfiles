@@ -62,9 +62,3 @@ tagauto() {
     git tag --sign --message $2 $1
     git push origin --tags
 }
-
-secretsback() {
-    rsync -aE --delete ~/Documents /Volumes/$1/
-    rsync -aE --delete ~/Pictures /Volumes/$1/
-    rsync -aE --delete ~/Developer /Volumes/$1/
-}
