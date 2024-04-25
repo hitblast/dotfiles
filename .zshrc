@@ -3,7 +3,7 @@ source ~/Repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Enable Powerlevel10k instant prompt.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # Load pyenv for interactive shells.
@@ -25,7 +25,7 @@ HIST_STAMPS="mm/dd/yyyy"
 zstyle ':omz:update' mode auto
 
 # Add the necessary plugins for the shell.
-plugins=(	
+plugins=(
 	git
 	pyenv
 	sudo
@@ -37,10 +37,10 @@ source $ZSH/oh-my-zsh.sh
 # Homebrew autocompletion.
 if type brew &>/dev/null
 then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+    FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
-  autoload -Uz compinit
-  compinit
+    autoload -Uz compinit
+    compinit
 fi
 
 # Enable zoxide bridge to cd.
@@ -56,8 +56,15 @@ eval "$(fzf --zsh)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+
 # Aliases and functions.
 tagauto() {
-  git tag --sign --message $2 $1
-  git push origin --tags
+    git tag --sign --message $2 $1
+    git push origin --tags
+}
+
+secretsback() {
+    rsync -aE --delete ~/Documents /Volumes/$1/
+    rsync -aE --delete ~/Pictures /Volumes/$1/
+    rsync -aE --delete ~/Developer /Volumes/$1/
 }
