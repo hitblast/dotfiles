@@ -1,6 +1,7 @@
 android-file-transfer
 appcleaner
 arc
+bootstrap-studio
 discord
 handbrake
 hazeover

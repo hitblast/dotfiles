@@ -1,5 +1,6 @@
 autoconf
 ca-certificates
+certifi
 fzf
 gettext
 git
@@ -13,6 +14,7 @@ nim
 openssl@3
 pcre2
 pkg-config
+poetry
 pyenv
 python@3.12
 readline
