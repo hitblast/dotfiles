@@ -12,6 +12,7 @@ iina
 iterm2
 itsycal
 keyboardcleantool
+obsidian
 orbstack
 protonvpn
 rectangle
