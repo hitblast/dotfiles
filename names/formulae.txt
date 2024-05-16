@@ -6,6 +6,7 @@ gettext
 git
 libgit2
 libssh2
+llvm
 llvm@17
 lz4
 m4
@@ -22,6 +23,8 @@ rust
 shpotify
 sqlite
 thefuck
+tokei
 xz
+z3
 zoxide
 zstd
