@@ -22,4 +22,3 @@ steam
 transmission
 visual-studio-code
 whatsapp
-zed
