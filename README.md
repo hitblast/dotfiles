@@ -23,3 +23,4 @@ chmod +x setup.sh
 | Function                  | Description                                                    |
 | ------------------------- | -------------------------------------------------------------- |
 | `tagauto <ver-num> <msg>` | Automatically tag and sign latest commit, then push to origin. |
+| `rmbrewcache`             | Remove all cache files from Homebrew.                          |

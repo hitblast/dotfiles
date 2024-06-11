@@ -62,3 +62,5 @@ tagauto() {
     git tag --sign --message $2 $1
     git push origin --tags
 }
+
+alias rmbrewcache="rm -rf $(brew --cache)/*"
