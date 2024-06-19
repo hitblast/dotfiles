@@ -1,6 +1,8 @@
+aria2
 autoconf
 ca-certificates
 certifi
+cffi
 fzf
 gettext
 git
@@ -15,9 +17,11 @@ openssl@3
 pcre2
 pkg-config
 poetry
+pycparser
 pyenv
 python@3.12
 readline
+resfetch
 rust
 shpotify
 sqlite

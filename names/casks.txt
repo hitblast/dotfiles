@@ -19,6 +19,5 @@ rectangle
 spotify
 stats
 steam
-transmission
 visual-studio-code
 whatsapp
