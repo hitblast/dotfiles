@@ -6,11 +6,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
     source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Load pyenv for interactive shells.
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -34,6 +29,10 @@ plugins=(
 # Source Oh My Zsh.
 source $ZSH/oh-my-zsh.sh
 
+# Source powerlevel10k theme.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
 # Homebrew autocompletion.
 if type brew &>/dev/null
 then
@@ -51,10 +50,6 @@ eval $(thefuck --alias)
 
 # Source fzf.
 source <(fzf --zsh)
-
-# Source powerlevel10k theme.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 
 # Aliases and functions.
