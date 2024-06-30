@@ -1,11 +1,9 @@
-android-file-transfer
 appcleaner
 arc
 bootstrap-studio
 discord
 handbrake
 hazeover
-hiddenbar
 httpie
 hyperkey
 iina
@@ -19,5 +17,7 @@ rectangle
 spotify
 stats
 steam
+thor
 visual-studio-code
 whatsapp
+whisky
