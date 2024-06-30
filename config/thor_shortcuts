@@ -1,0 +1,32 @@
+[
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
+    "appDisplayName" : "iTerm",
+    "shortcut" : "shift+ctrl+alt+cmd+`"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Spotify.app\/",
+    "appDisplayName" : "Spotify",
+    "shortcut" : "shift+ctrl+alt+cmd+s"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Discord.app\/",
+    "appDisplayName" : "Discord",
+    "shortcut" : "shift+ctrl+alt+cmd+d"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/",
+    "appDisplayName" : "Visual Studio Code",
+    "shortcut" : "shift+ctrl+alt+cmd+v"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/OrbStack.app\/",
+    "appDisplayName" : "OrbStack",
+    "shortcut" : "shift+ctrl+alt+cmd+o"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Arc.app\/",
+    "appDisplayName" : "Arc",
+    "shortcut" : "shift+ctrl+alt+cmd+a"
+  }
+]
