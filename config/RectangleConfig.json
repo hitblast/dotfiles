@@ -83,7 +83,7 @@
 
     },
     "gapSize" : {
-      "float" : 10
+      "float" : 0
     },
     "hapticFeedbackOnSnap" : {
       "int" : 0
@@ -152,6 +152,9 @@
       "bool" : false
     },
     "screenEdgeGapTop" : {
+      "float" : 0
+    },
+    "screenEdgeGapTopNotch" : {
       "float" : 0
     },
     "shortEdgeSnapAreaSize" : {
@@ -313,5 +316,5 @@
       "modifierFlags" : 1966080
     }
   },
-  "version" : "85"
+  "version" : "86"
 }
