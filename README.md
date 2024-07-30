@@ -3,7 +3,7 @@
 ## 🛠️ Used Configuration
 
 - **Computer**: MacBook Air M1 (Late 2020)
-- **OS (latest commit)**: macOS 14.4 Sonoma
+- **OS (latest commit)**: macOS 14.5 Sonoma
 - **Shell**: zsh
 
 ## ⚡ Setup
