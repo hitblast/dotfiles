@@ -53,9 +53,10 @@ source <(fzf --zsh)
 
 
 # Aliases and functions.
-tagauto() {
+tagpush() {
     git tag --sign --message $2 $1
     git push origin --tags
 }
 
 alias rmbrewcache="rm -rf $(brew --cache)/*"
+alias rmpoetryvenv="rm -rf $HOME/Library/Caches/pypoetry/virtualenvs/*"

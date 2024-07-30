@@ -22,5 +22,6 @@ chmod +x setup.sh
 
 | Function                  | Description                                                    |
 | ------------------------- | -------------------------------------------------------------- |
-| `tagauto <ver-num> <msg>` | Automatically tag and sign latest commit, then push to origin. |
+| `tagpush <ver-num> <msg>` | Automatically tag and sign latest commit, then push to origin. |
 | `rmbrewcache`             | Remove all cache files from Homebrew.                          |
+| `rmpoetryvenv`            | Remove all virtual environments created by Poetry.             |
