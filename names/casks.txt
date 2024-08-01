@@ -1,5 +1,4 @@
 appcleaner
-arc
 bootstrap-studio
 discord
 hazeover
