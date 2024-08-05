@@ -36,7 +36,7 @@ source $ZSH/oh-my-zsh.sh
 # Homebrew autocompletion.
 if type brew &>/dev/null
 then
-    FPATH="$(brew --prefix)/share/zsh/site-functions:~/.zfunc:${FPATH}"
+    FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
     autoload -Uz compinit
     compinit
