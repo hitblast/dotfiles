@@ -1,4 +1,4 @@
-#! /bin/zsh
+#! /bin/bash
 
 # DRY_RUN environment variable is only used for CI pipelines
 # in order to test the integrity of the scripts.
@@ -16,7 +16,7 @@ done
 echo "Setting up Homebrew..."
 
 # Install Homebrew.
-/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Load Homebrew.
 eval "$(`brew --prefix`/bin/brew shellenv)"
@@ -49,7 +49,7 @@ done
 
 # Install Oh My Zsh and Powerleve10k.
 echo "Setting up Oh My Zsh and Powerlevel10k..."
-/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Add autocompletion plugin for zsh.

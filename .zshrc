@@ -42,6 +42,7 @@ then
     compinit
 fi
 
+
 # Enable zoxide bridge to cd.
 eval "$(zoxide init --cmd cd zsh)"
 

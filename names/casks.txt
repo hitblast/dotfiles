@@ -1,4 +1,6 @@
 appcleaner
+arc
+betterdiscord-installer
 bootstrap-studio
 discord
 hazeover
@@ -7,6 +9,7 @@ httpie
 hyperkey
 iina
 iterm2
+jetbrains-toolbox
 keyboardcleantool
 obsidian
 orbstack

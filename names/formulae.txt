@@ -1,4 +1,6 @@
 autoconf
+brotli
+c-ares
 ca-certificates
 certifi
 cffi
@@ -9,10 +11,11 @@ git
 gmp
 gnupg
 gnutls
+icu4c
 libassuan
 libevent
 libgcrypt
-libgit2
+libgit2@1.7
 libgpg-error
 libidn2
 libksba
@@ -21,6 +24,7 @@ libssh2
 libtasn1
 libunistring
 libusb
+libuv
 llvm
 lz4
 m4
@@ -28,6 +32,7 @@ mpdecimal
 nettle
 nim
 ninja
+node
 npth
 openssl@3
 p11-kit
