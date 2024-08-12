@@ -60,6 +60,7 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $HO
 # Run macos_cfg.sh script to configure macOS settings.
 # This runs only if the system is darwin-based and the shell is interactive.
 if [[ "$OSTYPE" == "darwin"* && -t 0 ]]; then
+    echo "Configuring macOS settings..."
     
     # Enable autohide dock.
     defaults write com.apple.dock "autohide" -bool "true" && killall Dock
@@ -69,6 +70,9 @@ if [[ "$OSTYPE" == "darwin"* && -t 0 ]]; then
 
     # Enable Touch ID-based sudo authentication.
     sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+
+    # Enable key repeating.
+    defaults write -g ApplePressAndHoldEnabled -bool false
 
 else
     echo "Skipping macOS configuration script..."
