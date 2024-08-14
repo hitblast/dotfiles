@@ -11,6 +11,7 @@ iina
 iterm2
 jetbrains-toolbox
 keyboardcleantool
+maccy
 obsidian
 orbstack
 protonvpn
