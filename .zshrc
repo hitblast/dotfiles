@@ -53,11 +53,6 @@ eval $(thefuck --alias)
 source <(fzf --zsh)
 
 
-# Aliases and functions.
-tagpush() {
-    git tag --sign --message $2 $1
-    git push origin --tags
-}
-
-alias rmbrewcache="rm -rf $(brew --cache)/*"
-alias rmpoetryvenv="rm -rf $HOME/Library/Caches/pypoetry/virtualenvs/*"
+# Removal aliases.
+alias rbc="rm -rf $(brew --cache)/*"
+alias rpv="rm -rf $HOME/Library/Caches/pypoetry/virtualenvs/*"
