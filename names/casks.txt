@@ -1,5 +1,4 @@
 appcleaner
-arc
 betterdiscord-installer
 bootstrap-studio
 discord
@@ -8,11 +7,9 @@ hot
 httpie
 hyperkey
 iina
-iterm2
 jetbrains-toolbox
 keyboardcleantool
-maccy
-obsidian
+notion
 orbstack
 protonvpn
 rectangle
@@ -20,5 +17,6 @@ spotify
 steam
 transmission
 visual-studio-code
+warp
 whatsapp
 zoom

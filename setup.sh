@@ -5,7 +5,7 @@
 
 # Copy dotfiles.
 echo "Copying dotfiles..."
-DOTFILES=(.gitignore .hushlogin .zprofile .zshrc .p10k.zsh)
+DOTFILES=(.gitignore .hushlogin .bash_profile .bashrc)
 
 for dotfile in $(echo ${DOTFILES[*]});
 do
@@ -15,11 +15,9 @@ done
 # Setup Homebrew variables beforehand.
 echo "Setting up Homebrew..."
 
-# Install Homebrew.
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-# Load Homebrew.
-eval "$(`brew --prefix`/bin/brew shellenv)"
+# Install Homebrew and load the shell environment.
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)".
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Install Homebrew formulae.
 echo "Installing Homebrew formulae..."
@@ -47,20 +45,13 @@ do
     fi
 done
 
-# Install Oh My Zsh and Powerleve10k.
-echo "Setting up Oh My Zsh and Powerlevel10k..."
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
-# Add autocompletion plugin for zsh.
-echo "Adding autocompletion plugin for zsh..."
-mkdir $HOME/Repos
-git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $HOME/Repos/zsh-autocomplete
-
 # Run macos_cfg.sh script to configure macOS settings.
 # This runs only if the system is darwin-based and the shell is interactive.
 if [[ "$OSTYPE" == "darwin"* && -t 0 ]]; then
     echo "Configuring macOS settings..."
+
+    # Enable hidden suck-in effect for the dock.
+    defaults write com.apple.dock mineffect -string suck 
     
     # Enable autohide dock.
     defaults write com.apple.dock "autohide" -bool "true" && killall Dock
