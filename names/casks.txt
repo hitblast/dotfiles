@@ -1,7 +1,7 @@
 appcleaner
-betterdiscord-installer
 bootstrap-studio
 discord
+firefox
 hazeover
 hot
 httpie
@@ -9,6 +9,7 @@ hyperkey
 iina
 jetbrains-toolbox
 keyboardcleantool
+mymonero
 notion
 orbstack
 protonvpn
@@ -19,4 +20,5 @@ transmission
 visual-studio-code
 warp
 whatsapp
+zed
 zoom

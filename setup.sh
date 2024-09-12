@@ -3,15 +3,6 @@
 # DRY_RUN environment variable is only used for CI pipelines
 # in order to test the integrity of the scripts.
 
-# Copy dotfiles.
-echo "Copying dotfiles..."
-DOTFILES=(.gitignore .hushlogin .bash_profile .bashrc)
-
-for dotfile in $(echo ${DOTFILES[*]});
-do
-    cp $(echo $dotfile) ~
-done
-
 # Setup Homebrew variables beforehand.
 echo "Setting up Homebrew..."
 
@@ -51,8 +42,8 @@ if [[ "$OSTYPE" == "darwin"* && -t 0 ]]; then
     echo "Configuring macOS settings..."
 
     # Enable hidden suck-in effect for the dock.
-    defaults write com.apple.dock mineffect -string suck 
-    
+    defaults write com.apple.dock mineffect -string suck
+
     # Enable autohide dock.
     defaults write com.apple.dock "autohide" -bool "true" && killall Dock
 

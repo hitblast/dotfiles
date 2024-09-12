@@ -1,8 +1,6 @@
 autoconf
 bash
 bash-completion@2
-brotli
-c-ares
 ca-certificates
 certifi
 cffi
@@ -13,10 +11,10 @@ git
 gmp
 gnupg
 gnutls
-icu4c
 libassuan
 libevent
 libgcrypt
+libgit2
 libgit2@1.7
 libgpg-error
 libidn2
@@ -26,15 +24,14 @@ libssh2
 libtasn1
 libunistring
 libusb
-libuv
 llvm
 lz4
 m4
+mactop
 mpdecimal
 nettle
 nim
 ninja
-node
 npth
 openssl@3
 p11-kit
@@ -49,8 +46,8 @@ readline
 rust
 shpotify
 sqlite
+stow
 thefuck
-tree
 unbound
 xz
 z3
