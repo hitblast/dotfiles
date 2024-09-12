@@ -11,14 +11,15 @@ export GPG_TTY
 
 # Add pyenv to PATH.
 export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
-# Added by OrbStack: command-line tools and integration
-[ -f ~/.orbstack/shell/init.sh ] && source ~/.orbstack/shell/init.sh
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # Added by: JetBrains Toolbox
 export PATH="$PATH:/Users/hitblast/Library/Application Support/JetBrains/Toolbox/scripts"
 
 # Source for the .bashrc file.
 [[ -s ~/.bashrc ]] && source ~/.bashrc
+
+# Added by OrbStack: command-line tools and integration
+# Comment this line if you don't want it to be added again.
+source ~/.orbstack/shell/init.bash 2>/dev/null || :
