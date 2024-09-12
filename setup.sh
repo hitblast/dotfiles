@@ -3,6 +3,15 @@
 # DRY_RUN environment variable is only used for CI pipelines
 # in order to test the integrity of the scripts.
 
+# Copy dotfiles.
+echo "Copying dotfiles..."
+DOTFILES=(.gitignore .hushlogin .bash_profile .bashrc)
+
+for dotfile in $(echo ${DOTFILES[*]});
+do
+    cp $(echo $dotfile) ~
+done
+
 # Setup Homebrew variables beforehand.
 echo "Setting up Homebrew..."
 
