@@ -15,7 +15,6 @@ libassuan
 libevent
 libgcrypt
 libgit2
-libgit2@1.7
 libgpg-error
 libidn2
 libksba
@@ -46,7 +45,6 @@ readline
 rust
 shpotify
 sqlite
-stow
 thefuck
 unbound
 xz
