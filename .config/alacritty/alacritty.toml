@@ -1,0 +1,28 @@
+general.import = [
+    "~/.config/alacritty/themes/themes/oxocarbon.toml"
+]
+
+[window]
+padding.x = 30
+padding.y = 30
+title = "in love with the golden since april"
+
+opacity = 0.85
+dimensions = { columns = 100, lines = 25 }
+decorations = "Buttonless"
+
+blur = true
+option_as_alt = "Both"
+
+[font]
+normal.family = "MesloLGS Nerd Font Mono"
+
+size = 14
+
+[cursor]
+style = { blinking = "On" }
+blink_interval = 200
+thickness = 0.2
+
+[mouse]
+hide_when_typing = true
