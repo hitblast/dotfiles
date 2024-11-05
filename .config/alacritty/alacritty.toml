@@ -7,7 +7,7 @@ padding.x = 30
 padding.y = 30
 title = "in love with the golden since april"
 
-opacity = 0.85
+opacity = 0.9
 dimensions = { columns = 100, lines = 25 }
 decorations = "Buttonless"
 
