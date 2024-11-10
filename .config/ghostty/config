@@ -14,7 +14,7 @@ macos-window-shadow = false
 window-padding-x = 30
 window-padding-y = 30 
 window-width = 93 
-window-height = 24
+window-height = 25
 
 # Window background decoration. 
 background-blur-radius = 80
