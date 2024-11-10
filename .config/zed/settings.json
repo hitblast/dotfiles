@@ -18,6 +18,10 @@
     },
     "version": "2"
   },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
   "vim_mode": true,
   "ui_font_family": "JetBrains Mono",
   "buffer_font_family": "JetBrains Mono",
@@ -50,6 +54,11 @@
     "toml": true
   },
   "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "checkOnSave": false
+      }
+    },
     "pyright": {
       "settings": {
         "python.analysis": {

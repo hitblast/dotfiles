@@ -1,5 +1,5 @@
 general.import = [
-    "~/.config/alacritty/themes/themes/oxocarbon.toml"
+    "~/.config/alacritty/themes/themes/moonfly.toml"
 ]
 
 [window]
@@ -7,17 +7,17 @@ padding.x = 30
 padding.y = 30
 title = "in love with the golden since april"
 
-opacity = 0.9
-dimensions = { columns = 100, lines = 25 }
+dimensions = { columns = 100, lines = 23 }
 decorations = "Buttonless"
 
+opacity = 0.7
 blur = true
 option_as_alt = "Both"
 
 [font]
-normal.family = "MesloLGS Nerd Font Mono"
-
+normal.family = "JetBrains Mono"
 size = 14
+offset = { x = 0, y = 2 }
 
 [cursor]
 style = { blinking = "On" }
