@@ -1,6 +1,9 @@
 # Load Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Load local binaries to PATH.
+export PATH="$HOME/.local/bin:$PATH"
+
 # Enable bash-completion@2.
 export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
