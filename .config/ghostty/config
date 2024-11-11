@@ -6,7 +6,7 @@ font-thicken = true
 
 # Theme.
 theme = "pnevma"
-background = #0a0a0a 
+background = #0f0f0f 
 
 # Window-specific settings.
 macos-titlebar-style = hidden
