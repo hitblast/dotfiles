@@ -212,7 +212,8 @@ alt-shift-l = ['join-with right', 'mode main']
 # Callbacks for moving some nodes automatically to their respected workspaces:
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
-run = 'move-node-to-workspace T'
+if.workspace = 'T'
+run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
