@@ -1,6 +1,9 @@
 # Set vim mode for terminal.
 set -o vi
 
+# Alias for seeing the grooving parrot once in a while.
+alias parut = "curl parrot.live"
+
 # Enable zoxide integration for easy cd.
 eval "$(zoxide init --cmd cd bash)"
 
