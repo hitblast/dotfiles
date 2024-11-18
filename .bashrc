@@ -1,3 +1,6 @@
+# Set TERM environment variable for accessing SSH-connected devices.
+export TERM=xterm-256color
+
 # Set vim mode for terminal.
 set -o vi
 
