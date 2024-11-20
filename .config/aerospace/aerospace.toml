@@ -12,7 +12,7 @@ after-login-command = []
 after-startup-command = [
     # JankyBorders has a built-in detection of already running process,
     # so it won't be run twice on AeroSpace restart
-    'exec-and-forget borders active_color=0xff7f7252 width=5.0'
+    'exec-and-forget borders active_color=0xff7f7252 width=5.0',
 ]
 
 # Start AeroSpace at login
@@ -225,7 +225,7 @@ run = 'move-node-to-workspace S'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
-run = 'move-node-to-workspace W'
+run = 'move-node-to-workspace F'
 
 [[on-window-detected]]
 if.app-id = 'com.bohemiancoding.sketch3'
@@ -238,3 +238,7 @@ run = 'move-node-to-workspace B'
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+if.app-id = 'notion.id'
+run = 'move-node-to-workspace J'
