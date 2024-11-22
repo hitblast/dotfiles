@@ -220,7 +220,7 @@ run = 'move-node-to-workspace S'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
-run = 'move-node-to-workspace F'
+run = 'move-node-to-workspace W'
 
 [[on-window-detected]]
 if.app-id = 'com.bohemiancoding.sketch3'
@@ -236,4 +236,4 @@ run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
 if.app-id = 'notion.id'
-run = 'move-node-to-workspace J'
+run = 'move-node-to-workspace N'
