@@ -1,7 +1,7 @@
 # Font.
 font-family = "JetBrains Mono"
 font-feature = liga
-font-size = 14 
+font-size = 13 
 font-thicken = true
 
 # Theme.
