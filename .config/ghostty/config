@@ -12,6 +12,7 @@ background = #0f0f0f
 macos-titlebar-style = native
 macos-window-shadow = false
 window-padding-x = 30
+window-colorspace = display-p3
 window-padding-y = 30 
 window-width = 93 
 window-height = 25
