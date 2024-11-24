@@ -4,7 +4,7 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Mac OSX: Caps Lock → left option (escape if alone)",
+                        "description": "Mac OSX: Caps Lock → left option (esc if alone)",
                         "manipulators": [
                             {
                                 "from": {
@@ -93,14 +93,6 @@
                 {
                     "from": { "key_code": "right_option" },
                     "to": [{ "key_code": "period" }]
-                },
-                {
-                    "from": { "key_code": "escape" },
-                    "to": [{ "key_code": "vk_none" }]
-                },
-                {
-                    "from": { "key_code": "f6" },
-                    "to": [{ "key_code": "vk_none" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
