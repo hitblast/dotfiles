@@ -4,6 +4,39 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Mac OSX: Caps Lock → left option (esc if alone)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "opt_caps_lock",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "key_code": "left_option",
+                                        "modifiers": []
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "opt_caps_lock",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "to_if_alone": [{ "key_code": "escape" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Mac OSX: disable cmd + option + h + m to prevent minimising all windows",
                         "manipulators": [
                             {
@@ -46,8 +79,12 @@
             "selected": true,
             "simple_modifications": [
                 {
-                    "from": { "key_code": "caps_lock" },
-                    "to": [{ "key_code": "left_option" }]
+                    "from": { "key_code": "f4" },
+                    "to": [{ "apple_vendor_top_case_key_code": "illumination_down" }]
+                },
+                {
+                    "from": { "key_code": "f5" },
+                    "to": [{ "apple_vendor_top_case_key_code": "illumination_up" }]
                 },
                 {
                     "from": { "key_code": "period" },
@@ -56,14 +93,6 @@
                 {
                     "from": { "key_code": "right_option" },
                     "to": [{ "key_code": "period" }]
-                },
-                {
-                    "from": { "key_code": "f5" },
-                    "to": [{ "apple_vendor_top_case_key_code": "illumination_up" }]
-                },
-                {
-                    "from": { "key_code": "f4" },
-                    "to": [{ "apple_vendor_top_case_key_code": "illumination_down" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
