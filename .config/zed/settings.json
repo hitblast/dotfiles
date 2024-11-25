@@ -31,7 +31,7 @@
   "relative_line_numbers": true,
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Light Soft",
+    "light": "Xcode Presentation Light",
     "dark": "Xcode High Contrast Darker"
   },
   "journal": {
