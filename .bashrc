@@ -9,4 +9,3 @@ eval "$(zoxide init --cmd cd bash)"
 
 # Enable fzf integration for fuzzy searching.
 eval "$(fzf --bash)"
-
