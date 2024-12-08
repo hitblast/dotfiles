@@ -1,5 +1,5 @@
 # Font.
-font-family = "Monaco"
+font-family = "JetBrains Mono"
 font-feature = liga
 font-size = 12 
 font-thicken = true
