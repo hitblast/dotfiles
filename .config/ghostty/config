@@ -17,5 +17,10 @@ window-padding-y = 30
 window-width = 93 
 window-height = 25
 
+# Keybinds.
+keybind = command+shift+h=toggle_quick_terminal
+
 # Misc.
 confirm-close-surface = false
+
+
