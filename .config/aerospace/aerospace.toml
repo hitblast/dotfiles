@@ -205,10 +205,6 @@ if.app-id = 'dev.zed.Zed'
 run = 'move-node-to-workspace W'
 
 [[on-window-detected]]
-if.app-id = 'come.apple.dt.Xcode'
-run = 'move-node-to-workspace W'
-
-[[on-window-detected]]
 if.app-id = 'com.bohemiancoding.sketch3'
 run = 'move-node-to-workspace D'
 
