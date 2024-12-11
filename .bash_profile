@@ -8,9 +8,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-# Add Flutter SDK to PATH.
-export PATH="$HOME/.devel/flutter/bin:$PATH"
-
 # Add gnupg to PATH.
 GPG_TTY=$(tty)
 export GPG_TTY
@@ -19,17 +16,16 @@ export GPG_TTY
 # Comment this line if you don't want it to be added again.
 source ~/.orbstack/shell/init.bash 2>/dev/null || :
 
-# Add cargo environment.
+# Add cargo environment (rust).
 . "$HOME/.cargo/env"
-
-# Add ruby to PATH.
-if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
-  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
-  export PATH=`gem environment gemdir`/bin:$PATH
-fi
 
 # Add rustup to PATH (rust).
 export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 
+# Add asdf environment.
+. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/completions/asdf.bash"
+
 # Source for the .bashrc file.
 [[ -s ~/.bashrc ]] && source ~/.bashrc
+
