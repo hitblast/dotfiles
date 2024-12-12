@@ -113,24 +113,20 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # primary workspace configuration
-alt-w = 'workspace W'
-alt-r = 'workspace R'
 alt-s = 'workspace S'
+alt-w = 'workspace W'
 alt-d = 'workspace D'
-alt-f = 'workspace F'
-alt-z = 'workspace Z'
-alt-x = 'workspace X'
-alt-c = 'workspace C'
+alt-b = 'workspace B'
+alt-m = 'workspace M'
+alt-o = 'workspace O'
 
 # moving nodes
-alt-shift-w = 'move-node-to-workspace W'
-alt-shift-r = 'move-node-to-workspace R'
 alt-shift-s = 'move-node-to-workspace S'
+alt-shift-w = 'move-node-to-workspace W'
 alt-shift-d = 'move-node-to-workspace D'
-alt-shift-f = 'move-node-to-workspace F'
-alt-shift-z = 'move-node-to-workspace Z'
-alt-shift-x = 'move-node-to-workspace X'
-alt-shift-c = 'move-node-to-workspace C'
+alt-shift-b = 'move-node-to-workspace B'
+alt-shift-m = 'move-node-to-workspace M'
+alt-shift-o = 'move-node-to-workspace O'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -176,6 +172,10 @@ if.app-name-regex-substring = 'finder'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-name-regex-substring = 'mail'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
 run = 'layout floating'
 
@@ -201,8 +201,12 @@ run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
-run = 'move-node-to-workspace F'
+run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
-run = 'move-node-to-workspace C'
+run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace O'
