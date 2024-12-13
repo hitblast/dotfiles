@@ -150,6 +150,7 @@ backspace = ['close-all-windows-but-current', 'mode main']
 
 # 'apps' binding mode declaration.
 [mode.apps.binding]
+esc = 'mode main'
 g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
 o = ['exec-and-forget open -a /Applications/Obsidian.app', 'mode main']
 s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
