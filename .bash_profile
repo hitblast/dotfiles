@@ -19,9 +19,6 @@ source ~/.orbstack/shell/init.bash 2>/dev/null || :
 # Add cargo environment (rust).
 . "$HOME/.cargo/env"
 
-# Add rustup to PATH (rust).
-export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
-
 # Add asdf environment.
 . "$HOME/.asdf/asdf.sh"
 . "$HOME/.asdf/completions/asdf.bash"
