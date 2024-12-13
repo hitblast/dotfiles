@@ -177,6 +177,10 @@ if.app-name-regex-substring = 'mail'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-name-regex-substring = 'activity monitor'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
 run = 'layout floating'
 
