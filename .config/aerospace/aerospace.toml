@@ -163,7 +163,14 @@ g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
 o = ['exec-and-forget open -a /Applications/Obsidian.app', 'mode main']
 s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
 z = ['exec-and-forget open -a /Applications/Zed.app', 'mode main']
-a = ['exec-and-forget open -a /Applications/Aseprite.app', 'mode main']
+a = [
+    'exec-and-forget open -a /System/Applications/Utilities/Activity\ Monitor.app',
+    'mode main',
+]
+cmd-alt-ctrl-a = [
+    'exec-and-forget open -a /Applications/Aseprite.app',
+    'mode main',
+]
 d = ['exec-and-forget open -a /Applications/Discord.app', 'mode main']
 f = ['exec-and-forget open -a /Applications/Firefox.app', 'mode main']
 
