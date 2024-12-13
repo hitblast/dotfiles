@@ -12,3 +12,9 @@ eval "$(fzf --bash)"
 
 # Integrate cargo environment.
 . "$HOME/.cargo/env"
+
+# Aliases.
+ff ()
+{
+	aerospace list-windows --all | fzf --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
+}
