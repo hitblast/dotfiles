@@ -122,6 +122,7 @@ cmd-alt-ctrl-i = 'workspace I'
 cmd-alt-ctrl-o = 'workspace O'
 cmd-alt-ctrl-p = 'workspace P'
 cmd-alt-ctrl-b = 'workspace B'
+cmd-alt-ctrl-m = 'workspace M'
 
 # moving nodes
 cmd-alt-ctrl-shift-w = 'move-node-to-workspace W'
@@ -133,6 +134,7 @@ cmd-alt-ctrl-shift-i = 'move-node-to-workspace I'
 cmd-alt-ctrl-shift-o = 'move-node-to-workspace O'
 cmd-alt-ctrl-shift-p = 'move-node-to-workspace P'
 cmd-alt-ctrl-shift-b = 'move-node-to-workspace B'
+cmd-alt-ctrl-shift-m = 'move-node-to-workspace M'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -216,7 +218,7 @@ run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
-run = 'move-node-to-workspace F'
+run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
