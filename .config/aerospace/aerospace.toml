@@ -113,6 +113,7 @@ cmd-alt-ctrl-shift-minus = 'resize smart -50'
 cmd-alt-ctrl-shift-equal = 'resize smart +50'
 
 # primary workspace configuration
+cmd-alt-ctrl-w = 'workspace W'
 cmd-alt-ctrl-s = 'workspace S'
 cmd-alt-ctrl-d = 'workspace D'
 cmd-alt-ctrl-f = 'workspace F'
@@ -123,6 +124,7 @@ cmd-alt-ctrl-p = 'workspace P'
 cmd-alt-ctrl-b = 'workspace B'
 
 # moving nodes
+cmd-alt-ctrl-shift-w = 'move-node-to-workspace W'
 cmd-alt-ctrl-shift-s = 'move-node-to-workspace S'
 cmd-alt-ctrl-shift-d = 'move-node-to-workspace D'
 cmd-alt-ctrl-shift-f = 'move-node-to-workspace F'
@@ -194,11 +196,11 @@ run = 'move-node-to-workspace S'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
-run = 'move-node-to-workspace F'
+run = 'move-node-to-workspace W'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'xcode'
-run = 'move-node-to-workspace F'
+run = 'move-node-to-workspace W'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'aseprite'
@@ -214,7 +216,7 @@ run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
-run = 'move-node-to-workspace I'
+run = 'move-node-to-workspace F'
 
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
