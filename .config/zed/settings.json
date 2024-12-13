@@ -35,10 +35,6 @@
     "light": "Xcode Presentation Light",
     "dark": "Xcode High Contrast Darker"
   },
-  "journal": {
-    "path": "~",
-    "hour_format": "hour24"
-  },
   "terminal": {
     "detect_venv": {
       "on": {
