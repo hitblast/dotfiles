@@ -114,19 +114,27 @@ alt-shift-equal = 'resize smart +50'
 
 # primary workspace configuration
 alt-s = 'workspace S'
-alt-w = 'workspace W'
 alt-d = 'workspace D'
-alt-b = 'workspace B'
-alt-m = 'workspace M'
+alt-f = 'workspace F'
+alt-u = 'workspace U'
+alt-i = 'workspace I'
 alt-o = 'workspace O'
+alt-p = 'workspace P'
+alt-b = 'workspace B'
+alt-n = 'workspace N'
+alt-m = 'workspace M'
 
 # moving nodes
 alt-shift-s = 'move-node-to-workspace S'
-alt-shift-w = 'move-node-to-workspace W'
 alt-shift-d = 'move-node-to-workspace D'
-alt-shift-b = 'move-node-to-workspace B'
-alt-shift-m = 'move-node-to-workspace M'
+alt-shift-f = 'move-node-to-workspace F'
+alt-shift-u = 'move-node-to-workspace U'
+alt-shift-i = 'move-node-to-workspace I'
 alt-shift-o = 'move-node-to-workspace O'
+alt-shift-p = 'move-node-to-workspace P'
+alt-shift-b = 'move-node-to-workspace B'
+alt-shift-n = 'move-node-to-workspace N'
+alt-shift-m = 'move-node-to-workspace M'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -190,11 +198,11 @@ run = 'move-node-to-workspace S'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
-run = 'move-node-to-workspace W'
+run = 'move-node-to-workspace F'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'xcode'
-run = 'move-node-to-workspace W'
+run = 'move-node-to-workspace F'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'aseprite'
