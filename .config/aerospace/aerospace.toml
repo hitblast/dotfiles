@@ -137,7 +137,7 @@ cmd-alt-ctrl-shift-b = 'move-node-to-workspace B'
 cmd-alt-ctrl-shift-m = 'move-node-to-workspace M'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
-alt-tab = 'workspace-back-and-forth'
+cmd-alt-ctrl-semicolon = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
 cmd-alt-ctrl-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
