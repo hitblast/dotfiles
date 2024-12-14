@@ -13,7 +13,7 @@
   },
   "indent_guides": {
     "enabled": true,
-    "coloring": "indent_aware"
+    "coloring": "fixed"
   },
   "centered_layout": {
     "left_padding": 0.1,
