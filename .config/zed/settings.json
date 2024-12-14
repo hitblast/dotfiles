@@ -74,18 +74,8 @@
     "**/.classpath",
     "**/.settings",
     // Zed defaults are listed above
-    "**/out",
     "**/dist",
-    "**/.husky",
-    "**/.turbo",
-    "**/.vscode-test",
-    "**/.vscode",
-    "**/.next",
-    "**/.storybook",
-    "**/.tap",
-    "**/.nyc_output",
-    "**/report",
-    "**/node_modules"
+    "**/.vscode"
   ],
   "lsp": {
     "rust-analyzer": {
