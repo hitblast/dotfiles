@@ -6,10 +6,18 @@
     "dock": "left"
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "right"
   },
   "project_panel": {
     "dock": "right"
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "centered_layout": {
+    "left_padding": 0.1,
+    "right_padding": 0.1
   },
   "assistant": {
     "default_model": {
@@ -21,6 +29,9 @@
   "telemetry": {
     "diagnostics": false,
     "metrics": false
+  },
+  "inlay_hints": {
+    "enabled": true
   },
   "vim_mode": true,
   "ui_font_family": "JetBrains Mono",
@@ -36,6 +47,9 @@
     "dark": "Xcode High Contrast Darker"
   },
   "terminal": {
+    "env": {
+      "EDITOR": "zed --wait"
+    },
     "detect_venv": {
       "on": {
         "directories": [".env", "env", ".venv", "venv"],
@@ -50,17 +64,33 @@
     "xcode-themes": true,
     "toml": true
   },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    // Zed defaults are listed above
+    "**/out",
+    "**/dist",
+    "**/.husky",
+    "**/.turbo",
+    "**/.vscode-test",
+    "**/.vscode",
+    "**/.next",
+    "**/.storybook",
+    "**/.tap",
+    "**/.nyc_output",
+    "**/report",
+    "**/node_modules"
+  ],
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
         "checkOnSave": false
-      }
-    },
-    "pyright": {
-      "settings": {
-        "python.analysis": {
-          "ignore": ["*"]
-        }
       }
     }
   },
