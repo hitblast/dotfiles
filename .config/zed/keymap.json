@@ -1,0 +1,30 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift shift": "file_finder::Toggle",
+      "cmd-k h": ["workspace::ActivatePaneInDirection", "Left"],
+      "cmd-k j": ["workspace::ActivatePaneInDirection", "Down"],
+      "cmd-k k": ["workspace::ActivatePaneInDirection", "Up"],
+      "cmd-k l": ["workspace::ActivatePaneInDirection", "Right"],
+
+      "cmd-k H": ["workspace::SwapPaneInDirection", "Left"],
+      "cmd-k J": ["workspace::SwapPaneInDirection", "Down"],
+      "cmd-k L": ["workspace::SwapPaneInDirection", "Right"],
+      "cmd-k K": ["workspace::SwapPaneInDirection", "Up"]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  }
+]
