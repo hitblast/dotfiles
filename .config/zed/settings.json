@@ -15,6 +15,7 @@
     "enabled": true,
     "coloring": "fixed"
   },
+  "show_user_picture": false,
   "centered_layout": {
     "left_padding": 0.1,
     "right_padding": 0.1
@@ -47,6 +48,8 @@
     "dark": "Xcode High Contrast Darker"
   },
   "terminal": {
+    "blinking": "on",
+    "copy_on_select": true,
     "env": {
       "EDITOR": "zed --wait"
     },
