@@ -10,6 +10,9 @@ eval "$(zoxide init --cmd cd bash)"
 # Enable fzf integration for fuzzy searching.
 eval "$(fzf --bash)"
 
+# Enable pay-respects integration.
+eval "$(pay-respects bash --alias)"
+
 # Integrate cargo environment.
 . "$HOME/.cargo/env"
 
