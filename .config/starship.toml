@@ -1,0 +1,40 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$c\
+$python\
+$rust\
+$dart\
+$docker_context\
+$jobs\
+$cmd_duration\
+$line_break\
+$character"""
+
+[character]
+success_symbol = '[%](bold white)'
+error_symbol = '[%](bold red)'
+
+[directory]
+style = 'bold white'
+truncation_symbol = '.../'
+
+[directory.substitutions]
+'Desktop' = '◆ Desktop'
+'Developer' = '◆ Developer'
+'Documents' = '◆ Documents'
+'Downloads' = '◆ Downloads'
+'Movies' = '◆ Movies'
+'Music' = '◆ Music'
+'Pictures' = '◆ Pictures'
+
+[fill]
+symbol = '- '
+
+[git_branch]
+style = 'bold green'
+
+[python]
+symbol = 'py '
