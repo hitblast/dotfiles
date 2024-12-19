@@ -19,10 +19,6 @@ source ~/.orbstack/shell/init.bash 2>/dev/null || :
 # Add cargo environment (rust).
 . "$HOME/.cargo/env"
 
-# Add asdf environment.
-. "$HOME/.asdf/asdf.sh"
-. "$HOME/.asdf/completions/asdf.bash"
-
 # Source for the .bashrc file.
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 
