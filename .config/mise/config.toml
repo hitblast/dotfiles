@@ -1,0 +1,8 @@
+[tools]
+"cargo:bat" = "latest"
+"cargo:bottom" = "latest"
+"cargo:starship" = "latest"
+"cargo:tokei" = "latest"
+"cargo:zoxide" = "latest"
+flutter = "latest"
+ruby = "latest"
