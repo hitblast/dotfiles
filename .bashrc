@@ -4,6 +4,9 @@ export TERM=xterm-256color
 # Set vim mode for terminal.
 set -o vi
 
+# Integrate cargo environment.
+. "$HOME/.cargo/env"
+
 # Enable mise integration.
 eval "$(/opt/homebrew/bin/mise activate bash)"
 
@@ -13,11 +16,8 @@ eval "$(fzf --bash)"
 # Enable zoxide integration for easy cd.
 eval "$(zoxide init --cmd cd bash)"
 
-# Enable pay-respects integration.
-eval "$(pay-respects bash --alias)"
-
-# Integrate cargo environment.
-. "$HOME/.cargo/env"
+# Enable starship integration.
+eval "$(starship init bash)"
 
 # Aliases.
 ff ()
