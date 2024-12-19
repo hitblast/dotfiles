@@ -109,8 +109,8 @@ cmd-alt-ctrl-shift-k = 'move up'
 cmd-alt-ctrl-shift-l = 'move right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-cmd-alt-ctrl-shift-minus = 'resize smart -50'
-cmd-alt-ctrl-shift-equal = 'resize smart +50'
+cmd-alt-ctrl-minus = 'resize smart -50'
+cmd-alt-ctrl-equal = 'resize smart +50'
 
 # primary workspace configuration
 cmd-alt-ctrl-w = 'workspace W'
