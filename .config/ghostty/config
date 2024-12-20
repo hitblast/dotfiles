@@ -9,7 +9,7 @@ theme = "pnevma"
 background = #0f0f0f
 
 # Window-specific settings.
-macos-titlebar-style = native
+macos-titlebar-style = hidden
 macos-window-shadow = false
 window-padding-x = 30
 window-colorspace = display-p3

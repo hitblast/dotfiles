@@ -1,7 +1,7 @@
 return {
-  "comfysage/evergarden",
+  "rebelot/kanagawa.nvim",
   priority = 1000,
   config = function()
-    vim.cmd("colorscheme evergarden")
+    vim.cmd("colorscheme kanagawa")
   end 
 }
