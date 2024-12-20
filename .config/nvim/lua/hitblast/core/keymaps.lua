@@ -2,16 +2,17 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
--- insert mode keymaps
+-- (insert mode) generic keybinds
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
--- normal mode keymaps
+-- (normal mode) generic keybinds 
 keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>ls", ":Lazy<CR>", { desc = "Open lazy.nvim window" })
 
 keymap.set("n", "<leader>=", "<C-a>", { desc = "Increment number" })
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 
--- window management
+-- (normal mode) window management keybind
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
