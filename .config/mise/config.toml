@@ -2,6 +2,7 @@
 "cargo:bat" = "latest"
 "cargo:bottom" = "latest"
 "cargo:eza" = "latest"
+"cargo:ripgrep" = "latest"
 "cargo:starship" = "latest"
 "cargo:tokei" = "latest"
 "cargo:zoxide" = "latest"
