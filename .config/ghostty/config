@@ -13,7 +13,7 @@ macos-titlebar-style = hidden
 macos-window-shadow = false
 window-padding-x = 30
 window-colorspace = display-p3
-window-padding-y = 20 
+window-padding-y = 30 
 window-width = 93 
 window-height = 25
 
