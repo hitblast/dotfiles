@@ -80,13 +80,6 @@
     "**/dist",
     "**/.vscode"
   ],
-  "lsp": {
-    "rust-analyzer": {
-      "initialization_options": {
-        "checkOnSave": false
-      }
-    }
-  },
   "languages": {
     "Python": {
       "language_servers": ["pyright", "ruff"],
