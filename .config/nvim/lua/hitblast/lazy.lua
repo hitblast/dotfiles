@@ -12,6 +12,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("hitblast.plugins", {
+  checker = {
+    enabled = true,
+    notify = true,
+  },
   change_detection = {
     notify = false,
   },

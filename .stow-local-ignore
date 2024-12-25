@@ -1,5 +1,6 @@
 \.DS_Store
-README.md
 .git
 .gitignore
+mods.sh
 Brewfile
+README.md
