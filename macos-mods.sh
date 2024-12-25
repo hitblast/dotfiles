@@ -20,9 +20,9 @@ if [ "$user_input" == "ch" ]; then
     # Custom dock modifications
     defaults write com.apple.dock "tilesize" -int "46"
     defaults write com.apple.dock "autohide" -bool "true"
-    defaults write com.apple.dock "orientation" -string "left" && killall Dock
+    defaults write com.apple.dock "orientation" -string "left"
     defaults write com.apple.dock autohide-delay -float 0
-    defaults write com.apple.dock autohide-time-modifier -float 0.15
+    defaults write com.apple.dock autohide-time-modifier -float 0.6
     defaults write com.apple.dock "expose-group-apps" -bool "true"
     killall Dock
 
