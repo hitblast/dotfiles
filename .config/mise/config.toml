@@ -9,3 +9,4 @@
 "cargo:zoxide" = "latest"
 flutter = "latest"
 ruby = "latest"
+watchexec = "latest"
