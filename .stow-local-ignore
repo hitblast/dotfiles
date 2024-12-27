@@ -1,6 +1,6 @@
 \.DS_Store
 .git
 .gitignore
-mods.sh
+macos-mods.sh
 Brewfile
 README.md
