@@ -11,9 +11,9 @@ background = #0f0f0f
 # Window-specific settings.
 macos-titlebar-style = hidden
 macos-window-shadow = false
-window-padding-x = 30
+window-padding-x = 25
 window-colorspace = display-p3
-window-padding-y = 30 
+window-padding-y = 20 
 window-width = 93 
 window-height = 25
 
@@ -23,4 +23,7 @@ keybind = command+shift+h=toggle_quick_terminal
 # Misc.
 confirm-close-surface = false
 
+# Initial command.
+# Since I have tmux installed, I'll initialize it.
+command = /opt/homebrew/bin/tmux
 
