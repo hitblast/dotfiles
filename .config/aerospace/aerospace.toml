@@ -56,12 +56,12 @@ preset = 'qwerty'
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 7 
-inner.vertical = 7
-outer.left = 7
-outer.bottom = 7
-outer.top = 7
-outer.right = 7
+inner.horizontal = 6 
+inner.vertical = 6
+outer.left = 6
+outer.bottom = 6
+outer.top = 6
+outer.right = 6
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -113,28 +113,50 @@ cmd-alt-ctrl-shift-minus = 'resize smart -50'
 cmd-alt-ctrl-shift-equal = 'resize smart +50'
 
 # primary workspace configuration
-cmd-alt-ctrl-w = 'workspace W'
-cmd-alt-ctrl-s = 'workspace S'
+cmd-alt-ctrl-a = 'workspace A'
+cmd-alt-ctrl-b = 'workspace B'
+cmd-alt-ctrl-c = 'workspace C'
 cmd-alt-ctrl-d = 'workspace D'
 cmd-alt-ctrl-f = 'workspace F'
-cmd-alt-ctrl-u = 'workspace U'
+cmd-alt-ctrl-g = 'workspace G'
 cmd-alt-ctrl-i = 'workspace I'
+cmd-alt-ctrl-m = 'workspace M'
+cmd-alt-ctrl-n = 'workspace N'
 cmd-alt-ctrl-o = 'workspace O'
 cmd-alt-ctrl-p = 'workspace P'
-cmd-alt-ctrl-b = 'workspace B'
-cmd-alt-ctrl-m = 'workspace M'
+cmd-alt-ctrl-q = 'workspace Q'
+cmd-alt-ctrl-r = 'workspace R'
+cmd-alt-ctrl-s = 'workspace S'
+cmd-alt-ctrl-t = 'workspace T'
+cmd-alt-ctrl-u = 'workspace U'
+cmd-alt-ctrl-v = 'workspace V'
+cmd-alt-ctrl-w = 'workspace W'
+cmd-alt-ctrl-x = 'workspace X'
+cmd-alt-ctrl-y = 'workspace Y'
+cmd-alt-ctrl-z = 'workspace Z'
 
 # moving nodes
-cmd-alt-ctrl-shift-w = 'move-node-to-workspace W'
-cmd-alt-ctrl-shift-s = 'move-node-to-workspace S'
+cmd-alt-ctrl-shift-a = 'move-node-to-workspace A'
+cmd-alt-ctrl-shift-b = 'move-node-to-workspace B'
+cmd-alt-ctrl-shift-c = 'move-node-to-workspace C'
 cmd-alt-ctrl-shift-d = 'move-node-to-workspace D'
 cmd-alt-ctrl-shift-f = 'move-node-to-workspace F'
-cmd-alt-ctrl-shift-u = 'move-node-to-workspace U'
+cmd-alt-ctrl-shift-g = 'move-node-to-workspace G'
 cmd-alt-ctrl-shift-i = 'move-node-to-workspace I'
+cmd-alt-ctrl-shift-m = 'move-node-to-workspace M'
+cmd-alt-ctrl-shift-n = 'move-node-to-workspace N'
 cmd-alt-ctrl-shift-o = 'move-node-to-workspace O'
 cmd-alt-ctrl-shift-p = 'move-node-to-workspace P'
-cmd-alt-ctrl-shift-b = 'move-node-to-workspace B'
-cmd-alt-ctrl-shift-m = 'move-node-to-workspace M'
+cmd-alt-ctrl-shift-q = 'move-node-to-workspace Q'
+cmd-alt-ctrl-shift-r = 'move-node-to-workspace R'
+cmd-alt-ctrl-shift-s = 'move-node-to-workspace S'
+cmd-alt-ctrl-shift-t = 'move-node-to-workspace T'
+cmd-alt-ctrl-shift-u = 'move-node-to-workspace U'
+cmd-alt-ctrl-shift-v = 'move-node-to-workspace V'
+cmd-alt-ctrl-shift-w = 'move-node-to-workspace W'
+cmd-alt-ctrl-shift-x = 'move-node-to-workspace X'
+cmd-alt-ctrl-shift-y = 'move-node-to-workspace Y'
+cmd-alt-ctrl-shift-z = 'move-node-to-workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 cmd-alt-ctrl-semicolon = 'workspace-back-and-forth'
@@ -211,6 +233,10 @@ run = 'move-node-to-workspace W'
 [[on-window-detected]]
 if.app-name-regex-substring = 'xcode'
 run = 'move-node-to-workspace W'
+
+[[on-window-detected]]
+if.app-id = 'com.mitchellh.ghostty'
+run = 'move-node-to-workspace T'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'aseprite'
