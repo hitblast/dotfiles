@@ -23,7 +23,3 @@ keybind = command+shift+h=toggle_quick_terminal
 # Misc.
 confirm-close-surface = false
 
-# Initial command.
-# Since I have tmux installed, I'll initialize it.
-command = /opt/homebrew/bin/tmux
-
