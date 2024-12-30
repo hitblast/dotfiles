@@ -1,0 +1,5 @@
+[build]
+rustc-wrapper = "/opt/homebrew/bin/sccache"
+
+[target.aarch64-apple-darwin]
+rustflags = ["-C", "link-arg=-fuse-ld=mold"]
