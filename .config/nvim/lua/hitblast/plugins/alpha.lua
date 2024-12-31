@@ -13,10 +13,10 @@ return {
       "                              ",
       "    ▄   ████▄ ▄█ ██▄   ▄████  ",
       "     █  █   █ ██ █  █  █▀   ▀ ",
-      "█     █ █   █ ██ █   █ █▀▀    ", 
-      " █    █ ▀████ ▐█ █  █  █      ", 
-      "  █  █         ▐ ███▀   █     ", 
-      "   █▐                    ▀    ", 
+      "█     █ █   █ ██ █   █ █▀▀    ",
+      " █    █ ▀████ ▐█ █  █  █      ",
+      "  █  █         ▐ ███▀   █     ",
+      "   █▐                    ▀    ",
       "   ▐                          ",
       "                              ",
       "                              ",
@@ -32,7 +32,6 @@ return {
       dashboard.button("q", "Quit Neovim", "<cmd>qa<CR>"),
     }
 
-    -- send config to alpha
     alpha.setup(dashboard.opts)
 
     -- disable folding on alpha buffer
