@@ -11,10 +11,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("hitblast.plugins", {
+require("lazy").setup({ { import = "hitblast.plugins" }, { import = "hitblast.plugins.lsp" } }, {
   checker = {
     enabled = true,
-    notify = true,
+    notify = false,
   },
   change_detection = {
     notify = false,
