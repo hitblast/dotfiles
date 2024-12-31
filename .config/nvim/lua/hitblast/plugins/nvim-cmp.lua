@@ -1,3 +1,5 @@
+---@diagnostic disable: missing-fields
+
 return {
   "hrsh7th/nvim-cmp",
   event = "InsertEnter",
