@@ -231,10 +231,6 @@ if.app-id = 'dev.zed.Zed'
 run = 'move-node-to-workspace W'
 
 [[on-window-detected]]
-if.app-id = 'com.mitchellh.ghostty'
-run = 'move-node-to-workspace W'
-
-[[on-window-detected]]
 if.app-name-regex-substring = 'xcode'
 run = 'move-node-to-workspace W'
 
