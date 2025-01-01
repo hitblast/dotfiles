@@ -18,7 +18,7 @@ window-width = 93
 window-height = 25
 
 # Keybinds.
-keybind = command+shift+h=toggle_quick_terminal
+keybind = global:command+option+control+t=toggle_quick_terminal
 
 # Misc.
 confirm-close-surface = true
