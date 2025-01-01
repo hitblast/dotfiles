@@ -6,8 +6,10 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- (normal mode) generic keybinds 
-keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search highlights" })
-keymap.set("n", "<leader>lz", ":Lazy<CR>", { desc = "Open lazy.nvim window" })
+keymap.set("n", "<leader>hx", ":nohl<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>ll", ":Lazy<CR>", { desc = "Open lazy.nvim window" })
+keymap.set("n", "<leader>mm", ":Mason<CR>", { desc = "Open Mason window" })
+keymap.set("n", "<leader>aa", ":Alpha<CR>", { desc = "Show Alpha window (homescreen)" })
 
 keymap.set("n", "<leader>=", "<C-a>", { desc = "Increment number" })
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
