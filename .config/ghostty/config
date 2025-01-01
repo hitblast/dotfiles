@@ -19,7 +19,7 @@ window-height = 25
 
 # Quick terminal.
 quick-terminal-position = bottom
-quick-terminal-animation-duration = 0.1
+quick-terminal-animation-duration = 0
 
 # Keybinds.
 keybind = global:command+option+control+t=toggle_quick_terminal
