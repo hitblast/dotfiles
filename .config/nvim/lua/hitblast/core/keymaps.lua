@@ -7,7 +7,7 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- (normal mode) generic keybinds 
 keymap.set("n", "<leader>ch", ":nohl<CR>", { desc = "Clear search highlights" })
-keymap.set("n", "<leader>ls", ":Lazy<CR>", { desc = "Open lazy.nvim window" })
+keymap.set("n", "<leader>lz", ":Lazy<CR>", { desc = "Open lazy.nvim window" })
 
 keymap.set("n", "<leader>=", "<C-a>", { desc = "Increment number" })
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
@@ -25,4 +25,4 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 
 -- (terminal mode) generic keybinds
-keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Escape terminal" }) 
+keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Escape terminal" })
