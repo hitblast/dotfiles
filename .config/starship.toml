@@ -1,5 +1,4 @@
 format = """
-$battery\
 $directory\
 $git_branch\
 $git_status\
@@ -13,22 +12,6 @@ $jobs\
 $cmd_duration\
 $line_break\
 $character"""
-
-[battery]
-disabled = false
-format = " [$symbol$percentage]($style) "
-full_symbol = "🍡 "
-charging_symbol = "⇋ "
-discharging_symbol = ""
-unknown_symbol = "? "
-
-[[battery.display]]
-threshold = 30
-style = "bold red"
-
-[[battery.display]]
-threshold = 100
-style = "white"
 
 [character]
 success_symbol = '[%](bold white)'
