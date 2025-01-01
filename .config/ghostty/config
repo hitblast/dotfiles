@@ -1,7 +1,7 @@
 # Font.
 font-family = "JetBrains Mono Nerd Font"
 font-feature = liga
-font-size = 13 
+font-size = 13.5
 font-thicken = true
 
 # Theme.
@@ -25,5 +25,5 @@ quick-terminal-animation-duration = 0.1
 keybind = global:command+option+control+t=toggle_quick_terminal
 
 # Misc.
-confirm-close-surface = true
+confirm-close-surface = false
 
