@@ -1,0 +1,20 @@
+return {
+  'nvim-flutter/flutter-tools.nvim',
+  lazy = false,
+  dependencies = {
+      'nvim-lua/plenary.nvim',
+      'stevearc/dressing.nvim', -- optional for vim.ui.select
+  },
+  config = function()
+    local flutter_tools = require("flutter-tools")
+    flutter_tools.setup({})
+
+    -- keymaps for flutter-tools
+    local keymap = vim.keymap
+
+    keymap.set("n", "<leader>flp", "<cmd>FlutterRun<CR>", { desc = "Run Flutter project"})
+    keymap.set("n", "<leader>flr", "<cmd>FlutterReload<CR>", { desc = "Reload running Flutter session"})
+    keymap.set("n", "<leader>flR", "<cmd>FlutterRestart<CR>", { desc = "Restart Flutter session"})
+    keymap.set("n", "<leader>flx", "<cmd>FlutterQuit<CR>", { desc = "Quit current Flutter session"})
+  end,
+}
