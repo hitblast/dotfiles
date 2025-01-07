@@ -28,3 +28,5 @@ ff ()
 alias lz="lazygit"
 alias lzy="lazygit"
 alias lazy="lazygit"
+
+alias grh="git reset --hard"
