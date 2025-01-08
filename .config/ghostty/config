@@ -17,13 +17,6 @@ window-padding-y = 25
 window-width = 93 
 window-height = 25
 
-# Quick terminal.
-quick-terminal-position = bottom
-quick-terminal-animation-duration = 0
-
-# Keybinds.
-keybind = global:command+option+control+t=toggle_quick_terminal
-
 # Misc.
 confirm-close-surface = false
 
