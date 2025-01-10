@@ -8,5 +8,6 @@
 "cargo:trimsec" = "latest"
 "cargo:zoxide" = "latest"
 flutter = "latest"
+node = "latest"
 ruby = "latest"
 watchexec = "latest"
