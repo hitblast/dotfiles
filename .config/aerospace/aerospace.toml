@@ -1,5 +1,4 @@
-# Place a copy of this config to ~/.aerospace.toml
-# After that, you can edit ~/.aerospace.toml to your liking
+# https://github.com/hitblast
 
 # You can use it to add commands that run after login to macOS user session.
 # 'start-at-login' needs to be 'true' for 'after-login-command' to work
@@ -21,7 +20,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 30
+accordion-padding = 35
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -56,12 +55,12 @@ preset = 'qwerty'
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 8 
-inner.vertical = 8
-outer.left = 8
-outer.bottom = 8
-outer.top = 8
-outer.right = 8
+inner.horizontal = 9 
+inner.vertical = 9
+outer.left = 9
+outer.bottom = 9
+outer.top = 9
+outer.right = 9
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -102,6 +101,10 @@ cmd-alt-ctrl-j = 'focus down'
 cmd-alt-ctrl-k = 'focus up'
 cmd-alt-ctrl-l = 'focus right'
 
+# Toggle fullscreen mode for focused window.
+# See: https://nikitabobko.github.io/AeroSpace/commands#fullscreen
+cmd-alt-ctrl-f = 'fullscreen'
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#move
 cmd-alt-ctrl-shift-h = 'move left'
 cmd-alt-ctrl-shift-j = 'move down'
@@ -112,11 +115,10 @@ cmd-alt-ctrl-shift-l = 'move right'
 cmd-alt-ctrl-shift-minus = 'resize smart -50'
 cmd-alt-ctrl-shift-equal = 'resize smart +50'
 
-# primary workspace configuration
+# Primary workspace configuration.
 cmd-alt-ctrl-a = 'workspace A'
 cmd-alt-ctrl-b = 'workspace B'
 cmd-alt-ctrl-d = 'workspace D'
-cmd-alt-ctrl-f = 'workspace F'
 cmd-alt-ctrl-g = 'workspace G'
 cmd-alt-ctrl-i = 'workspace I'
 cmd-alt-ctrl-m = 'workspace M'
@@ -133,11 +135,10 @@ cmd-alt-ctrl-x = 'workspace X'
 cmd-alt-ctrl-y = 'workspace Y'
 cmd-alt-ctrl-z = 'workspace Z'
 
-# moving nodes
+# Moving nodes.
 cmd-alt-ctrl-shift-a = 'move-node-to-workspace A'
 cmd-alt-ctrl-shift-b = 'move-node-to-workspace B'
 cmd-alt-ctrl-shift-d = 'move-node-to-workspace D'
-cmd-alt-ctrl-shift-f = 'move-node-to-workspace F'
 cmd-alt-ctrl-shift-g = 'move-node-to-workspace G'
 cmd-alt-ctrl-shift-i = 'move-node-to-workspace I'
 cmd-alt-ctrl-shift-m = 'move-node-to-workspace M'
@@ -156,8 +157,6 @@ cmd-alt-ctrl-shift-z = 'move-node-to-workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 cmd-alt-ctrl-semicolon = 'workspace-back-and-forth'
-# See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-cmd-alt-ctrl-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-alt-ctrl-shift-semicolon = 'mode service'
@@ -172,9 +171,10 @@ f = [
     'layout floating tiling',
     'mode main',
 ] # Toggle between floating and tiling layout
-backspace = ['close-all-windows-but-current', 'mode main']
+q = ['close-all-windows-but-current', 'mode main']
 
 # 'apps' binding mode declaration.
+# See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.apps.binding]
 esc = 'mode main'
 g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
@@ -182,14 +182,7 @@ o = ['exec-and-forget open -a /Applications/Obsidian.app', 'mode main']
 s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
 z = ['exec-and-forget open -a /Applications/Zed.app', 'mode main']
 k = ['exec-and-forget open -a /Applications/KeyboardCleanTool.app', 'mode main']
-a = [
-    'exec-and-forget open -a /System/Applications/Utilities/Activity\ Monitor.app',
-    'mode main',
-]
-cmd-alt-ctrl-a = [
-    'exec-and-forget open -a /Applications/Aseprite.app',
-    'mode main',
-]
+a = ['exec-and-forget open -a /System/Applications/Utilities/Activity\ Monitor.app', 'mode main']
 d = ['exec-and-forget open -a /Applications/Discord.app', 'mode main']
 f = ['exec-and-forget open -a /Applications/Firefox.app', 'mode main']
 
