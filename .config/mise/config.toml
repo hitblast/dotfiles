@@ -1,6 +1,7 @@
 [tools]
 "cargo:bat" = "latest"
 "cargo:bottom" = "latest"
+"cargo:du-dust" = "latest"
 "cargo:eza" = "latest"
 "cargo:ripgrep" = "latest"
 "cargo:starship" = "latest"
