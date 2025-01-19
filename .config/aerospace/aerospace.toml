@@ -246,3 +246,7 @@ run = 'move-node-to-workspace M'
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
 run = 'move-node-to-workspace O'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'steam'
+run = 'move-node-to-workspace G'
