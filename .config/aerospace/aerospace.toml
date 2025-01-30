@@ -236,6 +236,14 @@ if.app-id = 'com.bohemiancoding.sketch3'
 run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
+if.app-name-regex-substring = 'legacy launcher'
+run = 'move-node-to-workspace G'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'minecraft'
+run = 'move-node-to-workspace G'
+
+[[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
 run = 'move-node-to-workspace B'
 
