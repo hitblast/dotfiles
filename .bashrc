@@ -31,3 +31,4 @@ alias lazy="lazygit"
 
 alias grh="git reset --hard"
 
+alias minecraft="java -jar ~/.local/minecraft/launcher.jar"
