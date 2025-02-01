@@ -46,11 +46,11 @@
                 },
                 {
                     "from": { "key_code": "f5" },
-                    "to": [{ "key_code": "f5" }]
+                    "to": [{ "apple_vendor_top_case_key_code": "illumination_up" }]
                 },
                 {
                     "from": { "key_code": "f6" },
-                    "to": [{ "apple_vendor_top_case_key_code": "illumination_up" }]
+                    "to": [{ "apple_vendor_keyboard_key_code": "launchpad" }]
                 },
                 {
                     "from": { "key_code": "period" },
