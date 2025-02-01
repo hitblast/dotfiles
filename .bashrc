@@ -4,9 +4,6 @@ export TERM=xterm-256color
 # Set vim mode for terminal.
 set -o vi
 
-# Integrate cargo environment.
-. "$HOME/.cargo/env"
-
 # Enable mise integration.
 eval "$(/opt/homebrew/bin/mise activate bash)"
 
