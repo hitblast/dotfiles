@@ -51,12 +51,6 @@ stow . -t ~
 
 - Part 2: Development setup
 
-Install [Rust](https://rust-lang.org) using the following command:
-
-```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
 Now, we're gonna use [mise](https://mise.jdx.dev) to install all of our tools. We have installed it using `brew` in the previous step.
 
 ```bash

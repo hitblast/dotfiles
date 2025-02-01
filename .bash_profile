@@ -12,9 +12,6 @@ export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 # Comment this line if you don't want it to be added again.
 source ~/.orbstack/shell/init.bash 2>/dev/null || :
 
-# Add cargo environment (rust).
-. "$HOME/.cargo/env"
-
 # Source for the .bashrc file.
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 
