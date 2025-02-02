@@ -252,3 +252,8 @@ run = 'move-node-to-workspace O'
 [[on-window-detected]]
 if.app-name-regex-substring = 'steam'
 run = 'move-node-to-workspace G'
+
+[[on-window-detected]]
+if.app-id = 'com.mitchellh.ghostty'
+if.workspace = 'S'
+run = 'move-node-to-workspace W'
