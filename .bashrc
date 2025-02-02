@@ -24,7 +24,7 @@ ff ()
 
 alias cat="bat -P"
 
-alias ls="eza -al --icons=never"
+alias ls="eza --icons=never"
 alias lz="lazygit"
 alias lzy="lazygit"
 alias lazy="lazygit"
