@@ -23,16 +23,16 @@ automatically-unhide-macos-hidden-apps = false
 # Possible values: (qwerty|dvorak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
-  preset = 'qwerty'
+preset = 'qwerty'
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*)
 [gaps]
-  inner.horizontal = 10
-  inner.vertical = 10
-  outer.left = 10
-  outer.bottom = 10
-  outer.top = 10
-  outer.right = 10
+inner.horizontal = 10
+inner.vertical = 10
+outer.left = 10
+outer.bottom = 10
+outer.top = 10
+outer.right = 10
 
 
 # Binding modes
@@ -40,169 +40,172 @@ automatically-unhide-macos-hidden-apps = false
 
 # 'main' binding mode declaration
 [mode.main.binding]
-  # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-  cmd-alt-ctrl-slash = 'layout tiles horizontal vertical'
-  cmd-alt-ctrl-comma = 'layout accordion horizontal vertical'
+# See: https://nikitabobko.github.io/AeroSpace/commands#layout
+cmd-alt-ctrl-slash = 'layout tiles horizontal vertical'
+cmd-alt-ctrl-comma = 'layout accordion horizontal vertical'
 
-  # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-  cmd-alt-ctrl-h = 'focus left'
-  cmd-alt-ctrl-j = 'focus down'
-  cmd-alt-ctrl-k = 'focus up'
-  cmd-alt-ctrl-l = 'focus right'
+# See: https://nikitabobko.github.io/AeroSpace/commands#focus
+cmd-alt-ctrl-h = 'focus left'
+cmd-alt-ctrl-j = 'focus down'
+cmd-alt-ctrl-k = 'focus up'
+cmd-alt-ctrl-l = 'focus right'
 
-  # Toggle fullscreen mode for focused window.
-  # See: https://nikitabobko.github.io/AeroSpace/commands#fullscreen
-  cmd-alt-ctrl-f = 'fullscreen'
+# Toggle fullscreen mode for focused window.
+# See: https://nikitabobko.github.io/AeroSpace/commands#fullscreen
+cmd-alt-ctrl-f = 'fullscreen'
 
-  # See: https://nikitabobko.github.io/AeroSpace/commands#move
-  cmd-alt-ctrl-shift-h = 'move left'
-  cmd-alt-ctrl-shift-j = 'move down'
-  cmd-alt-ctrl-shift-k = 'move up'
-  cmd-alt-ctrl-shift-l = 'move right'
+# See: https://nikitabobko.github.io/AeroSpace/commands#move
+cmd-alt-ctrl-shift-h = 'move left'
+cmd-alt-ctrl-shift-j = 'move down'
+cmd-alt-ctrl-shift-k = 'move up'
+cmd-alt-ctrl-shift-l = 'move right'
 
-  # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-  cmd-alt-ctrl-shift-minus = 'resize smart -50'
-  cmd-alt-ctrl-shift-equal = 'resize smart +50'
+# See: https://nikitabobko.github.io/AeroSpace/commands#resize
+cmd-alt-ctrl-shift-minus = 'resize smart -50'
+cmd-alt-ctrl-shift-equal = 'resize smart +50'
 
-  # Workspace declarations:
-  cmd-alt-ctrl-a = 'workspace A'
-  cmd-alt-ctrl-b = 'workspace B'
-  cmd-alt-ctrl-d = 'workspace D'
-  cmd-alt-ctrl-g = 'workspace G'
-  cmd-alt-ctrl-i = 'workspace I'
-  cmd-alt-ctrl-m = 'workspace M'
-  cmd-alt-ctrl-n = 'workspace N'
-  cmd-alt-ctrl-o = 'workspace O'
-  cmd-alt-ctrl-q = 'workspace Q'
-  cmd-alt-ctrl-r = 'workspace R'
-  cmd-alt-ctrl-s = 'workspace S'
-  cmd-alt-ctrl-t = 'workspace T'
-  cmd-alt-ctrl-u = 'workspace U'
-  cmd-alt-ctrl-v = 'workspace V'
-  cmd-alt-ctrl-w = 'workspace W'
-  cmd-alt-ctrl-y = 'workspace Y'
-  cmd-alt-ctrl-z = 'workspace Z'
+# Workspace declarations:
+cmd-alt-ctrl-a = 'workspace A'
+cmd-alt-ctrl-b = 'workspace B'
+cmd-alt-ctrl-d = 'workspace D'
+cmd-alt-ctrl-g = 'workspace G'
+cmd-alt-ctrl-i = 'workspace I'
+cmd-alt-ctrl-m = 'workspace M'
+cmd-alt-ctrl-n = 'workspace N'
+cmd-alt-ctrl-o = 'workspace O'
+cmd-alt-ctrl-q = 'workspace Q'
+cmd-alt-ctrl-r = 'workspace R'
+cmd-alt-ctrl-s = 'workspace S'
+cmd-alt-ctrl-t = 'workspace T'
+cmd-alt-ctrl-u = 'workspace U'
+cmd-alt-ctrl-v = 'workspace V'
+cmd-alt-ctrl-w = 'workspace W'
+cmd-alt-ctrl-y = 'workspace Y'
+cmd-alt-ctrl-z = 'workspace Z'
 
-  # Moving nodes:
-  cmd-alt-ctrl-shift-a = 'move-node-to-workspace A'
-  cmd-alt-ctrl-shift-b = 'move-node-to-workspace B'
-  cmd-alt-ctrl-shift-d = 'move-node-to-workspace D'
-  cmd-alt-ctrl-shift-g = 'move-node-to-workspace G'
-  cmd-alt-ctrl-shift-i = 'move-node-to-workspace I'
-  cmd-alt-ctrl-shift-m = 'move-node-to-workspace M'
-  cmd-alt-ctrl-shift-n = 'move-node-to-workspace N'
-  cmd-alt-ctrl-shift-o = 'move-node-to-workspace O'
-  cmd-alt-ctrl-shift-q = 'move-node-to-workspace Q'
-  cmd-alt-ctrl-shift-r = 'move-node-to-workspace R'
-  cmd-alt-ctrl-shift-s = 'move-node-to-workspace S'
-  cmd-alt-ctrl-shift-t = 'move-node-to-workspace T'
-  cmd-alt-ctrl-shift-u = 'move-node-to-workspace U'
-  cmd-alt-ctrl-shift-v = 'move-node-to-workspace V'
-  cmd-alt-ctrl-shift-w = 'move-node-to-workspace W'
-  cmd-alt-ctrl-shift-y = 'move-node-to-workspace Y'
-  cmd-alt-ctrl-shift-z = 'move-node-to-workspace Z'
+# Moving nodes:
+cmd-alt-ctrl-shift-a = 'move-node-to-workspace A'
+cmd-alt-ctrl-shift-b = 'move-node-to-workspace B'
+cmd-alt-ctrl-shift-d = 'move-node-to-workspace D'
+cmd-alt-ctrl-shift-g = 'move-node-to-workspace G'
+cmd-alt-ctrl-shift-i = 'move-node-to-workspace I'
+cmd-alt-ctrl-shift-m = 'move-node-to-workspace M'
+cmd-alt-ctrl-shift-n = 'move-node-to-workspace N'
+cmd-alt-ctrl-shift-o = 'move-node-to-workspace O'
+cmd-alt-ctrl-shift-q = 'move-node-to-workspace Q'
+cmd-alt-ctrl-shift-r = 'move-node-to-workspace R'
+cmd-alt-ctrl-shift-s = 'move-node-to-workspace S'
+cmd-alt-ctrl-shift-t = 'move-node-to-workspace T'
+cmd-alt-ctrl-shift-u = 'move-node-to-workspace U'
+cmd-alt-ctrl-shift-v = 'move-node-to-workspace V'
+cmd-alt-ctrl-shift-w = 'move-node-to-workspace W'
+cmd-alt-ctrl-shift-y = 'move-node-to-workspace Y'
+cmd-alt-ctrl-shift-z = 'move-node-to-workspace Z'
 
-  # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
-  cmd-alt-ctrl-semicolon = 'workspace-back-and-forth'
+# See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
+cmd-alt-ctrl-semicolon = 'workspace-back-and-forth'
 
-  # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-  cmd-alt-ctrl-shift-semicolon = 'mode service'
-  cmd-alt-ctrl-shift-enter = 'mode apps'
+# See: https://nikitabobko.github.io/AeroSpace/commands#mode
+cmd-alt-ctrl-shift-semicolon = 'mode service'
+cmd-alt-ctrl-shift-enter = 'mode apps'
 
 
 # 'service' binding mode declaration
 [mode.service.binding]
-  r = ['reload-config', 'mode main']
-  esc = ['flatten-workspace-tree', 'mode main'] # reset layout
-  f = [
-      'layout floating tiling',
-      'mode main',
-  ] # Toggle between floating and tiling layout
-  q = ['close-all-windows-but-current', 'mode main']
+r = ['reload-config', 'mode main']
+esc = ['flatten-workspace-tree', 'mode main'] # reset layout
+f = [
+    'layout floating tiling',
+    'mode main',
+] # Toggle between floating and tiling layout
+q = ['close-all-windows-but-current', 'mode main']
 
 
 # 'apps' binding mode declaration
 [mode.apps.binding]
-  esc = 'mode main'
-  g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
-  o = ['exec-and-forget open -a /Applications/Obsidian.app', 'mode main']
-  s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
-  z = ['exec-and-forget open -a /Applications/Zed.app', 'mode main']
-  k = ['exec-and-forget open -a /Applications/KeyboardCleanTool.app', 'mode main']
-  a = ['exec-and-forget open -a /System/Applications/Utilities/Activity\ Monitor.app', 'mode main']
-  d = ['exec-and-forget open -a /Applications/Discord.app', 'mode main']
-  f = ['exec-and-forget open -a /Applications/Firefox.app', 'mode main']
+esc = 'mode main'
+g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
+o = ['exec-and-forget open -a /Applications/Obsidian.app', 'mode main']
+s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
+z = ['exec-and-forget open -a /Applications/Zed.app', 'mode main']
+k = ['exec-and-forget open -a /Applications/KeyboardCleanTool.app', 'mode main']
+a = [
+    'exec-and-forget open -a /System/Applications/Utilities/Activity\ Monitor.app',
+    'mode main',
+]
+d = ['exec-and-forget open -a /Applications/Discord.app', 'mode main']
+f = ['exec-and-forget open -a /Applications/Firefox.app', 'mode main']
 
-  cmd-alt-ctrl-shift-h = ['join-with left', 'mode main']
-  cmd-alt-ctrl-shift-j = ['join-with down', 'mode main']
-  cmd-alt-ctrl-shift-k = ['join-with up', 'mode main']
-  cmd-alt-ctrl-shift-l = ['join-with right', 'mode main']
+cmd-alt-ctrl-shift-h = ['join-with left', 'mode main']
+cmd-alt-ctrl-shift-j = ['join-with down', 'mode main']
+cmd-alt-ctrl-shift-k = ['join-with up', 'mode main']
+cmd-alt-ctrl-shift-l = ['join-with right', 'mode main']
 
 
 # App-specific callbacks
 # Executed when an app instance has been initiated
 
 [[on-window-detected]]
-  if.app-name-regex-substring = 'finder'
-  run = 'layout floating'
+if.app-name-regex-substring = 'finder'
+run = 'layout floating'
 
 [[on-window-detected]]
-  if.app-id = 'com.apple.mail'
-  run = 'layout floating'
+if.app-id = 'com.apple.mail'
+run = 'layout floating'
 
 [[on-window-detected]]
-  if.app-id = 'com.apple.Passwords'
-  run = 'layout floating'
+if.app-id = 'com.apple.Passwords'
+run = 'layout floating'
 
 [[on-window-detected]]
-  if.app-name-regex-substring = 'activity monitor'
-  run = 'layout floating'
+if.app-name-regex-substring = 'activity monitor'
+run = 'layout floating'
 
 [[on-window-detected]]
-  if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
-  run = 'layout floating'
+if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
+run = 'layout floating'
 
 [[on-window-detected]]
-  if.app-id = 'ch.protonvpn.mac'
-  run = 'layout floating'
+if.app-id = 'ch.protonvpn.mac'
+run = 'layout floating'
 
 [[on-window-detected]]
-  if.app-id = 'com.spotify.client'
-  run = 'move-node-to-workspace S'
+if.app-id = 'com.spotify.client'
+run = 'move-node-to-workspace S'
 
 [[on-window-detected]]
-  if.app-id = 'dev.zed.Zed'
-  run = 'move-node-to-workspace W'
+if.app-id = 'dev.zed.Zed'
+run = 'move-node-to-workspace W'
 
 [[on-window-detected]]
-  if.app-name-regex-substring = 'xcode'
-  run = 'move-node-to-workspace W'
+if.app-name-regex-substring = 'xcode'
+run = 'move-node-to-workspace W'
 
 [[on-window-detected]]
-  if.app-name-regex-substring = 'aseprite'
-  run = 'move-node-to-workspace D'
+if.app-name-regex-substring = 'aseprite'
+run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
-  if.app-id = 'com.bohemiancoding.sketch3'
-  run = 'move-node-to-workspace D'
+if.app-id = 'com.bohemiancoding.sketch3'
+run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
-  if.app-id = 'org.mozilla.firefox'
-  run = 'move-node-to-workspace B'
+if.app-id = 'org.mozilla.firefox'
+run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
-  if.app-id = 'com.hnc.Discord'
-  run = 'move-node-to-workspace M'
+if.app-id = 'com.hnc.Discord'
+run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
-  if.app-id = 'md.obsidian'
-  run = 'move-node-to-workspace O'
+if.app-id = 'md.obsidian'
+run = 'move-node-to-workspace O'
 
 [[on-window-detected]]
-  if.app-name-regex-substring = 'steam'
-  run = 'move-node-to-workspace G'
+if.app-name-regex-substring = 'steam'
+run = 'move-node-to-workspace G'
 
 [[on-window-detected]]
-  if.app-id = 'com.mitchellh.ghostty'
-  if.workspace = 'S'
-  run = 'move-node-to-workspace W'
+if.app-id = 'com.mitchellh.ghostty'
+if.workspace = 'S'
+run = 'move-node-to-workspace W'
