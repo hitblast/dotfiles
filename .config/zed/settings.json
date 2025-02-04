@@ -32,6 +32,9 @@
     },
     "version": "2"
   },
+  "features": {
+    "inline_completion_provider": "none"
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
