@@ -46,7 +46,7 @@
                 },
                 {
                     "from": { "key_code": "f5" },
-                    "to": [{ "key_code": "vk_none" }]
+                    "to": [{ "key_code": "f5" }]
                 },
                 {
                     "from": { "key_code": "f6" },
