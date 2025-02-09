@@ -2,7 +2,6 @@ format = """
 $directory\
 $git_branch\
 $git_status\
-$fill\
 $c\
 $python\
 $rust\
@@ -29,9 +28,6 @@ truncation_symbol = '.../'
 'Movies' = '◆ Movies'
 'Music' = '◆ Music'
 'Pictures' = '◆ Pictures'
-
-[fill]
-symbol = '- '
 
 [git_branch]
 style = 'bold green'
