@@ -61,7 +61,7 @@
   "theme": {
     "mode": "system",
     "light": "Xcode Presentation Light",
-    "dark": "Fleet Dark"
+    "dark": "Xcode Default Darker"
   },
   "terminal": {
     "blinking": "on",
