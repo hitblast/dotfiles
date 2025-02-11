@@ -10,6 +10,8 @@ $docker_context\
 $jobs\
 $cmd_duration\
 $line_break\
+$username\
+$hostname\
 $character"""
 
 [character]
@@ -17,7 +19,7 @@ success_symbol = '[%](bold white)'
 error_symbol = '[%](bold red)'
 
 [directory]
-style = 'bold white'
+style = 'white'
 truncation_symbol = '.../'
 
 [directory.substitutions]
@@ -32,5 +34,15 @@ truncation_symbol = '.../'
 [git_branch]
 style = 'bold green'
 
+[hostname]
+ssh_only = false
+format = '[@$ssh_symbol$hostname]($style) '
+style = 'dimmed white'
+
 [python]
 symbol = 'py '
+
+[username]
+show_always = true
+format = '[$user]($style)'
+style_user = 'dimmed white'
