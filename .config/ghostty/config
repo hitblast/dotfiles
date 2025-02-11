@@ -4,6 +4,10 @@ font-feature = liga
 font-size = 13
 font-thicken = true
 
+# Cursor.
+cursor-color = #ffffff
+cursor-style = block
+
 # Theme.
 theme = "pnevma"
 background = #111111
