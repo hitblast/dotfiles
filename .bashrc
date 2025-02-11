@@ -22,13 +22,14 @@ ff ()
 	aerospace list-windows --all | fzf --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
 }
 
-alias cat="bat -P"
-
 alias ls="eza --icons=never"
+
 alias lz="lazygit"
 alias lzy="lazygit"
 alias lazy="lazygit"
 
 alias grh="git reset --hard"
+
+alias mactop="sudo mactop --color white"
 
 alias minecraft="java -jar ~/.local/minecraft/launcher.jar"
