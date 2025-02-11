@@ -1,7 +1,7 @@
 return {
-  "mellow-theme/mellow.nvim",
+  "savq/melange-nvim",
   priority = 1000,
   config = function()
-    vim.cmd("colorscheme mellow")
+    vim.cmd("colorscheme melange")
   end,
 }
