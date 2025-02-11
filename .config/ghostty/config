@@ -6,14 +6,14 @@ font-thicken = true
 
 # Theme.
 theme = "pnevma"
-background = #161617
+background = #111111
 
 # Window-specific settings.
 macos-titlebar-style = hidden
 macos-window-shadow = true
 window-colorspace = display-p3
 window-padding-x = 25
-window-padding-y = 20
+window-padding-y = 25
 window-width = 100
 window-height = 25
 
