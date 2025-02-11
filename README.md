@@ -58,3 +58,13 @@ mise install
 ```
 
 This will install rest of the required runtimes in this configuration.
+
+- Part 3: Optionals
+
+In my everyday setup, I like to use the built-in Touch ID feature of MacBooks when accessing the `sudo` command. To apply, simply run:
+
+```bash
+sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+```
+
+See [this reference](https://dev.to/siddhantkcode/enable-touch-id-authentication-for-sudo-on-macos-sonoma-14x-4d28) for more information.
