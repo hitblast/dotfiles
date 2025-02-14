@@ -33,7 +33,7 @@
     "version": "2"
   },
   "features": {
-    "inline_completion_provider": "none"
+    "inline_completion_provider": "zed"
   },
   "telemetry": {
     "diagnostics": false,
