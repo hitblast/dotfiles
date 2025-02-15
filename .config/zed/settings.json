@@ -33,7 +33,7 @@
     "version": "2"
   },
   "features": {
-    "inline_completion_provider": "zed"
+    "edit_prediction_provider": "zed"
   },
   "telemetry": {
     "diagnostics": false,
@@ -61,7 +61,7 @@
   "theme": {
     "mode": "system",
     "light": "Xcode Presentation Light",
-    "dark": "Xcode Default Darker"
+    "dark": "Fleet Dark"
   },
   "terminal": {
     "blinking": "on",

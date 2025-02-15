@@ -9,6 +9,7 @@
 "cargo:zoxide" = "latest"
 flutter = "latest"
 node = "latest"
+"npm:create-dmg" = "latest"
 ruby = "latest"
 rust = "latest"
 watchexec = "latest"
