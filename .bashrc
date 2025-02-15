@@ -4,18 +4,6 @@ export TERM=xterm-256color
 # Set vim mode for terminal.
 set -o vi
 
-# Enable mise integration.
-eval "$(/opt/homebrew/bin/mise activate bash)"
-
-# Enable fzf integration for fuzzy searching.
-eval "$(fzf --bash)"
-
-# Enable zoxide integration for easy cd.
-eval "$(zoxide init --cmd cd bash)"
-
-# Enable starship integration.
-eval "$(starship init bash)"
-
 # Aliases.
 ff ()
 {
@@ -33,3 +21,17 @@ alias grh="git reset --hard"
 alias mactop="sudo mactop --color white"
 
 alias minecraft="java -jar ~/.local/minecraft/launcher.jar"
+
+
+# Enable mise integration.
+eval "$(/opt/homebrew/bin/mise activate bash)"
+
+# Enable fzf integration for fuzzy searching.
+eval "$(fzf --bash)"
+
+# Enable starship integration.
+eval "$(starship init bash)"
+
+# Finally, enable zoxide integration.
+eval "$(zoxide init --cmd cd bash)"
+
