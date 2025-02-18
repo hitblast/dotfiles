@@ -134,6 +134,7 @@ a = [
 ]
 d = ['exec-and-forget open -a /Applications/Discord.app', 'mode main']
 z = ['exec-and-forget open -a /Applications/Zen\ Browser.app', 'mode main']
+p = ['exec-and-forget open -a /Applications/psst.app', 'mode main']
 
 cmd-alt-ctrl-shift-h = ['join-with left', 'mode main']
 cmd-alt-ctrl-shift-j = ['join-with down', 'mode main']
