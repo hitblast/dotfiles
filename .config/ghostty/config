@@ -10,7 +10,7 @@ cursor-style = block
 
 # Theme.
 theme = "pnevma"
-background = #111111
+background = #0c0c0c
 
 # Window-specific settings.
 macos-titlebar-style = hidden
