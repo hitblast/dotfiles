@@ -54,7 +54,7 @@
   "ui_font_family": "JetBrains Mono",
   "buffer_font_family": "JetBrains Mono",
   "ui_font_size": 14,
-  "buffer_font_size": 11.0,
+  "buffer_font_size": 11.5,
   "buffer_line_height": "comfortable",
   "base_keymap": "VSCode",
   "relative_line_numbers": true,

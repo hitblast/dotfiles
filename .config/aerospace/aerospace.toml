@@ -212,3 +212,8 @@ run = 'move-node-to-workspace G'
 if.app-id = 'com.mitchellh.ghostty'
 if.workspace = 'S'
 run = 'move-node-to-workspace W'
+
+[[on-window-detected]]
+if.app-id = 'com.mitchellh.ghostty'
+if.workspace = 'T'
+run = 'layout floating'
