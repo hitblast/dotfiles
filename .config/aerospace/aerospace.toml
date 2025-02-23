@@ -80,6 +80,7 @@ cmd-alt-ctrl-t = 'workspace T'
 cmd-alt-ctrl-u = 'workspace U'
 cmd-alt-ctrl-v = 'workspace V'
 cmd-alt-ctrl-w = 'workspace W'
+cmd-alt-ctrl-x = 'workspace X'
 cmd-alt-ctrl-y = 'workspace Y'
 cmd-alt-ctrl-z = 'workspace Z'
 
@@ -99,6 +100,7 @@ cmd-alt-ctrl-shift-t = 'move-node-to-workspace T'
 cmd-alt-ctrl-shift-u = 'move-node-to-workspace U'
 cmd-alt-ctrl-shift-v = 'move-node-to-workspace V'
 cmd-alt-ctrl-shift-w = 'move-node-to-workspace W'
+cmd-alt-ctrl-shift-x = 'move-node-to-workspace X'
 cmd-alt-ctrl-shift-y = 'move-node-to-workspace Y'
 cmd-alt-ctrl-shift-z = 'move-node-to-workspace Z'
 
@@ -108,17 +110,20 @@ cmd-alt-ctrl-semicolon = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-alt-ctrl-shift-semicolon = 'mode service'
 cmd-alt-ctrl-shift-enter = 'mode apps'
+cmd-alt-ctrl-shift-quote = 'mode command'
 
 
 # 'service' binding mode declaration
 [mode.service.binding]
-r = ['reload-config', 'mode main']
 esc = ['flatten-workspace-tree', 'mode main'] # reset layout
-f = [
-    'layout floating tiling',
-    'mode main',
-] # Toggle between floating and tiling layout
-q = ['close-all-windows-but-current', 'mode main']
+r = ['reload-config', 'mode main'] # reload AeroSpace configuration
+f = ['layout floating tiling', 'mode main'] # toggle between floating and tiling layout
+
+
+# 'command' binding mode declaration
+[mode.command.binding]
+esc = 'mode main'
+k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill coreaudiod
 
 
 # 'apps' binding mode declaration
@@ -128,10 +133,6 @@ g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
 o = ['exec-and-forget open -a /Applications/Obsidian.app', 'mode main']
 s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
 k = ['exec-and-forget open -a /Applications/KeyboardCleanTool.app', 'mode main']
-a = [
-    'exec-and-forget open -a /System/Applications/Utilities/Activity\ Monitor.app',
-    'mode main',
-]
 d = ['exec-and-forget open -a /Applications/Discord.app', 'mode main']
 z = ['exec-and-forget open -a /Applications/Zen\ Browser.app', 'mode main']
 
@@ -173,6 +174,11 @@ if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace S'
 
 [[on-window-detected]]
+if.app-id = 'com.mitchellh.ghostty'
+if.workspace = 'S'
+run = 'move-node-to-workspace W'
+
+[[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
 run = 'move-node-to-workspace W'
 
@@ -208,12 +214,3 @@ run = 'move-node-to-workspace O'
 if.app-name-regex-substring = 'steam'
 run = 'move-node-to-workspace G'
 
-[[on-window-detected]]
-if.app-id = 'com.mitchellh.ghostty'
-if.workspace = 'S'
-run = 'move-node-to-workspace W'
-
-[[on-window-detected]]
-if.app-id = 'com.mitchellh.ghostty'
-if.workspace = 'T'
-run = 'layout floating'
