@@ -92,7 +92,6 @@
     "**/Thumbs.db",
     "**/.classpath",
     "**/.settings",
-    // Zed defaults are listed above
     "**/dist",
     "**/.vscode"
   ],
@@ -115,6 +114,19 @@
           }
         }
       ]
+    }
+  },
+  "lsp": {
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "off"
+        },
+        "python": {
+          "pythonPath": ".venv/bin/python"
+        }
+      }
     }
   }
 }
