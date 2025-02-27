@@ -153,12 +153,16 @@ run = 'layout floating'
 if.app-id = 'com.apple.mail'
 run = 'layout floating'
 
+[[on-windows-detected]]
+if.app-id = 'com.apple.AppStore'
+run = 'layout floating'
+
 [[on-window-detected]]
 if.app-id = 'com.apple.Passwords'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'activity monitor'
+if.app-id = 'com.apple.ActivityMonitor'
 run = 'layout floating'
 
 [[on-window-detected]]
