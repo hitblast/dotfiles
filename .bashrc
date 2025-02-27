@@ -22,6 +22,8 @@ alias mactop="sudo mactop --color white"
 
 alias minecraft="java -jar ~/.local/minecraft/launcher.jar"
 
+alias updateall="brew update && brew upgrade && mise upgrade && uv tool upgrade --all"
+
 
 # Enable mise integration.
 eval "$(/opt/homebrew/bin/mise activate bash)"
