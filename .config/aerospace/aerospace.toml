@@ -153,7 +153,7 @@ run = 'layout floating'
 if.app-id = 'com.apple.mail'
 run = 'layout floating'
 
-[[on-windows-detected]]
+[[on-window-detected]]
 if.app-id = 'com.apple.AppStore'
 run = 'layout floating'
 
