@@ -21,6 +21,3 @@ window-padding-y = 25
 window-width = 100
 window-height = 30
 
-# Misc.
-confirm-close-surface = false
-
