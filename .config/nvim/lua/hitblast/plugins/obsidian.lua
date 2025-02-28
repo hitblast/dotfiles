@@ -13,7 +13,7 @@ return {
       workspaces = {
         {
           name = "fogmoor",
-          path = "~/Documents/fogmoor"
+          path = "~/fogmoor",
         },
       },
       ui = {
