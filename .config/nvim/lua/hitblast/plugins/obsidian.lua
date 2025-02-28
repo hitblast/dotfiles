@@ -5,20 +5,29 @@ return {
   ft = "markdown",
   dependencies = {
     "nvim-lua/plenary.nvim",
+    "hrsh7th/nvim-cmp",
   },
-  config = function()
-    local obsidian = require('obsidian')
-
-    obsidian.setup({
-      workspaces = {
-        {
-          name = "fogmoor",
-          path = "~/fogmoor",
-        },
+  opts = {
+    workspaces = {
+      {
+        name = "initone",
+        path = "~/initone",
       },
-      ui = {
-        enable = false
-      },
-    })
-  end,
+    },
+    ui = {
+      enable = false,
+    },
+    notes_subdir = "notes",
+    daily_notes = {
+      folder = "daily",
+      template = "daily.md",
+    },
+    templates = {
+      folder = "templates"
+    },
+    completion = {
+      nvim_cmp = true,
+      min_chars = 2,
+    },
+  },
 }
