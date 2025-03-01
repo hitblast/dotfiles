@@ -7,28 +7,39 @@ return {
     "nvim-lua/plenary.nvim",
     "hrsh7th/nvim-cmp",
   },
-  opts = {
-    workspaces = {
-      {
-        name = "initone",
-        path = "~/initone",
+  config = function()
+    local opts = {
+      workspaces = {
+        {
+          name = "initone",
+          path = "~/initone",
+        },
       },
-    },
-    ui = {
-      enable = false,
-    },
-    notes_subdir = "notes",
-    new_notes_location = "notes_subdir",
-    daily_notes = {
-      folder = "daily",
-      template = "daily.md",
-    },
-    templates = {
-      folder = "templates"
-    },
-    completion = {
-      nvim_cmp = true,
-      min_chars = 2,
-    },
-  },
+      ui = {
+        enable = false,
+      },
+      notes_subdir = "notes",
+      new_notes_location = "notes_subdir",
+      daily_notes = {
+        folder = "daily",
+        template = "daily.md",
+      },
+      templates = {
+        folder = "templates"
+      },
+      completion = {
+        nvim_cmp = true,
+        min_chars = 2,
+      },
+    }
+
+    local obsidian = require('obsidian')
+    obsidian.setup(opts)
+
+    -- keymaps for obsidian.nvim
+    local keymap = vim.keymap
+
+    keymap.set("n", "<leader>ot", "<cmd>ObsidianToday<CR>", { desc = "Open today's daily note" })
+    keymap.set("n", "<leader>on", "<cmd>ObsidianNew<CR>", { desc = "Create a new note" })
+  end,
 }

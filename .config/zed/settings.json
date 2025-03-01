@@ -28,7 +28,7 @@
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "o3-mini"
+      "model": "gpt-4o"
     },
     "version": "2"
   },

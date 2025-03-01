@@ -19,6 +19,7 @@ if [ "$user_input" == "c" ]; then
     defaults write com.apple.dock "tilesize" -int "46"
     defaults write com.apple.dock "autohide" -bool "true"
     defaults write com.apple.dock "orientation" -string "left"
+    defaults write com.apple.dock "mineffect" -string "suck"
     defaults write com.apple.dock autohide-delay -float 0
     defaults write com.apple.dock autohide-time-modifier -float 0.6
     defaults write com.apple.dock "expose-group-apps" -bool "true"
@@ -42,6 +43,7 @@ elif [ "$user_input" == "r" ]; then
     defaults delete com.apple.dock "tilesize"
     defaults delete com.apple.dock "autohide"
     defaults delete com.apple.dock "orientation"
+    defaults delete com.apple.dock "mineffect"
     defaults delete com.apple.dock autohide-delay
     defaults delete com.apple.dock autohide-time-modifier
     defaults delete com.apple.dock "expose-group-apps"
