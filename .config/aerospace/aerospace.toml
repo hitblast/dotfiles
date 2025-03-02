@@ -27,12 +27,12 @@ preset = 'qwerty'
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*)
 [gaps]
-inner.horizontal = 10
-inner.vertical = 10
-outer.left = 10
-outer.bottom = 10
-outer.top = 10
-outer.right = 10
+inner.horizontal = 5
+inner.vertical = 5
+outer.left = 12
+outer.bottom = 8
+outer.top = 12
+outer.right = 12
 
 
 # Binding modes
