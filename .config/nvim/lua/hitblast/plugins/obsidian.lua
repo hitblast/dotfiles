@@ -6,6 +6,7 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     "hrsh7th/nvim-cmp",
+    "nvim-telescope/telescope.nvim",
   },
   config = function()
     local opts = {
@@ -41,5 +42,6 @@ return {
 
     keymap.set("n", "<leader>ot", "<cmd>ObsidianToday<CR>", { desc = "Open today's daily note" })
     keymap.set("n", "<leader>on", "<cmd>ObsidianNew<CR>", { desc = "Create a new note" })
+    keymap.set("n", "<leader>of", "<cmd>ObsidianSearch<CR>", { desc = "Search within Obsidian vault" })
   end,
 }
