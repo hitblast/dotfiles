@@ -1,4 +1,16 @@
 {
+  "ssh_connections": [
+    {
+      "host": "orb",
+      "projects": [
+        {
+          "paths": [
+            "/Users/hitblast/Developer/IgKnite"
+          ]
+        }
+      ]
+    }
+  ],
   "notification_panel": {
     "dock": "left"
   },
