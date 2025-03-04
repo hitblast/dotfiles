@@ -29,10 +29,10 @@ preset = 'qwerty'
 [gaps]
 inner.horizontal = 5
 inner.vertical = 5
-outer.left = 8
-outer.bottom = 12
-outer.top = 12
-outer.right = 8
+outer.left = 9
+outer.bottom = 15
+outer.top = 7
+outer.right = 9
 
 
 # Binding modes
@@ -213,8 +213,4 @@ run = 'move-node-to-workspace M'
 [[on-window-detected]]
 if.app-id = 'md.obsidian'
 run = 'move-node-to-workspace O'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'steam'
-run = 'move-node-to-workspace G'
 
