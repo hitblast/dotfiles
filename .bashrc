@@ -20,8 +20,6 @@ alias grh="git reset --hard"
 
 alias mactop="sudo mactop --color white"
 
-alias minecraft="java -jar ~/.local/minecraft/launcher.jar"
-
 alias updateall="brew update && brew upgrade && mise upgrade && uv tool upgrade --all"
 
 
