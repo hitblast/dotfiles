@@ -6,7 +6,7 @@ return {
 
         gruvbox.setup({
             terminal_colors = true,
-            dim_inactive = true,
+            dim_inactive = false,
             transparent_mode = false,
         })
 
