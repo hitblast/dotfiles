@@ -1,7 +1,7 @@
 # Font.
 font-family = "JetBrains Mono Nerd Font"
 font-feature = liga
-font-size = 12
+font-size = 12.3
 font-thicken = true
 
 # Cursor.
