@@ -30,7 +30,7 @@ preset = 'qwerty'
 inner.horizontal = 5
 inner.vertical = 5
 outer.left = 9
-outer.bottom = 15
+outer.bottom = 7
 outer.top = 7
 outer.right = 9
 
