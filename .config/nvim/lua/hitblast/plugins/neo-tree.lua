@@ -18,6 +18,16 @@ return {
             window = {
                 position = "right",
             },
+            event_handlers = {
+                {
+                    event = "neo_tree_buffer_enter",
+                    handler = function(_)
+                        vim.cmd([[
+                            setlocal relativenumber
+                        ]])
+                    end,
+                },
+            },
         })
 
         -- keymaps for neo-tree
