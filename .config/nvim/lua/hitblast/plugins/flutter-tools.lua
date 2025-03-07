@@ -3,6 +3,7 @@ return {
     ft = "dart",
     dependencies = {
         'nvim-lua/plenary.nvim',
+        'stevearc/dressing.nvim',
     },
     config = function()
         local flutter_tools = require("flutter-tools")
