@@ -6,6 +6,9 @@ return {
         "MunifTanjim/nui.nvim",
         "nvim-tree/nvim-web-devicons",
     },
+    keys = {
+        { "<leader>ee", "<cmd>Neotree toggle<CR>", desc = "Toggle file explorer" }
+    },
     config = function()
         local neotree = require("neo-tree")
 
@@ -29,10 +32,5 @@ return {
                 },
             },
         })
-
-        -- keymaps for neo-tree
-        local keymap = vim.keymap
-
-        keymap.set("n", "<leader>ee", "<cmd>Neotree toggle<CR>", { desc = "Toggle file explorer " });
     end,
 }
