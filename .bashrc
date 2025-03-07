@@ -10,6 +10,8 @@ ff ()
 	aerospace list-windows --all | fzf --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
 }
 
+alias cat="bat"
+
 alias ls="eza --icons=never -l"
 
 alias lz="lazygit"
