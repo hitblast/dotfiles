@@ -26,8 +26,8 @@ return {
             dashboard.button("SPACE ee", "Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
             dashboard.button("SPACE ff", "Find file", "<cmd>Telescope find_files<CR>"),
             dashboard.button("SPACE fs", "Find string", "<cmd>Telescope live_grep<CR>"),
-            dashboard.button("SPACE ll", "Open lazy window", "<cmd>Lazy<CR>"),
-            dashboard.button("SPACE mm", "Open mason window", "<cmd>Mason<CR>"),
+            dashboard.button("SPACE l", "Open lazy window", "<cmd>Lazy<CR>"),
+            dashboard.button("SPACE m", "Open mason window", "<cmd>Mason<CR>"),
             dashboard.button("q", "Quit Neovim", "<cmd>qa<CR>"),
         }
 
