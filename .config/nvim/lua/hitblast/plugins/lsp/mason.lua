@@ -16,5 +16,10 @@ return {
                 "ruff",
             },
         })
+
+        -- keymaps for mason
+        local keymap = vim.keymap
+
+        keymap.set("n", "<leader>m", "<cmd>Mason<CR>", { desc = "Open mason window" })
     end,
 }

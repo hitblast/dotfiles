@@ -20,3 +20,6 @@ require("lazy").setup({ { import = "hitblast.plugins" }, { import = "hitblast.pl
         notify = false,
     },
 })
+
+-- keymap for entering lazy, fast
+vim.keymap.set("n", "<leader>l", "<cmd>Lazy<CR>", { desc = "Open lazy window" })

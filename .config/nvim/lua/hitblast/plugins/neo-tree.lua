@@ -7,7 +7,7 @@ return {
         "nvim-tree/nvim-web-devicons",
     },
     keys = {
-        { "<leader>ee", "<cmd>Neotree toggle<CR>", desc = "Toggle file explorer" }
+        { "<leader>e", "<cmd>Neotree toggle<CR>", desc = "Toggle file explorer" }
     },
     config = function()
         local neotree = require("neo-tree")
