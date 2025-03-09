@@ -22,17 +22,7 @@ These are the primary programs that are used in this configuration:
 
 - Part 1: Basic environment
 
-Set up the macOS-specific settings and configuration using the following group of commands:
-
-```bash
-# Clone the repository.
-chmod +x macos-mods.sh
-
-# Run the script.
-./macos-mods.sh
-```
-
-Now, install [Homebrew](https://brew.sh) and the required packages using the following group of commands:
+Install [Homebrew](https://brew.sh) and the required packages using the following group of commands:
 
 ```bash
 # Install Homebrew.
@@ -47,6 +37,14 @@ If everything has been installed, now you can use `stow` to create symlinks for 
 ```bash
 # Set up the symlinks.
 stow . -t ~
+```
+
+I've created [cutler](https://github.com/hitblast/cutler) for automating the process of setting my system preferences.
+Here's the command to set everything up:
+
+```bash
+# Set up macOS system settings.
+cutler apply
 ```
 
 - Part 2: Development setup
