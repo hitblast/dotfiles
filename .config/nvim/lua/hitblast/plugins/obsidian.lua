@@ -6,6 +6,12 @@ return {
         "hrsh7th/nvim-cmp",
         "nvim-telescope/telescope.nvim",
     },
+    ft = "markdown",
+    keys = {
+        { "<leader>ot", "<cmd>ObsidianToday<CR>", desc = "Open today's daily note" },
+        { "<leader>on", "<cmd>ObsidianNew<CR>", desc = "Create a new note" },
+        { "<leader>fo", "<cmd>ObsidianSearch<CR>", desc = "Fuzzy find in Obsidian vault" },
+    },
     config = function()
         local opts = {
             workspaces = {
