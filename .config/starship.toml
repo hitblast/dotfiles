@@ -37,7 +37,7 @@ style = 'bold green'
 [hostname]
 ssh_only = false
 format = '[@$ssh_symbol$hostname]($style) '
-style = 'dimmed white'
+style = 'white'
 
 [python]
 symbol = 'py '
@@ -45,4 +45,4 @@ symbol = 'py '
 [username]
 show_always = true
 format = '[$user]($style)'
-style_user = 'dimmed white'
+style_user = 'white'
