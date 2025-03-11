@@ -174,13 +174,12 @@ if.app-id = 'ch.protonvpn.mac'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.spotify.client'
-run = 'move-node-to-workspace S'
+if.app-id = 'com.mitchellh.ghostty'
+run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.mitchellh.ghostty'
-if.workspace = 'S'
-run = 'move-node-to-workspace W'
+if.app-id = 'com.spotify.client'
+run = 'move-node-to-workspace S'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
