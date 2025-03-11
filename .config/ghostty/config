@@ -1,16 +1,14 @@
 # Font.
 font-family = "JetBrains Mono Nerd Font"
 font-feature = liga
-font-size = 13.5
+font-size = 14.5
 font-thicken = true
 
 # Cursor.
-cursor-color = #ffffff
 cursor-style = block
 
 # Theme.
-theme = "pnevma"
-background = #0c0c0c
+theme = "GruvBoxDark"
 
 # Window-specific settings.
 macos-titlebar-style = hidden
@@ -18,6 +16,6 @@ macos-window-shadow = true
 window-colorspace = display-p3
 window-padding-x = 20
 window-padding-y = 20
-window-width = 90
+window-width = 101
 window-height = 28
 
