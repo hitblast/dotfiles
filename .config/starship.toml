@@ -1,18 +1,12 @@
 format = """
+$username\
+$hostname\
 $directory\
 $git_branch\
 $git_status\
-$c\
-$python\
-$rust\
-$dart\
-$docker_context\
-$jobs\
 $cmd_duration\
-$line_break\
-$username\
-$hostname\
-$character"""
+$character\
+"""
 
 [character]
 success_symbol = '[%](bold white)'
@@ -22,15 +16,6 @@ error_symbol = '[%](bold red)'
 style = 'white'
 truncation_symbol = '.../'
 
-[directory.substitutions]
-'Desktop' = '◆ Desktop'
-'Developer' = '◆ Developer'
-'Documents' = '◆ Documents'
-'Downloads' = '◆ Downloads'
-'Movies' = '◆ Movies'
-'Music' = '◆ Music'
-'Pictures' = '◆ Pictures'
-
 [git_branch]
 style = 'bold green'
 
@@ -38,9 +23,6 @@ style = 'bold green'
 ssh_only = false
 format = '[@$ssh_symbol$hostname]($style) '
 style = 'white'
-
-[python]
-symbol = 'py '
 
 [username]
 show_always = true
