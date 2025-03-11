@@ -16,8 +16,8 @@ background = #0c0c0c
 macos-titlebar-style = hidden
 macos-window-shadow = true
 window-colorspace = display-p3
-window-padding-x = 15
-window-padding-y = 15
-window-width = 100
-window-height = 30
+window-padding-x = 20
+window-padding-y = 20
+window-width = 90
+window-height = 28
 
