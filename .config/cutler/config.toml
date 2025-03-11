@@ -13,7 +13,7 @@ FirstClickThreshold = 0
 TrackpadThreeFingerDrag = true
 
 [dock]
-tilesize = 46
+tilesize = 60
 autohide = true
 orientation = "left"
 mineffect = "suck"
