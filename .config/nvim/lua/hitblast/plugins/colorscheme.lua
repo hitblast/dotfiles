@@ -1,8 +1,8 @@
 return {
-    "ellisonleao/gruvbox.nvim",
+    "mellow-theme/mellow.nvim",
     priority = 1000,
     config = function()
-        vim.cmd("colorscheme gruvbox")
+        vim.cmd("colorscheme mellow")
     end,
 }
 
