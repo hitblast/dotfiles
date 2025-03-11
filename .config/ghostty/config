@@ -1,14 +1,14 @@
 # Font.
 font-family = "JetBrains Mono Nerd Font"
 font-feature = liga
-font-size = 14.5
+font-size = 13.5
 font-thicken = true
 
 # Cursor.
 cursor-style = block
 
 # Theme.
-theme = "GruvBoxDark"
+theme = "0x96f"
 
 # Window-specific settings.
 macos-titlebar-style = hidden
