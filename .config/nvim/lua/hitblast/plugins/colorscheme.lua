@@ -1,8 +1,8 @@
 return {
-    "mellow-theme/mellow.nvim",
+    "felipeagc/fleet-theme-nvim",
     priority = 1000,
     config = function()
-        vim.cmd("colorscheme mellow")
+        vim.cmd("colorscheme fleet")
     end,
 }
 
