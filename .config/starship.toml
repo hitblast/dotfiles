@@ -23,11 +23,9 @@ truncation_symbol = '.../'
 style = 'bold green'
 
 [hostname]
-ssh_only = false
 format = '[@$ssh_symbol$hostname]($style) '
 style = 'white'
 
 [username]
-show_always = true
 format = '[$user]($style)'
 style_user = 'white'
