@@ -4,7 +4,9 @@ $hostname\
 $directory\
 $git_branch\
 $git_status\
-$cmd_duration\
+$python\
+$rust\
+$dart\
 $character\
 """
 add_newline = false
