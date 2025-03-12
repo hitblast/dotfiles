@@ -37,6 +37,3 @@ eval "$(starship init bash)"
 # Finally, enable zoxide integration.
 eval "$(zoxide init --cmd cd bash)"
 
-
-# Run fortune on shell execution.
-fortune
