@@ -131,10 +131,10 @@ k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill coreaudiod
 esc = 'mode main'
 g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
 o = ['exec-and-forget open -a /Applications/Obsidian.app', 'mode main']
-s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
+s = ['exec-and-forget open -a /Applications/Safari.app', 'mode main']
+cmd-alt-ctrl-s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
 k = ['exec-and-forget open -a /Applications/KeyboardCleanTool.app', 'mode main']
 d = ['exec-and-forget open -a /Applications/Discord.app', 'mode main']
-z = ['exec-and-forget open -a /Applications/Zen\ Browser.app', 'mode main']
 
 cmd-alt-ctrl-shift-h = ['join-with left', 'mode main']
 cmd-alt-ctrl-shift-j = ['join-with down', 'mode main']
