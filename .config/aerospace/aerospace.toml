@@ -130,9 +130,8 @@ k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill coreaudiod
 [mode.apps.binding]
 esc = 'mode main'
 g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
-o = ['exec-and-forget open -a /Applications/Obsidian.app', 'mode main']
-s = ['exec-and-forget open -a /Applications/Safari.app', 'mode main']
-cmd-alt-ctrl-s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
+o = ['exec-and-forget open -a /Applications/Orion.app', 'mode main']
+s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
 k = ['exec-and-forget open -a /Applications/KeyboardCleanTool.app', 'mode main']
 d = ['exec-and-forget open -a /Applications/Discord.app', 'mode main']
 
@@ -194,18 +193,10 @@ if.app-id = 'com.bohemiancoding.sketch3'
 run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
-if.app-id = 'app.zen-browser.zen'
-run = 'move-node-to-workspace B'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Safari'
+if.app-id = 'com.kagi.kagimacOS'
 run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace M'
-
-[[on-window-detected]]
-if.app-id = 'md.obsidian'
-run = 'move-node-to-workspace O'
 
