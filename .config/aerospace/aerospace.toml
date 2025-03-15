@@ -178,7 +178,7 @@ if.app-id = 'ch.protonvpn.mac'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.apple.safari'
+if.app-id = 'com.apple.Safari'
 run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
