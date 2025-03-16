@@ -10,10 +10,10 @@
     }
   ],
   "notification_panel": {
-    "dock": "left"
+    "dock": "right"
   },
-  "chat_panel": {
-    "dock": "left"
+  "collaboration_panel": {
+    "button": false
   },
   "outline_panel": {
     "dock": "right"
@@ -36,6 +36,7 @@
     "right_padding": 0.08
   },
   "assistant": {
+    "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
       "model": "o3-mini"

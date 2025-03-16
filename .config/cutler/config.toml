@@ -1,6 +1,11 @@
 [menuextra.clock]   
 FlashDateSeparators = true
 DateFormat = "\"HH:mm:ss\""
+Show24Hour = true
+ShowAMPM = false
+ShowDate = 2
+ShowDayOfWeek = false
+ShowSeconds = true
 
 [finder]
 AppleShowAllFiles = true
