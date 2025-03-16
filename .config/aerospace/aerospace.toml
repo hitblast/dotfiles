@@ -134,7 +134,6 @@ z = ['exec-and-forget open -a /Applications/Zen.app', 'mode main']
 b = ['exec-and-forget open -a /Applications/Safari.app', 'mode main']
 s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
 k = ['exec-and-forget open -a /Applications/KeyboardCleanTool.app', 'mode main']
-d = ['exec-and-forget open -a /Applications/Discord.app', 'mode main']
 
 cmd-alt-ctrl-shift-h = ['join-with left', 'mode main']
 cmd-alt-ctrl-shift-j = ['join-with down', 'mode main']
@@ -200,8 +199,4 @@ run = 'move-node-to-workspace D'
 [[on-window-detected]]
 if.app-id = 'com.bohemiancoding.sketch3'
 run = 'move-node-to-workspace D'
-
-[[on-window-detected]]
-if.app-id = 'com.hnc.Discord'
-run = 'move-node-to-workspace M'
 
