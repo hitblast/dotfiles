@@ -177,7 +177,7 @@ if.app-id = 'ch.protonvpn.mac'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.hitblast.Alter'
+if.app-id = 'com.hitblast.alter'
 run = 'layout floating'
 
 [[on-window-detected]]
