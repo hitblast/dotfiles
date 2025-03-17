@@ -177,7 +177,15 @@ if.app-id = 'ch.protonvpn.mac'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = 'com.hitblast.Alter'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'com.apple.Safari'
+run = 'move-node-to-workspace B'
+
+[[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
 run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
