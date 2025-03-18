@@ -129,6 +129,7 @@ k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill coreaudiod
 # 'apps' binding mode declaration
 [mode.apps.binding]
 esc = 'mode main'
+a = ['exec-and-forget open -a /Applications/AFFiNE.app', 'mode main']
 g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
 z = ['exec-and-forget open -a /Applications/Zen.app', 'mode main']
 b = ['exec-and-forget open -a /Applications/Safari.app', 'mode main']
@@ -207,4 +208,12 @@ run = 'move-node-to-workspace D'
 [[on-window-detected]]
 if.app-id = 'com.bohemiancoding.sketch3'
 run = 'move-node-to-workspace D'
+
+[[on-window-detected]]
+if.app-id = 'bg.zine.bootstrapstudio'
+run = 'move-node-to-workspace D'
+
+[[on-window-detected]]
+if.app-id = 'pro.affine.app'
+run = 'move-node-to-workspace N'
 
