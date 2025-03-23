@@ -46,10 +46,6 @@
                 },
                 {
                     "from": { "key_code": "f5" },
-                    "to": [{ "key_code": "f5" }]
-                },
-                {
-                    "from": { "key_code": "f6" },
                     "to": [{ "apple_vendor_top_case_key_code": "illumination_up" }]
                 },
                 {
