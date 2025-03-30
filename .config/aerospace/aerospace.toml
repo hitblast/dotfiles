@@ -74,6 +74,7 @@ cmd-alt-ctrl-i = 'workspace I'
 cmd-alt-ctrl-m = 'workspace M'
 cmd-alt-ctrl-n = 'workspace N'
 cmd-alt-ctrl-o = 'workspace O'
+cmd-alt-ctrl-p = 'workspace P'
 cmd-alt-ctrl-q = 'workspace Q'
 cmd-alt-ctrl-r = 'workspace R'
 cmd-alt-ctrl-s = 'workspace S'
@@ -95,6 +96,7 @@ cmd-alt-ctrl-shift-i = 'move-node-to-workspace I'
 cmd-alt-ctrl-shift-m = 'move-node-to-workspace M'
 cmd-alt-ctrl-shift-n = 'move-node-to-workspace N'
 cmd-alt-ctrl-shift-o = 'move-node-to-workspace O'
+cmd-alt-ctrl-shift-p = 'move-node-to-workspace P'
 cmd-alt-ctrl-shift-q = 'move-node-to-workspace Q'
 cmd-alt-ctrl-shift-r = 'move-node-to-workspace R'
 cmd-alt-ctrl-shift-s = 'move-node-to-workspace S'
@@ -159,10 +161,6 @@ if.app-id = 'com.apple.AppStore'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.apple.iphonesimulator'
-run = 'layout floating'
-
-[[on-window-detected]]
 if.app-id = 'com.apple.Passwords'
 run = 'layout floating'
 
@@ -211,10 +209,9 @@ if.app-id = 'com.bohemiancoding.sketch3'
 run = 'move-node-to-workspace D'
 
 [[on-window-detected]]
-if.app-id = 'bg.zine.bootstrapstudio'
-run = 'move-node-to-workspace D'
-
-[[on-window-detected]]
 if.app-id = 'pro.affine.app'
 run = 'move-node-to-workspace N'
 
+[[on-window-detected]]
+if.app-id = 'net.whatsapp.WhatsApp'
+run = 'move-node-to-workspace M'
