@@ -133,6 +133,7 @@ k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill coreaudiod
 # 'apps' binding mode declaration
 [mode.apps.binding]
 esc = 'mode main'
+w = ['exec-and-forget open -a /Applications/WhatsApp.app', 'mode main']
 a = ['exec-and-forget open -a /Applications/AFFiNE.app', 'mode main']
 g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
 b = ['exec-and-forget open -a /Applications/Safari.app', 'mode main']
