@@ -20,6 +20,7 @@ TrackpadThreeFingerDrag = true
 [dock]
 tilesize = 50
 autohide = true
+magnification = false
 orientation = "right"
 mineffect = "suck"
 autohide-delay = 0
