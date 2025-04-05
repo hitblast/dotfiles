@@ -36,7 +36,7 @@
     "right_padding": 0.08
   },
   "assistant": {
-    "dock": "left",
+    "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
       "model": "o3-mini"
