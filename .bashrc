@@ -5,9 +5,12 @@ export TERM=xterm-256color
 set -o vi
 
 # Aliases.
-ff ()
-{
+ff() {
 	aerospace list-windows --all | fzf --bind 'enter:execute(bash -c "aerospace focus --window-id {1}")+abort'
+}
+
+bundleid() {
+    osascript -e "id of app \"$1\""
 }
 
 alias cat="bat"
@@ -17,8 +20,6 @@ alias ls="eza --icons=never -l"
 alias lz="lazygit"
 alias lzy="lazygit"
 alias lazy="lazygit"
-
-alias grh="git reset --hard"
 
 alias mactop="sudo mactop --color white"
 
@@ -36,4 +37,3 @@ eval "$(starship init bash)"
 
 # Finally, enable zoxide integration.
 eval "$(zoxide init --cmd cd bash)"
-
