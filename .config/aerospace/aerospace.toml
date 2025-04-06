@@ -67,6 +67,7 @@ cmd-alt-ctrl-shift-equal = 'resize smart +50'
 # Workspace declarations:
 cmd-alt-ctrl-a = 'workspace A'
 cmd-alt-ctrl-b = 'workspace B'
+cmd-alt-ctrl-c = 'workspace C'
 cmd-alt-ctrl-d = 'workspace D'
 cmd-alt-ctrl-e = 'workspace E'
 cmd-alt-ctrl-g = 'workspace G'
@@ -89,6 +90,7 @@ cmd-alt-ctrl-z = 'workspace Z'
 # Moving nodes:
 cmd-alt-ctrl-shift-a = 'move-node-to-workspace A'
 cmd-alt-ctrl-shift-b = 'move-node-to-workspace B'
+cmd-alt-ctrl-shift-c = 'move-node-to-workspace C'
 cmd-alt-ctrl-shift-d = 'move-node-to-workspace D'
 cmd-alt-ctrl-shift-e = 'move-node-to-workspace E'
 cmd-alt-ctrl-shift-g = 'move-node-to-workspace G'
@@ -188,6 +190,10 @@ run = 'move-node-to-workspace B'
 [[on-window-detected]]
 if.app-id = 'app.zen-browser.zen'
 run = 'move-node-to-workspace B'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.clock'
+run = 'move-node-to-workspace C'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
