@@ -160,6 +160,10 @@ if.app-id = 'com.apple.mail'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = 'com.apple.clock'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'com.apple.AppStore'
 run = 'layout floating'
 
@@ -190,10 +194,6 @@ run = 'move-node-to-workspace B'
 [[on-window-detected]]
 if.app-id = 'app.zen-browser.zen'
 run = 'move-node-to-workspace B'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.clock'
-run = 'move-node-to-workspace C'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
