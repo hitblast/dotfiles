@@ -3,6 +3,7 @@
 "cargo:cargo-edit" = "latest"
 "cargo:du-dust" = "latest"
 "cargo:eza" = "latest"
+"cargo:mdbook" = "latest"
 "cargo:ripgrep" = "latest"
 "cargo:starship" = "latest"
 "cargo:tokei" = "latest"
