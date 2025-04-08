@@ -1,4 +1,6 @@
-[menuextra.clock]   
+# System settings
+
+[menuextra.clock]
 FlashDateSeparators = true
 DateFormat = "\"HH:mm:ss\""
 Show24Hour = true
@@ -30,3 +32,32 @@ expose-group-apps = true
 [NSGlobalDomain.com.apple.keyboard]
 fnState = false
 
+# External command execution
+# This includes setting the global hostname and configuring sudo authentication with Touch ID.
+
+[external.variables]
+hostname = "darkstar"
+
+[external]
+[[external.command]]
+cmd = "scutil"
+args = ["--set", "ComputerName", "$hostname"]
+sudo = true
+
+[[external.command]]
+cmd = "scutil"
+args = ["--set", "HostName", "$hostname"]
+sudo = true
+
+[[external.command]]
+cmd = "scutil"
+args = ["--set", "LocalHostName", "$hostname"]
+sudo = true
+
+[[external.command]]
+cmd = "sh"
+args = [
+    "-c",
+    "sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local",
+]
+sudo = false
