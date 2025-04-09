@@ -1,5 +1,9 @@
 # Load Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+# Set TERM environment variable for accessing SSH-connected devices.
+export TERM=xterm-256color
 
 # Load local binaries to PATH.
 export PATH="$HOME/.local/bin:$PATH"
@@ -14,4 +18,3 @@ source ~/.orbstack/shell/init.bash 2>/dev/null || :
 
 # Source for the .bashrc file.
 [[ -s ~/.bashrc ]] && source ~/.bashrc
-
