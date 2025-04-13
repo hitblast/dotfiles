@@ -9,7 +9,7 @@ cursor-style = block
 
 # Theme.
 theme = "xcodedarkhc"
-background = "#181818"
+background = "#181616"
 
 # Window-specific settings.
 macos-titlebar-style = hidden

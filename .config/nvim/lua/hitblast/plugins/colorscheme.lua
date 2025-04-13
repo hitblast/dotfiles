@@ -1,8 +1,8 @@
 return {
-    "felipeagc/fleet-theme-nvim",
+    "rebelot/kanagawa.nvim",
     priority = 1000,
     config = function()
-        vim.cmd("colorscheme fleet")
+        vim.cmd("colorscheme kanagawa-dragon")
     end,
 }
 
