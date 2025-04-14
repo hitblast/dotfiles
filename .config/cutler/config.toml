@@ -60,4 +60,10 @@ args = [
     "-c",
     "sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local",
 ]
-sudo = false
+
+[[external.command]]
+cmd = "osascript"
+args = [
+    "-e",
+    "'tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file'",
+]
