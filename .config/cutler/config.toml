@@ -13,7 +13,10 @@ ShowSeconds = true
 AppleShowAllFiles = true
 CreateDesktop = false
 ShowPathbar = true
+ShowExternalHardDrivesOnDesktop = false
 FXRemoveOldTrashItems = true
+FXEnableExtensionChangeWarning = false
+FXDefaultSearchScope = "SCcf"
 
 [AppleMultitouchTrackpad]
 FirstClickThreshold = 0
@@ -22,12 +25,19 @@ TrackpadThreeFingerDrag = true
 [dock]
 tilesize = 50
 autohide = true
+static-only = true
 magnification = false
 orientation = "right"
 mineffect = "suck"
 autohide-delay = 0
 autohide-time-modifier = 0.6
 expose-group-apps = true
+
+[CloudSubscriptionFeatures.optIn]
+545129924 = false
+
+[NSGlobalDomain]
+NSDocumentSaveNewDocumentsToCloud = false
 
 [NSGlobalDomain.com.apple.keyboard]
 fnState = false
