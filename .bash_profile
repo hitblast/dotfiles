@@ -14,8 +14,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # Here, bash-completion@2 is set up because I'm not using system bash.
 # Then, load homebrew autocompletions.
 
-export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
 if type brew &>/dev/null
 then
