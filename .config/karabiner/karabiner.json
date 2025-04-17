@@ -1,86 +1,82 @@
 {
-  "profiles": [
-    {
-      "complex_modifications": {
-        "rules": [
-          {
-            "description": "Command + F1/F2 = Keyboard Brightness Adjustment",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "f1",
-                  "modifiers": {
-                    "mandatory": ["left_command"]
-                  }
-                },
-                "to": [{ "key_code": "illumination_decrement" }],
-                "type": "basic"
-              },
-              {
-                "from": {
-                  "key_code": "f2",
-                  "modifiers": {
-                    "mandatory": ["left_command"]
-                  }
-                },
-                "to": [{ "key_code": "illumination_increment" }],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Hyper Key: Caps Lock to Left Control + Left Option + Left Command",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "caps_lock",
-                  "modifiers": { "optional": ["any"] }
-                },
-                "to": [
-                  {
-                    "set_variable": {
-                      "name": "hyper_caps_lock",
-                      "value": 1
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "Command + F1/F2 = Keyboard Brightness Adjustment",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f1",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "key_code": "illumination_decrement" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f2",
+                                    "modifiers": { "mandatory": ["right_command"] }
+                                },
+                                "to": [{ "key_code": "illumination_increment" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper Key: Caps Lock to Left Control + Left Option + Left Command",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "hyper_caps_lock",
+                                            "value": 1
+                                        }
+                                    },
+                                    {
+                                        "key_code": "left_control",
+                                        "modifiers": ["left_command", "left_option"]
+                                    }
+                                ],
+                                "to_after_key_up": [
+                                    {
+                                        "set_variable": {
+                                            "name": "hyper_caps_lock",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
-                  },
-                  {
-                    "key_code": "left_control",
-                    "modifiers": ["left_command", "left_option"]
-                  }
-                ],
-                "to_after_key_up": [
-                  {
-                    "set_variable": {
-                      "name": "hyper_caps_lock",
-                      "value": 0
-                    }
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          }
-        ]
-      },
-      "fn_function_keys": [
-        {
-          "from": { "key_code": "f4" },
-          "to": [{ "key_code": "vk_none" }]
+                ]
+            },
+            "fn_function_keys": [
+                {
+                    "from": { "key_code": "f4" },
+                    "to": [{ "key_code": "vk_none" }]
+                }
+            ],
+            "name": "\"Hyper Key\" enabled (with gear shifters)",
+            "selected": true,
+            "simple_modifications": [
+                {
+                    "from": { "key_code": "period" },
+                    "to": [{ "key_code": "vk_none" }]
+                },
+                {
+                    "from": { "key_code": "right_option" },
+                    "to": [{ "key_code": "period" }]
+                }
+            ],
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
-      ],
-      "name": "\"Hyper Key\" enabled (with gear shifters)",
-      "selected": true,
-      "simple_modifications": [
-        {
-          "from": { "key_code": "period" },
-          "to": [{ "key_code": "vk_none" }]
-        },
-        {
-          "from": { "key_code": "right_option" },
-          "to": [{ "key_code": "period" }]
-        }
-      ],
-      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
-    }
-  ]
+    ]
 }
