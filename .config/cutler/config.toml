@@ -26,6 +26,7 @@ TrackpadThreeFingerDrag = true
 tilesize = 50
 autohide = true
 static-only = true
+show-recents = false
 magnification = false
 orientation = "right"
 mineffect = "suck"
