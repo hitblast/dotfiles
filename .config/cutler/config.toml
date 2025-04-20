@@ -2,12 +2,12 @@
 
 [menuextra.clock]
 FlashDateSeparators = true
-DateFormat = "\"h:mm\""
+DateFormat = "\"h:mm:ss\""
 Show24Hour = false
 ShowAMPM = false
 ShowDate = 2
 ShowDayOfWeek = false
-ShowSeconds = false
+ShowSeconds = true
 
 [finder]
 AppleShowAllFiles = true
@@ -66,6 +66,9 @@ args = ["--set", "LocalHostName", "$hostname"]
 sudo = true
 
 [[external.command]]
+cmd = "echo \"Hello World\""
+
+[[external.command]]
 cmd = "sh"
 args = [
     "-c",
@@ -73,8 +76,5 @@ args = [
 ]
 
 [[external.command]]
-cmd = "osascript"
-args = [
-    "-e",
-    "tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file",
-]
+cmd = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file'"
+
