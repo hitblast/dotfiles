@@ -51,29 +51,19 @@ hostname = "darkstar"
 
 [external]
 [[external.command]]
-cmd = "scutil"
-args = ["--set", "ComputerName", "$hostname"]
+cmd = "scutil --set ComputerName $hostname"
 sudo = true
 
 [[external.command]]
-cmd = "scutil"
-args = ["--set", "HostName", "$hostname"]
+cmd = "scutil --set HostName $hostname"
 sudo = true
 
 [[external.command]]
-cmd = "scutil"
-args = ["--set", "LocalHostName", "$hostname"]
+cmd = "scutil --set LocalHostName $hostname"
 sudo = true
 
 [[external.command]]
-cmd = "echo \"Hello World\""
-
-[[external.command]]
-cmd = "sh"
-args = [
-    "-c",
-    "sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local",
-]
+cmd = "sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local"
 
 [[external.command]]
 cmd = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file'"
