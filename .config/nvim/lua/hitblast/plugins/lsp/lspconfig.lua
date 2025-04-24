@@ -4,7 +4,7 @@ return {
     dependencies = {
         "hrsh7th/cmp-nvim-lsp",
         { "antosha417/nvim-lsp-file-operations", config = true },
-        { "folke/neodev.nvim", opts = {} },
+        { "folke/neodev.nvim",                   opts = {} },
     },
     config = function()
         -- import lspconfig plugin
@@ -22,6 +22,14 @@ return {
                 local opts = { buffer = ev.buf, silent = true }
 
                 -- set keybinds
+                opts.desc = "Toggle inlay hints"
+                keymap.set("n", '<leader>i',
+                    function()
+                        vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ 0 }), { 0 })
+                    end,
+                    opts
+                )
+
                 opts.desc = "Show LSP references"
                 keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
 
@@ -93,6 +101,7 @@ return {
                             completion = {
                                 callSnippet = "Replace",
                             },
+                            hint = { enable = true },
                         },
                     },
                 })
