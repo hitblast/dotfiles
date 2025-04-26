@@ -1,4 +1,5 @@
 {
+    "global": { "unsafe_ui": true },
     "profiles": [
         {
             "complex_modifications": {
@@ -9,7 +10,7 @@
                             {
                                 "from": {
                                     "key_code": "f1",
-                                    "modifiers": { "mandatory": ["right_command"] }
+                                    "modifiers": { "mandatory": ["command"] }
                                 },
                                 "to": [{ "key_code": "illumination_decrement" }],
                                 "type": "basic"
@@ -17,7 +18,7 @@
                             {
                                 "from": {
                                     "key_code": "f2",
-                                    "modifiers": { "mandatory": ["right_command"] }
+                                    "modifiers": { "mandatory": ["command"] }
                                 },
                                 "to": [{ "key_code": "illumination_increment" }],
                                 "type": "basic"
