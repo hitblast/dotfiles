@@ -23,6 +23,9 @@ alias mactop="sudo mactop --color white"
 alias updateall="brew update && brew upgrade && mise upgrade && uv tool upgrade --all"
 
 
+# Enable cutler integration.
+eval "$(cutler status --prompt)"
+
 # Enable mise integration.
 eval "$(/opt/homebrew/bin/mise activate bash)"
 
