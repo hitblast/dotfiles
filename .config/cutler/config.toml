@@ -34,6 +34,9 @@ autohide-delay = 0
 autohide-time-modifier = 0.6
 expose-group-apps = true
 
+[HIToolBox]
+AppleFnUsageType = 0
+
 [CloudSubscriptionFeatures.optIn]
 545129924 = false
 
@@ -67,4 +70,3 @@ cmd = "sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | sudo tee /etc/pa
 
 [[external.command]]
 cmd = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file'"
-
