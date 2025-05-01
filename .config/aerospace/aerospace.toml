@@ -130,22 +130,18 @@ f = ['layout floating tiling', 'mode main'] # toggle between floating and tiling
 [mode.command.binding]
 esc = 'mode main'
 k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill coreaudiod
+equal = 'volume up'
+minus = 'volume down'
 
 
 # 'apps' binding mode declaration
 [mode.apps.binding]
 esc = 'mode main'
 w = ['exec-and-forget open -a /Applications/WhatsApp.app', 'mode main']
-a = ['exec-and-forget open -a /Applications/AFFiNE.app', 'mode main']
 g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
 b = ['exec-and-forget open -a /Applications/Safari.app', 'mode main']
 s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
 k = ['exec-and-forget open -a /Applications/KeyboardCleanTool.app', 'mode main']
-
-cmd-alt-ctrl-shift-h = ['join-with left', 'mode main']
-cmd-alt-ctrl-shift-j = ['join-with down', 'mode main']
-cmd-alt-ctrl-shift-k = ['join-with up', 'mode main']
-cmd-alt-ctrl-shift-l = ['join-with right', 'mode main']
 
 
 # App-specific callbacks
@@ -214,10 +210,6 @@ run = 'move-node-to-workspace D'
 [[on-window-detected]]
 if.app-id = 'com.bohemiancoding.sketch3'
 run = 'move-node-to-workspace D'
-
-[[on-window-detected]]
-if.app-id = 'pro.affine.app'
-run = 'move-node-to-workspace N'
 
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
