@@ -49,24 +49,16 @@ fnState = false
 # External command execution
 # This includes setting the global hostname and configuring sudo authentication with Touch ID.
 
-[external.variables]
-hostname = "darkstar"
+[vars]
+hostname = "epiphany"
 
-[external]
-[[external.command]]
-cmd = "scutil --set ComputerName $hostname"
+[commands.hostname]
+run = "scutil --set ComputerName $hostname && scutil --set HostName $hostname && scutil --set LocalHostName $hostname"
 sudo = true
 
-[[external.command]]
-cmd = "scutil --set HostName $hostname"
+[commands.touchid]
+run = "sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | tee /etc/pam.d/sudo_local"
 sudo = true
 
-[[external.command]]
-cmd = "scutil --set LocalHostName $hostname"
-sudo = true
-
-[[external.command]]
-cmd = "sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local"
-
-[[external.command]]
-cmd = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file'"
+[commands.wall]
+run = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file'"
