@@ -50,7 +50,7 @@ fnState = false
 # This includes setting the global hostname and configuring sudo authentication with Touch ID.
 
 [vars]
-hostname = "epiphany"
+hostname = "darkstar"
 
 [commands.hostname]
 run = "scutil --set ComputerName $hostname && scutil --set HostName $hostname && scutil --set LocalHostName $hostname"
@@ -61,4 +61,4 @@ run = "sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | tee /etc/pam.d/s
 sudo = true
 
 [commands.wall]
-run = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file'"
+run = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"/Users/hitblast/Pictures/bg.png\" as POSIX file'"
