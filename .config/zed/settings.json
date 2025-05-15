@@ -36,6 +36,7 @@
     "right_padding": 0.08
   },
   "assistant": {
+    "default_profile": "write",
     "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
@@ -62,17 +63,17 @@
   },
   "vim_mode": true,
   "seed_search_query_from_cursor": "selection",
-  "ui_font_family": "JetBrains Mono",
-  "buffer_font_family": "JetBrains Mono",
+  "ui_font_family": "Input Mono Narrow",
+  "buffer_font_family": "Input Mono Narrow",
   "ui_font_size": 14,
-  "buffer_font_size": 12.3,
+  "buffer_font_size": 14,
   "buffer_line_height": "comfortable",
   "base_keymap": "VSCode",
   "relative_line_numbers": true,
   "theme": {
     "mode": "system",
     "light": "Xcode Presentation Light",
-    "dark": "Fleet Dark"
+    "dark": "Kanagawa Dragon"
   },
   "terminal": {
     "blinking": "on",
