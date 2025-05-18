@@ -1,5 +1,6 @@
 [tools]
 "cargo:cargo-edit" = "latest"
+"cargo:hookman" = "latest"
 "cargo:trimsec" = "latest"
 flutter = "latest"
 node = "latest"

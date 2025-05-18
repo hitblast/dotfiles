@@ -71,9 +71,9 @@
   "base_keymap": "VSCode",
   "relative_line_numbers": true,
   "theme": {
-    "mode": "system",
+    "mode": "light",
     "light": "Xcode Default Light",
-    "dark": "Kanagawa Dragon"
+    "dark": "Xcode Default Light"
   },
   "terminal": {
     "blinking": "on",

@@ -8,8 +8,7 @@ font-thicken = true
 cursor-style = block
 
 # Theme.
-theme = "Kanagawa Dragon"
-foreground = "#c5c9c5"
+theme = "xcodelight"
 
 # Window-specific settings.
 macos-titlebar-style = hidden

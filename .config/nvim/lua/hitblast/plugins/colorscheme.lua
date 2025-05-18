@@ -1,8 +1,8 @@
 return {
-    "rebelot/kanagawa.nvim",
+    "nomis51/nvim-xcode-theme",
     priority = 1000,
     config = function()
-        vim.cmd("colorscheme kanagawa-dragon")
+        vim.cmd("colorscheme xcodelight")
     end,
 }
 
