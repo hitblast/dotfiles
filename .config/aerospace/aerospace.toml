@@ -218,3 +218,8 @@ run = 'move-node-to-workspace M'
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+if.app-id = 'org.m0k.transmission'
+run = 'move-node-to-workspace T'
+

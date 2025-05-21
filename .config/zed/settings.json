@@ -40,7 +40,7 @@
     "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "o4-mini"
+      "model": "o3-mini"
     },
     "version": "2"
   },
