@@ -36,11 +36,15 @@
     "right_padding": 0.08
   },
   "assistant": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "o3-mini"
+    },
     "default_profile": "write",
     "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "o3-mini"
+      "model": "o4-mini"
     },
     "version": "2"
   },
