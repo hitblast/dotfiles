@@ -48,9 +48,6 @@ end
 # 3) Third‐party tools initialization
 # ————————————————————————————————
 
-# cutler
-cutler status --prompt
-
 # mise
 mise activate fish | source
 
