@@ -35,12 +35,8 @@
     "left_padding": 0.08,
     "right_padding": 0.08
   },
-  "assistant": {
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "o3-mini"
-    },
-    "default_profile": "write",
+  "agent": {
+    "default_profile": "ask",
     "dock": "right",
     "default_model": {
       "provider": "copilot_chat",

@@ -1,0 +1,57 @@
+# ~/.config/fish/config.fish
+
+# ————————————————————————————————
+# 1) Environment variables
+# ————————————————————————————————
+
+# Disable greetings
+set fish_greeting ""
+
+# Editor
+set -x EDITOR nvim
+set -x VISUAL nvim
+
+# TERM
+set -x TERM xterm-256color
+
+# Load Homebrew environment (PATH, PKG_CONFIG_PATH, etc.)
+/opt/homebrew/bin/brew shellenv | source
+
+# Add any local bin directory
+set -x PATH $HOME/.local/bin $PATH
+
+# ————————————————————————————————
+# 2) Aliases & functions
+# ————————————————————————————————
+
+function cat;    bat $argv; end
+function ls;     eza --icons=never -l $argv; end
+function lz;     lazygit $argv; end
+function lzy;    lazygit $argv; end
+function lazy;   lazygit $argv; end
+function mactop; sudo mactop --color white $argv; end
+function updateall
+    brew update; and brew upgrade
+    mise upgrade
+    uv tool upgrade --all
+end
+
+function bundleid
+    osascript -e "id of app \"$argv[1]\""
+end
+
+# ————————————————————————————————
+# 3) Third‐party tools initialization
+# ————————————————————————————————
+
+# cutler
+cutler status --prompt
+
+# mise
+mise activate fish | source
+
+# starship prompt
+starship init fish | source
+
+# zoxide
+zoxide init fish | source
