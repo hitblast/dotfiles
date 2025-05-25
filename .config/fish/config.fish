@@ -11,8 +11,12 @@ set fish_greeting ""
 set -x EDITOR nvim
 set -x VISUAL nvim
 
-# TERM
+# Currently, Ghostty isn't that recognized of a terminal
+# So, set to xterm-256color for support during ssh sessions
 set -x TERM xterm-256color
+
+# Disable Homebrew auto update
+set -x HOMEBREW_NO_AUTO_UPDATE 1
 
 # Load Homebrew environment (PATH, PKG_CONFIG_PATH, etc.)
 /opt/homebrew/bin/brew shellenv | source
