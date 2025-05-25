@@ -54,4 +54,4 @@ mise activate fish | source
 starship init fish | source
 
 # zoxide
-zoxide init fish | source
+zoxide init --cmd cd fish | source
