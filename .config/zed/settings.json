@@ -73,7 +73,7 @@
   "theme": {
     "mode": "light",
     "light": "Xcode Spartan",
-    "dark": "Xcode Default Light"
+    "dark": "Xcode Spartan"
   },
   "terminal": {
     "blinking": "on",
