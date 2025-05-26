@@ -7,10 +7,11 @@ These are the primary programs that are used in this configuration:
 
 - Window Management (Tiling): AeroSpace
 - Key Remapping: Karabiner Elements
+- Primary Shell Environment: `fish`
 - Development Tools:
     1. mise (for Flutter, Ruby & some Rust-based tools)
     2. uv (for Python environments)
-    4. homebrew (for general package management)
+    3. homebrew (for general package management)
 
 ## Requirements
 
@@ -27,14 +28,16 @@ Install [Homebrew](https://brew.sh) and the required packages using the followin
 ```bash
 # Install Homebrew.
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# Install the required packages.
-brew bundle
 ```
 
-If everything has been installed, now you can use `stow` to create symlinks for the configuration files:
+For the next, make sure you've cloned this repository, since symlinking the files to their destination is mandatory.
+
+Now, install `stow` using brew:
 
 ```bash
+# Install.
+brew install stow
+
 # Set up the symlinks.
 stow . -t ~
 ```
@@ -43,8 +46,14 @@ I've created [cutler](https://github.com/hitblast/cutler) for automating the pro
 Here's the command to set everything up:
 
 ```bash
+# Install cutler.
+brew install cutler
+
 # Set up macOS system settings.
 cutler apply
+
+# Also install the remaining brew formulae/casks.
+cutler brew install
 ```
 
 - Part 2: Development setup
