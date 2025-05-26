@@ -1,0 +1,21 @@
+audio_cache_size=500
+repeat="track"
+use_nerdfont=true
+
+[theme]
+background = "#FFFFFF"
+primary = "#8C8C8C"
+secondary = "#A2A2A2"
+title = "#313131"
+playing = "#07B846"
+playing_selected = "#2DD66A"
+playing_bg = "#FFFFFF"
+highlight = "#FFFFFF"
+highlight_bg = "#000000"
+error = "#FF7C7C"
+error_bg = "#A50000"
+statusbar = "#000000"
+statusbar_progress = "#00AC4C"
+statusbar_bg = "#00AC4C"
+cmdline = "#FFFFFF"
+cmdline_bg = "#696969"

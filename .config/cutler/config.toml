@@ -66,5 +66,5 @@ run = "osascript -e 'tell application \"System Events\" to tell every desktop to
 # Homebrew formula / casks listing
 
 [brew]
-formulae= ["bat", "blake3", "ca-certificates", "cutler", "dust", "eza", "fastfetch", "fish", "flyctl", "fzf", "gettext", "gh", "git", "hookman", "hwloc", "lazygit", "libgit2", "libssh2", "libunistring", "libuv", "libyaml", "lpeg", "luajit", "luv", "lz4", "mactop", "mise", "mold", "ncspot", "ncurses", "neovim", "oniguruma", "openssl@3", "pcre2", "portaudio", "ripgrep", "sccache", "shpotify", "starship", "stow", "tbb", "tokei", "tree-sitter", "unibilium", "usage", "utf8proc", "xz", "zoxide", "zstd"]
-casks= ["aerospace", "alfred", "alter", "android-file-transfer", "android-studio", "appcleaner", "discord", "font-input", "ghostty", "handbrake", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zen-browser", "zulu@21"]
+formulae= ["bat", "cmatrix", "cutler", "dust", "eza", "fastfetch", "fish", "flyctl", "fzf", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mise", "mold", "ncspot", "neovim", "openssl@3", "ripgrep", "sccache", "shpotify", "starship", "stow", "tokei", "zoxide"]
+casks= ["aerospace", "alfred", "android-file-transfer", "android-studio", "appcleaner", "discord", "font-input", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zen-browser", "zulu@21"]
