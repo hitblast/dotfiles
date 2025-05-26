@@ -1,7 +1,7 @@
 # ~/.config/fish/config.fish
 
 # ————————————————————————————————
-# 1) Environment variables
+# Environment variables
 # ————————————————————————————————
 
 # Disable greetings
@@ -25,18 +25,16 @@ set -x HOMEBREW_NO_AUTO_UPDATE 1
 set -x PATH $HOME/.local/bin $PATH
 
 # ————————————————————————————————
-# 2) Aliases & functions
+# Aliases & functions
 # ————————————————————————————————
 
 function cat;    bat $argv; end
-function ls;     eza --icons=never -l $argv; end
 function lz;     lazygit $argv; end
-function lzy;    lazygit $argv; end
-function lazy;   lazygit $argv; end
 function mactop; sudo mactop --color white $argv; end
 function updateall
     brew update; and brew upgrade
     mise upgrade
+    gh extensions upgrade --all
     uv tool upgrade --all
 end
 
@@ -45,11 +43,14 @@ function bundleid
 end
 
 # ————————————————————————————————
-# 3) Third‐party tools initialization
+# Third‐party tools initialization
 # ————————————————————————————————
 
 # mise
 mise activate fish | source
+
+# uv
+uv generate-shell-completion fish | source
 
 # starship prompt
 starship init fish | source
