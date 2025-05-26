@@ -64,4 +64,4 @@ Now, we're gonna use [mise](https://mise.jdx.dev) to install all of our tools. W
 mise install
 ```
 
-This will install rest of the required runtimes in this configuration.
+This will install the rest of the required runtimes in this configuration.
