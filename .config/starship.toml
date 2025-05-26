@@ -21,6 +21,7 @@ truncation_symbol = '.../'
 
 [git_branch]
 style = 'bold green'
+symbol = ' '
 
 [hostname]
 format = '[@$ssh_symbol$hostname]($style) '
