@@ -11,8 +11,7 @@ set fish_greeting ""
 set -x EDITOR nvim
 set -x VISUAL nvim
 
-# Currently, Ghostty isn't that recognized of a terminal
-# So, set to xterm-256color for support during ssh sessions
+# Terminal metadata
 set -x TERM xterm-256color
 
 # Disable Homebrew auto update
@@ -23,6 +22,9 @@ set -x HOMEBREW_NO_AUTO_UPDATE 1
 
 # Add any local bin directory
 set -x PATH $HOME/.local/bin $PATH
+
+# Add uutils-coreutils binaries to path
+set -x PATH /opt/homebrew/opt/uutils-coreutils/libexec/uubin $PATH
 
 # ————————————————————————————————
 # Aliases & functions
