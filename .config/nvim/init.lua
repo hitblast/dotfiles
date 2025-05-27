@@ -330,6 +330,9 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         markdown = { 'prettier' },
+        html = { 'prettier' },
+        css = { 'prettier' },
+        javascript = { 'prettier' },
       },
     },
   },
