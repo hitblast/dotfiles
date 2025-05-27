@@ -75,6 +75,7 @@ require('lazy').setup({
       },
     },
   },
+  -- knowing my keybinds
   {
     'folke/which-key.nvim',
     event = 'VimEnter',
@@ -120,6 +121,7 @@ require('lazy').setup({
       },
     },
   },
+  -- telescope for searching and fuzzy finding
   {
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
@@ -173,6 +175,7 @@ require('lazy').setup({
       end, { desc = '[S]earch [N]eovim files' })
     end,
   },
+  -- another amazing software by folke
   {
     'folke/lazydev.nvim',
     ft = 'lua',
@@ -182,6 +185,7 @@ require('lazy').setup({
       },
     },
   },
+  -- lsp configuration and setup
   {
     'neovim/nvim-lspconfig',
     dependencies = {
@@ -285,6 +289,7 @@ require('lazy').setup({
       vim.list_extend(ensure_installed, {
         'prettier',
         'stylua',
+        'rust-analyzer',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
       require('mason-lspconfig').setup {
@@ -300,6 +305,7 @@ require('lazy').setup({
       }
     end,
   },
+  -- formatting
   {
     'stevearc/conform.nvim',
     event = { 'BufWritePre' },
@@ -333,6 +339,7 @@ require('lazy').setup({
         html = { 'prettier' },
         css = { 'prettier' },
         javascript = { 'prettier' },
+        rust = { 'rust-analyzer' },
       },
     },
   },
