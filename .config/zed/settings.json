@@ -36,11 +36,11 @@
     "right_padding": 0.1
   },
   "agent": {
-    "default_profile": "ask",
+    "default_profile": "write",
     "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "o4-mini"
+      "model": "gpt-4.1"
     },
     "version": "2"
   },

@@ -10,9 +10,10 @@ export PATH="$HOME/.local/bin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-# Enable bash autocompletion.
-# Here, bash-completion@2 is set up because I'm not using system bash.
-# Then, load homebrew autocompletions.
+# Enable bash.
+# Here, bash-completion@2 is set up because I'm not using system bash,
+# which is in v3 for Macs even in the latest macOS Sonoma builds.
+# I'll also enable completions for Homebrew in the process.
 
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
