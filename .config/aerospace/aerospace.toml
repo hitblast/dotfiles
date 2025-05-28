@@ -65,50 +65,18 @@ cmd-alt-ctrl-shift-minus = 'resize smart -50'
 cmd-alt-ctrl-shift-equal = 'resize smart +50'
 
 # Workspace declarations:
-cmd-alt-ctrl-a = 'workspace A'
-cmd-alt-ctrl-b = 'workspace B'
-cmd-alt-ctrl-c = 'workspace C'
-cmd-alt-ctrl-d = 'workspace D'
-cmd-alt-ctrl-e = 'workspace E'
-cmd-alt-ctrl-g = 'workspace G'
-cmd-alt-ctrl-i = 'workspace I'
-cmd-alt-ctrl-m = 'workspace M'
-cmd-alt-ctrl-n = 'workspace N'
-cmd-alt-ctrl-o = 'workspace O'
-cmd-alt-ctrl-p = 'workspace P'
-cmd-alt-ctrl-q = 'workspace Q'
-cmd-alt-ctrl-r = 'workspace R'
-cmd-alt-ctrl-s = 'workspace S'
-cmd-alt-ctrl-t = 'workspace T'
-cmd-alt-ctrl-u = 'workspace U'
-cmd-alt-ctrl-v = 'workspace V'
-cmd-alt-ctrl-w = 'workspace W'
-cmd-alt-ctrl-x = 'workspace X'
-cmd-alt-ctrl-y = 'workspace Y'
-cmd-alt-ctrl-z = 'workspace Z'
+cmd-alt-ctrl-y = 'workspace 1'
+cmd-alt-ctrl-u = 'workspace 2'
+cmd-alt-ctrl-i = 'workspace 3'
+cmd-alt-ctrl-o = 'workspace 4'
+cmd-alt-ctrl-p = 'workspace 5'
 
 # Moving nodes:
-cmd-alt-ctrl-shift-a = 'move-node-to-workspace A'
-cmd-alt-ctrl-shift-b = 'move-node-to-workspace B'
-cmd-alt-ctrl-shift-c = 'move-node-to-workspace C'
-cmd-alt-ctrl-shift-d = 'move-node-to-workspace D'
-cmd-alt-ctrl-shift-e = 'move-node-to-workspace E'
-cmd-alt-ctrl-shift-g = 'move-node-to-workspace G'
-cmd-alt-ctrl-shift-i = 'move-node-to-workspace I'
-cmd-alt-ctrl-shift-m = 'move-node-to-workspace M'
-cmd-alt-ctrl-shift-n = 'move-node-to-workspace N'
-cmd-alt-ctrl-shift-o = 'move-node-to-workspace O'
-cmd-alt-ctrl-shift-p = 'move-node-to-workspace P'
-cmd-alt-ctrl-shift-q = 'move-node-to-workspace Q'
-cmd-alt-ctrl-shift-r = 'move-node-to-workspace R'
-cmd-alt-ctrl-shift-s = 'move-node-to-workspace S'
-cmd-alt-ctrl-shift-t = 'move-node-to-workspace T'
-cmd-alt-ctrl-shift-u = 'move-node-to-workspace U'
-cmd-alt-ctrl-shift-v = 'move-node-to-workspace V'
-cmd-alt-ctrl-shift-w = 'move-node-to-workspace W'
-cmd-alt-ctrl-shift-x = 'move-node-to-workspace X'
-cmd-alt-ctrl-shift-y = 'move-node-to-workspace Y'
-cmd-alt-ctrl-shift-z = 'move-node-to-workspace Z'
+cmd-alt-ctrl-shift-y = 'move-node-to-workspace 1'
+cmd-alt-ctrl-shift-u = 'move-node-to-workspace 2'
+cmd-alt-ctrl-shift-i = 'move-node-to-workspace 3'
+cmd-alt-ctrl-shift-o = 'move-node-to-workspace 4'
+cmd-alt-ctrl-shift-p = 'move-node-to-workspace 5'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 cmd-alt-ctrl-backslash = 'workspace-back-and-forth'
@@ -185,41 +153,41 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
-run = 'move-node-to-workspace B'
+run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'app.zen-browser.zen'
-run = 'move-node-to-workspace B'
+run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
-run = 'move-node-to-workspace S'
+run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
-run = 'move-node-to-workspace W'
+run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'xcode'
-run = 'move-node-to-workspace W'
+run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'aseprite'
-run = 'move-node-to-workspace D'
+run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'com.bohemiancoding.sketch3'
-run = 'move-node-to-workspace D'
+run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
-run = 'move-node-to-workspace M'
+run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
-run = 'move-node-to-workspace M'
+run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
 if.app-id = 'org.m0k.transmission'
-run = 'move-node-to-workspace T'
+run = 'move-node-to-workspace 1'
 

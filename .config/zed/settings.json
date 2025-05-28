@@ -36,6 +36,10 @@
     "right_padding": 0.1
   },
   "agent": {
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
     "default_profile": "write",
     "dock": "right",
     "default_model": {
