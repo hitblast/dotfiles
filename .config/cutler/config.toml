@@ -56,9 +56,6 @@ hostname = "darkstar"
 run = "scutil --set ComputerName $hostname && scutil --set HostName $hostname && scutil --set LocalHostName $hostname"
 sudo = true
 
-[commands.disablemusic]
-run = "launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist"
-
 [commands.touchid]
 run = "sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | tee /etc/pam.d/sudo_local"
 sudo = true
