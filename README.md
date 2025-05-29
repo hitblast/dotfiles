@@ -10,16 +10,16 @@ These are the primary programs that are used in this configuration:
 - Key Remapping: Karabiner Elements
 - Primary Shell Environment: `fish`
 - Development Tools:
-    1. mise (for Flutter, Ruby & some Rust-based tools)
-    2. uv (for Python environments)
-    3. homebrew (for general package management)
+  1. mise (for Flutter, Ruby & some Rust-based tools)
+  2. uv (for Python environments)
+  3. homebrew (for general package management)
 
 ## Requirements
 
 - [Homebrew](https://brew.sh)
 - [Rust](https://rust-lang.org)
 - [Xcode Command-Line Tools](https://developer.apple.com/download/more/)
-(can be installed from within macOS using `xcode-select --install`)
+  (can be installed from within macOS using `xcode-select --install`)
 
 ## Installation
 
@@ -33,7 +33,7 @@ following group of commands:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-For the next, make sure you've cloned this repository, since
+For the next step, make sure you've cloned this repository, since
 symlinking the files to their destination is mandatory.
 
 Now, install `stow` using brew:
