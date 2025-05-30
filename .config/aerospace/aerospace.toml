@@ -1,6 +1,21 @@
 # https://github.com/hitblast
 # Documentation reference: https://nikitabobko.github.io/AeroSpace/guide
 
+# All possible keys:
+    # - Letters.        a, b, c, ..., z
+    # - Numbers.        0, 1, 2, ..., 9
+    # - Keypad numbers. keypad0, keypad1, keypad2, ..., keypad9
+    # - F-keys.         f1, f2, ..., f20
+    # - Special keys.   minus, equal, period, comma, slash, backslash, quote, semicolon,
+    #                   backtick, leftSquareBracket, rightSquareBracket, space, enter, esc,
+    #                   backspace, tab, pageUp, pageDown, home, end, forwardDelete,
+    #                   sectionSign (ISO keyboards only, european keyboards only)
+    # - Keypad special. keypadClear, keypadDecimalMark, keypadDivide, keypadEnter, keypadEqual,
+    #                   keypadMinus, keypadMultiply, keypadPlus
+    # - Arrows.         left, down, up, right
+
+    # All possible modifiers: cmd, alt, ctrl, shift
+
 
 # Available commands: https://nikitabobko.github.io/AeroSpace/commands
 after-login-command = []
@@ -65,21 +80,32 @@ cmd-alt-ctrl-shift-minus = 'resize smart -50'
 cmd-alt-ctrl-shift-equal = 'resize smart +50'
 
 # Workspace declarations:
-cmd-alt-ctrl-y = 'workspace 1'
-cmd-alt-ctrl-u = 'workspace 2'
-cmd-alt-ctrl-i = 'workspace 3'
-cmd-alt-ctrl-o = 'workspace 4'
-cmd-alt-ctrl-p = 'workspace 5'
+cmd-alt-ctrl-u = 'workspace 1'
+cmd-alt-ctrl-i = 'workspace 2'
+cmd-alt-ctrl-o = 'workspace 3'
+cmd-alt-ctrl-p = 'workspace 4'
+cmd-alt-ctrl-y = 'workspace 5'
+cmd-alt-ctrl-6 = 'workspace 6'
+cmd-alt-ctrl-7 = 'workspace 7'
+cmd-alt-ctrl-8 = 'workspace 8'
+cmd-alt-ctrl-9 = 'workspace 9'
+cmd-alt-ctrl-0 = 'workspace 0'
 
 # Moving nodes:
-cmd-alt-ctrl-shift-y = 'move-node-to-workspace 1'
-cmd-alt-ctrl-shift-u = 'move-node-to-workspace 2'
-cmd-alt-ctrl-shift-i = 'move-node-to-workspace 3'
-cmd-alt-ctrl-shift-o = 'move-node-to-workspace 4'
-cmd-alt-ctrl-shift-p = 'move-node-to-workspace 5'
+cmd-alt-ctrl-shift-u = 'move-node-to-workspace 1'
+cmd-alt-ctrl-shift-i = 'move-node-to-workspace 2'
+cmd-alt-ctrl-shift-o = 'move-node-to-workspace 3'
+cmd-alt-ctrl-shift-p = 'move-node-to-workspace 4'
+cmd-alt-ctrl-shift-y = 'move-node-to-workspace 5'
+cmd-alt-ctrl-shift-6 = 'move-node-to-workspace 6'
+cmd-alt-ctrl-shift-7 = 'move-node-to-workspace 7'
+cmd-alt-ctrl-shift-8 = 'move-node-to-workspace 8'
+cmd-alt-ctrl-shift-9 = 'move-node-to-workspace 9'
+cmd-alt-ctrl-shift-0 = 'move-node-to-workspace 0'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
-cmd-alt-ctrl-backslash = 'workspace-back-and-forth'
+cmd-alt-ctrl-leftSquareBracket = 'workspace-back-and-forth'
+cmd-alt-ctrl-rightSquareBracket = 'workspace-back-and-forth'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-alt-ctrl-shift-semicolon = 'mode service'
@@ -153,45 +179,41 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
-run = 'move-node-to-workspace 3'
+run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-id = 'app.zen-browser.zen'
-run = 'move-node-to-workspace 3'
+run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
-run = 'move-node-to-workspace 1'
+run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
-run = 'move-node-to-workspace 2'
-
-[[on-window-detected]]
-if.app-id = 'com.mitchellh.ghostty'
-run = 'move-node-to-workspace 2'
+run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'xcode'
-run = 'move-node-to-workspace 2'
+run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'aseprite'
-run = 'move-node-to-workspace 4'
+run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'com.bohemiancoding.sketch3'
-run = 'move-node-to-workspace 4'
+run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
-run = 'move-node-to-workspace 5'
+run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
-run = 'move-node-to-workspace 5'
+run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'org.m0k.transmission'
-run = 'move-node-to-workspace 1'
+run = 'move-node-to-workspace 8'
 
