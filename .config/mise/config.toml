@@ -1,6 +1,4 @@
 [tools]
-"cargo:cargo-edit" = "latest"
-"cargo:trimsec" = "latest"
 flutter = "latest"
 node = "latest"
 ruby = "latest"
