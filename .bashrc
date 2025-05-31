@@ -15,6 +15,17 @@ alias lazy="lazygit"
 alias mactop="sudo mactop --color white"
 alias updateall="brew update && brew upgrade && mise upgrade && uv tool upgrade --all"
 
+# Git-specific aliases.
+alias ga="git add"
+alias gb="git branch"
+alias gc="git commit"
+alias gcl="git clone"
+alias gd="git diff"
+alias gi="git init"
+alias gl="git log --all --graph --oneline --decorate"
+alias gp="git push"
+alias gs="git status --short"
+alias gu="git pull"
 
 # Enable mise integration.
 eval "$(/opt/homebrew/bin/mise activate bash)"

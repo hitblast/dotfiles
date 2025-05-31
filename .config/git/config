@@ -1,0 +1,65 @@
+[user]
+	name = HitBlast
+	email = hitblastlive@gmail.com
+	signingkey = /Users/hitblast/.ssh/id_ed25519_github.pub
+
+[core]
+    compression = 9
+    whitespace = error
+    preloadindex = true
+
+[advice]
+    addEmptyPathspec = false
+    pushNonFastForward = false
+    statusHints = false
+
+[url "git@github.com:hitblast/"]
+    insteadOf = "int:"
+
+[url "git@github.com:"]
+    insteadOf = "ext:"
+
+[gpg]
+	format = "ssh"
+
+# $ git init
+[init]
+    defaultBranch = master
+
+# $ git status
+[status]
+    branch = true
+    showStash = true
+    showUntrackedFiles = all
+
+# $ git push
+[push]
+    autoSetupRemote = true
+    default = current
+    followTags = true
+
+# $ git tag
+[tag]
+    gpgSign = true
+
+# $ git commit
+[commit]
+	gpgsign = true
+
+# $ git fetch
+[fetch]
+	prune = true
+
+# $ git pull
+[pull]
+    default = current
+	rebase = true
+
+# $ git rebase
+[rebase]
+    autoStash = true
+    missingCommitsCheck = warn
+
+# $ git log
+[log]
+    abbrevCommit = true
