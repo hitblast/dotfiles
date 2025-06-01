@@ -55,10 +55,8 @@ Here's the command to set everything up:
 brew install cutler
 
 # Set up macOS system settings.
-cutler apply
-
-# Also install the remaining brew formulae/casks.
-cutler brew install
+# Also install all homebrew formulae/casks.
+cutler apply --with-brew
 ```
 
 - Part 2: Development setup
