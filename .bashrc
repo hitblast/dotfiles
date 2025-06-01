@@ -7,7 +7,7 @@ bundleid() {
 }
 
 alias cat="bat"
-alias cleanup_mise_brew="brew cleanup --prune=all && mise cache clean"
+alias fd="fd --color=never"
 alias ls="eza --icons=never -l"
 alias lz="lazygit"
 alias lzy="lazygit"
