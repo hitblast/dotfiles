@@ -67,4 +67,4 @@ run = "osascript -e 'tell application \"System Events\" to tell every desktop to
 
 [brew]
 formulae= ["bash", "bash-completion@2", "bat", "cargo-edit", "cutler", "dust", "eza", "fd", "fzf", "gh", "git", "hookman", "lazygit", "mactop", "mise", "mold", "mprocs", "ncspot", "neovim", "openssl@3", "ripgrep", "sccache", "starship", "stow", "tokei", "zoxide"]
-casks= ["aerospace", "alfred", "android-file-transfer", "android-studio", "appcleaner", "discord", "font-input", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zen-browser", "zulu@21"]
+casks= ["aerospace", "alfred", "android-studio", "appcleaner", "discord", "font-input", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zen-browser", "zulu@21"]
