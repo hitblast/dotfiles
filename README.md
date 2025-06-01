@@ -8,7 +8,7 @@ These are the primary programs that are used in this configuration:
 
 - Window Management (Tiling): AeroSpace
 - Key Remapping: Karabiner Elements
-- Primary Shell Environment: `fish`
+- Primary Shell Environment: `bash`
 - Development Tools:
   1. mise (for Flutter, Ruby & some Rust-based tools)
   2. uv (for Python environments)
