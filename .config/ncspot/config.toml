@@ -1,20 +1,22 @@
-audio_cache_size=500
-use_nerdfont=true
+use_nerdfont = true
+audio_cache_size = 200
+shuffle = true
 
 [theme]
 background = "#FFFFFF"
-primary = "#8C8C8C"
-secondary = "#A2A2A2"
-title = "#313131"
-playing = "#07B846"
-playing_selected = "#2DD66A"
-playing_bg = "#FFFFFF"
-highlight = "#FFFFFF"
-highlight_bg = "#000000"
-error = "#FF7C7C"
-error_bg = "#A50000"
-statusbar = "#000000"
-statusbar_progress = "#00AC4C"
+primary = "#373737"
+secondary = "#C6C6C6"
+title = "#373737"
+playing = "#009435"
+playing_selected = "#005F22"
+playing_bg = "#F5F5F5"
+highlight = "#515151"
+highlight_bg = "#C0C0C0"
+error = "#FF7373"
+error_bg = "#A00000"
+statusbar = "#272727"
+statusbar_progress = "#009A44"
 statusbar_bg = "#00AC4C"
-cmdline = "#FFFFFF"
-cmdline_bg = "#696969"
+cmdline = "#000000"
+cmdline_bg = "#FFFFFF"
+
