@@ -1,0 +1,11 @@
+-- Filetype-specific autocommands (extend as needed)
+
+-- Example: Set tab width for Python files
+-- vim.api.nvim_create_autocmd('FileType', {
+--   pattern = 'python',
+--   callback = function()
+--     vim.bo.tabstop = 4
+--     vim.bo.shiftwidth = 4
+--     vim.bo.expandtab = true
+--   end,
+-- })
