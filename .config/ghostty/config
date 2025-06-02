@@ -1,21 +1,31 @@
-# Font.
+# font
 font-family = "Input Mono Narrow"
 font-feature = liga
 font-size = 18
 font-thicken = true
 
-# Cursor.
-cursor-style = block
+# shell integrations
+shell-integration-features = no-cursor
 
-# Theme.
+# cursor
+cursor-style-blink = true
+
+# mouse
+mouse-hide-while-typing = true
+
+# theme
 theme = "xcodelight"
 
-# Window-specific settings.
-macos-titlebar-style = hidden
-macos-window-shadow = true
+# window
 window-colorspace = display-p3
-window-padding-x = 5
-window-padding-y = 5
 window-width = 101
 window-height = 28
+window-vsync = false
+
+# macOS-specific settings
+macos-titlebar-style = hidden
+macos-window-shadow = true
+
+# misc.
+alpha-blending = native
 
