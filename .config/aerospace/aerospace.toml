@@ -75,6 +75,9 @@ cmd-alt-ctrl-shift-j = 'move down'
 cmd-alt-ctrl-shift-k = 'move up'
 cmd-alt-ctrl-shift-l = 'move right'
 
+# Launch primary terminal application.
+cmd-alt-ctrl-enter = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 cmd-alt-ctrl-shift-minus = 'resize smart -50'
 cmd-alt-ctrl-shift-equal = 'resize smart +50'
@@ -132,7 +135,6 @@ minus = 'volume down'
 [mode.apps.binding]
 esc = 'mode main'
 w = ['exec-and-forget open -a /Applications/WhatsApp.app', 'mode main']
-g = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
 b = ['exec-and-forget open -a /Applications/Safari.app', 'mode main']
 s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
 k = ['exec-and-forget open -a /Applications/KeyboardCleanTool.app', 'mode main']
