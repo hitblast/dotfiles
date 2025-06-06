@@ -4,6 +4,9 @@ export TERM=xterm-256color
 # Load local binaries to PATH.
 export PATH="$HOME/.local/bin:$PATH"
 
+# Also use uutils-coreutils to replace regular Unix commands.
+export PATH="/opt/homebrew/opt/uutils-coreutils/libexec/uubin:$PATH"
+
 # ---
 
 # Load Homebrew.
