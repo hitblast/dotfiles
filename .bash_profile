@@ -13,7 +13,16 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # This is to ensure compliance with the custom cargo configuration.
 export CARGO_HOME="$HOME/.config/cargo"
 
-# Enable bash.
+# Cache preprocessor steps in sccache for even faster compile times.
+export SCCACHE_DIRECT=true
+
+# Faster C/C++ compile times by utilizing sccache.
+export CC="sccache clang"
+export CXX="sccache clang++"
+
+# ---
+
+# Enable bash autocompletions.
 # Here, bash-completion@2 is set up because I'm not using system bash,
 # which is in v3 for Macs even in the latest macOS Sonoma builds.
 # I'll also enable completions for Homebrew in the process.
@@ -34,13 +43,11 @@ then
   fi
 fi
 
+# ---
+
 # Added by OrbStack: command-line tools and integration
 # Comment this line if you don't want it to be added again.
 source ~/.orbstack/shell/init.bash 2>/dev/null || :
-
-# Faster C/C++ compile times by utilizing sccache.
-export CC="sccache clang"
-export CXX="sccache clang++"
 
 # Source for the .bashrc file.
 [[ -s ~/.bashrc ]] && source ~/.bashrc
