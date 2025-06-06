@@ -1,2 +1,3 @@
 [build]
 rustc-wrapper = "/opt/homebrew/bin/sccache"
+rustflags = ["-C", "linker=xcrun -find ld"]
