@@ -38,5 +38,9 @@ fi
 # Comment this line if you don't want it to be added again.
 source ~/.orbstack/shell/init.bash 2>/dev/null || :
 
+# Faster C/C++ compile times by utilizing sccache.
+export CC="sccache clang"
+export CXX="sccache clang++"
+
 # Source for the .bashrc file.
 [[ -s ~/.bashrc ]] && source ~/.bashrc
