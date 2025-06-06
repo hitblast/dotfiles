@@ -10,6 +10,9 @@ export PATH="$HOME/.local/bin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+# This is to ensure compliance with the custom cargo configuration.
+export CARGO_HOME="$HOME/.config/cargo"
+
 # Enable bash.
 # Here, bash-completion@2 is set up because I'm not using system bash,
 # which is in v3 for Macs even in the latest macOS Sonoma builds.
