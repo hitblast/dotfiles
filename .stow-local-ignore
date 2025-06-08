@@ -1,7 +1,4 @@
 \.DS_Store
-.git
-.gitignore
-macos-mods.sh
-Brewfile
+\.git
+\.gitignore
 README.md
-.*.old
