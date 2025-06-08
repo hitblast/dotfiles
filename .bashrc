@@ -8,7 +8,6 @@ bundleid() {
 
 alias cat="bat"
 alias fd="fd --color=never"
-alias lz="lazygit"
 alias mactop="sudo mactop --color white"
 
 # Git-specific aliases.

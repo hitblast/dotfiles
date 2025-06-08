@@ -5,3 +5,4 @@
 .config/zed/*
 !.config/zed/settings.json
 .config/github-copilot
+.config/ncspot/userstate.cbor
