@@ -1,1 +1,7 @@
 .DS_Store
+.config/flutter/tool_state
+.config/cargo/*
+!.config/cargo/config.toml
+.config/zed/*
+!.config/zed/settings.json
+.config/github-copilot
