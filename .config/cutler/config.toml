@@ -56,10 +56,6 @@ hostname = "darkstar"
 run = "scutil --set ComputerName $hostname && scutil --set HostName $hostname && scutil --set LocalHostName $hostname"
 sudo = true
 
-[commands.touchid]
-run = "sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | tee /etc/pam.d/sudo_local"
-sudo = true
-
 [commands.wall]
 run = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file'"
 
