@@ -62,5 +62,6 @@ run = "osascript -e 'tell application \"System Events\" to tell every desktop to
 # Homebrew formula / casks listing
 
 [brew]
-formulae= ["bash", "bash-completion@2", "bat", "cargo-edit", "cmatrix", "cutler", "dust", "fd", "fzf", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mise", "ncspot", "neovim", "openssl@3", "ripgrep", "sccache", "starship", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
-casks= ["aerospace", "alfred", "android-studio", "appcleaner", "discord", "font-input", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zen-browser", "zulu@21"]
+formulae= ["bash", "bash-completion@2", "bat", "ca-certificates", "cargo-edit", "cmatrix", "cutler", "dust", "fd", "fzf", "gettext", "git", "hookman", "lazygit", "libgit2", "libssh2", "libunistring", "libuv", "libyaml", "lpeg", "luajit", "luv", "mactop", "mise", "ncspot", "ncurses", "neovim", "oniguruma", "openssl@3", "pcre2", "portaudio", "ripgrep", "sccache", "starship", "stow", "tokei", "tree-sitter", "unibilium", "usage", "utf8proc", "uutils-coreutils", "uv", "zoxide"]
+casks= ["aerospace", "android-studio", "appcleaner", "discord", "font-input", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zulu@21"]
+taps = ["hitblast/tap", "nikitabobko/tap"]
