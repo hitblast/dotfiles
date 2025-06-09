@@ -1,5 +1,4 @@
 {
-    "global": { "unsafe_ui": true },
     "profiles": [
         {
             "complex_modifications": {
