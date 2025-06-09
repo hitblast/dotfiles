@@ -37,8 +37,8 @@ expose-group-apps = true
 [set.HIToolBox]
 AppleFnUsageType = 0
 
-[set.CloudSubscriptionFeatures.optIn]
-545129924 = false
+# [set.CloudSubscriptionFeatures.optIn]
+# 545129924 = false
 
 [set.NSGlobalDomain]
 NSDocumentSaveNewDocumentsToCloud = false
