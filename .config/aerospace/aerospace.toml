@@ -76,7 +76,10 @@ cmd-alt-ctrl-shift-k = 'move up'
 cmd-alt-ctrl-shift-l = 'move right'
 
 # Launch primary terminal application.
-cmd-alt-ctrl-enter = ['exec-and-forget open -a /Applications/Ghostty.app', 'mode main']
+cmd-alt-ctrl-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
+
+# Empty trash.
+cmd-alt-ctrl-backspace = 'exec-and-forget rm -rf ~/.Trash/*'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 cmd-alt-ctrl-shift-minus = 'resize smart -50'
@@ -112,7 +115,6 @@ cmd-alt-ctrl-rightSquareBracket = 'workspace-back-and-forth'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-alt-ctrl-shift-semicolon = 'mode service'
-cmd-alt-ctrl-shift-enter = 'mode apps'
 cmd-alt-ctrl-shift-backslash = 'mode command'
 
 
@@ -129,15 +131,6 @@ esc = 'mode main'
 k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill coreaudiod
 equal = 'volume up'
 minus = 'volume down'
-
-
-# 'apps' binding mode declaration
-[mode.apps.binding]
-esc = 'mode main'
-w = ['exec-and-forget open -a /Applications/WhatsApp.app', 'mode main']
-b = ['exec-and-forget open -a /Applications/Safari.app', 'mode main']
-s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
-k = ['exec-and-forget open -a /Applications/KeyboardCleanTool.app', 'mode main']
 
 
 # App-specific callbacks
