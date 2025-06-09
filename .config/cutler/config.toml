@@ -62,6 +62,6 @@ run = "osascript -e 'tell application \"System Events\" to tell every desktop to
 # Homebrew formula / casks listing
 
 [brew]
-formulae= ["bash", "bash-completion@2", "bat", "cargo-edit", "cmatrix", "cutler", "dust", "fd", "fzf", "git", "hookman", "lazygit", "libyaml", "mactop", "mise", "ncspot", "neovim", "ripgrep", "sccache", "starship", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
+formulae= ["bash", "bash-completion@2", "bat", "cargo-edit", "cmatrix", "cutler", "dust", "fd", "fzf", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ncspot", "neovim", "ripgrep", "sccache", "starship", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
 casks= ["aerospace", "android-studio", "appcleaner", "discord", "font-input", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zulu@21"]
 taps = ["hitblast/tap", "nikitabobko/tap"]
