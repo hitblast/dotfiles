@@ -78,9 +78,6 @@ cmd-alt-ctrl-shift-l = 'move right'
 # Launch primary terminal application.
 cmd-alt-ctrl-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
 
-# Empty trash.
-cmd-alt-ctrl-backspace = 'exec-and-forget rm -rf ~/.Trash/*'
-
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 cmd-alt-ctrl-shift-minus = 'resize smart -50'
 cmd-alt-ctrl-shift-equal = 'resize smart +50'
