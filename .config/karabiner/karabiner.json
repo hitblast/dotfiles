@@ -68,12 +68,6 @@
                     "ignore": false
                 }
             ],
-            "fn_function_keys": [
-                {
-                    "from": { "key_code": "f4" },
-                    "to": [{ "key_code": "vk_none" }]
-                }
-            ],
             "name": "hyper key with gear shifters",
             "selected": true,
             "simple_modifications": [
