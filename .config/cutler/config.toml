@@ -41,6 +41,8 @@ AppleFnUsageType = 0
 # 545129924 = false
 
 [set.NSGlobalDomain]
+KeyRepeat = 2
+InitialKeyRepeat = 15
 NSDocumentSaveNewDocumentsToCloud = false
 
 [set.NSGlobalDomain.com.apple.keyboard]
@@ -63,5 +65,5 @@ run = "osascript -e 'tell application \"System Events\" to tell every desktop to
 
 [brew]
 formulae= ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "cmatrix", "cutler", "drs", "dust", "fd", "fzf", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ncspot", "neovim", "ninja", "ripgrep", "sccache", "starship", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
-casks= ["aerospace", "android-studio", "appcleaner", "discord", "font-input", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "onyx", "orbstack", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zulu@21"]
+casks= ["aerospace", "android-studio", "appcleaner", "container", "discord", "font-input", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "onyx", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zulu@21"]
 taps = ["hitblast/tap", "nikitabobko/tap"]
