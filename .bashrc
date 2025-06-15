@@ -19,6 +19,7 @@ alias gch="git checkout"
 alias gcl="git clone"
 alias gl="git log --all --graph --oneline --decorate"
 alias gp="git push"
+alias gpn="git push --no-verify"
 alias gt="git tag"
 alias gpu="git pull"
 
