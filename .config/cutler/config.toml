@@ -44,6 +44,8 @@ AppleFnUsageType = 0
 KeyRepeat = 2
 InitialKeyRepeat = 15
 NSDocumentSaveNewDocumentsToCloud = false
+NSAutomaticInlinePredictionEnabled = 0
+NSAutomaticSpellingCorrectionEnabled = 0
 
 [set.NSGlobalDomain.com.apple.keyboard]
 fnState = false
