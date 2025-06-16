@@ -69,3 +69,7 @@ mise install
 ```
 
 This will install the rest of the required runtimes in this configuration.
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE).
