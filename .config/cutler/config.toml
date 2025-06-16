@@ -37,6 +37,11 @@ expose-group-apps = true
 [set.HIToolbox]
 AppleFnUsageType = 0
 
+[set.screencapture]
+show-thumbnail = false
+target = "clipboard"
+type = "png"
+
 # [set.CloudSubscriptionFeatures.optIn]
 # 545129924 = false
 
