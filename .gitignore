@@ -1,8 +1,15 @@
 .DS_Store
-.config/flutter/tool_state
+
+# cargo
 .config/cargo/*
 !.config/cargo/config.toml
+
+# zed
 .config/zed/*
-!.config/zed/settings.json
+!.config/zed/*.json
+
+# github copilot
 .config/github-copilot
+
+# ncspot
 .config/ncspot/userstate.cbor
