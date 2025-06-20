@@ -8,8 +8,7 @@ return {
   },
   lazy = false,
   keys = {
-    { '<Leader>ee', ':Neotree filesystem reveal float<CR>', desc = 'NeoTree filesystem reveal', silent = true },
-    { '<Leader>eb', ':Neotree buffers reveal float<CR>', desc = 'NeoTree buffers reveal', silent = true },
+    { '<Leader>e', ':Neotree filesystem reveal float<CR>', desc = 'Show file explorer', silent = true },
   },
   opts = {
     filesystem = {
