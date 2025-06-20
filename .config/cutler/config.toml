@@ -66,11 +66,63 @@ run = "scutil --set ComputerName $hostname && scutil --set HostName $hostname &&
 sudo = true
 
 [commands.wall]
-run = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"~/Pictures/wall.png\"'"
+run = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"~/Pictures/bg-wall.png\"'"
 
 # Homebrew formula / casks listing
 
 [brew]
-formulae= ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "cmatrix", "cutler", "drs", "dust", "fd", "fzf", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ncspot", "neovim", "ninja", "ripgrep", "sccache", "starship", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
-casks= ["aerospace", "android-studio", "appcleaner", "container", "discord", "font-input", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "onyx", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zulu@21"]
+formulae = [
+    "bash",
+    "bash-completion@2",
+    "bat",
+    "cargo-edit",
+    "cmake",
+    "cmatrix",
+    "cutler",
+    "drs",
+    "dust",
+    "fd",
+    "fzf",
+    "gh",
+    "git",
+    "hookman",
+    "lazygit",
+    "libyaml",
+    "mactop",
+    "mas",
+    "mise",
+    "ncspot",
+    "neovim",
+    "ninja",
+    "ripgrep",
+    "sccache",
+    "starship",
+    "stow",
+    "tokei",
+    "uutils-coreutils",
+    "uv",
+    "zoxide",
+]
+casks = [
+    "aerospace",
+    "android-studio",
+    "appcleaner",
+    "container",
+    "discord",
+    "font-input",
+    "ghostty",
+    "hot",
+    "iina",
+    "karabiner-elements",
+    "keyboardcleantool",
+    "onyx",
+    "protonvpn",
+    "spotify",
+    "transmission",
+    "whatsapp",
+    "zed",
+    "zen",
+    "zulu@21",
+]
 taps = ["hitblast/tap", "nikitabobko/tap"]
+no-deps = true
