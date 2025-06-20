@@ -12,6 +12,7 @@ alias lz="lazygit"
 alias mactop="sudo mactop --color white"
 
 # Git-specific aliases.
+alias gp="git push"
 alias gpn="git push --no-verify"
 alias gt="git tag"
 alias gco="git checkout"
