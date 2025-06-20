@@ -8,7 +8,8 @@ return {
   },
   lazy = false,
   keys = {
-    { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
+    { '<Leader>ee', ':Neotree filesystem reveal float<CR>', desc = 'NeoTree filesystem reveal', silent = true },
+    { '<Leader>eb', ':Neotree buffers reveal float<CR>', desc = 'NeoTree buffers reveal', silent = true },
   },
   opts = {
     filesystem = {
@@ -20,7 +21,7 @@ return {
       },
       window = {
         mappings = {
-          ['\\'] = 'close_window',
+          ['<Leader>e'] = 'close_window',
         },
       },
     },
