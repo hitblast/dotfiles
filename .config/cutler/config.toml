@@ -51,9 +51,7 @@ InitialKeyRepeat = 15
 NSDocumentSaveNewDocumentsToCloud = false
 NSAutomaticInlinePredictionEnabled = 0
 NSAutomaticSpellingCorrectionEnabled = 0
-
-[set.NSGlobalDomain.com.apple.keyboard]
-fnState = false
+"com.apple.keyboard.fnState" = false
 
 # External command execution
 # This includes setting the global hostname and configuring sudo authentication with Touch ID.

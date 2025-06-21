@@ -1,5 +1,5 @@
 -- Load all core configuration (options, keymaps, autocommands)
-require('hitblast.core.init')
+require 'hitblast.core.init'
 
 -- enable lazy.nvim
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -14,7 +14,7 @@ end
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
-require('lazy').setup(require('hitblast.plugins'), {
+require('lazy').setup(require 'hitblast.plugins', {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
       cmd = '⌘',
