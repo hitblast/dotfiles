@@ -10,14 +10,13 @@ These are the primary programs that are used in this configuration:
 - Key Remapping: Karabiner Elements
 - Primary Shell Environment: `bash`
 - Development Tools:
-  1. mise (for Flutter, Ruby & some Rust-based tools)
+  1. mise (for Ruby, Rust and other toolchains)
   2. uv (for Python environments)
   3. homebrew (for general package management)
 
 ## Requirements
 
 - [Homebrew](https://brew.sh)
-- [Rust](https://rust-lang.org)
 - [Xcode Command-Line Tools](https://developer.apple.com/download/more/)
   (can be installed from within macOS using `xcode-select --install`)
 
