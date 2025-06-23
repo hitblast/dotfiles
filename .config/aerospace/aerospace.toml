@@ -113,6 +113,7 @@ cmd-alt-ctrl-rightSquareBracket = 'workspace-back-and-forth'
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-alt-ctrl-shift-semicolon = 'mode service'
 cmd-alt-ctrl-shift-backslash = 'mode command'
+cmd-alt-ctrl-shift-enter = 'mode apps'
 
 
 # 'service' binding mode declaration
@@ -126,8 +127,15 @@ f = ['layout floating tiling', 'mode main'] # toggle between floating and tiling
 [mode.command.binding]
 esc = 'mode main'
 k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill coreaudiod
-equal = 'volume up'
-minus = 'volume down'
+
+
+# 'apps' binding mode declaration
+[mode.apps.binding]
+esc = 'mode main'
+b = ['exec-and-forget open -a Safari', 'mode main']
+c = ['exec-and-forget open -a Zed', 'mode main']
+s = ['exec-and-forget open -a Spotify', 'mode main']
+w = ['exec-and-forget open -a WhatsApp', 'mode main']
 
 
 # App-specific callbacks
