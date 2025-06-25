@@ -1,9 +1,9 @@
 [tools]
 flutter = "latest"
-mdbook = "latest"
 node = "latest"
 ruby = "latest"
 rust = "latest"
+watchexec = "latest"
 
 [settings]
 python.uv_venv_auto = true

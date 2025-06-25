@@ -59,7 +59,12 @@ NSAutomaticSpellingCorrectionEnabled = 0
 hostname = "darkstar"
 
 [commands.dotfiles]
-run = "mkdir ~/Developer && git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles && cd ~/Developer/dotfiles && stow . -t ~"
+run = """
+mkdir ~/Developer
+git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
+cd ~/Developer/dotfiles
+stow . -t ~
+"""
 ensure-first = true
 
 [commands.mise]
@@ -67,11 +72,16 @@ run = "mise install"
 ensure-first = true
 
 [commands.hostname]
-run = "scutil --set ComputerName $hostname && scutil --set HostName $hostname && scutil --set LocalHostName $hostname"
+run = """
+scutil --set LocalHostName $hostname
+scutil --set HostName $hostname
+scutil --set ComputerName $hostname
+"""
 sudo = true
 
 [commands.wallpaper]
 run = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"~/Pictures/bg-wall.png\"'"
+
 
 # Homebrew formula / casks listing
 
