@@ -133,7 +133,7 @@ k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill coreaudiod
 [mode.apps.binding]
 esc = 'mode main'
 b = ['exec-and-forget open -a Safari', 'mode main']
-c = ['exec-and-forget open -a Zed', 'mode main']
+z = ['exec-and-forget open -a Zed', 'mode main']
 s = ['exec-and-forget open -a Spotify', 'mode main']
 w = ['exec-and-forget open -a WhatsApp', 'mode main']
 
