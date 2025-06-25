@@ -21,6 +21,7 @@ theme = "rose-pine-dawn"
 window-colorspace = display-p3
 window-width = 101
 window-height = 28
+window-vsync = false
 
 # macOS-specific settings
 macos-titlebar-style = hidden
