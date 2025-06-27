@@ -78,18 +78,6 @@
                 {
                     "from": { "key_code": "right_option" },
                     "to": [{ "key_code": "period" }]
-                },
-                {
-                    "from": { "pointing_button": "button3" },
-                    "to": [{ "consumer_key_code": "al_local_machine_browser" }]
-                },
-                {
-                    "from": { "pointing_button": "button4" },
-                    "to": [{ "apple_vendor_keyboard_key_code": "mission_control" }]
-                },
-                {
-                    "from": { "pointing_button": "button5" },
-                    "to": [{ "apple_vendor_keyboard_key_code": "launchpad" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
