@@ -14,12 +14,6 @@ These are the primary programs that are used in this configuration:
   2. uv (for Python environments)
   3. homebrew (for general package management)
 
-## Requirements
-
-- [Homebrew](https://brew.sh)
-- [Xcode Command-Line Tools](https://developer.apple.com/download/more/)
-  (can be installed from within macOS using `xcode-select --install`)
-
 ## Installation
 
 I have made [cutler](https://hitblast.github.io/cutler) to automate my entire macOS setup pipeline. Here's how it goes:
@@ -37,7 +31,6 @@ cutler apply --with-brew
 ```
 
 3. Wait for all the processes to complete.
-
 
 ## License
 
