@@ -21,7 +21,7 @@ I have made [cutler](https://hitblast.github.io/cutler) to automate my entire ma
 1. Install the `cutler` CLI:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/hitblast/cutler/main/install.sh)"
+/bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/hitblast/cutler/main/install.sh)"
 ```
 
 2. Run the following command:
