@@ -8,15 +8,9 @@ bundleid() {
 
 alias cat="bat"
 alias fd="fd --color=never"
+alias find="fd --color=never"
 alias lz="lazygit"
 alias mactop="sudo mactop --color white"
-
-# Git-specific aliases.
-alias gp="git push"
-alias gpn="git push --no-verify"
-alias gt="git tag"
-alias gco="git checkout"
-alias gc="git commit"
 
 # Enable mise integration.
 eval "$(/opt/homebrew/bin/mise activate bash)"

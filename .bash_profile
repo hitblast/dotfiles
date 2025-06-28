@@ -46,6 +46,10 @@ then
   fi
 fi
 
+# Enable bash autocompletions for git.
+# Reference: /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash
+source "$(xcode-select -p)/usr/share/git-core/git-completion.bash"
+
 # ---
 
 # Added by OrbStack: command-line tools and integration
