@@ -13,3 +13,6 @@
 
 # ncspot
 .config/ncspot/userstate.cbor
+
+# flutter
+.config/flutter/*
