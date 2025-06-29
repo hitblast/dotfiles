@@ -27,7 +27,7 @@ I have made [cutler](https://hitblast.github.io/cutler) to automate my entire ma
 2. Run the following command:
 
 ```bash
-cutler apply --with-brew
+cutler apply --with-brew -y
 ```
 
 3. Wait for all the processes to complete.
