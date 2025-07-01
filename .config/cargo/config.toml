@@ -1,3 +1,2 @@
 [build]
 rustc-wrapper = "/opt/homebrew/bin/sccache"
-rustflags = ["-C", "linker=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"]
