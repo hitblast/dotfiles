@@ -113,7 +113,7 @@ cmd-alt-ctrl-rightSquareBracket = 'workspace-back-and-forth'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-alt-ctrl-shift-semicolon = 'mode service'
-cmd-alt-ctrl-shift-backslash = 'mode command'
+cmd-alt-ctrl-shift-enter = 'mode command'
 
 
 # 'service' binding mode declaration
