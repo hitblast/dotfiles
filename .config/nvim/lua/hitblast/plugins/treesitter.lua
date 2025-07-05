@@ -15,6 +15,7 @@ return {
       'query',
       'vim',
       'vimdoc',
+      'rust',
     },
     auto_install = true,
     highlight = {
