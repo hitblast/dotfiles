@@ -82,6 +82,7 @@ sudo = true
 # Homebrew formula / casks listing
 
 [brew]
-formulae = ["bash", "bash-completion@2", "bat", "ca-certificates", "cargo-edit", "cmake", "cmatrix", "drs", "dust", "fd", "fzf", "gettext", "gh", "git", "hookman", "lazygit", "libgit2", "libssh2", "libunistring", "libyaml", "mactop", "mas", "mise", "ncspot", "ncurses", "ninja", "oniguruma", "openssl@3", "pcre2", "portaudio", "ripgrep", "sccache", "starship", "stow", "tokei", "usage", "uutils-coreutils", "uv", "zoxide"]
+formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "cmatrix", "drs", "dust", "fd", "fzf", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ncspot", "neovim", "ninja", "ripgrep", "sccache", "starship", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
 casks = ["aerospace", "android-studio", "appcleaner", "container", "discord", "font-input", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zulu@21"]
 taps = ["hitblast/tap", "nikitabobko/tap"]
+no-deps = true
