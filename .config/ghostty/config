@@ -14,8 +14,7 @@ cursor-style-blink = true
 mouse-hide-while-typing = true
 
 # theme
-foreground = "#0c0c0c"
-theme = "rose-pine-dawn"
+theme = "xcodelight"
 
 # window
 window-colorspace = display-p3
