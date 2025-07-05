@@ -80,7 +80,7 @@ scutil --set ComputerName $hostname
 sudo = true
 
 [commands.wallpaper]
-run = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"~/Pictures/bg-wall.png\"'"
+run = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"~/Pictures/wall.png\"'"
 
 
 # Homebrew formula / casks listing
