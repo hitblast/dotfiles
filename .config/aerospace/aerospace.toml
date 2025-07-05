@@ -77,7 +77,8 @@ cmd-alt-ctrl-shift-l = 'move right'
 
 # Launch primary terminal application.
 cmd-alt-ctrl-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
-cmd-alt-ctrl-r = 'exec-and-forget open -a Finder'
+cmd-alt-ctrl-e = 'exec-and-forget open -a Finder'
+cmd-alt-ctrl-b = 'exec-and-forget open -a Safari'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 cmd-alt-ctrl-shift-minus = 'resize smart -50'
