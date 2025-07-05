@@ -4,7 +4,7 @@ scrollback-limit = 1000000
 # font
 font-family = "Input Mono Narrow"
 font-feature = liga
-font-size = 18
+font-size = 16
 font-thicken = true
 
 # shell integrations
