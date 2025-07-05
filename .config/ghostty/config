@@ -23,6 +23,7 @@ theme = "xcodelight"
 window-colorspace = display-p3
 window-width = 101
 window-height = 28
+window-save-state = always
 
 # macOS-specific settings
 macos-icon = "chalkboard"
@@ -33,8 +34,6 @@ macos-window-shadow = true
 alpha-blending = native
 
 # keybinds
-keybind = ctrl+n=new_window
-
 keybind = ctrl+h=goto_split:left
 keybind = ctrl+j=goto_split:bottom
 keybind = ctrl+k=goto_split:top
@@ -44,13 +43,6 @@ keybind = ctrl+w>h=new_split:left
 keybind = ctrl+w>j=new_split:down
 keybind = ctrl+w>k=new_split:up
 keybind = ctrl+w>l=new_split:right
-keybind = ctrl+w>f=toggle_split_zoom
-
-keybind = ctrl+w>n=next_tab
-keybind = ctrl+w>p=previous_tab
 
 keybind = super+r=reload_config
-
-window-save-state = always
-
 
