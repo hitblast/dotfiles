@@ -1,3 +1,6 @@
+# scrollback
+scrollback-limit = 1000000
+
 # font
 font-family = "Input Mono Narrow"
 font-feature = liga
@@ -28,4 +31,26 @@ macos-window-shadow = true
 
 # misc.
 alpha-blending = native
+
+# keybinds
+keybind = ctrl+n=new_window
+
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
+
+keybind = ctrl+w>h=new_split:left
+keybind = ctrl+w>j=new_split:down
+keybind = ctrl+w>k=new_split:up
+keybind = ctrl+w>l=new_split:right
+keybind = ctrl+w>f=toggle_split_zoom
+
+keybind = ctrl+w>n=next_tab
+keybind = ctrl+w>p=previous_tab
+
+keybind = super+r=reload_config
+
+window-save-state = always
+
 
