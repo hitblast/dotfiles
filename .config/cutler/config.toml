@@ -79,10 +79,6 @@ scutil --set ComputerName $hostname
 """
 sudo = true
 
-[commands.wallpaper]
-run = "osascript -e 'tell application \"System Events\" to tell every desktop to set picture to \"~/System/Library/Desktop Pictures/Big Sur Mountains.madesktop\"'"
-
-
 # Homebrew formula / casks listing
 
 [brew]
