@@ -1,5 +1,6 @@
 {
   "agent": {
+    "enabled": false, // trying to resolve some technical debt
     "default_model": {
       "provider": "copilot_chat",
       "model": "o3-mini"
@@ -18,6 +19,7 @@
     "button": false
   },
   "outline_panel": {
+    "indent_size": 25,
     "dock": "right"
   },
   "project_panel": {
@@ -32,7 +34,6 @@
     "git_status": true,
     "file_icons": true
   },
-  "show_user_picture": false,
   "centered_layout": {
     "left_padding": 0.1,
     "right_padding": 0.1
@@ -50,7 +51,7 @@
   "git": {
     "inline_blame": {
       "enabled": true,
-      "delay_ms": 800,
+      "delay_ms": 500,
       "min_column": 80
     }
   },
@@ -65,8 +66,8 @@
   "relative_line_numbers": true,
   "theme": {
     "mode": "light",
-    "light": "Rosé Pine Dawn",
-    "dark": "Rosé Pine Dawn"
+    "light": "Fleet Dark",
+    "dark": "Fleet Dark"
   },
   "terminal": {
     "blinking": "on",
@@ -76,13 +77,14 @@
     },
     "detect_venv": {
       "on": {
-        "directories": [".env", "env", ".venv", "venv"],
+        "directories": [".venv", "venv"],
         "activate_script": "default"
       }
     }
   },
   "auto_install_extensions": {
-    "git-firefly": true
+    "git-firefly": true,
+    "fleet-themes": true
   },
   "file_scan_exclusions": [
     "**/.git",
