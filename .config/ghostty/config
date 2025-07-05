@@ -34,10 +34,10 @@ macos-window-shadow = true
 alpha-blending = native
 
 # keybinds
-keybind = ctrl+w>h=goto_split:left
-keybind = ctrl+w>j=goto_split:bottom
-keybind = ctrl+w>k=goto_split:top
-keybind = ctrl+w>l=goto_split:right
+keybind = ctrl+h=goto_split:left
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+l=goto_split:right
 
 keybind = ctrl+n>h=new_split:left
 keybind = ctrl+n>j=new_split:down
@@ -45,4 +45,3 @@ keybind = ctrl+n>k=new_split:up
 keybind = ctrl+n>l=new_split:right
 
 keybind = super+r=reload_config
-
