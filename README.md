@@ -24,7 +24,9 @@ I have made [cutler](https://hitblast.github.io/cutler) to automate my entire ma
 /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/hitblast/cutler/main/install.sh)"
 ```
 
-2. Run the following command:
+2. Copy [.config/cutler/config.toml](https://github.com/hitblast/dotfiles/blob/master/.config/cutler/config.toml) to `~/.config/cutler/config.toml` in your machine.
+
+3. Run the following command:
 
 ```bash
 cutler apply --with-brew -y
