@@ -1,6 +1,5 @@
 [tools]
 flutter = "latest"
-node = "latest"
 ruby = "latest"
 rust = "latest"
 watchexec = "latest"

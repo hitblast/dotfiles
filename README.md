@@ -1,22 +1,20 @@
 # dotfiles
 
-Configuration files for my local development environment
+Configuration files for my local development environment.
 
 ## Programs
 
 These are the primary programs that are used in this configuration:
 
-- Window Management (Tiling): AeroSpace
-- Key Remapping: Karabiner Elements
-- Primary Shell Environment: `bash`
+- Setup Pipeline: [cutler](https://cutlercli.github.io) (my own setup pipeline automation tool)
+- Tiling Window Manager: [AeroSpace](https://github.com/nikitabobko/AeroSpace)
+- Key Remapping: [Karabiner Elements](https://karabiner-elements.pqrs.org)
+- Default Shell: `/opt/homebrew/bin/bash`
 - Development Tools:
   1. mise (for Flutter, Ruby, Rust and other toolchains)
   2. uv (for Python environments)
-  3. homebrew (for general package management)
 
 ## Installation
-
-I have made [cutler](https://cutlercli.github.io) to automate my entire macOS setup pipeline. Here's how it goes:
 
 1. Install the `cutler` CLI:
 
@@ -36,4 +34,4 @@ cutler apply --with-brew -y
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE).
+This repository is licensed under the [MIT License](./LICENSE).
