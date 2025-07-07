@@ -168,7 +168,7 @@ if.app-id = 'ch.protonvpn.mac'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.hitblast.alter'
+if.app-id = 'net.whatsapp.WhatsApp'
 run = 'layout floating'
 
 [[on-window-detected]]
@@ -198,10 +198,6 @@ run = 'move-node-to-workspace 3'
 [[on-window-detected]]
 if.app-id = 'com.bohemiancoding.sketch3'
 run = 'move-node-to-workspace 3'
-
-[[on-window-detected]]
-if.app-id = 'net.whatsapp.WhatsApp'
-run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
