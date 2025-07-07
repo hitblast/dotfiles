@@ -2,7 +2,7 @@
 scrollback-limit = 1000000
 
 # font
-font-family = "Input Mono Narrow"
+font-family = "Liga SFMono Nerd Font"
 font-feature = liga
 font-size = 16
 font-thicken = true
