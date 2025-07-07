@@ -16,7 +16,7 @@ These are the primary programs that are used in this configuration:
 
 ## Installation
 
-I have made [cutler](https://hitblast.github.io/cutler) to automate my entire macOS setup pipeline. Here's how it goes:
+I have made [cutler](https://cutlercli.github.io) to automate my entire macOS setup pipeline. Here's how it goes:
 
 1. Install the `cutler` CLI:
 
