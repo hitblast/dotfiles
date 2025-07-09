@@ -1,78 +1,17 @@
-[remote]
-url = "https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml"
-autosync = true
-
-[set.menuextra.clock]
-FlashDateSeparators = true
-DateFormat = "\"h:mm:ss\""
-Show24Hour = false
-ShowAMPM = false
-ShowDate = 2
-ShowDayOfWeek = false
-ShowSeconds = true
-
-[set.finder]
-AppleShowAllFiles = true
-CreateDesktop = false
-ShowPathbar = true
-ShowExternalHardDrivesOnDesktop = false
-FXRemoveOldTrashItems = true
-FXEnableExtensionChangeWarning = false
-FXDefaultSearchScope = "SCcf"
-
-[set.AppleMultitouchTrackpad]
-FirstClickThreshold = 0
-TrackpadThreeFingerDrag = true
-
-[set.dock]
-tilesize = 64
-autohide = true
-static-only = true
-show-recents = false
-magnification = false
-orientation = "bottom"
-mineffect = "suck"
-autohide-delay = 0
-autohide-time-modifier = 0.6
-expose-group-apps = true
-
-[set.HIToolbox]
-AppleFnUsageType = 0
-
-[set.screencapture]
-show-thumbnail = false
-target = "clipboard"
-type = "png"
-
-# [set.CloudSubscriptionFeatures.optIn]
-# 545129924 = false
-
-[set.NSGlobalDomain]
-KeyRepeat = 2
-InitialKeyRepeat = 15
-NSDocumentSaveNewDocumentsToCloud = false
-NSAutomaticInlinePredictionEnabled = 0
-NSAutomaticSpellingCorrectionEnabled = 0
-"com.apple.keyboard.fnState" = false
-
-# External command execution
-# This includes setting the global hostname and configuring sudo authentication with Touch ID.
-
-[vars]
-hostname = "darkstar"
+[brew]
+casks = ["aerospace", "android-studio", "appcleaner", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zulu@21"]
+formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "cmatrix", "drs", "dust", "fd", "fzf", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ncspot", "ninja", "ripgrep", "sccache", "starship", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
+no-deps = true
+taps = ["hitblast/tap", "nikitabobko/tap"]
 
 [commands.dotfiles]
+ensure-first = true
 run = """
 mkdir ~/Developer
 git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
 cd ~/Developer/dotfiles
 stow . -t ~
 """
-ensure-first = true
-
-[commands.mise]
-run = "mise install"
-ensure-first = true
 
 [commands.hostname]
 run = """
@@ -82,10 +21,63 @@ scutil --set ComputerName $hostname
 """
 sudo = true
 
-# Homebrew formula / casks listing
+[commands.mise]
+ensure-first = true
+run = "mise install"
 
-[brew]
-formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "cmatrix", "drs", "dust", "fd", "fzf", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ncspot", "ninja", "ripgrep", "sccache", "starship", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
-casks = ["aerospace", "android-studio", "appcleaner", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zulu@21"]
-taps = ["hitblast/tap", "nikitabobko/tap"]
-no-deps = true
+[remote]
+autosync = true
+url = "https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml"
+
+[set.AppleMultitouchTrackpad]
+FirstClickThreshold = 0
+TrackpadThreeFingerDrag = true
+
+[set.HIToolbox]
+AppleFnUsageType = 0
+
+[set.NSGlobalDomain]
+InitialKeyRepeat = 15
+KeyRepeat = 2
+NSAutomaticInlinePredictionEnabled = 0
+NSAutomaticSpellingCorrectionEnabled = 0
+NSDocumentSaveNewDocumentsToCloud = false
+"com.apple.keyboard.fnState" = false
+
+[set.dock]
+autohide = true
+autohide-delay = 0
+autohide-time-modifier = 0.6
+expose-group-apps = true
+magnification = false
+mineffect = "suck"
+orientation = "bottom"
+show-recents = false
+static-only = true
+tilesize = 64
+
+[set.finder]
+AppleShowAllFiles = true
+CreateDesktop = false
+FXDefaultSearchScope = "SCcf"
+FXEnableExtensionChangeWarning = false
+FXRemoveOldTrashItems = true
+ShowExternalHardDrivesOnDesktop = false
+ShowPathbar = true
+
+[set.menuextra.clock]
+DateFormat = '"h:mm:ss"'
+FlashDateSeparators = true
+Show24Hour = false
+ShowAMPM = false
+ShowDate = 2
+ShowDayOfWeek = false
+ShowSeconds = true
+
+[set.screencapture]
+show-thumbnail = false
+target = "clipboard"
+type = "png"
+
+[vars]
+hostname = "darkstar"

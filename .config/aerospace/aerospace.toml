@@ -169,7 +169,7 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
-run = 'layout floating'
+run = ['layout floating', 'move-node-to-workspace 4']
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
