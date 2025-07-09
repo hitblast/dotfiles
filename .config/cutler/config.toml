@@ -1,3 +1,6 @@
+[remote]
+url = "https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml"
+autosync = true
 
 [set.menuextra.clock]
 FlashDateSeparators = true
