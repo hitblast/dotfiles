@@ -3,7 +3,7 @@
     "enabled": true, // trying to resolve some technical debt
     "default_model": {
       "provider": "copilot_chat",
-      "model": "o3-mini"
+      "model": "gpt-4.1"
     },
     "model_parameters": [],
     "inline_assistant_model": {
