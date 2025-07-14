@@ -34,6 +34,8 @@ macos-window-shadow = true
 alpha-blending = native
 
 # keybinds
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
+
 keybind = ctrl+h=goto_split:left
 keybind = ctrl+j=goto_split:bottom
 keybind = ctrl+k=goto_split:top

@@ -12,6 +12,7 @@ git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
 cd ~/Developer/dotfiles
 stow . -t ~
 """
+required = ["stow", "git"]
 
 [commands.hostname]
 run = """
@@ -24,6 +25,7 @@ sudo = true
 [commands.mise]
 ensure-first = true
 run = "mise install"
+required = ["mise"]
 
 [remote]
 autosync = true
