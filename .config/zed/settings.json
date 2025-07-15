@@ -1,6 +1,6 @@
 {
   "agent": {
-    "enabled": true, // trying to resolve some technical debt
+    "enabled": true,
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4.1"
@@ -9,8 +9,7 @@
     "inline_assistant_model": {
       "provider": "copilot_chat",
       "model": "gpt-4.1"
-    },
-    "version": "2"
+    }
   },
   "notification_panel": {
     "dock": "right"

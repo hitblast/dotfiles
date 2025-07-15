@@ -6,13 +6,13 @@ taps = ["hitblast/tap", "nikitabobko/tap"]
 
 [commands.dotfiles]
 ensure-first = true
+required = ["stow", "git"]
 run = """
 mkdir ~/Developer
 git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
 cd ~/Developer/dotfiles
 stow . -t ~
 """
-required = ["stow", "git"]
 
 [commands.hostname]
 run = """
@@ -24,8 +24,8 @@ sudo = true
 
 [commands.mise]
 ensure-first = true
-run = "mise install"
 required = ["mise"]
+run = "mise install"
 
 [remote]
 autosync = true
