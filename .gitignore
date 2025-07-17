@@ -16,3 +16,6 @@
 
 # flutter
 .config/flutter/*
+
+# configstore (gemini-cli)
+.config/configstore/*
