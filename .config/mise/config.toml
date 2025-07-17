@@ -1,6 +1,9 @@
 [tools]
+"cargo:trimsec" = "latest"
 flutter = "latest"
+gemini-cli = "latest"
 neovim = "latest"
+node = "latest"
 ruby = "latest"
 rust = "latest"
 watchexec = "latest"
