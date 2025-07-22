@@ -2,8 +2,8 @@
 casks = ["aerospace", "android-studio", "appcleaner", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "protonvpn", "spotify", "transmission", "zed", "zen", "zulu@21"]
 formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "cmatrix", "drs", "dust", "fd", "fzf", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ncspot", "ninja", "ripgrep", "sccache", "starship", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
 no-deps = true
-taps = ["hitblast/tap", "nikitabobko/tap"]
 no_deps = true
+taps = ["hitblast/tap", "nikitabobko/tap"]
 
 [commands.dotfiles]
 ensure-first = true
