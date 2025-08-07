@@ -16,11 +16,5 @@ alias mactop="sudo mactop --color white"
 # Enable mise integration.
 eval "$(/opt/homebrew/bin/mise activate bash)"
 
-# Enable fzf integration for fuzzy searching.
-eval "$(fzf --bash)"
-
-# Enable starship integration.
-eval "$(starship init bash)"
-
 # Finally, enable zoxide integration.
 eval "$(zoxide init --cmd cd bash)"

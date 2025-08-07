@@ -1,16 +1,58 @@
 [brew]
-casks = ["aerospace", "android-studio", "appcleaner", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "protonvpn", "spotify", "transmission", "zed", "zen", "zulu@21"]
-formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "cmatrix", "drs", "dust", "fd", "fzf", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ncspot", "ninja", "ripgrep", "sccache", "starship", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
-no-deps = true
+casks = [
+    "aerospace",
+    "android-studio",
+    "appcleaner",
+    "container",
+    "discord",
+    "font-sf-mono-nerd-font-ligaturized",
+    "ghostty",
+    "hot",
+    "iina",
+    "karabiner-elements",
+    "keyboardcleantool",
+    "protonvpn",
+    "spotify",
+    "transmission",
+    "whatsapp",
+    "zed",
+    "zen",
+    "zulu@21",
+]
+formulae = [
+    "bash",
+    "bash-completion@2",
+    "bat",
+    "cargo-edit",
+    "cmake",
+    "cmatrix",
+    "drs",
+    "dust",
+    "fd",
+    "gh",
+    "git",
+    "hookman",
+    "lazygit",
+    "libyaml",
+    "mactop",
+    "mas",
+    "mise",
+    "ncspot",
+    "ninja",
+    "ripgrep",
+    "sccache",
+    "stow",
+    "tokei",
+    "uutils-coreutils",
+    "uv",
+    "zoxide",
+]
 no_deps = true
 taps = ["hitblast/tap", "nikitabobko/tap"]
 
 [commands.dotfiles]
-ensure-first = true
-required = [
-    "stow",
-    "git",
-]
+ensure_first = true
+required = ["stow", "git"]
 run = """
 mkdir ~/Developer
 git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
@@ -27,7 +69,7 @@ scutil --set ComputerName $hostname
 sudo = true
 
 [commands.mise]
-ensure-first = true
+ensure_first = true
 required = ["mise"]
 run = "mise install"
 
@@ -72,7 +114,6 @@ ShowExternalHardDrivesOnDesktop = false
 ShowPathbar = true
 
 [set.menuextra.clock]
-DateFormat = '"h:mm:ss"'
 FlashDateSeparators = true
 Show24Hour = false
 ShowAMPM = false
