@@ -1,12 +1,7 @@
 format = """
-$username\
-$hostname\
 $directory\
 $git_branch\
 $git_status\
-$python\
-$rust\
-$dart\
 $character\
 """
 add_newline = false
@@ -20,13 +15,5 @@ style = 'white'
 truncation_symbol = '.../'
 
 [git_branch]
-style = 'bold green'
-symbol = ' '
-
-[hostname]
-format = '[@$ssh_symbol$hostname]($style) '
-style = 'white'
-
-[username]
-format = '[$user]($style)'
-style_user = 'white'
+style = 'bold'
+symbol = ''
