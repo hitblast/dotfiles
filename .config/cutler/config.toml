@@ -48,11 +48,17 @@ formulae = [
     "zoxide",
 ]
 no_deps = true
-taps = ["hitblast/tap", "nikitabobko/tap"]
+taps = [
+    "hitblast/tap",
+    "nikitabobko/tap",
+]
 
 [commands.dotfiles]
 ensure_first = true
-required = ["stow", "git"]
+required = [
+    "stow",
+    "git",
+]
 run = """
 mkdir ~/Developer
 git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
