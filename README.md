@@ -19,7 +19,7 @@ These are the primary programs that are used in this configuration:
 1. Install the `cutler` CLI:
 
 ```bash
-/bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/hitblast/cutler/main/install.sh)"
+curl -fsSL https://cutlercli.github.io/scripts/install.sh | /bin/bash
 ```
 
 2. Run the following command:
