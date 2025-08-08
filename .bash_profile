@@ -7,10 +7,10 @@ export PATH="$HOME/.local/bin:$PATH"
 # Also use uutils-coreutils to replace regular Unix commands.
 export PATH="/opt/homebrew/opt/uutils-coreutils/libexec/uubin:$PATH"
 
-# Keep only 50 commands in memory
+# Keep only 50 commands in memory.
 HISTSIZE=50
 
-# Keep only 100 commands in ~/.bash_history
+# Keep only 100 commands in ~/.bash_history.
 HISTFILESIZE=100
 
 # ---
