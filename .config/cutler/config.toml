@@ -1,51 +1,6 @@
 [brew]
-casks = [
-    "aerospace",
-    "android-studio",
-    "appcleaner",
-    "container",
-    "discord",
-    "font-sf-mono-nerd-font-ligaturized",
-    "ghostty",
-    "hot",
-    "iina",
-    "karabiner-elements",
-    "keyboardcleantool",
-    "protonvpn",
-    "spotify",
-    "transmission",
-    "whatsapp",
-    "zed",
-    "zen",
-    "zulu@21",
-]
-formulae = [
-    "bash",
-    "bash-completion@2",
-    "bat",
-    "cargo-edit",
-    "cmake",
-    "cmatrix",
-    "drs",
-    "dust",
-    "fd",
-    "gh",
-    "git",
-    "hookman",
-    "lazygit",
-    "libyaml",
-    "mactop",
-    "mas",
-    "mise",
-    "ninja",
-    "ripgrep",
-    "sccache",
-    "stow",
-    "tokei",
-    "uutils-coreutils",
-    "uv",
-    "zoxide",
-]
+casks = ["aerospace", "android-studio", "appcleaner", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zulu@21"]
+formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "cmatrix", "drs", "dust", "fd", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ninja", "ripgrep", "sccache", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
 no_deps = true
 taps = ["hitblast/tap", "nikitabobko/tap"]
 
