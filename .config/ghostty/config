@@ -26,7 +26,7 @@ window-height = 28
 
 # macOS-specific settings
 macos-icon = "chalkboard"
-macos-titlebar-style = hidden
+macos-titlebar-style = native
 macos-window-shadow = true
 
 # misc.
