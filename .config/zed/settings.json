@@ -61,7 +61,7 @@
   "base_keymap": "VSCode",
   "relative_line_numbers": true,
   "theme": {
-    "mode": "light",
+    "mode": "system",
     "light": "Fleet Light",
     "dark": "Fleet Dark"
   },
