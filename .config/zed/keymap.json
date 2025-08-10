@@ -1,18 +1,15 @@
-// Zed keymap
-//
-// For information on binding keys, see the Zed
 // documentation: https://zed.dev/docs/key-bindings
-//
-// To see the default key bindings run `zed: open default keymap`
-// from the command palette.
 [
   {
-    "context": "Dock",
     "bindings": {
-      "ctrl-w h": "workspace::ActivatePaneLeft",
-      "ctrl-w l": "workspace::ActivatePaneRight",
-      "ctrl-w k": "workspace::ActivatePaneUp",
-      "ctrl-w j": "workspace::ActivatePaneDown"
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-n h": "pane::SplitLeft",
+      "ctrl-n j": "pane::SplitDown",
+      "ctrl-n k": "pane::SplitUp",
+      "ctrl-n l": "pane::SplitRight"
     }
   }
 ]
