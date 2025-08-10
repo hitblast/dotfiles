@@ -5,7 +5,13 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-j": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-c": "workspace::ToggleCenteredLayout",
       "ctrl-n h": "pane::SplitLeft",
       "ctrl-n j": "pane::SplitDown",
       "ctrl-n k": "pane::SplitUp",
