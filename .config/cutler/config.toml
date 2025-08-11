@@ -1,9 +1,57 @@
+# Homebrew
 [brew]
-casks = ["aerospace", "android-studio", "appcleaner", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "httpie-desktop", "iina", "karabiner-elements", "keyboardcleantool", "protonvpn", "spotify", "transmission", "whatsapp", "zed", "zen", "zulu@21"]
-formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "cmatrix", "drs", "dust", "fd", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ninja", "ripgrep", "sccache", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
+casks = [
+    "aerospace",
+    "android-studio",
+    "appcleaner",
+    "container",
+    "discord",
+    "font-sf-mono-nerd-font-ligaturized",
+    "ghostty",
+    "hot",
+    "httpie-desktop",
+    "iina",
+    "karabiner-elements",
+    "keyboardcleantool",
+    "protonvpn",
+    "spotify",
+    "transmission",
+    "whatsapp",
+    "zed",
+    "zen",
+    "zulu@21",
+]
+formulae = [
+    "bash",
+    "bash-completion@2",
+    "bat",
+    "cargo-edit",
+    "cmake",
+    "cmatrix",
+    "drs",
+    "dust",
+    "fd",
+    "gh",
+    "git",
+    "hookman",
+    "lazygit",
+    "libyaml",
+    "mactop",
+    "mas",
+    "mise",
+    "ninja",
+    "ripgrep",
+    "sccache",
+    "stow",
+    "tokei",
+    "uutils-coreutils",
+    "uv",
+    "zoxide",
+]
 no_deps = true
 taps = ["hitblast/tap", "nikitabobko/tap"]
 
+# External Commands
 [commands.dotfiles]
 ensure_first = true
 required = ["stow", "git"]
@@ -12,6 +60,11 @@ mkdir ~/Developer
 git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
 cd ~/Developer/dotfiles
 stow . -t ~
+"""
+
+[commands.touchid]
+run = """
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 """
 
 [commands.hostname]
@@ -27,10 +80,12 @@ ensure_first = true
 required = ["mise"]
 run = "mise install"
 
+# Remote Sync
 [remote]
 autosync = false
 url = "https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml"
 
+# Preferences
 [set.AppleMultitouchTrackpad]
 FirstClickThreshold = 0
 TrackpadThreeFingerDrag = true
@@ -80,5 +135,6 @@ show-thumbnail = false
 target = "clipboard"
 type = "png"
 
+# Command Variables
 [vars]
 hostname = "darkstar"
