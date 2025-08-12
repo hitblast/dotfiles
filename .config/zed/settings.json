@@ -51,6 +51,12 @@
       "min_column": 80
     }
   },
+  "minimap": {
+    "show": "always"
+  },
+  "scrollbar": {
+    "show": "auto"
+  },
   "vim_mode": true,
   "seed_search_query_from_cursor": "selection",
   "ui_font_family": "Liga SFMono Nerd Font",
