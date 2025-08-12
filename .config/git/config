@@ -1,7 +1,7 @@
 [user]
 	name = "Anindya Shiddhartha"
 	email = hitblastlive@gmail.com
-	signingkey = /Users/hitblast/.ssh/id_ed25519_github.pub
+	signingkey = /Users/hitblast/.ssh/id_ed25519_code.pub
 
 [core]
     compression = 9
