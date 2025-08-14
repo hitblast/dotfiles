@@ -111,7 +111,7 @@ mineffect = "suck"
 orientation = "bottom"
 show-recents = false
 static-only = true
-tilesize = 43
+tilesize = 60
 
 [set.finder]
 AppleShowAllFiles = true
