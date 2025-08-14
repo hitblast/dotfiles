@@ -25,7 +25,7 @@ curl -fsSL https://cutlercli.github.io/scripts/install.sh | /bin/bash
 2. Run the following command:
 
 ```bash
-cutler apply --url https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml --with-brew -y
+cutler apply --url https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml --brew -y
 ```
 
 3. Wait for all the processes to complete.
