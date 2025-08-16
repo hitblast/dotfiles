@@ -2,19 +2,19 @@
 # Documentation reference: https://nikitabobko.github.io/AeroSpace/guide
 
 # All possible keys:
-    # - Letters.        a, b, c, ..., z
-    # - Numbers.        0, 1, 2, ..., 9
-    # - Keypad numbers. keypad0, keypad1, keypad2, ..., keypad9
-    # - F-keys.         f1, f2, ..., f20
-    # - Special keys.   minus, equal, period, comma, slash, backslash, quote, semicolon,
-    #                   backtick, leftSquareBracket, rightSquareBracket, space, enter, esc,
-    #                   backspace, tab, pageUp, pageDown, home, end, forwardDelete,
-    #                   sectionSign (ISO keyboards only, european keyboards only)
-    # - Keypad special. keypadClear, keypadDecimalMark, keypadDivide, keypadEnter, keypadEqual,
-    #                   keypadMinus, keypadMultiply, keypadPlus
-    # - Arrows.         left, down, up, right
+# - Letters.        a, b, c, ..., z
+# - Numbers.        0, 1, 2, ..., 9
+# - Keypad numbers. keypad0, keypad1, keypad2, ..., keypad9
+# - F-keys.         f1, f2, ..., f20
+# - Special keys.   minus, equal, period, comma, slash, backslash, quote, semicolon,
+#                   backtick, leftSquareBracket, rightSquareBracket, space, enter, esc,
+#                   backspace, tab, pageUp, pageDown, home, end, forwardDelete,
+#                   sectionSign (ISO keyboards only, european keyboards only)
+# - Keypad special. keypadClear, keypadDecimalMark, keypadDivide, keypadEnter, keypadEqual,
+#                   keypadMinus, keypadMultiply, keypadPlus
+# - Arrows.         left, down, up, right
 
-    # All possible modifiers: cmd, alt, ctrl, shift
+# All possible modifiers: cmd, alt, ctrl, shift
 
 
 # Available commands: https://nikitabobko.github.io/AeroSpace/commands
@@ -28,7 +28,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 
 accordion-padding = 45
 
-default-root-container-layout = 'accordion'
+default-root-container-layout = 'tiles'
 default-root-container-orientation = 'auto'
 
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
@@ -119,13 +119,16 @@ cmd-alt-ctrl-shift-enter = 'mode command'
 [mode.service.binding]
 esc = ['flatten-workspace-tree', 'mode main'] # reset layout
 r = ['reload-config', 'mode main'] # reload AeroSpace configuration
-f = ['layout floating tiling', 'mode main'] # toggle between floating and tiling layout
+f = [
+    'layout floating tiling',
+    'mode main',
+] # toggle between floating and tiling layout
 
 
 # 'command' binding mode declaration
 [mode.command.binding]
 esc = 'mode main'
-k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] 
+k = ['exec-and-forget sudo killall coreaudiod', 'mode main']
 m = ['exec-and-forget sudo pmset -a lowpowermode 0', 'mode main']
 l = ['exec-and-forget sudo pmset -a lowpowermode 1', 'mode main']
 
@@ -200,4 +203,3 @@ run = 'move-node-to-workspace 3'
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace 4'
-
