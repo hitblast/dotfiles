@@ -101,5 +101,17 @@
     "**/.vscode"
   ],
   "remove_trailing_whitespace_on_save": true,
-  "always_treat_brackets_as_autoclosed": true
+  "always_treat_brackets_as_autoclosed": true,
+  // LSP-specific configuration
+  "languages": {
+    "Python": {
+      "language_servers": ["ruff", "pylsp"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "language_server": { "name": "ruff" }
+        }
+      ]
+    }
+  }
 }
