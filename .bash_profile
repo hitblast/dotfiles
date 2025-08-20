@@ -40,9 +40,5 @@ source /opt/homebrew/opt/git/etc/bash_completion.d/git-completion.bash
 
 # ---
 
-# Added by OrbStack: command-line tools and integration
-# Comment this line if you don't want it to be added again.
-source ~/.orbstack/shell/init.bash 2>/dev/null || :
-
 # Source for the .bashrc file.
 [[ -s ~/.bashrc ]] && source ~/.bashrc
