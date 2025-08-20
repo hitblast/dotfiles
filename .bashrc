@@ -11,15 +11,12 @@ __prompt_command() {
     local RCol='\[\e[0m\]'
 
     local Red='\[\e[0;31m\]'
-    local Gre='\[\e[0;32m\]'
 
     if [ $EXIT != 0 ]; then
-        PS1+="${Red}\u${RCol}"
+        PS1+="\u@\h \W${Red}\$${RCol} "
     else
-        PS1+="${Gre}\u${RCol}"
+        PS1+="\u@\h \W\$ "
     fi
-
-    PS1+="@\h \W$ "
 }
 
 # Aliases.
