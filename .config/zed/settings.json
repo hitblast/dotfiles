@@ -39,7 +39,7 @@
     "right_padding": 0.1
   },
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "none"
   },
   "telemetry": {
     "diagnostics": false,
@@ -55,9 +55,6 @@
       "min_column": 80
     }
   },
-  "minimap": {
-    "show": "always"
-  },
   "scrollbar": {
     "show": "auto"
   },
@@ -66,7 +63,7 @@
   "ui_font_family": "Liga SFMono Nerd Font",
   "buffer_font_family": "Liga SFMono Nerd Font",
   "ui_font_size": 15,
-  "buffer_font_size": 14,
+  "buffer_font_size": 13,
   "buffer_line_height": "comfortable",
   "base_keymap": "VSCode",
   "relative_line_numbers": true,
@@ -89,8 +86,12 @@
     }
   },
   "auto_install_extensions": {
+    "dart": true,
+    "fleet-themes": true,
     "git-firefly": true,
-    "fleet-themes": true
+    "html": true,
+    "ruff": true,
+    "toml": true
   },
   "file_scan_exclusions": [
     "**/.git",
