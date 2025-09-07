@@ -77,8 +77,6 @@ cmd-alt-ctrl-shift-l = 'move right'
 
 # Launch primary terminal application.
 cmd-alt-ctrl-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
-cmd-alt-ctrl-e = 'exec-and-forget open -a Finder'
-cmd-alt-ctrl-b = 'exec-and-forget open -a Safari'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 cmd-alt-ctrl-shift-minus = 'resize smart -50'
@@ -137,40 +135,8 @@ l = ['exec-and-forget sudo pmset -a lowpowermode 1', 'mode main']
 # Executed when an app instance has been initiated
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'finder'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.mail'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.clock'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.AppStore'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Passwords'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.ActivityMonitor'
-run = 'layout floating'
-
-[[on-window-detected]]
 if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
 run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'ch.protonvpn.mac'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'net.whatsapp.WhatsApp'
-run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
@@ -202,4 +168,12 @@ run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'net.whatsapp.WhatsApp'
 run = 'move-node-to-workspace 4'
