@@ -1,6 +1,5 @@
 [tools]
 "cargo:trimsec" = "latest"
-flutter = "latest"
 neovim = "latest"
 ruby = "latest"
 rust = "latest"
