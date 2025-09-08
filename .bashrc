@@ -17,7 +17,7 @@ __prompt_command() {
     if command -v git &>/dev/null; then
         git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
         if [ -n "$git_branch" ] && [ "$git_branch" != "HEAD" ]; then
-            # Check if repo is dirty (modified)
+            # Check if repo is dirty (modified).
             if git diff --quiet 2>/dev/null && git diff --cached --quiet 2>/dev/null; then
                 git_dirty=""
             else
