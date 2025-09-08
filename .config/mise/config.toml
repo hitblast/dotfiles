@@ -1,8 +1,7 @@
 [tools]
 "cargo:trimsec" = "latest"
 neovim = "latest"
-rust = "latest"
-rust-analyzer = "latest"
+rust = { version = "latest", components = "rust-analyzer" }
 
 [settings]
 python.uv_venv_auto = true
