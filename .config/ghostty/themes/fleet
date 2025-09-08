@@ -1,6 +1,23 @@
-background = #111111
+background = #101010
 foreground = #e0e1e4
 cursor-color = #e0e1e4
 cursor-text = #18191b
 selection-background = #696d79
 selection-foreground = #e0e1e4
+
+palette = 0=#e0e1e4
+palette = 1=#94c1fa
+palette = 2=#7eacab
+palette = 3=#81c8be
+palette = 4=#8caaee
+palette = 5=#d898d8
+palette = 6=#e5c995
+palette = 7=#a5adce
+palette = 8=#86986a
+palette = 9=#e67172
+palette = 10=#8ec772
+palette = 11=#d9ba73
+palette = 12=#7b9ef0
+palette = 13=#f2a4db
+palette = 14=#5abfb5
+palette = 15=#b5bfe2

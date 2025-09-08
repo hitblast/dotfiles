@@ -127,8 +127,6 @@ f = [
 [mode.command.binding]
 esc = 'mode main'
 k = ['exec-and-forget sudo killall coreaudiod', 'mode main']
-m = ['exec-and-forget sudo pmset -a lowpowermode 0', 'mode main']
-l = ['exec-and-forget sudo pmset -a lowpowermode 1', 'mode main']
 
 
 # App-specific callbacks
@@ -160,10 +158,6 @@ run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'aseprite'
-run = 'move-node-to-workspace 3'
-
-[[on-window-detected]]
-if.app-id = 'com.bohemiancoding.sketch3'
 run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
