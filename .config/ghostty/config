@@ -29,14 +29,13 @@ window-padding-y = 7
 # macOS-specific settings
 macos-icon = "chalkboard"
 macos-titlebar-style = hidden
+macos-titlebar-proxy-icon = hidden
 macos-window-shadow = true
 
 # misc.
 alpha-blending = native
 
 # keybinds
-keybind = global:ctrl+grave_accent=toggle_quick_terminal
-
 keybind = ctrl+h=goto_split:left
 keybind = ctrl+j=goto_split:bottom
 keybind = ctrl+k=goto_split:top
