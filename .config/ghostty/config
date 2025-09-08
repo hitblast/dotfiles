@@ -4,7 +4,7 @@ scrollback-limit = 1000000
 # font
 font-family = "Liga SFMono Nerd Font"
 font-feature = liga
-font-size = 15
+font-size = 16
 font-thicken = true
 
 # shell integrations
@@ -17,7 +17,7 @@ cursor-style-blink = true
 mouse-hide-while-typing = true
 
 # theme
-theme = "xcodelight"
+theme = "Mellifluous"
 
 # window
 window-colorspace = display-p3
