@@ -23,8 +23,8 @@ theme = "xcodelight"
 window-colorspace = display-p3
 window-width = 101
 window-height = 28
-window-padding-x = 5
-window-padding-y = 3
+window-padding-x = 10
+window-padding-y = 7
 
 # macOS-specific settings
 macos-icon = "chalkboard"
