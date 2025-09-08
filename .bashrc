@@ -9,13 +9,27 @@ __prompt_command() {
     PS1=""
 
     local RCol='\[\e[0m\]'
-
     local Red='\[\e[0;31m\]'
 
+    # Get current git branch, if any, and make it visually distinct for easier identification.
+    local git_branch=""
+    if command -v git &>/dev/null; then
+        git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+        if [ -n "$git_branch" ] && [ "$git_branch" != "HEAD" ]; then
+            # Use color and brackets to highlight the branch name.
+            local BranchColor='\[\e[0;36m\]'
+            local BranchReset='\[\e[0m\]'
+            git_branch=" ${BranchColor}[${git_branch}]${BranchReset}"
+        else
+            git_branch=""
+        fi
+    fi
+
+    # Change color for $ based on exit code.
     if [ $EXIT != 0 ]; then
-        PS1+="\u@\h \W${Red}\$${RCol} "
+        PS1+="\u@\h \W${git_branch}${Red}\$${RCol} "
     else
-        PS1+="\u@\h \W\$ "
+        PS1+="\u@\h \W${git_branch}\$ "
     fi
 }
 
