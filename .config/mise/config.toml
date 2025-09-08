@@ -3,7 +3,6 @@
 neovim = "latest"
 ruby = "latest"
 rust = "latest"
-watchexec = "latest"
 
 [settings]
 python.uv_venv_auto = true
