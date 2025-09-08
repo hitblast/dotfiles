@@ -31,9 +31,9 @@ __prompt_command() {
 
     # Change color for $ based on exit code.
     if [ $EXIT != 0 ]; then
-        PS1+="\u@\h \W${git_branch}${Red}\$${RCol} "
+        PS1+="\h \W${git_branch}${Red}\$${RCol} "
     else
-        PS1+="\u@\h \W${git_branch}\$ "
+        PS1+="\h \W${git_branch}\$ "
     fi
 }
 
