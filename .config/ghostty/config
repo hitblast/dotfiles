@@ -4,7 +4,7 @@ scrollback-limit = 1000000
 # font
 font-family = "Liga SFMono Nerd Font"
 font-feature = liga
-font-size = 14
+font-size = 16
 font-thicken = true
 
 # shell integrations
