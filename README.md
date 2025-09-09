@@ -11,7 +11,7 @@ These are the primary programs that are used in this configuration:
 - Key Remapping: [Karabiner Elements](https://karabiner-elements.pqrs.org)
 - Default Shell: `/opt/homebrew/bin/bash`
 - Development Tools:
-  1. mise (for Flutter, Ruby, Rust and other toolchains)
+  1. mise (for Rust and other toolchains)
   2. uv (for Python environments)
 
 ## Installation
