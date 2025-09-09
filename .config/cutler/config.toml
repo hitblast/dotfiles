@@ -5,6 +5,7 @@ formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "drs", "d
 no_deps = true
 taps = ["hitblast/tap", "nikitabobko/tap"]
 
+
 # External Commands
 [commands.dotfiles]
 ensure_first = true
@@ -23,21 +24,22 @@ sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_l
 
 [commands.hostname]
 run = """
-scutil --set LocalHostName $hostname
-scutil --set HostName $hostname
-scutil --set ComputerName $hostname
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
 """
-sudo = true
 
 [commands.mise]
 ensure_first = true
 required = ["mise"]
 run = "mise install"
 
+
 # Remote Sync
 [remote]
 autosync = false
 url = "https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml"
+
 
 # Preferences
 [set.AppleMultitouchTrackpad]
@@ -88,6 +90,7 @@ ShowSeconds = true
 show-thumbnail = false
 target = "clipboard"
 type = "png"
+
 
 # Command Variables
 [vars]
