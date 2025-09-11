@@ -110,13 +110,13 @@ cmd-alt-ctrl-rightSquareBracket = 'workspace-back-and-forth'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-alt-ctrl-shift-semicolon = 'mode service'
-cmd-alt-ctrl-shift-enter = 'mode command'
 cmd-alt-ctrl-semicolon = 'mode emoji'
 
 
 # 'service' binding mode declaration
 [mode.service.binding]
 esc = ['flatten-workspace-tree', 'mode main'] # reset layout
+c = ['exec-and-forget zed ~/Developer/dotfiles', 'mode main']
 r = ['reload-config', 'mode main'] # reload AeroSpace configuration
 f = [
     'layout floating tiling',
@@ -124,21 +124,15 @@ f = [
 ] # toggle between floating and tiling layout
 
 
-# 'command' binding mode declaration
-[mode.command.binding]
-esc = 'mode main'
-k = ['exec-and-forget sudo killall coreaudiod', 'mode main']
-
-
 # 'emoji' binding mode declaration
 [mode.emoji.binding]
 esc = 'mode main'
-c = ["exec-and-forget osascript -e 'set the clipboard to \"🐱\"' -e 'tell application \"System Events\" to keystroke \"v\" using {command down}'", "mode main"]
-a = ["exec-and-forget osascript -e 'set the clipboard to \"😾\"' -e 'tell application \"System Events\" to keystroke \"v\" using {command down}'", "mode main"]
-l = ["exec-and-forget osascript -e 'set the clipboard to \"😂\"' -e 'tell application \"System Events\" to keystroke \"v\" using {command down}'", "mode main"]
-h = ["exec-and-forget osascript -e 'set the clipboard to \"💝\"' -e 'tell application \"System Events\" to keystroke \"v\" using {command down}'", "mode main"]
-s = ["exec-and-forget osascript -e 'set the clipboard to \"💀\"' -e 'tell application \"System Events\" to keystroke \"v\" using {command down}'", "mode main"]
-t = ["exec-and-forget osascript -e 'set the clipboard to \"🤔\"' -e 'tell application \"System Events\" to keystroke \"v\" using {command down}'", "mode main"]
+c = ["exec-and-forget osascript -e 'set the clipboard to \"🐱\"'", "mode main"]
+a = ["exec-and-forget osascript -e 'set the clipboard to \"😾\"'", "mode main"]
+l = ["exec-and-forget osascript -e 'set the clipboard to \"😂\"'", "mode main"]
+h = ["exec-and-forget osascript -e 'set the clipboard to \"💝\"'", "mode main"]
+s = ["exec-and-forget osascript -e 'set the clipboard to \"💀\"'", "mode main"]
+t = ["exec-and-forget osascript -e 'set the clipboard to \"🤔\"'", "mode main"]
 
 
 # App-specific callbacks
