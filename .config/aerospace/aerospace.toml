@@ -88,10 +88,10 @@ cmd-alt-ctrl-i = 'workspace 2'
 cmd-alt-ctrl-o = 'workspace 3'
 cmd-alt-ctrl-p = 'workspace 4'
 cmd-alt-ctrl-y = 'workspace 5'
-cmd-alt-ctrl-6 = 'workspace 6'
-cmd-alt-ctrl-7 = 'workspace 7'
-cmd-alt-ctrl-8 = 'workspace 8'
-cmd-alt-ctrl-9 = 'workspace 9'
+cmd-alt-ctrl-7 = 'workspace A'
+cmd-alt-ctrl-8 = 'workspace B'
+cmd-alt-ctrl-9 = 'workspace C'
+cmd-alt-ctrl-0 = 'workspace M'
 
 # Moving nodes:
 cmd-alt-ctrl-shift-u = 'move-node-to-workspace 1'
@@ -99,10 +99,10 @@ cmd-alt-ctrl-shift-i = 'move-node-to-workspace 2'
 cmd-alt-ctrl-shift-o = 'move-node-to-workspace 3'
 cmd-alt-ctrl-shift-p = 'move-node-to-workspace 4'
 cmd-alt-ctrl-shift-y = 'move-node-to-workspace 5'
-cmd-alt-ctrl-shift-6 = 'move-node-to-workspace 6'
-cmd-alt-ctrl-shift-7 = 'move-node-to-workspace 7'
-cmd-alt-ctrl-shift-8 = 'move-node-to-workspace 8'
-cmd-alt-ctrl-shift-9 = 'move-node-to-workspace 9'
+cmd-alt-ctrl-shift-7 = 'move-node-to-workspace A'
+cmd-alt-ctrl-shift-8 = 'move-node-to-workspace B'
+cmd-alt-ctrl-shift-9 = 'move-node-to-workspace C'
+cmd-alt-ctrl-shift-0 = 'move-node-to-workspace M'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 cmd-alt-ctrl-leftSquareBracket = 'workspace-back-and-forth'
@@ -143,16 +143,8 @@ if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.apple.Safari'
-run = 'move-node-to-workspace 2'
-
-[[on-window-detected]]
-if.app-id = 'app.zen-browser.zen'
-run = 'move-node-to-workspace 2'
-
-[[on-window-detected]]
 if.app-id = 'com.spotify.client'
-run = 'move-node-to-workspace 5'
+run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
@@ -163,17 +155,29 @@ if.app-name-regex-substring = 'xcode'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'aseprite'
+if.app-id = 'com.apple.Safari'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'app.zen-browser.zen'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'com.anytype.anytype'
 run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
-if.app-id = 'com.hnc.Discord'
+if.app-name-regex-substring = 'aseprite'
 run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
-run = 'move-node-to-workspace 4'
+run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
-run = 'move-node-to-workspace 4'
+run = 'move-node-to-workspace 5'
