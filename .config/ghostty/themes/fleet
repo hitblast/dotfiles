@@ -7,16 +7,16 @@ selection-foreground = #e0e1e4
 
 palette = 0=#101010
 palette = 1=#e67172
-palette = 2=#e0e1e4
+palette = 2=#94d0cd
 palette = 3=#e5c995
-palette = 4=#444444
+palette = 4=#5b8be5
 palette = 5=#d898d8
 palette = 6=#81c8be
 palette = 7=#e0e1e4
 
 palette = 8=#a5adce
 palette = 9=#94c1fa
-palette = 10=#e0e1e4
+palette = 10=#94d0cd
 palette = 11=#d9ba73
 palette = 12=#7b9ef0
 palette = 13=#f2a4db
