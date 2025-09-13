@@ -1,6 +1,6 @@
 # Homebrew
 [brew]
-casks = ["aerospace", "anytype", "appcleaner", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "httpie-desktop", "iina", "karabiner-elements", "keyboardcleantool", "notion", "orbstack", "protonvpn", "spotify", "steam", "transmission", "whatsapp", "zed", "zen"]
+casks = ["aerospace", "appcleaner", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "httpie-desktop", "iina", "karabiner-elements", "keyboardcleantool", "notion", "orbstack", "protonvpn", "spotify", "steam", "transmission", "whatsapp", "zed", "zen"]
 formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "drs", "dust", "fd", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ninja", "ripgrep", "sccache", "stow", "tokei", "uutils-coreutils", "uv", "zoxide"]
 no_deps = true
 taps = ["hitblast/tap", "nikitabobko/tap"]
