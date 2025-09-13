@@ -116,8 +116,9 @@ cmd-alt-ctrl-semicolon = 'mode emoji'
 # 'service' binding mode declaration
 [mode.service.binding]
 esc = ['flatten-workspace-tree', 'mode main'] # reset layout
-c = ['exec-and-forget zed ~/Developer/dotfiles', 'mode main']
-r = ['reload-config', 'mode main'] # reload AeroSpace configuration
+c = ['exec-and-forget zed ~/Developer/dotfiles', 'mode main'] # show configuration
+k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill audio service
+r = ['reload-config', 'mode main'] # reload configuration
 f = [
     'layout floating tiling',
     'mode main',
@@ -127,12 +128,13 @@ f = [
 # 'emoji' binding mode declaration
 [mode.emoji.binding]
 esc = 'mode main'
-c = ["exec-and-forget osascript -e 'set the clipboard to \"🐱\"'", "mode main"]
-a = ["exec-and-forget osascript -e 'set the clipboard to \"😾\"'", "mode main"]
-l = ["exec-and-forget osascript -e 'set the clipboard to \"😂\"'", "mode main"]
-h = ["exec-and-forget osascript -e 'set the clipboard to \"💝\"'", "mode main"]
-s = ["exec-and-forget osascript -e 'set the clipboard to \"💀\"'", "mode main"]
-t = ["exec-and-forget osascript -e 'set the clipboard to \"🤔\"'", "mode main"]
+c = ["exec-and-forget osascript -e 'set the clipboard to \"🐱\"'", "mode main"] # [c]at
+a = ["exec-and-forget osascript -e 'set the clipboard to \"😾\"'", "mode main"] # [a]ngry cat
+l = ["exec-and-forget osascript -e 'set the clipboard to \"😂\"'", "mode main"] # [l]augh
+h = ["exec-and-forget osascript -e 'set the clipboard to \"💝\"'", "mode main"] # [g]ift heart
+s = ["exec-and-forget osascript -e 'set the clipboard to \"💀\"'", "mode main"] # [s]kull
+t = ["exec-and-forget osascript -e 'set the clipboard to \"🤔\"'", "mode main"] # [t]hink
+b = ["exec-and-forget osascript -e 'set the clipboard to \"😭\"'", "mode main"] # [b]ruh
 
 
 # App-specific callbacks
@@ -145,6 +147,11 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+if.app-id = 'com.mitchellh.ghostty'
+if.workspace = 'M'
+run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
