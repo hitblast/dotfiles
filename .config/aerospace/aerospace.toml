@@ -92,6 +92,7 @@ cmd-alt-ctrl-7 = 'workspace A'
 cmd-alt-ctrl-8 = 'workspace B'
 cmd-alt-ctrl-9 = 'workspace C'
 cmd-alt-ctrl-0 = 'workspace D'
+cmd-alt-ctrl-g = 'workspace G'
 
 # Moving nodes:
 cmd-alt-ctrl-shift-u = 'move-node-to-workspace 1'
@@ -103,6 +104,7 @@ cmd-alt-ctrl-shift-7 = 'move-node-to-workspace A'
 cmd-alt-ctrl-shift-8 = 'move-node-to-workspace B'
 cmd-alt-ctrl-shift-9 = 'move-node-to-workspace C'
 cmd-alt-ctrl-shift-0 = 'move-node-to-workspace D'
+cmd-alt-ctrl-shift-g = 'move-node-to-workspace G'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 cmd-alt-ctrl-leftSquareBracket = 'workspace-back-and-forth'
@@ -143,6 +145,10 @@ b = ["exec-and-forget osascript -e 'set the clipboard to \"😭\"'", "mode main"
 [[on-window-detected]]
 if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'steam'
+run = 'move-node-to-workspace G'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
