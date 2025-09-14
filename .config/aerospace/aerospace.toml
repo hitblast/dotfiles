@@ -106,6 +106,10 @@ cmd-alt-ctrl-shift-9 = 'move-node-to-workspace C'
 cmd-alt-ctrl-shift-0 = 'move-node-to-workspace D'
 cmd-alt-ctrl-shift-g = 'move-node-to-workspace G'
 
+# Launching some notable apps:
+cmd-alt-ctrl-s = 'exec-and-forget open -a /Applications/Spotify.app'
+cmd-alt-ctrl-b = 'exec-and-forget open -a /Applications/Safari.app'
+
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 cmd-alt-ctrl-leftSquareBracket = 'workspace-back-and-forth'
 cmd-alt-ctrl-rightSquareBracket = 'workspace-back-and-forth'
