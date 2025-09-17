@@ -6,7 +6,6 @@ Configuration files for my local development environment.
 
 These are the primary programs that are used in this configuration:
 
-- Setup Pipeline: [cutler](https://cutlercli.github.io) (my own setup pipeline automation tool)
 - Tiling Window Manager: [AeroSpace](https://github.com/nikitabobko/AeroSpace)
 - Key Remapping: [Karabiner Elements](https://karabiner-elements.pqrs.org)
 - Default Shell: `/opt/homebrew/bin/bash`
@@ -14,9 +13,14 @@ These are the primary programs that are used in this configuration:
   1. mise (for Rust and other toolchains)
   2. uv (for Python environments)
 
+## Prerequisites
+
+The whole repository can be conveniently installed using [cutler](https://cutlercli.github.io/), a
+macOS setup pipeline automation tool made by me to just be lazy when it comes to setting my laptop up.
+
 ## Installation
 
-1. Install the `cutler` CLI:
+1. Install the [cutler](https://cutlercli.github.io) CLI:
 
 ```bash
 curl -fsSL https://cutlercli.github.io/scripts/install.sh | /bin/bash
