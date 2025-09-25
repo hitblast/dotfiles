@@ -192,3 +192,7 @@ run = 'move-node-to-workspace 4'
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
 run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'instagram'
+run = 'move-node-to-workspace 4'
