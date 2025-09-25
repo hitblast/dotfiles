@@ -1,17 +1,6 @@
 {
+  "disable_ai": true,
   "show_edit_predictions": false,
-  "agent": {
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    },
-    "enabled": true,
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    },
-    "model_parameters": []
-  },
   "notification_panel": {
     "dock": "right"
   },
