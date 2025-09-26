@@ -7,7 +7,7 @@ taps = ["hitblast/tap", "nikitabobko/tap", "soloantonio/cartero"]
 
 
 # External Commands
-[commands.dotfiles]
+[command.dotfiles]
 ensure_first = true
 required = ["stow", "git"]
 run = """
@@ -17,19 +17,19 @@ cd ~/Developer/dotfiles
 stow . -t ~
 """
 
-[commands.touchid]
+[command.touchid]
 run = """
 sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 """
 
-[commands.hostname]
+[command.hostname]
 run = """
 sudo scutil --set LocalHostName $hostname
 sudo scutil --set HostName $hostname
 sudo scutil --set ComputerName $hostname
 """
 
-[commands.mise]
+[command.mise]
 ensure_first = true
 required = ["mise"]
 run = "mise install"
