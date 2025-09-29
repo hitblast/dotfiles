@@ -10,6 +10,7 @@ taps = ["hitblast/tap", "nikitabobko/tap", "risingwavelabs/risingwave", "soloant
 [command.dotfiles]
 ensure_first = true
 required = ["stow", "git"]
+flag = true
 run = """
 mkdir ~/Developer
 git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
@@ -21,6 +22,7 @@ stow . -t ~
 run = """
 sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 """
+flag = true
 
 [command.hostname]
 run = """
@@ -28,11 +30,13 @@ sudo scutil --set LocalHostName $hostname
 sudo scutil --set HostName $hostname
 sudo scutil --set ComputerName $hostname
 """
+flag = true
 
 [command.mise]
 ensure_first = true
 required = ["mise"]
 run = "mise install"
+flag = true
 
 
 # Remote Sync
