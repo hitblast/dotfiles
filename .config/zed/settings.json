@@ -1,16 +1,16 @@
 {
   // Agentic settings: (disabled for now)
-  // "agent": {
-  //   "default_model": {
-  //     "provider": "copilot_chat",
-  //     "model": "gpt-5"
-  //   },
-  //   "inline_assistant_model": {
-  //     "provider": "copilot_chat",
-  //     "model": "gpt-4.1"
-  //   }
-  // },
-  "disable_ai": true,
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    },
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    }
+  },
+  "disable_ai": false,
   "show_edit_predictions": false,
   "notification_panel": {
     "dock": "right"
