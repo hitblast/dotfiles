@@ -1,9 +1,18 @@
+# Homebrew apps & tools
+
 [brew]
 casks = ["aerospace", "anytype", "appcleaner", "cartero", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "spotify", "transmission", "zed", "zen"]
 formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "drs", "dust", "fd", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ninja", "ripgrep", "sccache", "stow", "tokei", "tree", "uv", "zoxide"]
 taps = ["hitblast/tap", "nikitabobko/tap", "soloantonio/cartero"]
 no_deps = true
 
+# External commands
+# NOTE: The flag = true commands only run if -a or -f is passed.
+
+[vars]
+hostname = "darkstar"
+
+# setup this repository
 [command.dotfiles]
 ensure_first = true
 flag = true
@@ -16,6 +25,14 @@ cd ~/Developer/dotfiles
 stow . -t ~ --adopt
 """
 
+# installs all tools declared in .config/mise/config.toml
+[command.mise]
+ensure_first = true
+flag = true
+required = ["mise"]
+run = "mise install"
+
+# sets hostname to darkstar
 [command.hostname]
 flag = true
 run = """
@@ -24,21 +41,23 @@ sudo scutil --set HostName $hostname
 sudo scutil --set ComputerName $hostname
 """
 
-[command.mise]
-ensure_first = true
-flag = true
-required = ["mise"]
-run = "mise install"
-
+# touch id based sudo
 [command.touchid]
 flag = true
 run = """
 sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 """
 
+# Remote autosync
+# NOTE: Only added for vanity and occasional fetching.
+# Since I test cutler on a daily basis, this one is required for me.
+
 [remote]
 autosync = false
 url = "https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml"
+
+# System preferences
+# NOTE: DO NOT CHANGE!
 
 [set.AppleMultitouchTrackpad]
 FirstClickThreshold = 0
@@ -89,6 +108,3 @@ ShowSeconds = true
 show-thumbnail = false
 target = "clipboard"
 type = "png"
-
-[vars]
-hostname = "darkstar"
