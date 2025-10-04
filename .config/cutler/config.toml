@@ -1,4 +1,3 @@
-lock = true
 [brew]
 casks = ["aerospace", "appcleaner", "cartero", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "notion", "orbstack", "protonvpn", "spotify", "transmission", "zed", "zen"]
 formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "drs", "dust", "fd", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ninja", "ripgrep", "sccache", "stow", "tokei", "tree", "uv", "zoxide"]
