@@ -1,8 +1,8 @@
 [brew]
-casks = ["aerospace", "appcleaner", "cartero", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "notion", "orbstack", "protonvpn", "spotify", "transmission", "zed", "zen"]
+casks = ["aerospace", "anytype", "appcleaner", "cartero", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "spotify", "transmission", "zed", "zen"]
 formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "drs", "dust", "fd", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ninja", "ripgrep", "sccache", "stow", "tokei", "tree", "uv", "zoxide"]
-no_deps = true
 taps = ["hitblast/tap", "nikitabobko/tap", "soloantonio/cartero"]
+no_deps = true
 
 [command.dotfiles]
 ensure_first = true
