@@ -9,10 +9,11 @@ ensure_first = true
 flag = true
 required = ["stow", "git"]
 run = """
-mkdir ~/Developer
-git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
+if [ ! -d ~/Developer/dotfiles ]; then
+  git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
+fi
 cd ~/Developer/dotfiles
-stow . -t ~
+stow . -t ~ --adopt
 """
 
 [command.hostname]
