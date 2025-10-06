@@ -1,101 +1,3 @@
-# Homebrew apps & tools
-
-[brew]
-casks = ["aerospace", "anytype", "appcleaner", "cartero", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "spotify", "transmission", "zed", "zen"]
-formulae = ["bash", "bash-completion@2", "bat", "cargo-edit", "cmake", "drs", "dust", "fd", "gh", "git", "hookman", "lazygit", "libyaml", "mactop", "mas", "mise", "ninja", "ripgrep", "sccache", "stow", "tokei", "tree", "uv", "zoxide"]
-taps = ["hitblast/tap", "nikitabobko/tap", "soloantonio/cartero"]
-no_deps = true
-
-# External commands
-# NOTE: The flag = true commands only run if -a or -f is passed.
-
-[vars]
-hostname = "darkstar"
-
-# setup this repository
-[command.dotfiles]
-ensure_first = true
-flag = true
-required = ["stow", "git"]
-run = """
-if [ ! -d ~/Developer/dotfiles ]; then
-  git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
-fi
-cd ~/Developer/dotfiles
-stow . -t ~ --adopt
-"""
-
-# installs all tools declared in .config/mise/config.toml
-[command.mise]
-ensure_first = true
-flag = true
-required = ["mise"]
-run = "mise install"
-
-# sets hostname to darkstar
-[command.hostname]
-flag = true
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-
-# touch id based sudo
-[command.touchid]
-flag = true
-run = """
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
-"""
-
-# Remote autosync
-# NOTE: Only added for vanity and occasional fetching.
-# Since I test cutler on a daily basis, this one is required for me.
-
-[remote]
-autosync = false
-url = "https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml"
-
-# System preferences
-# NOTE: DO NOT CHANGE!
-
-[set.AppleMultitouchTrackpad]
-FirstClickThreshold = 0
-TrackpadThreeFingerDrag = true
-
-[set.HIToolbox]
-AppleFnUsageType = 0
-
-[set.NSGlobalDomain]
-InitialKeyRepeat = 15
-KeyRepeat = 2
-NSAutoFillHeuristicControllerEnabled = false
-NSAutomaticInlinePredictionEnabled = false
-NSAutomaticSpellingCorrectionEnabled = false
-NSDocumentSaveNewDocumentsToCloud = false
-"com.apple.keyboard.fnState" = false
-
-[set.dock]
-autohide = true
-autohide-delay = 0
-autohide-time-modifier = 0.6
-expose-group-apps = true
-magnification = true
-mineffect = "suck"
-orientation = "bottom"
-show-recents = false
-static-only = true
-tilesize = 64
-
-[set.finder]
-AppleShowAllFiles = true
-CreateDesktop = false
-FXDefaultSearchScope = "SCcf"
-FXEnableExtensionChangeWarning = false
-FXRemoveOldTrashItems = true
-ShowExternalHardDrivesOnDesktop = false
-ShowPathbar = true
-
 [set.menuextra.clock]
 FlashDateSeparators = true
 Show24Hour = false
@@ -104,7 +6,142 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
+[set.dock]
+autohide-time-modifier = 0.6
+static-only = true
+autohide = true
+expose-group-apps = true
+show-recents = false
+autohide-delay = 0
+tilesize = 64
+mineffect = "suck"
+orientation = "bottom"
+magnification = true
+
+[set.finder]
+ShowExternalHardDrivesOnDesktop = false
+ShowPathbar = true
+FXDefaultSearchScope = "SCcf"
+AppleShowAllFiles = true
+FXEnableExtensionChangeWarning = false
+CreateDesktop = false
+FXRemoveOldTrashItems = true
+
+[set.AppleMultitouchTrackpad]
+TrackpadThreeFingerDrag = true
+test = true
+FirstClickThreshold = 0
+
 [set.screencapture]
 show-thumbnail = false
-target = "clipboard"
 type = "png"
+target = "clipboard"
+
+[set.HIToolbox]
+AppleFnUsageType = 0
+
+[set.NSGlobalDomain]
+NSAutomaticSpellingCorrectionEnabled = false
+NSAutomaticInlinePredictionEnabled = false
+KeyRepeat = 2
+NSAutoFillHeuristicControllerEnabled = false
+InitialKeyRepeat = 15
+"com.apple.keyboard.fnState" = false
+NSDocumentSaveNewDocumentsToCloud = false
+
+[vars]
+hostname = "darkstar"
+
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
+flag = true
+
+[command.mise]
+run = "mise install"
+ensure_first = true
+required = ["mise"]
+flag = true
+
+[command.dotfiles]
+run = """
+if [ ! -d ~/Developer/dotfiles ]; then
+  git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
+fi
+cd ~/Developer/dotfiles
+stow . -t ~ --adopt
+"""
+ensure_first = true
+required = [
+    "stow",
+    "git",
+]
+flag = true
+
+[command.touchid]
+run = """
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+"""
+flag = true
+
+[brew]
+formulae = [
+    "bash",
+    "bash-completion@2",
+    "bat",
+    "cargo-edit",
+    "cmake",
+    "drs",
+    "dust",
+    "fd",
+    "gh",
+    "git",
+    "hookman",
+    "lazygit",
+    "libyaml",
+    "mactop",
+    "mas",
+    "mise",
+    "ninja",
+    "ripgrep",
+    "sccache",
+    "stow",
+    "tokei",
+    "tree",
+    "uv",
+    "zoxide",
+]
+casks = [
+    "aerospace",
+    "anytype",
+    "appcleaner",
+    "cartero",
+    "container",
+    "discord",
+    "font-sf-mono-nerd-font-ligaturized",
+    "ghostty",
+    "hot",
+    "iina",
+    "karabiner-elements",
+    "keyboardcleantool",
+    "orbstack",
+    "protonvpn",
+    "spotify",
+    "sublime-merge",
+    "transmission",
+    "zed",
+    "zen",
+]
+taps = [
+    "hitblast/tap",
+    "nikitabobko/tap",
+    "soloantonio/cartero",
+]
+no_deps = true
+
+[remote]
+url = "https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml"
+autosync = false
