@@ -93,7 +93,6 @@
     "ruff": true,
     "toml": true
   },
-  "restore_on_startup": "none",
   "file_scan_exclusions": [
     "**/.git",
     "**/.svn",
