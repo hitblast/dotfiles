@@ -1,3 +1,24 @@
+[set.dock]
+magnification = true
+tilesize = 64
+show-recents = false
+expose-group-apps = true
+mineffect = "suck"
+autohide-time-modifier = 0.6
+static-only = true
+autohide = true
+orientation = "bottom"
+autohide-delay = 0
+
+[set.finder]
+FXEnableExtensionChangeWarning = false
+AppleShowAllFiles = true
+FXDefaultSearchScope = "SCcf"
+ShowPathbar = true
+ShowExternalHardDrivesOnDesktop = false
+FXRemoveOldTrashItems = true
+CreateDesktop = false
+
 [set.menuextra.clock]
 FlashDateSeparators = true
 Show24Hour = false
@@ -6,65 +27,30 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
-[set.dock]
-autohide-time-modifier = 0.6
-static-only = true
-autohide = true
-expose-group-apps = true
-show-recents = false
-autohide-delay = 0
-tilesize = 64
-mineffect = "suck"
-orientation = "bottom"
-magnification = true
-
-[set.finder]
-ShowExternalHardDrivesOnDesktop = false
-ShowPathbar = true
-FXDefaultSearchScope = "SCcf"
-AppleShowAllFiles = true
-FXEnableExtensionChangeWarning = false
-CreateDesktop = false
-FXRemoveOldTrashItems = true
-
-[set.AppleMultitouchTrackpad]
-TrackpadThreeFingerDrag = true
-test = true
-FirstClickThreshold = 0
-
 [set.screencapture]
+target = "clipboard"
 show-thumbnail = false
 type = "png"
-target = "clipboard"
+
+[set.AppleMultitouchTrackpad]
+FirstClickThreshold = 0
+TrackpadThreeFingerDrag = true
+test = true
 
 [set.HIToolbox]
 AppleFnUsageType = 0
 
 [set.NSGlobalDomain]
-NSAutomaticSpellingCorrectionEnabled = false
-NSAutomaticInlinePredictionEnabled = false
 KeyRepeat = 2
 NSAutoFillHeuristicControllerEnabled = false
 InitialKeyRepeat = 15
-"com.apple.keyboard.fnState" = false
+NSAutomaticInlinePredictionEnabled = false
+NSAutomaticSpellingCorrectionEnabled = false
 NSDocumentSaveNewDocumentsToCloud = false
+"com.apple.keyboard.fnState" = false
 
 [vars]
 hostname = "darkstar"
-
-[command.hostname]
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-flag = true
-
-[command.mise]
-run = "mise install"
-ensure_first = true
-required = ["mise"]
-flag = true
 
 [command.dotfiles]
 run = """
@@ -79,6 +65,20 @@ required = [
     "stow",
     "git",
 ]
+flag = true
+
+[command.mise]
+run = "mise install"
+ensure_first = true
+required = ["mise"]
+flag = true
+
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
 flag = true
 
 [command.touchid]
@@ -116,6 +116,7 @@ formulae = [
 ]
 casks = [
     "aerospace",
+    "android-platform-tools",
     "anytype",
     "appcleaner",
     "cartero",
@@ -132,6 +133,7 @@ casks = [
     "spotify",
     "sublime-merge",
     "transmission",
+    "whatsapp",
     "zed",
     "zen",
 ]
