@@ -1,23 +1,20 @@
-[set.dock]
-magnification = true
-tilesize = 64
-show-recents = false
-expose-group-apps = true
-mineffect = "suck"
-autohide-time-modifier = 0.6
-static-only = true
-autohide = true
-orientation = "bottom"
-autohide-delay = 0
-
 [set.finder]
-FXEnableExtensionChangeWarning = false
 AppleShowAllFiles = true
-FXDefaultSearchScope = "SCcf"
-ShowPathbar = true
-ShowExternalHardDrivesOnDesktop = false
+FXEnableExtensionChangeWarning = false
 FXRemoveOldTrashItems = true
+FXDefaultSearchScope = "SCcf"
+ShowExternalHardDrivesOnDesktop = false
+ShowPathbar = true
 CreateDesktop = false
+
+[set.NSGlobalDomain]
+NSAutoFillHeuristicControllerEnabled = false
+KeyRepeat = 2
+NSAutomaticInlinePredictionEnabled = false
+NSDocumentSaveNewDocumentsToCloud = false
+"com.apple.keyboard.fnState" = false
+InitialKeyRepeat = 15
+NSAutomaticSpellingCorrectionEnabled = false
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -29,25 +26,28 @@ ShowSeconds = true
 
 [set.screencapture]
 target = "clipboard"
-show-thumbnail = false
 type = "png"
+show-thumbnail = false
 
 [set.AppleMultitouchTrackpad]
 FirstClickThreshold = 0
 TrackpadThreeFingerDrag = true
 test = true
 
+[set.dock]
+mineffect = "suck"
+autohide-delay = 0
+show-recents = false
+tilesize = 64
+magnification = true
+orientation = "bottom"
+autohide-time-modifier = 0.6
+expose-group-apps = true
+static-only = true
+autohide = true
+
 [set.HIToolbox]
 AppleFnUsageType = 0
-
-[set.NSGlobalDomain]
-KeyRepeat = 2
-NSAutoFillHeuristicControllerEnabled = false
-InitialKeyRepeat = 15
-NSAutomaticInlinePredictionEnabled = false
-NSAutomaticSpellingCorrectionEnabled = false
-NSDocumentSaveNewDocumentsToCloud = false
-"com.apple.keyboard.fnState" = false
 
 [vars]
 hostname = "darkstar"
@@ -67,6 +67,12 @@ required = [
 ]
 flag = true
 
+[command.touchid]
+run = """
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+"""
+flag = true
+
 [command.mise]
 run = "mise install"
 ensure_first = true
@@ -78,12 +84,6 @@ run = """
 sudo scutil --set LocalHostName $hostname
 sudo scutil --set HostName $hostname
 sudo scutil --set ComputerName $hostname
-"""
-flag = true
-
-[command.touchid]
-run = """
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 """
 flag = true
 
