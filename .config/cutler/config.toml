@@ -73,9 +73,16 @@ sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_l
 """
 flag = true
 
+[command.uv]
+run = """
+uv tool install basedpyright
+uv tool install ruff
+"""
+required = ["uv"]
+flag = true
+
 [command.mise]
 run = "mise install"
-ensure_first = true
 required = ["mise"]
 flag = true
 
