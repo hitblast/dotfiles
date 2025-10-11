@@ -7,6 +7,7 @@
     compression = 9
     whitespace = error
     preloadindex = true
+	excludesfile = /Users/hitblast/.gitignore-global
 
 [advice]
     addEmptyPathspec = false
