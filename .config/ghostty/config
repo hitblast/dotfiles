@@ -20,8 +20,8 @@ theme = dark:fleet,light:"Xcode Light"
 window-colorspace = display-p3
 window-width = 101
 window-height = 28
-window-padding-x = 10
-window-padding-y = 7
+window-padding-x = 13
+window-padding-y = 11
 
 # macOS-specific settings
 macos-titlebar-style = hidden
