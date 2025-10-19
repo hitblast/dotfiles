@@ -1,20 +1,21 @@
-[set.finder]
-AppleShowAllFiles = true
-FXEnableExtensionChangeWarning = false
-FXRemoveOldTrashItems = true
-FXDefaultSearchScope = "SCcf"
-ShowExternalHardDrivesOnDesktop = false
-ShowPathbar = true
-CreateDesktop = false
+[set.HIToolbox]
+AppleFnUsageType = 0
 
-[set.NSGlobalDomain]
-NSAutoFillHeuristicControllerEnabled = false
-KeyRepeat = 2
-NSAutomaticInlinePredictionEnabled = false
-NSDocumentSaveNewDocumentsToCloud = false
-"com.apple.keyboard.fnState" = false
-InitialKeyRepeat = 15
-NSAutomaticSpellingCorrectionEnabled = false
+[set.AppleMultitouchTrackpad]
+FirstClickThreshold = 0
+TrackpadThreeFingerDrag = true
+
+[set.dock]
+tilesize = 30
+orientation = "bottom"
+show-recents = false
+static-only = true
+autohide = true
+magnification = true
+autohide-delay = 0
+mineffect = "suck"
+autohide-time-modifier = 0.6
+expose-group-apps = true
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -25,29 +26,27 @@ ShowDayOfWeek = false
 ShowSeconds = true
 
 [set.screencapture]
+show-thumbnail = false
 target = "clipboard"
 type = "png"
-show-thumbnail = false
 
-[set.AppleMultitouchTrackpad]
-FirstClickThreshold = 0
-TrackpadThreeFingerDrag = true
-test = true
+[set.finder]
+ShowExternalHardDrivesOnDesktop = false
+FXDefaultSearchScope = "SCcf"
+FXRemoveOldTrashItems = true
+ShowPathbar = true
+FXEnableExtensionChangeWarning = false
+AppleShowAllFiles = true
+CreateDesktop = false
 
-[set.dock]
-mineffect = "suck"
-autohide-delay = 0
-show-recents = false
-tilesize = 64
-magnification = true
-orientation = "bottom"
-autohide-time-modifier = 0.6
-expose-group-apps = true
-static-only = true
-autohide = true
-
-[set.HIToolbox]
-AppleFnUsageType = 0
+[set.NSGlobalDomain]
+NSAutoFillHeuristicControllerEnabled = false
+"com.apple.keyboard.fnState" = false
+InitialKeyRepeat = 15
+KeyRepeat = 2
+NSAutomaticInlinePredictionEnabled = false
+NSAutomaticSpellingCorrectionEnabled = false
+NSDocumentSaveNewDocumentsToCloud = false
 
 [vars]
 hostname = "darkstar"
@@ -65,6 +64,14 @@ required = [
     "stow",
     "git",
 ]
+flag = true
+
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
 flag = true
 
 [command.touchid]
@@ -86,14 +93,6 @@ run = "mise install"
 required = ["mise"]
 flag = true
 
-[command.hostname]
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-flag = true
-
 [brew]
 formulae = [
     "bash",
@@ -112,6 +111,7 @@ formulae = [
     "mactop",
     "mas",
     "mise",
+    "ncspot",
     "ninja",
     "ripgrep",
     "sccache",
@@ -123,8 +123,8 @@ formulae = [
 ]
 casks = [
     "aerospace",
+    "android-file-transfer",
     "android-platform-tools",
-    "anytype",
     "appcleaner",
     "cartero",
     "container",
