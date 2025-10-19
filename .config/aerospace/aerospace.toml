@@ -44,10 +44,10 @@ preset = 'qwerty'
 [gaps]
 inner.horizontal = 8
 inner.vertical = 8
-outer.left = 0
-outer.bottom = 0
-outer.top = 0
-outer.right = 0
+outer.left = 45
+outer.bottom = 45
+outer.top = 45
+outer.right = 45
 
 
 # Binding modes
@@ -87,7 +87,6 @@ cmd-alt-ctrl-u = 'workspace 1'
 cmd-alt-ctrl-i = 'workspace 2'
 cmd-alt-ctrl-o = 'workspace 3'
 cmd-alt-ctrl-p = 'workspace 4'
-cmd-alt-ctrl-y = 'workspace M'
 cmd-alt-ctrl-7 = 'workspace A'
 cmd-alt-ctrl-8 = 'workspace B'
 cmd-alt-ctrl-9 = 'workspace C'
@@ -98,15 +97,10 @@ cmd-alt-ctrl-shift-u = 'move-node-to-workspace 1'
 cmd-alt-ctrl-shift-i = 'move-node-to-workspace 2'
 cmd-alt-ctrl-shift-o = 'move-node-to-workspace 3'
 cmd-alt-ctrl-shift-p = 'move-node-to-workspace 4'
-cmd-alt-ctrl-shift-y = 'move-node-to-workspace M'
 cmd-alt-ctrl-shift-7 = 'move-node-to-workspace A'
 cmd-alt-ctrl-shift-8 = 'move-node-to-workspace B'
 cmd-alt-ctrl-shift-9 = 'move-node-to-workspace C'
 cmd-alt-ctrl-shift-0 = 'move-node-to-workspace D'
-
-# Launching some notable apps:
-cmd-alt-ctrl-s = 'exec-and-forget open -a /Applications/Spotify.app'
-cmd-alt-ctrl-b = 'exec-and-forget open -a /Applications/Safari.app'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 cmd-alt-ctrl-leftSquareBracket = 'workspace-back-and-forth'
@@ -147,10 +141,6 @@ b = ["exec-and-forget osascript -e 'set the clipboard to \"😭\"'", "mode main"
 [[on-window-detected]]
 if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
 run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.spotify.client'
-run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
