@@ -45,8 +45,8 @@ preset = 'qwerty'
 inner.horizontal = 8
 inner.vertical = 8
 outer.left = 45
-outer.bottom = 45
-outer.top = 45
+outer.bottom = 30
+outer.top = 30
 outer.right = 45
 
 

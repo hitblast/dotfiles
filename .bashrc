@@ -1,41 +1,13 @@
 # Set vim mode for terminal.
+# Interactive Vi mode for shell.
 set -o vi
 
-# Add exit code-based color after prompt.
-PROMPT_COMMAND=__prompt_command
-
-__prompt_command() {
-    local EXIT="$?"
-    PS1=""
-
-    local RCol='\[\e[0m\]'
-    local Red='\[\e[0;31m\]'
-
-    # Get current git branch, if any, and show if repo is modified.
-    local git_branch=""
-    local git_dirty=""
-    if command -v git &>/dev/null; then
-        git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
-        if [ -n "$git_branch" ] && [ "$git_branch" != "HEAD" ]; then
-            # Check if repo is dirty (modified).
-            if git diff --quiet 2>/dev/null && git diff --cached --quiet 2>/dev/null; then
-                git_dirty=""
-            else
-                git_dirty="*"
-            fi
-            git_branch=" (${git_branch}${git_dirty})"
-        else
-            git_branch=""
-        fi
-    fi
-
-    # Change color for $ based on exit code.
-    if [ $EXIT != 0 ]; then
-        PS1+="\h \W${git_branch}${Red}\$${RCol} "
-    else
-        PS1+="\h \W${git_branch}\$ "
-    fi
+# Set prompt to show git branch if in a git repo.
+__git_branch_ps1() {
+    git branch --show-current 2>/dev/null
 }
+
+PS1='\u@\h:\w$(branch=$(__git_branch_ps1); [[ -n $branch ]] && echo " (\[$(tput setaf 2)\]$branch\[$(tput sgr0)\])")\$ '
 
 # Aliases.
 bundleid() {
