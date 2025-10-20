@@ -7,6 +7,14 @@ __git_branch_ps1() {
     git branch --show-current 2>/dev/null
 }
 
+# Disable lazygit for Zed because I keep forgetting it.
+if [ -n "$EDITOR" ]; then
+    lazygit() {
+        echo "git gud, lazygit disabled in editor"
+        return 1
+    }
+fi
+
 PS1='\u@\h:\w$(branch=$(__git_branch_ps1); [[ -n $branch ]] && echo " (\[$(tput setaf 2)\]$branch\[$(tput sgr0)\])")\$ '
 
 # Aliases.
