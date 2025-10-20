@@ -25,7 +25,7 @@
             ]
           },
           {
-            "description": "Hyper Key: Caps Lock to Left Control + Left Option + Left Command",
+            "description": "Hyper Key",
             "manipulators": [
               {
                 "from": {
@@ -44,6 +44,7 @@
                     "modifiers": ["left_command", "left_option"]
                   }
                 ],
+                "to_if_alone": [{ "key_code": "escape" }],
                 "to_after_key_up": [
                   {
                     "set_variable": {
@@ -53,30 +54,6 @@
                   }
                 ],
                 "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Ignore Command+Q for select apps (convert to Command+W)",
-            "manipulators": [
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "q",
-                  "modifiers": {
-                    "mandatory": ["command"]
-                  }
-                },
-                "to": [{ "key_code": "w", "modifiers": ["command"] }],
-                "conditions": [
-                  {
-                    "type": "frontmost_application_if",
-                    "bundle_identifiers": [
-                      "^dev\\.zed\\.Zed$",
-                      "^com\\.mitchellh\\.ghostty"
-                    ]
-                  }
-                ]
               }
             ]
           }
