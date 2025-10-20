@@ -31,7 +31,7 @@ autohide = true
 magnification = true
 expose-group-apps = true
 show-recents = false
-tilesize = 30
+tilesize = 70
 mineffect = "suck"
 autohide-time-modifier = 0.6
 
