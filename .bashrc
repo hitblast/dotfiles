@@ -15,7 +15,34 @@ if [ -n "$EDITOR" ]; then
     }
 fi
 
-PS1='\u@\h:\w$(branch=$(__git_branch_ps1); [[ -n $branch ]] && echo " (\[$(tput setaf 2)\]$branch\[$(tput sgr0)\])")\$ '
+__git_branch_status_ps1() {
+    branch="$(__git_branch_ps1)"
+    if [ -z "$branch" ]; then
+        return
+    fi
+
+    status=""
+    # Check for unstaged changes
+    if git diff --quiet 2>/dev/null; then
+        :
+    else
+        status="*"
+    fi
+    # Check for pushable commits
+    if git rev-parse --abbrev-ref @{u} >/dev/null 2>&1; then
+        if [ -n "$(git log --oneline @{u}.. 2>/dev/null)" ]; then
+            status="${status}!"
+        fi
+    fi
+
+    # If both, show *!, if only one, show * or !
+    if [ -n "$status" ]; then
+        echo " ($(tput setaf 2)$status$branch$(tput sgr0))"
+    else
+        echo " ($(tput setaf 2)$branch$(tput sgr0))"
+    fi
+}
+PS1='\u@\h:\w$(__git_branch_status_ps1)\$ '
 
 # Aliases.
 bundleid() {
