@@ -1,21 +1,39 @@
-[set.HIToolbox]
-AppleFnUsageType = 0
+[set.finder]
+ShowPathbar = true
+FXEnableExtensionChangeWarning = false
+CreateDesktop = false
+FXDefaultSearchScope = "SCcf"
+FXRemoveOldTrashItems = true
+AppleShowAllFiles = true
+ShowExternalHardDrivesOnDesktop = false
 
 [set.AppleMultitouchTrackpad]
 FirstClickThreshold = 0
 TrackpadThreeFingerDrag = true
 
+[set.HIToolbox]
+AppleFnUsageType = 0
+
+[set.NSGlobalDomain]
+KeyRepeat = 2
+NSAutomaticInlinePredictionEnabled = false
+NSAutoFillHeuristicControllerEnabled = false
+NSDocumentSaveNewDocumentsToCloud = false
+InitialKeyRepeat = 15
+NSAutomaticSpellingCorrectionEnabled = false
+"com.apple.keyboard.fnState" = false
+
 [set.dock]
-tilesize = 30
 orientation = "bottom"
-show-recents = false
+autohide-delay = 0
 static-only = true
 autohide = true
 magnification = true
-autohide-delay = 0
+expose-group-apps = true
+show-recents = false
+tilesize = 30
 mineffect = "suck"
 autohide-time-modifier = 0.6
-expose-group-apps = true
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -27,29 +45,19 @@ ShowSeconds = true
 
 [set.screencapture]
 show-thumbnail = false
-target = "clipboard"
 type = "png"
-
-[set.finder]
-ShowExternalHardDrivesOnDesktop = false
-FXDefaultSearchScope = "SCcf"
-FXRemoveOldTrashItems = true
-ShowPathbar = true
-FXEnableExtensionChangeWarning = false
-AppleShowAllFiles = true
-CreateDesktop = false
-
-[set.NSGlobalDomain]
-NSAutoFillHeuristicControllerEnabled = false
-"com.apple.keyboard.fnState" = false
-InitialKeyRepeat = 15
-KeyRepeat = 2
-NSAutomaticInlinePredictionEnabled = false
-NSAutomaticSpellingCorrectionEnabled = false
-NSDocumentSaveNewDocumentsToCloud = false
+target = "clipboard"
 
 [vars]
 hostname = "darkstar"
+
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
+flag = true
 
 [command.dotfiles]
 run = """
@@ -66,18 +74,15 @@ required = [
 ]
 flag = true
 
-[command.hostname]
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-flag = true
-
 [command.touchid]
 run = """
 sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 """
+flag = true
+
+[command.mise]
+run = "mise install"
+required = ["mise"]
 flag = true
 
 [command.uv]
@@ -86,11 +91,6 @@ uv tool install basedpyright
 uv tool install ruff
 """
 required = ["uv"]
-flag = true
-
-[command.mise]
-run = "mise install"
-required = ["mise"]
 flag = true
 
 [brew]
@@ -123,7 +123,6 @@ formulae = [
 ]
 casks = [
     "aerospace",
-    "android-file-transfer",
     "android-platform-tools",
     "appcleaner",
     "cartero",
@@ -138,7 +137,6 @@ casks = [
     "orbstack",
     "protonvpn",
     "spotify",
-    "sublime-merge",
     "transmission",
     "whatsapp",
     "zed",

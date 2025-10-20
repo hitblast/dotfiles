@@ -90,7 +90,6 @@
     "fleet-themes": true,
     "git-firefly": true,
     "html": true,
-    "ruff": true,
     "toml": true
   },
   "file_scan_exclusions": [
@@ -106,16 +105,5 @@
     "**/.vscode"
   ],
   "remove_trailing_whitespace_on_save": true,
-  "always_treat_brackets_as_autoclosed": true,
-  // LSP-specific configuration
-  "languages": {
-    "Python": {
-      "format_on_save": "on",
-      "formatter": [
-        {
-          "language_server": { "name": "ruff" }
-        }
-      ]
-    }
-  }
+  "always_treat_brackets_as_autoclosed": true
 }
