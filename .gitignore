@@ -19,3 +19,7 @@
 
 # configstore (gemini-cli)
 .config/configstore/*
+
+# karabiner
+.config/karabiner/automatic_backups
+.config/karabiner/assets
