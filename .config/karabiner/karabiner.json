@@ -44,7 +44,6 @@
                     "modifiers": ["left_command", "left_option"]
                   }
                 ],
-                "to_if_alone": [{ "key_code": "escape" }],
                 "to_after_key_up": [
                   {
                     "set_variable": {
