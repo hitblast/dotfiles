@@ -170,10 +170,6 @@ if.app-id = 'app.zen-browser.zen'
 run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
-if.app-id = 'notion.id'
-run = 'move-node-to-workspace 3'
-
-[[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace 4'
 
@@ -182,9 +178,6 @@ if.app-id = 'com.apple.mail'
 run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
-if.app-id = 'net.whatsapp.WhatsApp'
+if.app-id = 'org.whispersystems.signal-desktop'
 run = 'move-node-to-workspace 4'
 
-[[on-window-detected]]
-if.app-name-regex-substring = 'instagram'
-run = 'move-node-to-workspace 4'
