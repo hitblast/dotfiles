@@ -107,31 +107,17 @@ cmd-alt-ctrl-leftSquareBracket = 'workspace-back-and-forth'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-alt-ctrl-shift-semicolon = 'mode service'
-cmd-alt-ctrl-semicolon = 'mode emoji'
 
 
 # 'service' binding mode declaration
 [mode.service.binding]
 esc = ['flatten-workspace-tree', 'mode main'] # reset layout
-c = ['exec-and-forget zed ~/Developer/dotfiles', 'mode main'] # show configuration
 k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill audio service
 r = ['reload-config', 'mode main'] # reload configuration
 f = [
     'layout floating tiling',
     'mode main',
 ] # toggle between floating and tiling layout
-
-
-# 'emoji' binding mode declaration
-[mode.emoji.binding]
-esc = 'mode main'
-c = ["exec-and-forget osascript -e 'set the clipboard to \"🐱\"'", "mode main"] # [c]at
-a = ["exec-and-forget osascript -e 'set the clipboard to \"😾\"'", "mode main"] # [a]ngry cat
-l = ["exec-and-forget osascript -e 'set the clipboard to \"😂\"'", "mode main"] # [l]augh
-h = ["exec-and-forget osascript -e 'set the clipboard to \"💝\"'", "mode main"] # [g]ift heart
-s = ["exec-and-forget osascript -e 'set the clipboard to \"💀\"'", "mode main"] # [s]kull
-t = ["exec-and-forget osascript -e 'set the clipboard to \"🤔\"'", "mode main"] # [t]hink
-b = ["exec-and-forget osascript -e 'set the clipboard to \"😭\"'", "mode main"] # [b]ruh
 
 
 # App-specific callbacks
