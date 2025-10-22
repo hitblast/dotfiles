@@ -22,12 +22,14 @@ __git_branch_status_ps1() {
     fi
 
     status=""
+
     # unstaged changes = *
     if git diff --quiet 2>/dev/null; then
         :
     else
         status="*"
     fi
+
     # pushable change = !
     if git rev-parse --abbrev-ref @{u} >/dev/null 2>&1; then
         if [ -n "$(git log --oneline @{u}.. 2>/dev/null)" ]; then
