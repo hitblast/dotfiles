@@ -1,11 +1,6 @@
 # vi mode for bash
 set -o vi
 
-# set prompt function
-__git_branch_ps1() {
-    git branch --show-current 2>/dev/null
-}
-
 # disable lazygit if I'm using code editor
 # this is I think going to be zed by default
 if [ -n "$EDITOR" ]; then
@@ -14,6 +9,11 @@ if [ -n "$EDITOR" ]; then
         return 1
     }
 fi
+
+# set prompt function
+__git_branch_ps1() {
+    git branch --show-current 2>/dev/null
+}
 
 __git_branch_status_ps1() {
     branch="$(__git_branch_ps1)"
