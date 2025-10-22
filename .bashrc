@@ -63,6 +63,7 @@ alias gp="git push"
 alias gpf="git push --force"
 alias gs="git status"
 alias gl="git log"
+alias gr="git commit --allow-empty --amend --only -m"
 
 # mise integration
 eval "$(/opt/homebrew/bin/mise activate bash)"
