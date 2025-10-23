@@ -1,0 +1,26 @@
+# editor configuration based on schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# general configuration
+add_newline = false
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$python\
+$rust\
+$sudo\
+$cmd_duration\
+$shell\
+$character"""
+
+[character]
+success_symbol = '\$'
+
