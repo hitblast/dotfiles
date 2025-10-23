@@ -24,3 +24,19 @@ $character"""
 [character]
 success_symbol = '\$'
 
+[directory]
+style = 'white'
+
+[git_branch]
+symbol = ''
+style = 'dimmed white'
+
+[python]
+symbol = ''
+
+[rust]
+style = 'bold yellow'
+symbol = ''
+
+[shell]
+disabled = false
