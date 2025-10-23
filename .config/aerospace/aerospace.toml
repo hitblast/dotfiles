@@ -87,20 +87,20 @@ cmd-alt-ctrl-u = 'workspace 1'
 cmd-alt-ctrl-i = 'workspace 2'
 cmd-alt-ctrl-o = 'workspace 3'
 cmd-alt-ctrl-p = 'workspace 4'
-cmd-alt-ctrl-7 = 'workspace A'
-cmd-alt-ctrl-8 = 'workspace B'
-cmd-alt-ctrl-9 = 'workspace C'
-cmd-alt-ctrl-0 = 'workspace D'
+cmd-alt-ctrl-7 = 'workspace 5'
+cmd-alt-ctrl-8 = 'workspace 6'
+cmd-alt-ctrl-9 = 'workspace 7'
+cmd-alt-ctrl-0 = 'workspace 8'
 
 # Moving nodes:
 cmd-alt-ctrl-shift-u = 'move-node-to-workspace 1'
 cmd-alt-ctrl-shift-i = 'move-node-to-workspace 2'
 cmd-alt-ctrl-shift-o = 'move-node-to-workspace 3'
 cmd-alt-ctrl-shift-p = 'move-node-to-workspace 4'
-cmd-alt-ctrl-shift-7 = 'move-node-to-workspace A'
-cmd-alt-ctrl-shift-8 = 'move-node-to-workspace B'
-cmd-alt-ctrl-shift-9 = 'move-node-to-workspace C'
-cmd-alt-ctrl-shift-0 = 'move-node-to-workspace D'
+cmd-alt-ctrl-shift-7 = 'move-node-to-workspace 5'
+cmd-alt-ctrl-shift-8 = 'move-node-to-workspace 6'
+cmd-alt-ctrl-shift-9 = 'move-node-to-workspace 7'
+cmd-alt-ctrl-shift-0 = 'move-node-to-workspace 8'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 cmd-alt-ctrl-leftSquareBracket = 'workspace-back-and-forth'
@@ -112,7 +112,6 @@ cmd-alt-ctrl-shift-semicolon = 'mode service'
 # 'service' binding mode declaration
 [mode.service.binding]
 esc = ['flatten-workspace-tree', 'mode main'] # reset layout
-k = ['exec-and-forget sudo killall coreaudiod', 'mode main'] # kill audio service
 r = ['reload-config', 'mode main'] # reload configuration
 f = [
     'layout floating tiling',
@@ -144,8 +143,16 @@ if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'aseprite'
+if.app-id = 'com.apple.mail'
 run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+if.app-id = 'com.aseprite.Aseprite'
+run = 'move-node-to-workspace 3'
+
+[[on-window-detected]]
+if.app-id = 'com.blackmagic-design.DaVinciResolveLite'
+run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
@@ -157,10 +164,6 @@ run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
-run = 'move-node-to-workspace 4'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.mail'
 run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
