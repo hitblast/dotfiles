@@ -23,6 +23,7 @@ $character"""
 
 [character]
 success_symbol = '\$'
+error_symbol = '[\$](bold red)'
 
 [directory]
 style = 'white'
