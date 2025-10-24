@@ -3,6 +3,11 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_COLLATE=en_US.UTF-8
 
+# If not already set, set EDITOR to be nvim.
+if [ -z "$EDITOR" ]; then
+    export EDITOR="nvim"
+fi
+
 # Set TERM environment variable for accessing SSH-connected devices.
 export TERM=xterm-256color
 
