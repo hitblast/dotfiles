@@ -19,13 +19,6 @@ bundle() {
     osascript -e "id of app \"$1\""
 }
 
-# put all completion update scripts here
-# (if manual is needed)
-updatecomp() {
-    mkdir $HOME/.bash_completions.d
-    cutler completion bash > "$HOME/.bash_completions.d/cutler.bash"
-}
-
 alias rq="cargo run -q"
 alias finder="open -a Finder ."
 alias cat="bat"
@@ -44,6 +37,9 @@ alias rewo="git commit --allow-empty --amend --only -m"
 
 # enable starship prompt
 eval "$(starship init bash)"
+
+# cutler integration
+eval "$(cutler completion bash)"
 
 # mise integration
 eval "$(/opt/homebrew/bin/mise activate bash)"
