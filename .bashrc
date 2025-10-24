@@ -25,11 +25,12 @@ alias mactop="sudo mactop --color white"
 
 # git-specific aliases
 alias gcam="git commit -a -m"
+alias gaa="git add --all"
 alias gp="git push"
 alias gpf="git push --force"
 alias gs="git status"
 alias gl="git log"
-alias gr="git commit --allow-empty --amend --only -m"
+alias rewo="git commit --allow-empty --amend --only -m"
 
 # enable starship prompt
 eval "$(starship init bash)"
