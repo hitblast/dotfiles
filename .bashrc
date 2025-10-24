@@ -3,9 +3,13 @@ set -o vi
 
 # disable lazygit if I'm using code editor
 # this is I think going to be zed by default
-if [ -n "$EDITOR" ]; then
-    lazygit() {
+if [[ "$EDITOR" != "nvim" ]]; then
+    function lazygit {
         echo "git gud, lazygit disabled in editor"
+        return 1
+    }
+    function nvim {
+        echo "git gud, nvim disabled in other editors"
         return 1
     }
 fi
@@ -13,6 +17,13 @@ fi
 # aliases
 bundle() {
     osascript -e "id of app \"$1\""
+}
+
+# put all completion update scripts here
+# (if manual is needed)
+updatecomp() {
+    mkdir $HOME/.bash_completions.d
+    cutler completion bash > "$HOME/.bash_completions.d/cutler.bash"
 }
 
 alias rq="cargo run -q"
@@ -29,7 +40,6 @@ alias gaa="git add --all"
 alias gp="git push"
 alias gpf="git push --force"
 alias gs="git status"
-alias gl="git log"
 alias rewo="git commit --allow-empty --amend --only -m"
 
 # enable starship prompt

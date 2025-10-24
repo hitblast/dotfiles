@@ -40,6 +40,14 @@ export CXX="sccache clang++"
 # git
 source /opt/homebrew/opt/git/etc/bash_completion.d/git-completion.bash
 
+# Load custom completions from a directory
+CUSTOM_COMPLETIONS_DIR="$HOME/.bash_completions.d"
+if [ -d "$CUSTOM_COMPLETIONS_DIR" ]; then
+    for completion in "$CUSTOM_COMPLETIONS_DIR"/*.bash; do
+        [ -r "$completion" ] && source "$completion"
+    done
+fi
+
 # ---
 
 # Source for the .bashrc file.
