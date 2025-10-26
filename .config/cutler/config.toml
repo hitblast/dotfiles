@@ -1,20 +1,18 @@
+[set.AppleMultitouchTrackpad]
+TrackpadThreeFingerDrag = true
+FirstClickThreshold = 0
+
 [set.NSGlobalDomain]
+NSAutoFillHeuristicControllerEnabled = false
+InitialKeyRepeat = 15
 KeyRepeat = 2
-"com.apple.keyboard.fnState" = false
-NSDocumentSaveNewDocumentsToCloud = false
 NSAutomaticInlinePredictionEnabled = false
 NSAutomaticSpellingCorrectionEnabled = false
-InitialKeyRepeat = 15
-NSAutoFillHeuristicControllerEnabled = false
+NSDocumentSaveNewDocumentsToCloud = false
+"com.apple.keyboard.fnState" = false
 
-[set.finder]
-CreateDesktop = false
-AppleShowAllFiles = true
-FXDefaultSearchScope = "SCcf"
-FXEnableExtensionChangeWarning = false
-FXRemoveOldTrashItems = true
-ShowExternalHardDrivesOnDesktop = false
-ShowPathbar = true
+[set.HIToolbox]
+AppleFnUsageType = 0
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -25,28 +23,30 @@ ShowDayOfWeek = false
 ShowSeconds = true
 
 [set.screencapture]
+target = "clipboard"
 type = "png"
 show-thumbnail = false
-target = "clipboard"
-
-[set.HIToolbox]
-AppleFnUsageType = 0
-
-[set.AppleMultitouchTrackpad]
-TrackpadThreeFingerDrag = true
-FirstClickThreshold = 0
 
 [set.dock]
-orientation = "bottom"
-show-recents = false
-autohide-delay = 0
-expose-group-apps = true
-autohide = true
-magnification = true
-static-only = true
-tilesize = 78
-autohide-time-modifier = 0.6
 mineffect = "suck"
+show-recents = false
+expose-group-apps = true
+tilesize = 78
+autohide = true
+static-only = true
+autohide-delay = 0
+orientation = "bottom"
+autohide-time-modifier = 0.6
+magnification = true
+
+[set.finder]
+FXEnableExtensionChangeWarning = false
+FXDefaultSearchScope = "SCcf"
+AppleShowAllFiles = true
+ShowExternalHardDrivesOnDesktop = false
+CreateDesktop = false
+ShowPathbar = true
+FXRemoveOldTrashItems = true
 
 [vars]
 hostname = "darkstar"
@@ -66,20 +66,6 @@ required = [
 ]
 flag = true
 
-[command.touchid]
-run = """
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
-"""
-flag = true
-
-[command.hostname]
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-flag = true
-
 [command.mise]
 run = "mise install"
 required = ["mise"]
@@ -92,6 +78,20 @@ uv tool install ruff
 uv tool install posting
 """
 required = ["uv"]
+flag = true
+
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
+flag = true
+
+[command.touchid]
+run = """
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+"""
 flag = true
 
 [brew]
@@ -141,7 +141,6 @@ casks = [
     "tower",
     "transmission",
     "zed",
-    "zen",
 ]
 taps = [
     "hitblast/tap",
