@@ -1,18 +1,30 @@
+[set.dock]
+expose-group-apps = true
+show-recents = false
+autohide = true
+tilesize = 78
+autohide-time-modifier = 0.6
+static-only = true
+magnification = true
+orientation = "bottom"
+autohide-delay = 0
+mineffect = "suck"
+
 [set.AppleMultitouchTrackpad]
 TrackpadThreeFingerDrag = true
 FirstClickThreshold = 0
 
-[set.NSGlobalDomain]
-NSAutoFillHeuristicControllerEnabled = false
-InitialKeyRepeat = 15
-KeyRepeat = 2
-NSAutomaticInlinePredictionEnabled = false
-NSAutomaticSpellingCorrectionEnabled = false
-NSDocumentSaveNewDocumentsToCloud = false
-"com.apple.keyboard.fnState" = false
-
 [set.HIToolbox]
 AppleFnUsageType = 0
+
+[set.NSGlobalDomain]
+NSAutoFillHeuristicControllerEnabled = false
+NSAutomaticInlinePredictionEnabled = false
+InitialKeyRepeat = 15
+KeyRepeat = 2
+NSDocumentSaveNewDocumentsToCloud = false
+NSAutomaticSpellingCorrectionEnabled = false
+"com.apple.keyboard.fnState" = false
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -22,34 +34,36 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
+[set.finder]
+CreateDesktop = false
+ShowExternalHardDrivesOnDesktop = false
+FXDefaultSearchScope = "SCcf"
+FXEnableExtensionChangeWarning = false
+AppleShowAllFiles = true
+FXRemoveOldTrashItems = true
+ShowPathbar = true
+
 [set.screencapture]
 target = "clipboard"
-type = "png"
 show-thumbnail = false
-
-[set.dock]
-mineffect = "suck"
-show-recents = false
-expose-group-apps = true
-tilesize = 78
-autohide = true
-static-only = true
-autohide-delay = 0
-orientation = "bottom"
-autohide-time-modifier = 0.6
-magnification = true
-
-[set.finder]
-FXEnableExtensionChangeWarning = false
-FXDefaultSearchScope = "SCcf"
-AppleShowAllFiles = true
-ShowExternalHardDrivesOnDesktop = false
-CreateDesktop = false
-ShowPathbar = true
-FXRemoveOldTrashItems = true
+type = "png"
 
 [vars]
 hostname = "darkstar"
+
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
+flag = true
+
+[command.touchid]
+run = """
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+"""
+flag = true
 
 [command.dotfiles]
 run = """
@@ -80,32 +94,16 @@ uv tool install posting
 required = ["uv"]
 flag = true
 
-[command.hostname]
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-flag = true
-
-[command.touchid]
-run = """
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
-"""
-flag = true
-
 [brew]
 formulae = [
     "bash",
     "bash-completion@2",
     "cargo-edit",
     "cmake",
-    "drs",
     "dust",
     "fd",
     "gh",
     "git",
-    "hookman",
     "lazygit",
     "libyaml",
     "mactop",
@@ -120,9 +118,10 @@ formulae = [
     "tokei",
     "uv",
     "zoxide",
+    "hitblast/tap/drs",
+    "hitblast/tap/hookman",
 ]
 casks = [
-    "aerospace",
     "android-platform-tools",
     "appcleaner",
     "chatgpt",
@@ -141,6 +140,7 @@ casks = [
     "tower",
     "transmission",
     "zed",
+    "nikitabobko/tap/aerospace",
 ]
 taps = [
     "hitblast/tap",
