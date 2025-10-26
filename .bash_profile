@@ -29,6 +29,9 @@ export SCCACHE_DIRECT=true
 export CC="sccache clang"
 export CXX="sccache clang++"
 
+# Remove cutler warning/hints.
+export CUTLER_NO_HINTS=1
+
 # ---
 
 # bash-completion@2 implementation
