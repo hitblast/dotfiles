@@ -8,9 +8,6 @@ if [ -z "$EDITOR" ]; then
     export EDITOR="nvim"
 fi
 
-# Set TERM environment variable for accessing SSH-connected devices.
-export TERM=xterm-256color
-
 # Load local binaries to PATH.
 export PATH="$HOME/.local/bin:$PATH"
 
