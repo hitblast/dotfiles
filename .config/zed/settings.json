@@ -1,7 +1,22 @@
 {
-  // Agentic settings: (disabled for now)
   "disable_ai": true,
-  "show_edit_predictions": false,
+  "title_bar": {
+    "show_menus": false,
+    "show_sign_in": false,
+    "show_user_picture": true,
+    "show_onboarding_banner": false,
+    "show_branch_icon": true,
+    "show_branch_name": true
+  },
+  "max_tabs": 5,
+  "search": {
+    "button": false
+  },
+  "git_panel": {
+    "collapse_untracked_diff": true,
+    "sort_by_path": true,
+    "fallback_branch_name": "master"
+  },
   "notification_panel": {
     "dock": "right"
   },
@@ -13,6 +28,7 @@
     "dock": "right"
   },
   "project_panel": {
+    "entry_spacing": "comfortable",
     "auto_fold_dirs": true,
     "dock": "right"
   },
@@ -27,9 +43,6 @@
   "centered_layout": {
     "left_padding": 0.1,
     "right_padding": 0.1
-  },
-  "features": {
-    "edit_prediction_provider": "none"
   },
   "telemetry": {
     "diagnostics": false,
@@ -63,6 +76,7 @@
     "dark": "Fleet Dark"
   },
   "terminal": {
+    "dock": "bottom",
     "blinking": "on",
     "copy_on_select": true,
     "env": {
