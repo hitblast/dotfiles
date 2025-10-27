@@ -1,9 +1,9 @@
 return {
-  "idr4n/github-monochrome.nvim",
+  "aktersnurra/no-clown-fiesta.nvim",
   lazy = false,
   priority = 1000,
   opts = {},
   config = function()
-	  vim.cmd("colorscheme github-monochrome-light")
+	  vim.cmd("colorscheme no-clown-fiesta")
   end,
 }
