@@ -1,6 +1,7 @@
 [tools]
 bat = "latest"
 "cargo:trimsec" = "latest"
+fastfetch = "latest"
 neovim = "latest"
 rust = { version = "latest", components = "rust-analyzer" }
 
