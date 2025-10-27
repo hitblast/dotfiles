@@ -26,11 +26,11 @@ success_symbol = '\$'
 error_symbol = '[\$](bold red)'
 
 [directory]
-style = 'dimmed black'
+style = 'dimmed white'
 
 [git_branch]
 symbol = ''
-style = 'black'
+style = 'white'
 
 [python]
 symbol = ''
@@ -40,5 +40,4 @@ style = 'bold yellow'
 symbol = ''
 
 [shell]
-style = 'bold black'
 disabled = false
