@@ -1,41 +1,44 @@
-[set.finder]
-ShowExternalHardDrivesOnDesktop = false
-FXDefaultSearchScope = "SCcf"
-CreateDesktop = false
-AppleShowAllFiles = true
-FXEnableExtensionChangeWarning = false
-FXRemoveOldTrashItems = true
-ShowPathbar = true
+[set.NSGlobalDomain]
+NSAutoFillHeuristicControllerEnabled = false
+NSAutomaticSpellingCorrectionEnabled = false
+KeyRepeat = 2
+"com.apple.keyboard.fnState" = false
+InitialKeyRepeat = 15
+NSDocumentSaveNewDocumentsToCloud = false
+NSAutomaticInlinePredictionEnabled = false
 
 [set.screencapture]
 target = "clipboard"
 type = "png"
 show-thumbnail = false
 
-[set.NSGlobalDomain]
-InitialKeyRepeat = 15
-NSAutomaticSpellingCorrectionEnabled = false
-KeyRepeat = 2
-NSDocumentSaveNewDocumentsToCloud = false
-"com.apple.keyboard.fnState" = false
-NSAutoFillHeuristicControllerEnabled = false
-NSAutomaticInlinePredictionEnabled = false
-
 [set.AppleMultitouchTrackpad]
-FirstClickThreshold = 0
 TrackpadThreeFingerDrag = true
+FirstClickThreshold = 0
+
+[set.HIToolbox]
+AppleFnUsageType = 0
 
 [set.dock]
+autohide-delay = 0
+orientation = "bottom"
+tilesize = 78
 expose-group-apps = true
+autohide-time-modifier = 0.6
+autohide = true
+magnification = true
+show-recents = false
 static-only = true
 mineffect = "suck"
-autohide = true
-orientation = "bottom"
-show-recents = false
-autohide-delay = 0
-magnification = true
-autohide-time-modifier = 0.6
-tilesize = 78
+
+[set.finder]
+ShowExternalHardDrivesOnDesktop = false
+AppleShowAllFiles = true
+ShowPathbar = true
+FXEnableExtensionChangeWarning = false
+CreateDesktop = false
+FXDefaultSearchScope = "SCcf"
+FXRemoveOldTrashItems = true
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -45,11 +48,30 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
-[set.HIToolbox]
-AppleFnUsageType = 0
-
 [vars]
 hostname = "darkstar"
+
+[command.mise]
+run = "mise install"
+required = ["mise"]
+flag = true
+
+[command.uv]
+run = """
+uv tool install basedpyright
+uv tool install ruff
+uv tool install posting
+"""
+required = ["uv"]
+flag = true
+
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
+flag = true
 
 [command.touchid]
 run = """
@@ -70,28 +92,6 @@ required = [
     "stow",
     "git",
 ]
-flag = true
-
-[command.uv]
-run = """
-uv tool install basedpyright
-uv tool install ruff
-uv tool install posting
-"""
-required = ["uv"]
-flag = true
-
-[command.hostname]
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-flag = true
-
-[command.mise]
-run = "mise install"
-required = ["mise"]
 flag = true
 
 [brew]
@@ -124,7 +124,6 @@ formulae = [
 casks = [
     "android-platform-tools",
     "appcleaner",
-    "chatgpt",
     "container",
     "discord",
     "font-sf-mono-nerd-font-ligaturized",
