@@ -29,7 +29,7 @@
     "button": false
   },
   "project_panel": {
-    "default_width": 250,
+    "default_width": 300,
     "entry_spacing": "comfortable",
     "auto_fold_dirs": true,
     "dock": "left"
@@ -67,18 +67,19 @@
   "seed_search_query_from_cursor": "selection",
   "ui_font_family": "Liga SFMono Nerd Font",
   "buffer_font_family": "Liga SFMono Nerd Font",
-  "ui_font_size": 15,
+  "ui_font_size": 16,
   "buffer_font_size": 13,
   "buffer_line_height": "comfortable",
   "base_keymap": "VSCode",
   "relative_line_numbers": true,
   "theme": {
     "mode": "system",
-    "light": "Fleet Light",
-    "dark": "Fleet Dark"
+    "light": "Oxocarbon Light (IBM Carbon)",
+    "dark": "Oxocarbon Dark (IBM Carbon)"
   },
   "terminal": {
     "dock": "bottom",
+    "minimum_contrast": 100,
     "blinking": "on",
     "copy_on_select": true,
     "env": {
@@ -92,11 +93,12 @@
     }
   },
   "auto_install_extensions": {
-    "dart": true,
-    "fleet-themes": true,
     "git-firefly": true,
     "html": true,
-    "toml": true
+    "toml": true,
+    "ruby": true,
+    "lua": true,
+    "oxocarbon": true
   },
   "file_scan_exclusions": [
     "**/.git",
