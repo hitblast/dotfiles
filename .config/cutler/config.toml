@@ -1,44 +1,23 @@
 [set.NSGlobalDomain]
+NSAutomaticInlinePredictionEnabled = false
+"com.apple.keyboard.fnState" = false
+KeyRepeat = 2
 NSAutoFillHeuristicControllerEnabled = false
 NSAutomaticSpellingCorrectionEnabled = false
-KeyRepeat = 2
-"com.apple.keyboard.fnState" = false
 InitialKeyRepeat = 15
 NSDocumentSaveNewDocumentsToCloud = false
-NSAutomaticInlinePredictionEnabled = false
-
-[set.screencapture]
-target = "clipboard"
-type = "png"
-show-thumbnail = false
-
-[set.AppleMultitouchTrackpad]
-TrackpadThreeFingerDrag = true
-FirstClickThreshold = 0
 
 [set.HIToolbox]
 AppleFnUsageType = 0
 
-[set.dock]
-autohide-delay = 0
-orientation = "bottom"
-tilesize = 78
-expose-group-apps = true
-autohide-time-modifier = 0.6
-autohide = true
-magnification = true
-show-recents = false
-static-only = true
-mineffect = "suck"
-
 [set.finder]
-ShowExternalHardDrivesOnDesktop = false
-AppleShowAllFiles = true
-ShowPathbar = true
-FXEnableExtensionChangeWarning = false
 CreateDesktop = false
-FXDefaultSearchScope = "SCcf"
+FXEnableExtensionChangeWarning = false
+AppleShowAllFiles = true
 FXRemoveOldTrashItems = true
+ShowExternalHardDrivesOnDesktop = false
+FXDefaultSearchScope = "SCcf"
+ShowPathbar = true
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -48,22 +27,29 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
+[set.dock]
+orientation = "bottom"
+magnification = true
+autohide-time-modifier = 0.6
+autohide = true
+autohide-delay = 0
+static-only = true
+tilesize = 78
+expose-group-apps = true
+mineffect = "suck"
+show-recents = false
+
+[set.AppleMultitouchTrackpad]
+TrackpadThreeFingerDrag = true
+FirstClickThreshold = 0
+
+[set.screencapture]
+show-thumbnail = false
+target = "clipboard"
+type = "png"
+
 [vars]
 hostname = "darkstar"
-
-[command.mise]
-run = "mise install"
-required = ["mise"]
-flag = true
-
-[command.uv]
-run = """
-uv tool install basedpyright
-uv tool install ruff
-uv tool install posting
-"""
-required = ["uv"]
-flag = true
 
 [command.hostname]
 run = """
@@ -73,10 +59,13 @@ sudo scutil --set ComputerName $hostname
 """
 flag = true
 
-[command.touchid]
+[command.uv]
 run = """
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+uv tool install basedpyright
+uv tool install ruff
+uv tool install posting
 """
+required = ["uv"]
 flag = true
 
 [command.dotfiles]
@@ -94,6 +83,17 @@ required = [
 ]
 flag = true
 
+[command.mise]
+run = "mise install"
+required = ["mise"]
+flag = true
+
+[command.touchid]
+run = """
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+"""
+flag = true
+
 [brew]
 formulae = [
     "bash",
@@ -102,6 +102,7 @@ formulae = [
     "cmake",
     "dust",
     "fd",
+    "fzf",
     "gh",
     "git",
     "lazygit",
