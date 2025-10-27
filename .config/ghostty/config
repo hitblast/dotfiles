@@ -14,7 +14,7 @@ cursor-style-blink = true
 mouse-hide-while-typing = true
 
 # theme
-theme = dark:fleet,light:"Xcode Light"
+theme = dark:noclownfiesta,light:noclownfiestalight
 
 # window
 window-colorspace = display-p3
