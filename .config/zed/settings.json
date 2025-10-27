@@ -111,5 +111,6 @@
     "**/.vscode"
   ],
   "remove_trailing_whitespace_on_save": true,
-  "always_treat_brackets_as_autoclosed": true
+  "always_treat_brackets_as_autoclosed": true,
+  "restore_on_startup": "none"
 }
