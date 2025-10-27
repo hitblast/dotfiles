@@ -68,6 +68,10 @@ uv tool install posting
 required = ["uv"]
 flag = true
 
+[command.uv-upgrade]
+run = "uv tool upgrade --all"
+required = ["uv"]
+
 [command.dotfiles]
 run = """
 if [ ! -d ~/Developer/dotfiles ]; then
@@ -88,11 +92,19 @@ run = "mise install"
 required = ["mise"]
 flag = true
 
+[command.mise-upgrade]
+run = "mise up"
+required = ["mise"]
+
 [command.touchid]
 run = """
 sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 """
 flag = true
+
+[command.brew-upgrade]
+run = "brew update && brew upgrade"
+required = ["brew"]
 
 [brew]
 formulae = [
