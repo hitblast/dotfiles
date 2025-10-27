@@ -15,7 +15,8 @@
   "git_panel": {
     "collapse_untracked_diff": true,
     "sort_by_path": true,
-    "fallback_branch_name": "master"
+    "fallback_branch_name": "master",
+    "button": false
   },
   "notification_panel": {
     "dock": "right"
@@ -25,12 +26,13 @@
   },
   "outline_panel": {
     "indent_size": 25,
-    "dock": "right"
+    "button": false
   },
   "project_panel": {
+    "default_width": 250,
     "entry_spacing": "comfortable",
     "auto_fold_dirs": true,
-    "dock": "right"
+    "dock": "left"
   },
   "indent_guides": {
     "enabled": true,

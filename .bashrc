@@ -19,7 +19,6 @@ bundle() {
     osascript -e "id of app \"$1\""
 }
 
-alias rq="cargo run -q"
 alias finder="open -a Finder ."
 alias cat="bat"
 alias fd="fd --color=never"
@@ -34,6 +33,7 @@ alias gp="git push"
 alias gpf="git push --force"
 alias gs="git status"
 alias rewo="git commit --allow-empty --amend --only -m"
+alias bruh="git reset --hard"
 
 # enable starship prompt
 eval "$(starship init bash)"
