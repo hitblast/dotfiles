@@ -1,11 +1,9 @@
 return {
-  "navarasu/onedark.nvim",
+  "idr4n/github-monochrome.nvim",
+  lazy = false,
   priority = 1000,
+  opts = {},
   config = function()
-    require('onedark').setup {
-      style = 'light'
-    }
-    -- Enable theme
-    require('onedark').load()
-  end
+	  vim.cmd("colorscheme github-monochrome-light")
+  end,
 }

@@ -12,6 +12,9 @@
   "search": {
     "button": false
   },
+  "file_finder": {
+    "modal_max_width": "large"
+  },
   "git_panel": {
     "collapse_untracked_diff": true,
     "sort_by_path": true,
@@ -32,7 +35,7 @@
     "default_width": 300,
     "entry_spacing": "comfortable",
     "auto_fold_dirs": true,
-    "dock": "left"
+    "dock": "right"
   },
   "indent_guides": {
     "enabled": true,
@@ -40,7 +43,8 @@
   },
   "tabs": {
     "git_status": true,
-    "file_icons": true
+    "file_icons": true,
+    "show_diagnostics": "errors"
   },
   "centered_layout": {
     "left_padding": 0.1,
@@ -61,9 +65,12 @@
     }
   },
   "scrollbar": {
-    "show": "auto"
+    "show": "never"
   },
   "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "always"
+  },
   "seed_search_query_from_cursor": "selection",
   "ui_font_family": "Liga SFMono Nerd Font",
   "buffer_font_family": "Liga SFMono Nerd Font",
@@ -73,9 +80,9 @@
   "base_keymap": "VSCode",
   "relative_line_numbers": true,
   "theme": {
-    "mode": "light",
-    "light": "One Light",
-    "dark": "One Light"
+    "mode": "system",
+    "light": "Fleet Light",
+    "dark": "Fleet Dark"
   },
   "terminal": {
     "dock": "bottom",
@@ -107,8 +114,18 @@
     "**/Thumbs.db",
     "**/.classpath",
     "**/.settings",
+    "**/out",
     "**/dist",
-    "**/.vscode"
+    "**/.husky",
+    "**/.turbo",
+    "**/.vscode-test",
+    "**/.vscode",
+    "**/.next",
+    "**/.storybook",
+    "**/.tap",
+    "**/.nyc_output",
+    "**/report",
+    "**/node_modules"
   ],
   "remove_trailing_whitespace_on_save": true,
   "always_treat_brackets_as_autoclosed": true,
