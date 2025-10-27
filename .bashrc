@@ -38,11 +38,11 @@ alias bruh="git reset --hard"
 # enable starship prompt
 eval "$(starship init bash)"
 
-# cutler integration
-eval "$(cutler completion bash)"
-
 # mise integration
-eval "$(/opt/homebrew/bin/mise activate bash)"
+eval "$(mise activate bash)"
+
+# fzf integration
+eval "$(fzf --bash)"
 
 # zoxide integration
 eval "$(zoxide init --cmd cd bash)"
