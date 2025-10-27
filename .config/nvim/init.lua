@@ -1,6 +1,7 @@
 -- vim opts
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+vim.opt.termguicolors = true
 
 -- useful for completions
 -- this makes it easy to understand
