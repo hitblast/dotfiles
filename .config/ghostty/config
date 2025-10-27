@@ -14,7 +14,7 @@ cursor-style-blink = true
 mouse-hide-while-typing = true
 
 # theme
-theme = dark:fleet,light:"Xcode Light"
+theme = Atom One Light
 
 # window
 window-colorspace = display-p3
