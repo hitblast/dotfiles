@@ -73,13 +73,12 @@
   "base_keymap": "VSCode",
   "relative_line_numbers": true,
   "theme": {
-    "mode": "system",
-    "light": "Oxocarbon Light (IBM Carbon)",
-    "dark": "Oxocarbon Dark (IBM Carbon)"
+    "mode": "light",
+    "light": "One Light",
+    "dark": "One Light"
   },
   "terminal": {
     "dock": "bottom",
-    "minimum_contrast": 100,
     "blinking": "on",
     "copy_on_select": true,
     "env": {
@@ -97,8 +96,7 @@
     "html": true,
     "toml": true,
     "ruby": true,
-    "lua": true,
-    "oxocarbon": true
+    "lua": true
   },
   "file_scan_exclusions": [
     "**/.git",
