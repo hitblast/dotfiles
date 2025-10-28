@@ -9,7 +9,6 @@ These are the primary programs that are used in this configuration:
 - Setup Wrapper: [cutler](https://cutlercli.github.io)
 - Package Manager: [Homebrew](https://brew.sh)
 - Tiling Window Manager: [AeroSpace](https://github.com/nikitabobko/AeroSpace)
-- Key Remapping: [Karabiner Elements](https://karabiner-elements.pqrs.org)
 - Default Shell: `/opt/homebrew/bin/bash`
 - Development Tools:
   1. [mise](https://mise.jdx.dev) (view [mise.toml](.config/mise/config.toml))
@@ -35,4 +34,3 @@ cutler apply -a --url https://raw.githubusercontent.com/hitblast/dotfiles/refs/h
 
 Since this is my personal configuration repository, I will not receive direct contributions to it. However, you may propose
 an idea or a new setup implementation challenge through methods of discussion (e.g. GitHub Issues or Discussions).
-
