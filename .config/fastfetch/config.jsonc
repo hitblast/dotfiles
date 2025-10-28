@@ -19,7 +19,7 @@
     "break",
   ],
   "display": {
-    "separator": " : ",
+    "separator": ": ",
     "color": {
       "keys": "white",
       "output": "white",
