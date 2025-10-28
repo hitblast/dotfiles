@@ -1,23 +1,18 @@
-[set.NSGlobalDomain]
-NSAutomaticInlinePredictionEnabled = false
-"com.apple.keyboard.fnState" = false
-KeyRepeat = 2
-NSAutoFillHeuristicControllerEnabled = false
-NSAutomaticSpellingCorrectionEnabled = false
-InitialKeyRepeat = 15
-NSDocumentSaveNewDocumentsToCloud = false
+[set.AppleMultitouchTrackpad]
+TrackpadThreeFingerDrag = true
+FirstClickThreshold = 0
 
 [set.HIToolbox]
 AppleFnUsageType = 0
 
-[set.finder]
-CreateDesktop = false
-FXEnableExtensionChangeWarning = false
-AppleShowAllFiles = true
-FXRemoveOldTrashItems = true
-ShowExternalHardDrivesOnDesktop = false
-FXDefaultSearchScope = "SCcf"
-ShowPathbar = true
+[set.NSGlobalDomain]
+KeyRepeat = 2
+NSDocumentSaveNewDocumentsToCloud = false
+NSAutomaticInlinePredictionEnabled = false
+NSAutoFillHeuristicControllerEnabled = false
+InitialKeyRepeat = 15
+NSAutomaticSpellingCorrectionEnabled = false
+"com.apple.keyboard.fnState" = false
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -27,50 +22,44 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
-[set.dock]
-orientation = "bottom"
-magnification = true
-autohide-time-modifier = 0.6
-autohide = true
-autohide-delay = 0
-static-only = true
-tilesize = 78
-expose-group-apps = true
-mineffect = "suck"
-show-recents = false
-
-[set.AppleMultitouchTrackpad]
-TrackpadThreeFingerDrag = true
-FirstClickThreshold = 0
-
 [set.screencapture]
-show-thumbnail = false
 target = "clipboard"
 type = "png"
+show-thumbnail = false
+
+[set.dock]
+autohide-time-modifier = 0.6
+expose-group-apps = true
+tilesize = 78
+magnification = true
+orientation = "bottom"
+autohide-delay = 0
+mineffect = "suck"
+show-recents = false
+static-only = true
+autohide = true
+
+[set.finder]
+AppleShowAllFiles = true
+FXDefaultSearchScope = "SCcf"
+FXEnableExtensionChangeWarning = false
+CreateDesktop = false
+FXRemoveOldTrashItems = true
+ShowExternalHardDrivesOnDesktop = false
+ShowPathbar = true
 
 [vars]
 hostname = "darkstar"
 
-[command.hostname]
+[command.touchid]
 run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 """
 flag = true
 
-[command.uv]
-run = """
-uv tool install basedpyright
-uv tool install ruff
-uv tool install posting
-"""
-required = ["uv"]
-flag = true
-
-[command.uv-upgrade]
-run = "uv tool upgrade --all"
-required = ["uv"]
+[command.mise-upgrade]
+run = "mise up"
+required = ["mise"]
 
 [command.dotfiles]
 run = """
@@ -87,24 +76,35 @@ required = [
 ]
 flag = true
 
+[command.brew-upgrade]
+run = "brew update && brew upgrade"
+required = ["brew"]
+
 [command.mise]
 run = "mise install"
 required = ["mise"]
 flag = true
 
-[command.mise-upgrade]
-run = "mise up"
-required = ["mise"]
-
-[command.touchid]
+[command.uv]
 run = """
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+uv tool install basedpyright
+uv tool install ruff
+uv tool install posting
 """
+required = ["uv"]
 flag = true
 
-[command.brew-upgrade]
-run = "brew update && brew upgrade"
-required = ["brew"]
+[command.uv-upgrade]
+run = "uv tool upgrade --all"
+required = ["uv"]
+
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
+flag = true
 
 [brew]
 formulae = [
@@ -142,8 +142,8 @@ casks = [
     "font-sf-mono-nerd-font-ligaturized",
     "ghostty",
     "hot",
+    "hyperkey",
     "iina",
-    "karabiner-elements",
     "keyboardcleantool",
     "orbstack",
     "protonvpn",
