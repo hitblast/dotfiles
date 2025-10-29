@@ -2,8 +2,16 @@
 bat = "latest"
 "cargo:trimsec" = "latest"
 fastfetch = "latest"
+lazygit = "latest"
 neovim = "latest"
+ripgrep = "latest"
 rust = { version = "latest", components = "rust-analyzer" }
+fzf = "latest"
+tokei = "latest"
+fd = "latest"
+zoxide = "latest"
+uv = "latest"
+github-cli = "latest"
 
 [settings]
 python.uv_venv_auto = true

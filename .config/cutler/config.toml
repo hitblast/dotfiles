@@ -1,18 +1,14 @@
-[set.AppleMultitouchTrackpad]
-TrackpadThreeFingerDrag = true
-FirstClickThreshold = 0
-
 [set.HIToolbox]
 AppleFnUsageType = 0
 
-[set.NSGlobalDomain]
-KeyRepeat = 2
-NSDocumentSaveNewDocumentsToCloud = false
-NSAutomaticInlinePredictionEnabled = false
-NSAutoFillHeuristicControllerEnabled = false
-InitialKeyRepeat = 15
-NSAutomaticSpellingCorrectionEnabled = false
-"com.apple.keyboard.fnState" = false
+[set.finder]
+FXEnableExtensionChangeWarning = false
+CreateDesktop = false
+FXDefaultSearchScope = "SCcf"
+AppleShowAllFiles = true
+FXRemoveOldTrashItems = true
+ShowExternalHardDrivesOnDesktop = false
+ShowPathbar = true
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -22,34 +18,42 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
-[set.screencapture]
-target = "clipboard"
-type = "png"
-show-thumbnail = false
-
 [set.dock]
+magnification = true
+mineffect = "suck"
+orientation = "bottom"
 autohide-time-modifier = 0.6
 expose-group-apps = true
-tilesize = 78
-magnification = true
-orientation = "bottom"
-autohide-delay = 0
-mineffect = "suck"
-show-recents = false
-static-only = true
 autohide = true
+autohide-delay = 0
+show-recents = false
+tilesize = 78
+static-only = true
 
-[set.finder]
-AppleShowAllFiles = true
-FXDefaultSearchScope = "SCcf"
-FXEnableExtensionChangeWarning = false
-CreateDesktop = false
-FXRemoveOldTrashItems = true
-ShowExternalHardDrivesOnDesktop = false
-ShowPathbar = true
+[set.AppleMultitouchTrackpad]
+TrackpadThreeFingerDrag = true
+FirstClickThreshold = 0
+
+[set.NSGlobalDomain]
+NSAutomaticSpellingCorrectionEnabled = false
+"com.apple.keyboard.fnState" = false
+NSAutoFillHeuristicControllerEnabled = false
+NSAutomaticInlinePredictionEnabled = false
+InitialKeyRepeat = 15
+NSDocumentSaveNewDocumentsToCloud = false
+KeyRepeat = 2
+
+[set.screencapture]
+type = "png"
+show-thumbnail = false
+target = "clipboard"
 
 [vars]
 hostname = "darkstar"
+
+[command.mise-upgrade]
+run = "mise up"
+required = ["mise"]
 
 [command.touchid]
 run = """
@@ -57,9 +61,22 @@ sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_l
 """
 flag = true
 
-[command.mise-upgrade]
-run = "mise up"
-required = ["mise"]
+[command.uv]
+run = """
+uv tool install basedpyright
+uv tool install ruff
+uv tool install posting
+"""
+required = ["uv"]
+flag = true
+
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
+flag = true
 
 [command.dotfiles]
 run = """
@@ -76,35 +93,18 @@ required = [
 ]
 flag = true
 
-[command.brew-upgrade]
-run = "brew update && brew upgrade"
-required = ["brew"]
-
 [command.mise]
 run = "mise install"
 required = ["mise"]
-flag = true
-
-[command.uv]
-run = """
-uv tool install basedpyright
-uv tool install ruff
-uv tool install posting
-"""
-required = ["uv"]
 flag = true
 
 [command.uv-upgrade]
 run = "uv tool upgrade --all"
 required = ["uv"]
 
-[command.hostname]
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-flag = true
+[command.brew-upgrade]
+run = "brew update && brew upgrade"
+required = ["brew"]
 
 [brew]
 formulae = [
@@ -113,24 +113,16 @@ formulae = [
     "cargo-edit",
     "cmake",
     "dust",
-    "fd",
-    "fzf",
-    "gh",
     "git",
-    "lazygit",
     "libyaml",
     "mactop",
     "mas",
     "mise",
     "ncspot",
     "ninja",
-    "ripgrep",
     "sccache",
     "starship",
     "stow",
-    "tokei",
-    "uv",
-    "zoxide",
     "hitblast/tap/drs",
     "hitblast/tap/hookman",
 ]
@@ -147,7 +139,6 @@ casks = [
     "keyboardcleantool",
     "orbstack",
     "protonvpn",
-    "signal",
     "spotify",
     "tower",
     "transmission",
