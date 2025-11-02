@@ -33,7 +33,7 @@
   },
   "project_panel": {
     "default_width": 300,
-    "entry_spacing": "comfortable",
+    "entry_spacing": "standard",
     "auto_fold_dirs": true,
     "dock": "right"
   },
@@ -75,7 +75,7 @@
   "ui_font_family": "Liga SFMono Nerd Font",
   "buffer_font_family": "Liga SFMono Nerd Font",
   "ui_font_size": 16,
-  "buffer_font_size": 13,
+  "buffer_font_size": 13.5,
   "buffer_line_height": "comfortable",
   "base_keymap": "VSCode",
   "relative_line_numbers": true,
