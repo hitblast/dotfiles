@@ -1,14 +1,36 @@
-[set.HIToolbox]
-AppleFnUsageType = 0
+[set.AppleMultitouchTrackpad]
+FirstClickThreshold = 0
+TrackpadThreeFingerDrag = true
+
+[set.NSGlobalDomain]
+NSAutomaticInlinePredictionEnabled = false
+"com.apple.keyboard.fnState" = false
+InitialKeyRepeat = 15
+KeyRepeat = 2
+NSAutomaticSpellingCorrectionEnabled = false
+NSAutoFillHeuristicControllerEnabled = false
+NSDocumentSaveNewDocumentsToCloud = false
+
+[set.dock]
+autohide = true
+static-only = true
+autohide-time-modifier = 0.6
+expose-group-apps = true
+orientation = "bottom"
+tilesize = 78
+magnification = true
+mineffect = "suck"
+show-recents = false
+autohide-delay = 0
 
 [set.finder]
-FXEnableExtensionChangeWarning = false
-CreateDesktop = false
+ShowPathbar = true
 FXDefaultSearchScope = "SCcf"
 AppleShowAllFiles = true
 FXRemoveOldTrashItems = true
+CreateDesktop = false
+FXEnableExtensionChangeWarning = false
 ShowExternalHardDrivesOnDesktop = false
-ShowPathbar = true
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -18,57 +40,16 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
-[set.dock]
-magnification = true
-mineffect = "suck"
-orientation = "bottom"
-autohide-time-modifier = 0.6
-expose-group-apps = true
-autohide = true
-autohide-delay = 0
-show-recents = false
-tilesize = 78
-static-only = true
-
-[set.AppleMultitouchTrackpad]
-TrackpadThreeFingerDrag = true
-FirstClickThreshold = 0
-
-[set.NSGlobalDomain]
-NSAutomaticSpellingCorrectionEnabled = false
-"com.apple.keyboard.fnState" = false
-NSAutoFillHeuristicControllerEnabled = false
-NSAutomaticInlinePredictionEnabled = false
-InitialKeyRepeat = 15
-NSDocumentSaveNewDocumentsToCloud = false
-KeyRepeat = 2
-
 [set.screencapture]
-type = "png"
 show-thumbnail = false
 target = "clipboard"
+type = "png"
+
+[set.HIToolbox]
+AppleFnUsageType = 0
 
 [vars]
 hostname = "darkstar"
-
-[command.mise-upgrade]
-run = "mise up"
-required = ["mise"]
-
-[command.touchid]
-run = """
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
-"""
-flag = true
-
-[command.uv]
-run = """
-uv tool install basedpyright
-uv tool install ruff
-uv tool install posting
-"""
-required = ["uv"]
-flag = true
 
 [command.hostname]
 run = """
@@ -77,6 +58,24 @@ sudo scutil --set HostName $hostname
 sudo scutil --set ComputerName $hostname
 """
 flag = true
+
+[command.uv-upgrade]
+run = "uv tool upgrade --all"
+required = ["uv"]
+
+[command.touchid]
+run = """
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+"""
+flag = true
+
+[command.mise-upgrade]
+run = "mise up"
+required = ["mise"]
+
+[command.brew-upgrade]
+run = "brew update && brew upgrade"
+required = ["brew"]
 
 [command.dotfiles]
 run = """
@@ -93,18 +92,19 @@ required = [
 ]
 flag = true
 
+[command.uv]
+run = """
+uv tool install basedpyright
+uv tool install ruff
+uv tool install posting
+"""
+required = ["uv"]
+flag = true
+
 [command.mise]
 run = "mise install"
 required = ["mise"]
 flag = true
-
-[command.uv-upgrade]
-run = "uv tool upgrade --all"
-required = ["uv"]
-
-[command.brew-upgrade]
-run = "brew update && brew upgrade"
-required = ["brew"]
 
 [brew]
 formulae = [
@@ -116,7 +116,6 @@ formulae = [
     "git",
     "libyaml",
     "mactop",
-    "mas",
     "mise",
     "ncspot",
     "ninja",
@@ -127,6 +126,7 @@ formulae = [
     "hitblast/tap/hookman",
 ]
 casks = [
+    "affinity",
     "android-platform-tools",
     "appcleaner",
     "container",
@@ -139,6 +139,7 @@ casks = [
     "keyboardcleantool",
     "orbstack",
     "protonvpn",
+    "signal",
     "spotify",
     "tower",
     "transmission",
