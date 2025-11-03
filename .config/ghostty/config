@@ -1,7 +1,7 @@
 # font
-font-family = "Liga SFMono Nerd Font"
+font-family = "Menlo"
 font-feature = liga
-font-size = 15
+font-size = 16
 font-thicken = true
 
 # shell integrations
@@ -14,17 +14,17 @@ cursor-style-blink = true
 mouse-hide-while-typing = true
 
 # theme
-theme = dark:noclownfiesta,light:noclownfiestalight
+theme = dark:noclownfiesta,light:"Xcode Light"
 
 # window
 window-colorspace = display-p3
 window-width = 101
 window-height = 28
-window-padding-x = 13
+window-padding-x = 11
 window-padding-y = 11
 
 # macOS-specific settings
-macos-titlebar-style = hidden
+macos-titlebar-style = transparent
 macos-titlebar-proxy-icon = hidden
 macos-window-shadow = true
 
