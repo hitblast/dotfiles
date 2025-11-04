@@ -1,36 +1,31 @@
-[set.AppleMultitouchTrackpad]
-FirstClickThreshold = 0
-TrackpadThreeFingerDrag = true
+[set.screencapture]
+type = "png"
+show-thumbnail = false
+target = "clipboard"
 
-[set.NSGlobalDomain]
-NSAutomaticInlinePredictionEnabled = false
-"com.apple.keyboard.fnState" = false
-InitialKeyRepeat = 15
-KeyRepeat = 2
-NSAutomaticSpellingCorrectionEnabled = false
-NSAutoFillHeuristicControllerEnabled = false
-NSDocumentSaveNewDocumentsToCloud = false
+[set.HIToolbox]
+AppleFnUsageType = 0
 
 [set.dock]
-autohide = true
-static-only = true
-autohide-time-modifier = 0.6
-expose-group-apps = true
-orientation = "bottom"
-tilesize = 78
-magnification = true
 mineffect = "suck"
+magnification = true
+tilesize = 78
+static-only = true
 show-recents = false
+autohide = true
+autohide-time-modifier = 0.6
+orientation = "bottom"
 autohide-delay = 0
+expose-group-apps = true
 
 [set.finder]
-ShowPathbar = true
-FXDefaultSearchScope = "SCcf"
+CreateDesktop = false
 AppleShowAllFiles = true
 FXRemoveOldTrashItems = true
-CreateDesktop = false
-FXEnableExtensionChangeWarning = false
+FXDefaultSearchScope = "SCcf"
 ShowExternalHardDrivesOnDesktop = false
+FXEnableExtensionChangeWarning = false
+ShowPathbar = true
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -40,42 +35,21 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
-[set.screencapture]
-show-thumbnail = false
-target = "clipboard"
-type = "png"
+[set.AppleMultitouchTrackpad]
+FirstClickThreshold = 0
+TrackpadThreeFingerDrag = true
 
-[set.HIToolbox]
-AppleFnUsageType = 0
+[set.NSGlobalDomain]
+NSAutomaticInlinePredictionEnabled = false
+NSAutomaticSpellingCorrectionEnabled = false
+NSDocumentSaveNewDocumentsToCloud = false
+NSAutoFillHeuristicControllerEnabled = false
+KeyRepeat = 2
+"com.apple.keyboard.fnState" = false
+InitialKeyRepeat = 15
 
 [vars]
 hostname = "darkstar"
-
-[command.hostname]
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-flag = true
-
-[command.uv-upgrade]
-run = "uv tool upgrade --all"
-required = ["uv"]
-
-[command.touchid]
-run = """
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
-"""
-flag = true
-
-[command.mise-upgrade]
-run = "mise up"
-required = ["mise"]
-
-[command.brew-upgrade]
-run = "brew update && brew upgrade"
-required = ["brew"]
 
 [command.dotfiles]
 run = """
@@ -92,6 +66,18 @@ required = [
 ]
 flag = true
 
+[command.mise-upgrade]
+run = "mise up"
+required = ["mise"]
+
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
+flag = true
+
 [command.uv]
 run = """
 uv tool install basedpyright
@@ -101,15 +87,30 @@ uv tool install posting
 required = ["uv"]
 flag = true
 
+[command.brew-upgrade]
+run = "brew update && brew upgrade"
+required = ["brew"]
+
 [command.mise]
 run = "mise install"
 required = ["mise"]
 flag = true
 
+[command.touchid]
+run = """
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+"""
+flag = true
+
+[command.uv-upgrade]
+run = "uv tool upgrade --all"
+required = ["uv"]
+
 [brew]
 formulae = [
     "bash",
     "bash-completion@2",
+    "cargo-audit",
     "cargo-edit",
     "cmake",
     "dust",
