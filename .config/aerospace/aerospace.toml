@@ -121,19 +121,6 @@ f = [
 
 # App-specific callbacks
 # Executed when an app instance has been initiated
-
-[[on-window-detected]]
-if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'net.freemacsoft.AppCleaner'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.finder'
-run = 'layout floating'
-
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
 run = ['move-node-to-workspace 1']
