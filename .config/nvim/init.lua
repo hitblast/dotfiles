@@ -7,5 +7,8 @@ vim.opt.termguicolors = true
 -- this makes it easy to understand
 vim.opt.completeopt = { "menuone", "noselect", "popup" }
 
+-- always use system clipboard
+vim.opt.clipboard = "unnamedplus"
+
 -- lazy setup
 require("config.lazy")
