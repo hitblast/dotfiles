@@ -1,32 +1,3 @@
-[set.screencapture]
-type = "png"
-show-thumbnail = false
-target = "clipboard"
-
-[set.HIToolbox]
-AppleFnUsageType = 0
-
-[set.dock]
-mineffect = "suck"
-magnification = true
-tilesize = 78
-static-only = true
-show-recents = false
-autohide = true
-autohide-time-modifier = 0.6
-orientation = "bottom"
-autohide-delay = 0
-expose-group-apps = true
-
-[set.finder]
-CreateDesktop = false
-AppleShowAllFiles = true
-FXRemoveOldTrashItems = true
-FXDefaultSearchScope = "SCcf"
-ShowExternalHardDrivesOnDesktop = false
-FXEnableExtensionChangeWarning = false
-ShowPathbar = true
-
 [set.menuextra.clock]
 FlashDateSeparators = true
 Show24Hour = false
@@ -40,16 +11,62 @@ FirstClickThreshold = 0
 TrackpadThreeFingerDrag = true
 
 [set.NSGlobalDomain]
-NSAutomaticInlinePredictionEnabled = false
 NSAutomaticSpellingCorrectionEnabled = false
-NSDocumentSaveNewDocumentsToCloud = false
-NSAutoFillHeuristicControllerEnabled = false
-KeyRepeat = 2
-"com.apple.keyboard.fnState" = false
 InitialKeyRepeat = 15
+NSDocumentSaveNewDocumentsToCloud = false
+"com.apple.keyboard.fnState" = false
+NSAutomaticInlinePredictionEnabled = false
+KeyRepeat = 2
+NSAutoFillHeuristicControllerEnabled = false
+
+[set.HIToolbox]
+AppleFnUsageType = 0
+
+[set.dock]
+autohide-time-modifier = 0.6
+mineffect = "suck"
+orientation = "bottom"
+tilesize = 78
+static-only = true
+magnification = true
+show-recents = false
+autohide-delay = 0
+expose-group-apps = true
+autohide = true
+
+[set.finder]
+FXEnableExtensionChangeWarning = false
+ShowExternalHardDrivesOnDesktop = false
+ShowPathbar = true
+FXRemoveOldTrashItems = true
+AppleShowAllFiles = true
+CreateDesktop = false
+FXDefaultSearchScope = "SCcf"
+
+[set.screencapture]
+target = "clipboard"
+show-thumbnail = false
+type = "png"
 
 [vars]
 hostname = "darkstar"
+
+[command.brew-upgrade]
+run = "brew update && brew upgrade"
+required = ["brew"]
+
+[command.uv]
+run = """
+uv tool install basedpyright
+uv tool install ruff
+uv tool install posting
+"""
+required = ["uv"]
+flag = true
+
+[command.uv-upgrade]
+run = "uv tool upgrade --all"
+required = ["uv"]
 
 [command.dotfiles]
 run = """
@@ -66,6 +83,17 @@ required = [
 ]
 flag = true
 
+[command.touchid]
+run = """
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+"""
+flag = true
+
+[command.mise]
+run = "mise install"
+required = ["mise"]
+flag = true
+
 [command.mise-upgrade]
 run = "mise up"
 required = ["mise"]
@@ -77,34 +105,6 @@ sudo scutil --set HostName $hostname
 sudo scutil --set ComputerName $hostname
 """
 flag = true
-
-[command.uv]
-run = """
-uv tool install basedpyright
-uv tool install ruff
-uv tool install posting
-"""
-required = ["uv"]
-flag = true
-
-[command.brew-upgrade]
-run = "brew update && brew upgrade"
-required = ["brew"]
-
-[command.mise]
-run = "mise install"
-required = ["mise"]
-flag = true
-
-[command.touchid]
-run = """
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
-"""
-flag = true
-
-[command.uv-upgrade]
-run = "uv tool upgrade --all"
-required = ["uv"]
 
 [brew]
 formulae = [
@@ -123,6 +123,7 @@ formulae = [
     "sccache",
     "starship",
     "stow",
+    "vhs",
     "hitblast/tap/drs",
     "hitblast/tap/hookman",
 ]
