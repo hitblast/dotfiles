@@ -1,12 +1,5 @@
 {
-  "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    },
-    "model_parameters": []
-  },
-  "disable_ai": false,
+  "disable_ai": true,
   "title_bar": {
     "show_menus": false,
     "show_sign_in": false,
