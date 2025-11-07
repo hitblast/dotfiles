@@ -26,6 +26,14 @@ alias find="fd --color=never"
 alias lz="lazygit"
 alias mactop="sudo mactop --color white"
 
+alias gco="git checkout"
+alias gcm="git cm"
+alias gp="git push"
+alias gP="git push --force"
+alias gpu="git pull"
+alias gbr="git branch"
+alias gt="git tag"
+
 # enable starship prompt
 eval "$(starship init bash)"
 
