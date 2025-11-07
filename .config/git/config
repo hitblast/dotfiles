@@ -67,3 +67,5 @@
 # $ git log
 [log]
     abbrevCommit = true
+[alias]
+	cm = !git add -A && git commit --allow-empty-message -m \"\"
