@@ -1,19 +1,30 @@
+[set.HIToolbox]
+AppleFnUsageType = 0
+
+[set.NSGlobalDomain]
+InitialKeyRepeat = 15
+NSDocumentSaveNewDocumentsToCloud = false
+"com.apple.keyboard.fnState" = false
+NSAutomaticInlinePredictionEnabled = false
+NSAutomaticSpellingCorrectionEnabled = false
+NSAutoFillHeuristicControllerEnabled = false
+KeyRepeat = 2
+
 [set.dock]
-static-only = true
-magnification = true
 autohide = true
+orientation = "bottom"
+show-recents = false
+autohide-delay = 0
+static-only = true
+mineffect = "suck"
 expose-group-apps = true
 autohide-time-modifier = 0.6
-autohide-delay = 0
-show-recents = false
-orientation = "bottom"
-mineffect = "suck"
 tilesize = 78
+magnification = true
 
-[set.screencapture]
-target = "clipboard"
-type = "png"
-show-thumbnail = false
+[set.AppleMultitouchTrackpad]
+FirstClickThreshold = 0
+TrackpadThreeFingerDrag = true
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -23,55 +34,22 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
-[set.HIToolbox]
-AppleFnUsageType = 0
-
-[set.AppleMultitouchTrackpad]
-FirstClickThreshold = 0
-TrackpadThreeFingerDrag = true
+[set.screencapture]
+show-thumbnail = false
+type = "png"
+target = "clipboard"
 
 [set.finder]
-FXRemoveOldTrashItems = true
-AppleShowAllFiles = true
-ShowExternalHardDrivesOnDesktop = false
 ShowPathbar = true
-FXEnableExtensionChangeWarning = false
-FXDefaultSearchScope = "SCcf"
+FXRemoveOldTrashItems = true
 CreateDesktop = false
-
-[set.NSGlobalDomain]
-NSAutomaticInlinePredictionEnabled = false
-NSDocumentSaveNewDocumentsToCloud = false
-"com.apple.keyboard.fnState" = false
-KeyRepeat = 2
-NSAutoFillHeuristicControllerEnabled = false
-NSAutomaticSpellingCorrectionEnabled = false
-InitialKeyRepeat = 15
+AppleShowAllFiles = true
+FXDefaultSearchScope = "SCcf"
+FXEnableExtensionChangeWarning = false
+ShowExternalHardDrivesOnDesktop = false
 
 [vars]
 hostname = "darkstar"
-
-[command.uv]
-run = """
-uv tool install basedpyright
-uv tool install ruff
-uv tool install posting
-"""
-required = ["uv"]
-flag = true
-
-[command.mise]
-run = "mise install"
-required = ["mise"]
-flag = true
-
-[command.hostname]
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-flag = true
 
 [command.uv-upgrade]
 run = "uv tool upgrade --all"
@@ -92,19 +70,41 @@ required = [
 ]
 flag = true
 
-[command.brew-upgrade]
-run = "brew update && brew upgrade"
-required = ["brew"]
-
-[command.mise-upgrade]
-run = "mise up"
-required = ["mise"]
-
 [command.touchid]
 run = """
 sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 """
 flag = true
+
+[command.uv]
+run = """
+uv tool install basedpyright
+uv tool install ruff
+uv tool install posting
+"""
+required = ["uv"]
+flag = true
+
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
+flag = true
+
+[command.brew-upgrade]
+run = "brew update && brew upgrade"
+required = ["brew"]
+
+[command.mise]
+run = "mise install"
+required = ["mise"]
+flag = true
+
+[command.mise-upgrade]
+run = "mise up"
+required = ["mise"]
 
 [brew]
 formulae = [
@@ -135,8 +135,8 @@ casks = [
     "font-sf-mono-nerd-font-ligaturized",
     "ghostty",
     "hot",
-    "hyperkey",
     "iina",
+    "karabiner-elements",
     "keyboardcleantool",
     "orbstack",
     "protonvpn",
