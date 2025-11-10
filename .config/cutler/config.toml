@@ -31,6 +31,7 @@ KeyRepeat = 2
 NSDocumentSaveNewDocumentsToCloud = false
 NSAutomaticInlinePredictionEnabled = false
 NSAutomaticSpellingCorrectionEnabled = false
+NSWindowShouldDragOnGesture = true
 
 [set.menuextra.clock]
 FlashDateSeparators = true
