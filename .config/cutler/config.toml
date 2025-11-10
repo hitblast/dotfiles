@@ -1,30 +1,36 @@
-[set.HIToolbox]
-AppleFnUsageType = 0
+[set.finder]
+ShowExternalHardDrivesOnDesktop = false
+FXDefaultSearchScope = "SCcf"
+ShowPathbar = true
+CreateDesktop = false
+FXEnableExtensionChangeWarning = false
+AppleShowAllFiles = true
+FXRemoveOldTrashItems = true
 
-[set.NSGlobalDomain]
-InitialKeyRepeat = 15
-NSDocumentSaveNewDocumentsToCloud = false
-"com.apple.keyboard.fnState" = false
-NSAutomaticInlinePredictionEnabled = false
-NSAutomaticSpellingCorrectionEnabled = false
-NSAutoFillHeuristicControllerEnabled = false
-KeyRepeat = 2
+[set.AppleMultitouchTrackpad]
+TrackpadThreeFingerDrag = true
+FirstClickThreshold = 0
 
 [set.dock]
 autohide = true
-orientation = "bottom"
-show-recents = false
 autohide-delay = 0
 static-only = true
+tilesize = 78
 mineffect = "suck"
 expose-group-apps = true
-autohide-time-modifier = 0.6
-tilesize = 78
 magnification = true
+show-recents = false
+autohide-time-modifier = 0.6
+orientation = "bottom"
 
-[set.AppleMultitouchTrackpad]
-FirstClickThreshold = 0
-TrackpadThreeFingerDrag = true
+[set.NSGlobalDomain]
+"com.apple.keyboard.fnState" = false
+InitialKeyRepeat = 15
+NSAutoFillHeuristicControllerEnabled = false
+KeyRepeat = 2
+NSDocumentSaveNewDocumentsToCloud = false
+NSAutomaticInlinePredictionEnabled = false
+NSAutomaticSpellingCorrectionEnabled = false
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -36,24 +42,14 @@ ShowSeconds = true
 
 [set.screencapture]
 show-thumbnail = false
-type = "png"
 target = "clipboard"
+type = "png"
 
-[set.finder]
-ShowPathbar = true
-FXRemoveOldTrashItems = true
-CreateDesktop = false
-AppleShowAllFiles = true
-FXDefaultSearchScope = "SCcf"
-FXEnableExtensionChangeWarning = false
-ShowExternalHardDrivesOnDesktop = false
+[set.HIToolbox]
+AppleFnUsageType = 0
 
 [vars]
 hostname = "darkstar"
-
-[command.uv-upgrade]
-run = "uv tool upgrade --all"
-required = ["uv"]
 
 [command.dotfiles]
 run = """
@@ -70,9 +66,15 @@ required = [
 ]
 flag = true
 
-[command.touchid]
+[command.uv-upgrade]
+run = "uv tool upgrade --all"
+required = ["uv"]
+
+[command.hostname]
 run = """
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
 """
 flag = true
 
@@ -85,13 +87,9 @@ uv tool install posting
 required = ["uv"]
 flag = true
 
-[command.hostname]
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-flag = true
+[command.mise-upgrade]
+run = "mise up"
+required = ["mise"]
 
 [command.brew-upgrade]
 run = "brew update && brew upgrade"
@@ -102,9 +100,11 @@ run = "mise install"
 required = ["mise"]
 flag = true
 
-[command.mise-upgrade]
-run = "mise up"
-required = ["mise"]
+[command.touchid]
+run = """
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
+"""
+flag = true
 
 [brew]
 formulae = [
@@ -145,6 +145,7 @@ casks = [
     "tower",
     "transmission",
     "zed",
+    "zen",
     "nikitabobko/tap/aerospace",
 ]
 taps = [
