@@ -10,5 +10,8 @@ vim.opt.completeopt = { "menuone", "noselect", "popup" }
 -- always use system clipboard
 vim.opt.clipboard = "unnamedplus"
 
+-- relative line numbers
+vim.wo.relativenumber = true
+
 -- lazy setup
 require("config.lazy")
