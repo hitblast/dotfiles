@@ -1,12 +1,5 @@
 {
-  "agent": {
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    },
-    "model_parameters": []
-  },
-  "disable_ai": false,
+  "disable_ai": true,
   "title_bar": {
     "show_menus": false,
     "show_sign_in": false,
@@ -85,7 +78,7 @@
   "buffer_font_size": 13,
   "buffer_line_height": "comfortable",
   "base_keymap": "VSCode",
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "theme": {
     "mode": "system",
     "light": "Fleet Light",
