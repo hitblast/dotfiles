@@ -1,7 +1,7 @@
 # font
 font-family = "Menlo"
 font-feature = liga
-font-size = 16
+font-size = 15
 font-thicken = true
 
 # shell integrations
