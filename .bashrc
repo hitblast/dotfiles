@@ -24,7 +24,6 @@ alias cat="bat"
 alias fd="fd --color=never"
 alias find="fd --color=never"
 alias lz="lazygit"
-alias mactop="sudo mactop --color white"
 
 alias gaa="git add --all"
 alias gcm="git commit -m"
