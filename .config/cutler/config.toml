@@ -15,6 +15,12 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
+[set.WindowManager]
+StandardHideWidgets = true
+StandardHideDesktopIcons = true
+EnableTilingByEdgeDrag = false
+StageManagerHideWidgets = true
+
 [set.NSGlobalDomain]
 InitialKeyRepeat = 15
 NSAutoFillHeuristicControllerEnabled = false
