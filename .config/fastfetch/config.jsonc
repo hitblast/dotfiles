@@ -8,6 +8,7 @@
     "os",
     "kernel",
     "uptime",
+    "display",
     "terminal",
     "cpu",
     "gpu",
