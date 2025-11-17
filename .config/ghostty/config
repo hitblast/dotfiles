@@ -1,7 +1,7 @@
 # font
 font-family = "Menlo"
 font-feature = liga
-font-size = 16
+font-size = 14
 font-thicken = true
 
 # shell integrations
@@ -22,6 +22,7 @@ window-width = 101
 window-height = 28
 window-padding-x = 11
 window-padding-y = 11
+window-save-state = always
 
 # macOS-specific settings
 macos-titlebar-style = transparent
