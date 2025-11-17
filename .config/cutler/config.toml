@@ -1,11 +1,30 @@
-[set.finder]
-ShowPathbar = true
-AppleShowAllFiles = true
-FXDefaultSearchScope = "SCcf"
-FXEnableExtensionChangeWarning = false
-CreateDesktop = false
-FXRemoveOldTrashItems = true
-ShowExternalHardDrivesOnDesktop = false
+[set.NSGlobalDomain]
+NSAutoFillHeuristicControllerEnabled = false
+"com.apple.keyboard.fnState" = false
+NSWindowShouldDragOnGesture = true
+InitialKeyRepeat = 15
+KeyRepeat = 2
+NSAutomaticInlinePredictionEnabled = false
+NSAutomaticSpellingCorrectionEnabled = false
+NSDocumentSaveNewDocumentsToCloud = false
+
+[set.dock]
+tilesize = 78
+autohide-delay = 0
+autohide-time-modifier = 0.6
+expose-group-apps = true
+mineffect = "suck"
+magnification = true
+orientation = "bottom"
+show-recents = false
+autohide = true
+static-only = true
+
+[set.WindowManager]
+StageManagerHideWidgets = true
+StandardHideDesktopIcons = true
+StandardHideWidgets = true
+EnableTilingByEdgeDrag = false
 
 [set.menuextra.clock]
 FlashDateSeparators = true
@@ -15,62 +34,39 @@ ShowDate = 2
 ShowDayOfWeek = false
 ShowSeconds = true
 
-[set.WindowManager]
-StandardHideWidgets = true
-StandardHideDesktopIcons = true
-EnableTilingByEdgeDrag = false
-StageManagerHideWidgets = true
-
-[set.NSGlobalDomain]
-InitialKeyRepeat = 15
-NSAutoFillHeuristicControllerEnabled = false
-NSDocumentSaveNewDocumentsToCloud = false
-NSWindowShouldDragOnGesture = true
-"com.apple.keyboard.fnState" = false
-KeyRepeat = 2
-NSAutomaticInlinePredictionEnabled = false
-NSAutomaticSpellingCorrectionEnabled = false
-
-[set.HIToolbox]
-AppleFnUsageType = 0
-
-[set.screencapture]
-type = "png"
-show-thumbnail = false
-target = "clipboard"
-
 [set.AppleMultitouchTrackpad]
 FirstClickThreshold = 0
 TrackpadThreeFingerDrag = true
 
-[set.dock]
-autohide = true
-tilesize = 78
-show-recents = false
-autohide-time-modifier = 0.6
-expose-group-apps = true
-autohide-delay = 0
-orientation = "bottom"
-magnification = true
-mineffect = "suck"
-static-only = true
+[set.HIToolbox]
+AppleFnUsageType = 0
+
+[set.finder]
+FXDefaultSearchScope = "SCcf"
+FXEnableExtensionChangeWarning = false
+FXRemoveOldTrashItems = true
+AppleShowAllFiles = true
+ShowExternalHardDrivesOnDesktop = false
+CreateDesktop = false
+ShowPathbar = true
+
+[set.screencapture]
+show-thumbnail = false
+target = "clipboard"
+type = "png"
 
 [vars]
 hostname = "darkstar"
 
-[command.dotfiles]
+[command.mise]
+run = "mise install"
+required = ["mise"]
+flag = true
+
+[command.touchid]
 run = """
-if [ ! -d ~/Developer/dotfiles ]; then
-  git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
-fi
-cd ~/Developer/dotfiles
-stow . -t ~ --adopt
+sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 """
-ensure_first = true
-required = [
-    "stow",
-    "git",
-]
 flag = true
 
 [command.uv]
@@ -90,12 +86,6 @@ required = ["uv"]
 run = "brew update && brew upgrade"
 required = ["brew"]
 
-[command.touchid]
-run = """
-sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
-"""
-flag = true
-
 [command.hostname]
 run = """
 sudo scutil --set LocalHostName $hostname
@@ -108,9 +98,19 @@ flag = true
 run = "mise up"
 required = ["mise"]
 
-[command.mise]
-run = "mise install"
-required = ["mise"]
+[command.dotfiles]
+run = """
+if [ ! -d ~/Developer/dotfiles ]; then
+  git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
+fi
+cd ~/Developer/dotfiles
+stow . -t ~ --adopt
+"""
+ensure_first = true
+required = [
+    "stow",
+    "git",
+]
 flag = true
 
 [brew]
@@ -137,7 +137,6 @@ casks = [
     "android-platform-tools",
     "appcleaner",
     "container",
-    "discord",
     "font-sf-mono-nerd-font-ligaturized",
     "ghostty",
     "hot",
