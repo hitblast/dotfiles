@@ -73,16 +73,17 @@
     "use_system_clipboard": "always"
   },
   "seed_search_query_from_cursor": "selection",
-  "ui_font_family": "SF Pro",
   "buffer_font_family": "Liga SFMono Nerd Font",
-  "ui_font_size": 17,
+  "ui_font_family": "Liga SFMono Nerd Font",
+  "ui_font_size": 15,
+  "ui_font_weight": 500,
   "buffer_font_size": 14,
   "buffer_line_height": "comfortable",
   "relative_line_numbers": "enabled",
   "theme": {
-    "mode": "light",
-    "light": "Xcode Default Light",
-    "dark": "Xcode Spartan"
+    "mode": "system",
+    "light": "Fleet Light",
+    "dark": "Fleet Light"
   },
   "terminal": {
     "dock": "bottom",
@@ -103,7 +104,7 @@
     "html": true,
     "toml": true,
     "lua": true,
-    "xcode-themes": true
+    "fleet-themes": true
   },
   "file_scan_exclusions": [
     "**/.git",

@@ -1,7 +1,6 @@
 # font
-font-family = "Liga SFMono Nerd Font"
 font-feature = liga
-font-size = 16
+font-size = 15
 font-thicken = true
 
 # shell integrations
@@ -14,7 +13,7 @@ cursor-style-blink = true
 mouse-hide-while-typing = true
 
 # theme
-theme = "Xcode Light"
+theme = Xcode Light
 
 # window
 window-colorspace = display-p3
