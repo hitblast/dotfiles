@@ -11,6 +11,9 @@ fi
 # Load local binaries to PATH.
 export PATH="$HOME/.local/bin:$PATH"
 
+# Load Android platforms-tools to PATH.
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+
 # ---
 
 # Load Homebrew.
