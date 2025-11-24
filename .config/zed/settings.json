@@ -1,5 +1,4 @@
 {
-  "icon_theme": "Colored Zed Icons Theme Dark",
   "disable_ai": true,
   "title_bar": {
     "show_menus": false,
@@ -104,8 +103,7 @@
     "html": true,
     "toml": true,
     "lua": true,
-    "xcode-themes": true,
-    "colored-zed-icons-theme": true
+    "xcode-themes": true
   },
   "file_scan_exclusions": [
     "**/.git",
