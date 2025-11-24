@@ -46,16 +46,17 @@
     "file_icons": true,
     "show_diagnostics": "errors"
   },
-  "centered_layout": {
-    "left_padding": 0.15,
-    "right_padding": 0
-  },
+
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
   "inlay_hints": {
     "enabled": true
+  },
+  "centered_layout": {
+    "left_padding": 0.15,
+    "right_padding": 0.15
   },
   "git": {
     "inline_blame": {
@@ -75,14 +76,14 @@
   "ui_font_family": "Liga SFMono Nerd Font",
   "buffer_font_family": "Liga SFMono Nerd Font",
   "ui_font_size": 15,
-  "buffer_font_size": 14,
+  "buffer_font_size": 13,
   "buffer_line_height": "comfortable",
   "base_keymap": "VSCode",
   "relative_line_numbers": "enabled",
   "theme": {
     "mode": "system",
     "light": "Xcode Low Key",
-    "dark": "Xcode High Contrast Darker"
+    "dark": "Xcode Low Key"
   },
   "terminal": {
     "dock": "bottom",
