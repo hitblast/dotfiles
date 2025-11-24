@@ -81,9 +81,9 @@
   "base_keymap": "VSCode",
   "relative_line_numbers": "enabled",
   "theme": {
-    "mode": "system",
+    "mode": "light",
     "light": "Xcode Low Key",
-    "dark": "Fleet Dark"
+    "dark": "Xcode Spartan"
   },
   "terminal": {
     "dock": "bottom",
