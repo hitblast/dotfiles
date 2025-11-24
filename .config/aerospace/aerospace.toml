@@ -49,7 +49,6 @@ outer.bottom = 0
 outer.top = 0
 outer.right = 0
 
-
 # Binding modes
 # Reference: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 
@@ -116,7 +115,7 @@ f = [
 # App-specific callbacks
 # Executed when an app instance has been initiated
 [[on-window-detected]]
-if.app-id = 'com.spotify.client'
+if.app-id = 'com.colliderli.iina'
 run = ['move-node-to-workspace 5']
 
 [[on-window-detected]]
