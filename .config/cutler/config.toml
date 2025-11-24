@@ -118,7 +118,7 @@ flag = true
 
 [brew]
 formulae = ["bash", "bash-completion@2", "cargo-audit", "cargo-edit", "cmake", "dust", "git", "libyaml", "mise", "ninja", "sccache", "starship", "stow", "vhs", "hitblast/tap/drs"]
-casks = ["affinity", "android-platform-tools", "android-studio", "appcleaner", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "font-sf-pro", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "signal", "tower", "transmission", "zed", "zen", "nikitabobko/tap/aerospace"]
+casks = ["affinity", "android-platform-tools", "android-studio", "appcleaner", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "signal", "tower", "transmission", "zed", "zen", "nikitabobko/tap/aerospace"]
 taps = ["hitblast/tap", "nikitabobko/tap", "soloantonio/cartero"]
 no_deps = true
 
