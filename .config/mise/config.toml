@@ -12,6 +12,7 @@ fd = "latest"
 zoxide = "latest"
 uv = "latest"
 github-cli = "latest"
+flutter = "latest"
 
 [settings]
 python.uv_venv_auto = true
