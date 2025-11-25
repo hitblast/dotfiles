@@ -16,8 +16,8 @@
 
 # All possible modifiers: cmd, alt, ctrl, shift
 
+config-version = 2
 
-# Available commands: https://nikitabobko.github.io/AeroSpace/commands
 after-login-command = []
 after-startup-command = []
 
@@ -34,13 +34,9 @@ default-root-container-orientation = 'horizontal'
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 automatically-unhide-macos-hidden-apps = false
 
-
-# Possible values: (qwerty|dvorak)
-# See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
 preset = 'qwerty'
 
-# Gaps between windows (inner-*) and between monitor edges (outer-*)
 [gaps]
 inner.horizontal = 8
 inner.vertical = 8
@@ -49,71 +45,58 @@ outer.bottom = 0
 outer.top = 0
 outer.right = 0
 
-# Binding modes
-# Reference: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
+# main mode bindings
 
-# 'main' binding mode declaration
 [mode.main.binding]
-# See: https://nikitabobko.github.io/AeroSpace/commands#layout
 cmd-alt-ctrl-slash = 'layout tiles horizontal vertical'
 cmd-alt-ctrl-comma = 'layout accordion horizontal vertical'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#focus
 cmd-alt-ctrl-h = 'focus left'
 cmd-alt-ctrl-j = 'focus down'
 cmd-alt-ctrl-k = 'focus up'
 cmd-alt-ctrl-l = 'focus right'
 
-# Toggle fullscreen mode for focused window.
-# See: https://nikitabobko.github.io/AeroSpace/commands#fullscreen
 cmd-alt-ctrl-f = 'fullscreen'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#move
 cmd-alt-ctrl-shift-h = 'move left'
 cmd-alt-ctrl-shift-j = 'move down'
 cmd-alt-ctrl-shift-k = 'move up'
 cmd-alt-ctrl-shift-l = 'move right'
 
-# Launch primary terminal application.
 cmd-alt-ctrl-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#resize
 cmd-alt-ctrl-shift-minus = 'resize smart -50'
 cmd-alt-ctrl-shift-equal = 'resize smart +50'
 
-# Workspace declarations:
 cmd-alt-ctrl-u = 'workspace 1'
 cmd-alt-ctrl-i = 'workspace 2'
 cmd-alt-ctrl-o = 'workspace 3'
 cmd-alt-ctrl-p = 'workspace 4'
 cmd-alt-ctrl-y = 'workspace 5'
 
-# Moving nodes:
 cmd-alt-ctrl-shift-u = 'move-node-to-workspace 1'
 cmd-alt-ctrl-shift-i = 'move-node-to-workspace 2'
 cmd-alt-ctrl-shift-o = 'move-node-to-workspace 3'
 cmd-alt-ctrl-shift-p = 'move-node-to-workspace 4'
 cmd-alt-ctrl-shift-y = 'move-node-to-workspace 5'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 cmd-alt-ctrl-leftSquareBracket = 'workspace-back-and-forth'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#mode
 cmd-alt-ctrl-shift-semicolon = 'mode service'
 
+# 'service' mode bindings
 
-# 'service' binding mode declaration
 [mode.service.binding]
-esc = ['flatten-workspace-tree', 'mode main'] # reset layout
-r = ['reload-config', 'mode main'] # reload configuration
+esc = ['flatten-workspace-tree', 'mode main'] 
+r = ['reload-config', 'mode main'] 
 f = [
     'layout floating tiling',
     'mode main',
-] # toggle between floating and tiling layout
-
+] 
 
 # App-specific callbacks
 # Executed when an app instance has been initiated
+
 [[on-window-detected]]
 if.app-id = 'com.colliderli.iina'
 run = ['move-node-to-workspace 5']
