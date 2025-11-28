@@ -7,12 +7,12 @@ neovim = "latest"
 ripgrep = "latest"
 rust = { version = "latest", components = "rust-analyzer" }
 fzf = "latest"
-tokei = "latest"
 fd = "latest"
 zoxide = "latest"
 uv = "latest"
 github-cli = "latest"
 flutter = "latest"
+ruby = "latest"
 
 [settings]
 python.uv_venv_auto = true
