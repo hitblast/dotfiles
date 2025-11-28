@@ -1,3 +1,6 @@
+# ~/.config/cutler/config.toml
+
+# System Settings
 
 [set.NSGlobalDomain]
 NSAutoFillHeuristicControllerEnabled = false
@@ -56,8 +59,31 @@ show-thumbnail = false
 target = "clipboard"
 type = "png"
 
+# Variable declarations
+#
+# NOTE: This is not exported to the rest of the environment *outside* of the program.
+
 [vars]
 hostname = "darkstar"
+
+# External commands
+#
+# NOTE: Upgrade commands are non-flagged.
+
+[command.dotfiles]
+run = """
+if [ ! -d ~/Developer/dotfiles ]; then
+  git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
+fi
+cd ~/Developer/dotfiles
+stow . -t ~ --adopt
+"""
+ensure_first = true
+required = [
+    "stow",
+    "git",
+]
+flag = true
 
 [command.mise]
 run = "mise install"
@@ -79,7 +105,13 @@ uv tool install posting
 required = ["uv"]
 flag = true
 
-# test
+[command.hostname]
+run = """
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set HostName $hostname
+sudo scutil --set ComputerName $hostname
+"""
+flag = true
 
 [command.uv-upgrade]
 run = "uv tool upgrade --all"
@@ -89,39 +121,53 @@ required = ["uv"]
 run = "brew update && brew upgrade"
 required = ["brew"]
 
-[command.hostname]
-run = """
-sudo scutil --set LocalHostName $hostname
-sudo scutil --set HostName $hostname
-sudo scutil --set ComputerName $hostname
-"""
-flag = true
-
 [command.mise-upgrade]
 run = "mise up"
 required = ["mise"]
 
-[command.dotfiles]
-run = """
-if [ ! -d ~/Developer/dotfiles ]; then
-  git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
-fi
-cd ~/Developer/dotfiles
-stow . -t ~ --adopt
-"""
-ensure_first = true
-required = [
-    "stow",
-    "git",
-]
-flag = true
+# homebrew backup
 
 [brew]
-formulae = ["bash", "bash-completion@2", "cargo-audit", "cargo-edit", "cmake", "dust", "git", "libyaml", "mise", "ninja", "sccache", "starship", "stow", "vhs", "hitblast/tap/drs"]
-casks = ["affinity", "android-platform-tools", "android-studio", "appcleaner", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "signal", "tower", "transmission", "zed", "zen", "nikitabobko/tap/aerospace"]
-taps = ["hitblast/tap", "nikitabobko/tap", "soloantonio/cartero"]
+formulae = [
+    "bash",
+    "bash-completion@2",
+    "cargo-audit",
+    "cargo-edit",
+    "cmake",
+    "dust",
+    "git",
+    "libyaml",
+    "mise",
+    "ninja",
+    "sccache",
+    "smartmontools",
+    "starship",
+    "stow",
+    "vhs",
+    "hitblast/tap/drs"
+]
+casks = [
+    "affinity",
+    "android-studio",
+    "appcleaner",
+    "container",
+    "discord",
+    "font-sf-mono-nerd-font-ligaturized",
+    "ghostty",
+    "hot",
+    "iina",
+    "karabiner-elements",
+    "keyboardcleantool",
+    "orbstack",
+    "protonvpn",
+    "tower",
+    "transmission",
+    "zed",
+    "zen",
+    "nikitabobko/tap/aerospace"
+]
+taps = [
+    "hitblast/tap",
+    "nikitabobko/tap",
+]
 no_deps = true
-
-[remote]
-url = "https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml"
-autosync = false
