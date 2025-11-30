@@ -13,7 +13,7 @@ cursor-style-blink = true
 mouse-hide-while-typing = true
 
 # theme
-theme = light:"Xcode Light",dark:"Black Metal (Bathory)"
+theme = light:"Xcode Light",dark:"Cursor Dark"
 
 # window
 window-colorspace = display-p3
