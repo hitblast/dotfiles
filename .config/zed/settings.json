@@ -12,8 +12,10 @@
   "search": {
     "button": false
   },
-  "file_finder": {
-    "modal_max_width": "large"
+  "confirm_quit": true,
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
   },
   "git_panel": {
     "collapse_untracked_diff": true,
@@ -74,16 +76,21 @@
   },
   "seed_search_query_from_cursor": "selection",
   "buffer_font_family": "Liga SFMono Nerd Font",
-  "ui_font_family": "Liga SFMono Nerd Font",
-  "ui_font_size": 15,
-  "ui_font_weight": 500,
+  "ui_font_family": "SF Pro",
+  "ui_font_size": 15.5,
   "buffer_font_size": 14,
   "buffer_line_height": "comfortable",
   "relative_line_numbers": "enabled",
   "theme": {
     "mode": "system",
-    "light": "Fleet Light",
-    "dark": "Fleet Light"
+    "light": "JetBrains Light",
+    "dark": "JetBrains Light"
+  },
+  "minimap": {
+    "show": "always",
+    "thumb": "hover",
+    "thumb_border": "full",
+    "max_width_columns": 150
   },
   "terminal": {
     "dock": "bottom",
@@ -104,7 +111,7 @@
     "html": true,
     "toml": true,
     "lua": true,
-    "fleet-themes": true
+    "jetbrains-themes": true
   },
   "file_scan_exclusions": [
     "**/.git",

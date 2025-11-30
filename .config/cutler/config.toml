@@ -128,46 +128,7 @@ required = ["mise"]
 # homebrew backup
 
 [brew]
-formulae = [
-    "bash",
-    "bash-completion@2",
-    "cargo-audit",
-    "cargo-edit",
-    "cmake",
-    "dust",
-    "git",
-    "libyaml",
-    "mise",
-    "ninja",
-    "sccache",
-    "smartmontools",
-    "starship",
-    "stow",
-    "vhs",
-    "hitblast/tap/drs"
-]
-casks = [
-    "affinity",
-    "android-studio",
-    "appcleaner",
-    "container",
-    "discord",
-    "font-sf-mono-nerd-font-ligaturized",
-    "ghostty",
-    "hot",
-    "iina",
-    "karabiner-elements",
-    "keyboardcleantool",
-    "orbstack",
-    "protonvpn",
-    "tower",
-    "transmission",
-    "zed",
-    "zen",
-    "nikitabobko/tap/aerospace"
-]
-taps = [
-    "hitblast/tap",
-    "nikitabobko/tap",
-]
+formulae = ["bash", "bash-completion@2", "cargo-audit", "cargo-edit", "cmake", "dust", "git", "libyaml", "mise", "ninja", "sccache", "smartmontools", "starship", "stow", "vhs", "hitblast/tap/drs"]
+casks = ["affinity", "android-studio", "appcleaner", "cloudflare-warp", "container", "discord", "font-sf-mono-nerd-font-ligaturized", "font-sf-pro", "ghostty", "hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "tower", "transmission", "zed", "zen", "nikitabobko/tap/aerospace"]
+taps = ["hitblast/tap", "nikitabobko/tap"]
 no_deps = true
