@@ -84,7 +84,7 @@
   "theme": {
     "mode": "system",
     "light": "JetBrains Light",
-    "dark": "JetBrains Light"
+    "dark": "JetBrains Dark"
   },
   "minimap": {
     "show": "always",
