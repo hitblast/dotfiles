@@ -81,7 +81,6 @@ cmd-alt-ctrl-shift-p = 'move-node-to-workspace 4'
 cmd-alt-ctrl-shift-y = 'move-node-to-workspace 5'
 
 cmd-alt-ctrl-leftSquareBracket = 'workspace-back-and-forth'
-
 cmd-alt-ctrl-shift-semicolon = 'mode service'
 
 # 'service' mode bindings
@@ -104,11 +103,11 @@ cmd-alt-ctrl-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
 if.app-id = 'com.colliderli.iina'
-run = ['move-node-to-workspace 5']
+run = 'move-node-to-workspace 5'
 
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
-run = ['move-node-to-workspace 1']
+run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
@@ -135,7 +134,7 @@ if.app-id = 'com.apple.Safari'
 run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
-if.app-id = 'app.zen-browser.zen'
+if.app-id = 'net.imput.helium'
 run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
