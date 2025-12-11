@@ -6,7 +6,7 @@ Configuration files for my local development environment.
 
 These are the primary programs that are used in this configuration:
 
-- Setup Wrapper: [cutler](https://cutlercli.github.io)
+- Setup Wrapper: [cutler](https://github.com/machlit/cutler)
 - Package Manager: [Homebrew](https://brew.sh)
 - Tiling Window Manager: [AeroSpace](https://github.com/nikitabobko/AeroSpace)
 - Default Shell: `/opt/homebrew/bin/bash`
@@ -19,7 +19,7 @@ These are the primary programs that are used in this configuration:
 1. Install the `cutler` CLI:
 
 ```bash
-curl -fsSL https://cutlercli.github.io/scripts/install.sh | /bin/bash
+curl -fsSL https://machlit.github.io/scripts/install-cutler.sh | /bin/bash
 ```
 
 2. Run the following command:
