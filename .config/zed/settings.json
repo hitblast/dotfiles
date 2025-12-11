@@ -12,7 +12,6 @@
   "search": {
     "button": false
   },
-  "confirm_quit": true,
   "tab_bar": {
     "show_nav_history_buttons": false,
     "show_tab_bar_buttons": false
