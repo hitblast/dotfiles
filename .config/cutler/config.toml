@@ -131,7 +131,6 @@ required = ["mise"]
 formulae = [
 	"bash",
 	"bash-completion@2",
-	"cargo-audit",
 	"cargo-edit",
 	"cmake",
 	"dust", 
@@ -156,6 +155,21 @@ casks = [
 	"font-sf-mono-nerd-font-ligaturized",
 	"font-sf-pro",
 	"ghostty",
-	"hot", "iina", "karabiner-elements", "keyboardcleantool", "orbstack", "protonvpn", "tower", "transmission", "zed", "zen", "nikitabobko/tap/aerospace"]
-taps = ["hitblast/tap", "nikitabobko/tap"]
+	"hot",
+	"helium-browser",
+	"iina",
+	"karabiner-elements",
+	"keyboardcleantool",
+	"orbstack",
+	"protonvpn",
+	"tower",
+	"transmission",
+	"zed",
+	"nikitabobko/tap/aerospace",
+	"spotify",
+]
+taps = [
+	"hitblast/tap",
+	"nikitabobko/tap"
+]
 no_deps = true
