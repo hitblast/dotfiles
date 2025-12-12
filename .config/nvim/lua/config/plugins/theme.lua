@@ -1,6 +1,14 @@
 return {
-	'kdheepak/monochrome.nvim',
+	'rebelot/kanagawa.nvim',
 	config = function()
-    		vim.cmd 'colorscheme monochrome'
+        require('kanagawa').setup({
+            transparent = true,
+            background = {
+                dark = "dragon",
+                light = "lotus"
+            },
+        })
+
+        vim.cmd.colorscheme('kanagawa')
 	end
 }
