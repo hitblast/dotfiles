@@ -3,40 +3,62 @@ return {
         "mason-org/mason.nvim",
         opts = {},
     },
+
     {
         "mason-org/mason-lspconfig.nvim",
         opts = {
             ensure_installed = { "lua_ls" },
         },
     },
+
     {
         "neovim/nvim-lspconfig",
+        dependencies = {
+            "hrsh7th/cmp-nvim-lsp",
+        },
         config = function()
-            vim.api.nvim_create_autocmd("LspAttach", {
-                callback = function(args)
-                    local client = vim.lsp.get_client_by_id(args.data.client_id)
-                    local bufnr = args.buf
-
-                    vim.lsp.completion.enable(true, client.id, bufnr, {
-                        autotrigger = true,
-                        convert = function(item)
-                            return { abbr = item.label:gsub("%b()", "") }
-                        end,
-                    })
-                end,
-            })
+            local capabilities = vim.lsp.protocol.make_client_capabilities()
+            capabilities = require("cmp_nvim_lsp").default_capabilities(capabilities)
 
             local servers = {
                 rust_analyzer = {
-                    cmd = { vim.fn.expand("~/.config/cargo/bin/rust-analyzer") }, -- custom binary
+                    cmd = { vim.fn.expand("~/.config/cargo/bin/rust-analyzer") },
+                    capabilities = capabilities,
                 },
-                lua_ls = {},
+                lua_ls = {
+                    capabilities = capabilities,
+                },
             }
 
-            for name, config in pairs(servers) do
-                vim.lsp.config[name] = config
+            for name, cfg in pairs(servers) do
+                vim.lsp.config[name] = cfg
                 vim.lsp.enable(name)
             end
+        end,
+    },
+
+    {
+        "hrsh7th/nvim-cmp",
+        dependencies = {
+            "hrsh7th/cmp-nvim-lsp",
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-path",
+        },
+        config = function()
+            local cmp = require("cmp")
+
+            cmp.setup({
+                mapping = cmp.mapping.preset.insert({
+                    ["<Tab>"]   = cmp.mapping.select_next_item(),
+                    ["<S-Tab>"] = cmp.mapping.select_prev_item(),
+                    ["<CR>"]    = cmp.mapping.confirm({ select = true }),
+                }),
+                sources = {
+                    { name = "nvim_lsp" },
+                    { name = "buffer" },
+                    { name = "path" },
+                },
+            })
         end,
     },
 }

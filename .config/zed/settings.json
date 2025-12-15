@@ -81,9 +81,9 @@
   "buffer_line_height": "comfortable",
   "relative_line_numbers": "enabled",
   "theme": {
-    "mode": "system",
-    "light": "JetBrains Light",
-    "dark": "JetBrains Dark"
+    "mode": "light",
+    "light": "Xcode Classic Light",
+    "dark": "Xcode Civic"
   },
   "minimap": {
     "show": "always",
@@ -110,7 +110,7 @@
     "html": true,
     "toml": true,
     "lua": true,
-    "jetbrains-themes": true
+    "xcode-themes": true
   },
   "file_scan_exclusions": [
     "**/.git",
