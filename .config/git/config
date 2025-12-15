@@ -1,6 +1,6 @@
 [user]
 	name = "Anindya Shiddhartha"
-	email = 67194380+hitblast@users.noreply.github.com
+	email = shiddhartha@tuta.io
 	signingkey = /Users/hitblast/.ssh/id_ed25519_code.pub
 
 [core]
@@ -14,11 +14,14 @@
     pushNonFastForward = false
     statusHints = false
 
-[url "git@github.com:hitblast/"]
+[url "git@codeberg.org:hitblast/"]
     insteadOf = "int:"
 
+[url "git@codeberg.org:"]
+    insteadOf = "bur:"
+
 [url "git@github.com:"]
-    insteadOf = "ext:"
+    insteadOf = "bur:"
 
 [gpg]
 	format = "ssh"
@@ -67,4 +70,3 @@
 # $ git log
 [log]
     abbrevCommit = true
-
