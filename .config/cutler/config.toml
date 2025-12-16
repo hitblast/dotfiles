@@ -162,10 +162,10 @@ casks = [
 	"keyboardcleantool",
 	"orbstack",
 	"protonvpn",
-	"tower",
 	"transmission",
 	"zed",
 	"nikitabobko/tap/aerospace",
+    "signal",
 	"spotify",
 ]
 taps = [
