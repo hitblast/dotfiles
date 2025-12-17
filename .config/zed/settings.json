@@ -81,9 +81,9 @@
   "buffer_line_height": "comfortable",
   "relative_line_numbers": "enabled",
   "theme": {
-    "mode": "light",
+    "mode": "system",
     "light": "Xcode Classic Light",
-    "dark": "Xcode Civic"
+    "dark": "Xcode High Contrast Darker"
   },
   "minimap": {
     "show": "always",
