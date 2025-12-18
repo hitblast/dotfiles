@@ -6,72 +6,72 @@
     "show_user_picture": true,
     "show_onboarding_banner": false,
     "show_branch_icon": true,
-    "show_branch_name": true
+    "show_branch_name": true,
   },
   "max_tabs": 5,
   "search": {
-    "button": false
+    "button": false,
   },
   "tab_bar": {
     "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": false
+    "show_tab_bar_buttons": false,
   },
   "git_panel": {
     "collapse_untracked_diff": true,
     "sort_by_path": true,
     "fallback_branch_name": "master",
-    "button": false
+    "button": false,
   },
   "notification_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "collaboration_panel": {
-    "button": false
+    "button": false,
   },
   "outline_panel": {
     "indent_size": 25,
-    "button": false
+    "button": false,
   },
   "project_panel": {
     "default_width": 300,
     "entry_spacing": "comfortable",
     "auto_fold_dirs": true,
-    "dock": "right"
+    "dock": "right",
   },
   "indent_guides": {
     "enabled": true,
-    "coloring": "fixed"
+    "coloring": "fixed",
   },
   "tabs": {
     "git_status": true,
     "file_icons": true,
-    "show_diagnostics": "errors"
+    "show_diagnostics": "errors",
   },
 
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "inlay_hints": {
-    "enabled": true
+    "enabled": true,
   },
   "centered_layout": {
     "left_padding": 0.15,
-    "right_padding": 0.15
+    "right_padding": 0.15,
   },
   "git": {
     "inline_blame": {
       "enabled": true,
       "delay_ms": 500,
-      "min_column": 80
-    }
+      "min_column": 80,
+    },
   },
   "scrollbar": {
-    "show": "never"
+    "show": "never",
   },
   "vim_mode": true,
   "vim": {
-    "use_system_clipboard": "always"
+    "use_system_clipboard": "always",
   },
   "seed_search_query_from_cursor": "selection",
   "buffer_font_family": "Liga SFMono Nerd Font",
@@ -83,34 +83,31 @@
   "theme": {
     "mode": "system",
     "light": "Xcode Classic Light",
-    "dark": "Xcode High Contrast Darker"
+    "dark": "Xcode High Contrast Darker",
   },
   "minimap": {
-    "show": "always",
-    "thumb": "hover",
-    "thumb_border": "full",
-    "max_width_columns": 150
+    "show": "never",
   },
   "terminal": {
     "dock": "bottom",
     "blinking": "on",
     "copy_on_select": true,
     "env": {
-      "EDITOR": "zed --wait"
+      "EDITOR": "zed --wait",
     },
     "detect_venv": {
       "on": {
         "directories": [".venv", "venv"],
-        "activate_script": "default"
-      }
-    }
+        "activate_script": "default",
+      },
+    },
   },
   "auto_install_extensions": {
     "git-firefly": true,
     "html": true,
     "toml": true,
     "lua": true,
-    "xcode-themes": true
+    "xcode-themes": true,
   },
   "file_scan_exclusions": [
     "**/.git",
@@ -132,9 +129,9 @@
     "**/.tap",
     "**/.nyc_output",
     "**/report",
-    "**/node_modules"
+    "**/node_modules",
   ],
   "remove_trailing_whitespace_on_save": true,
   "always_treat_brackets_as_autoclosed": true,
-  "restore_on_startup": "none"
+  "restore_on_startup": "none",
 }
