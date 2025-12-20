@@ -14,14 +14,11 @@
     pushNonFastForward = false
     statusHints = false
 
-[url "git@codeberg.org:hitblast/"]
-    insteadOf = "int:"
-
 [url "git@codeberg.org:"]
     insteadOf = "bur:"
 
 [url "git@github.com:"]
-    insteadOf = "bur:"
+    insteadOf = "hub:"
 
 [gpg]
 	format = "ssh"
