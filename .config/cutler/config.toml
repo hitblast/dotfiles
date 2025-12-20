@@ -143,7 +143,8 @@ formulae = [
 	"starship",
 	"stow",
 	"vhs",
-	"hitblast/tap/drs"
+	"hitblast/tap/drs",
+    "tw93/tap/mole"
 ]
 casks = [
 	"affinity",
@@ -169,6 +170,7 @@ casks = [
 ]
 taps = [
 	"hitblast/tap",
-	"nikitabobko/tap"
+	"nikitabobko/tap",
+    "tw93/tap",
 ]
 no_deps = true
