@@ -130,6 +130,10 @@ if.app-name-regex-substring = 'aseprite'
 run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
+if.app-id = 'com.bohemiancoding.sketch3'
+run = 'move-node-to-workspace 3'
+
+[[on-window-detected]]
 if.app-id = 'com.blackmagic-design.DaVinciResolveLite'
 run = 'move-node-to-workspace 3'
 
