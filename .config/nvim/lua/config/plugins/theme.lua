@@ -1,6 +1,6 @@
 return {
     'lunacookies/vim-colors-xcode',
     config = function()
-        vim.cmd.colorscheme("xcodelight")
+        vim.cmd.colorscheme("xcode")
     end
 }
