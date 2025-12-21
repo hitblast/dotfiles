@@ -103,7 +103,7 @@ cmd-alt-ctrl-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
 if.app-id = 'com.colliderli.iina'
-run = 'move-node-to-workspace 5'
+run = 'move-node-to-workspace 0'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
@@ -122,8 +122,12 @@ if.app-name-regex-substring = 'xcode'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
-if.app-id = 'com.apple.mail'
-run = 'move-node-to-workspace 1'
+if.app-id = 'com.apple.Safari'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
+if.app-id = 'net.imput.helium'
+run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'aseprite'
@@ -138,14 +142,11 @@ if.app-id = 'com.blackmagic-design.DaVinciResolveLite'
 run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
-if.app-id = 'com.apple.Safari'
-run = 'move-node-to-workspace 2'
-
-[[on-window-detected]]
-if.app-id = 'net.imput.helium'
-run = 'move-node-to-workspace 2'
-
-[[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace 4'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = 'move-node-to-workspace 4'
+
 
