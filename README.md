@@ -19,7 +19,7 @@ These are the primary programs that are used in this configuration:
 1. Install the `cutler` CLI:
 
 ```bash
-curl -fsSL https://machlit.github.io/scripts/install-cutler.sh | /bin/bash
+curl -fsSL https://machlit.github.io/cutler/install.sh | /bin/bash
 ```
 
 2. Run the following command:
