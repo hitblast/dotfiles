@@ -25,16 +25,6 @@ alias fd="fd --color=never"
 alias find="fd --color=never"
 alias lz="lazygit"
 
-alias gaa="git add --all"
-alias gcm="git commit -m"
-alias gcam="git commit -a -m"
-alias gco="git checkout"
-alias gp="git push"
-alias gP="git push --force"
-alias gpu="git pull"
-alias gbr="git branch"
-alias gt="git tag"
-
 # enable starship prompt
 eval "$(starship init bash)"
 
