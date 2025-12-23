@@ -137,7 +137,7 @@ formulae = [
 	"dust",
 	"fd",
 	"fzf",
-	"fastfetch"
+	"fastfetch",
 	"git",
 	"lazygit",
 	"libyaml",
