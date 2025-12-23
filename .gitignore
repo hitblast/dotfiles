@@ -23,3 +23,7 @@
 # karabiner
 .config/karabiner/automatic_backups
 .config/karabiner/assets
+
+# ssh
+.ssh/id*
+.ssh/known_hosts*
