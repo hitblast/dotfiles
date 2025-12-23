@@ -4,10 +4,6 @@ set -o vi
 # disable lazygit if I'm using code editor
 # this is I think going to be zed by default
 if [[ "$EDITOR" != "nvim" ]]; then
-    function lazygit {
-        echo "git gud, lazygit disabled in editor"
-        return 1
-    }
     function nvim {
         echo "git gud, nvim disabled in other editors"
         return 1
