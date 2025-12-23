@@ -129,15 +129,22 @@ required = ["mise"]
 
 [brew]
 formulae = [
+    "bat",
 	"bash",
 	"bash-completion@2",
 	"cargo-edit",
 	"cmake",
 	"dust",
+	"fd",
+	"fzf",
+	"fastfetch"
 	"git",
+	"lazygit",
 	"libyaml",
 	"mise",
 	"ninja",
+	"neovim",
+	"ripgrep",
 	"sccache",
 	"smartmontools",
 	"starship",
@@ -145,7 +152,8 @@ formulae = [
 	"vhs",
 	"hitblast/tap/drs",
     "tw93/tap/mole",
-    "uv"
+    "uv",
+    "zoxide",
 ]
 casks = [
 	"android-studio",

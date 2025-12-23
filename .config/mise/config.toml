@@ -1,13 +1,5 @@
 [tools]
-bat = "latest"
 "cargo:trimsec" = "latest"
-fastfetch = "latest"
-lazygit = "latest"
-neovim = "latest"
-ripgrep = "latest"
-fzf = "latest"
-fd = "latest"
-zoxide = "latest"
 rust = { version = "latest", components = "rust-analyzer,clippy"}
 github-cli = "latest"
 flutter = "latest"
