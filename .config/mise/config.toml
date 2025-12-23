@@ -5,11 +5,10 @@ fastfetch = "latest"
 lazygit = "latest"
 neovim = "latest"
 ripgrep = "latest"
-rust = { version = "latest", components = "rust-analyzer" }
 fzf = "latest"
 fd = "latest"
 zoxide = "latest"
-uv = "latest"
+rust = { version = "latest", components = "rust-analyzer,clippy"}
 github-cli = "latest"
 flutter = "latest"
 ruby = "latest"
