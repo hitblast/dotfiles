@@ -1,5 +1,3 @@
-# ~/.config/cutler/config.toml
-
 # System Settings
 
 [set.NSGlobalDomain]
@@ -8,6 +6,7 @@ NSAutoFillHeuristicControllerEnabled = false
 NSWindowShouldDragOnGesture = true
 InitialKeyRepeat = 15
 KeyRepeat = 2
+ApplePressAndHoldEnabled = false
 NSAutomaticInlinePredictionEnabled = false
 NSAutomaticSpellingCorrectionEnabled = false
 NSDocumentSaveNewDocumentsToCloud = false
@@ -76,6 +75,7 @@ if [ ! -d ~/Developer/dotfiles ]; then
   git clone https://github.com/hitblast/dotfiles.git ~/Developer/dotfiles
 fi
 cd ~/Developer/dotfiles
+git remote set-url origin hub:hitblast/dotfiles
 stow . -t ~ --adopt
 """
 ensure_first = true
@@ -87,6 +87,7 @@ flag = true
 
 [command.mise]
 run = "mise install"
+ensure_first = true
 required = ["mise"]
 flag = true
 
