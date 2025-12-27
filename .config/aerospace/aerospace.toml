@@ -87,7 +87,7 @@ cmd-alt-ctrl-shift-semicolon = 'mode service'
 
 [mode.service.binding]
 esc = ['flatten-workspace-tree', 'mode main'] 
-r = ["exec-and-forget osascript -e 'display notification \"Configuration has been reloaded.\" with title \"AeroSpace Config\"'", 'reload-config', 'mode main'] 
+r = ['reload-config', 'mode main'] 
 f = [
     'layout floating tiling',
     'mode main',
@@ -107,6 +107,10 @@ run = 'move-node-to-workspace 0'
 
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
+run = 'move-node-to-workspace 0'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'steam'
 run = 'move-node-to-workspace 0'
 
 [[on-window-detected]]
@@ -146,7 +150,9 @@ if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
-if.app-id = 'com.apple.mail'
+if.app-id = 'dev.vencord.vesktop'
 run = 'move-node-to-workspace 4'
 
-
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = 'move-node-to-workspace 4'
