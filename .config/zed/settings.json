@@ -73,6 +73,7 @@
   "vim": {
     "use_system_clipboard": "always",
   },
+  "confirm_quit": true,
   "seed_search_query_from_cursor": "selection",
   "buffer_font_family": "Liga SFMono Nerd Font",
   "ui_font_family": "SF Pro",
@@ -92,6 +93,7 @@
     "dock": "bottom",
     "blinking": "on",
     "copy_on_select": true,
+    "default_height": 500,
     "env": {
       "EDITOR": "zed --wait",
     },
