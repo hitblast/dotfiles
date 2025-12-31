@@ -73,12 +73,14 @@ cmd-alt-ctrl-i = 'workspace 2'
 cmd-alt-ctrl-o = 'workspace 3'
 cmd-alt-ctrl-p = 'workspace 4'
 cmd-alt-ctrl-y = 'workspace 0'
+cmd-alt-ctrl-g = 'workspace G'
 
 cmd-alt-ctrl-shift-u = 'move-node-to-workspace 1'
 cmd-alt-ctrl-shift-i = 'move-node-to-workspace 2'
 cmd-alt-ctrl-shift-o = 'move-node-to-workspace 3'
 cmd-alt-ctrl-shift-p = 'move-node-to-workspace 4'
 cmd-alt-ctrl-shift-y = 'move-node-to-workspace 0'
+cmd-alt-ctrl-shift-g = 'move-node-to-workspace G'
 
 cmd-alt-ctrl-leftSquareBracket = 'workspace-back-and-forth'
 cmd-alt-ctrl-shift-semicolon = 'mode service'
@@ -111,7 +113,7 @@ run = 'move-node-to-workspace 0'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'steam'
-run = 'move-node-to-workspace 0'
+run = 'move-node-to-workspace G'
 
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
