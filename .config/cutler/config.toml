@@ -151,9 +151,7 @@ formulae = [
 	"starship",
 	"stow",
 	"tokei",
-	"vhs",
-	"hitblast/tap/drs",
-    "tw93/tap/mole",
+	"machlit/tap/drs",
     "uv",
     "zoxide",
 ]
@@ -176,12 +174,10 @@ casks = [
 	"steam",
 	"spotify",
 	"transmission",
-    "vesktop",
 	"zed",
 ]
 taps = [
-	"hitblast/tap",
+	"machlit/tap",
 	"nikitabobko/tap",
-    "tw93/tap",
 ]
 no_deps = true
