@@ -4,6 +4,7 @@ rust = { version = "latest", components = "rust-analyzer,clippy"}
 github-cli = "latest"
 flutter = "latest"
 ruby = "latest"
+bun = "latest"
 
 [settings]
 python.uv_venv_auto = true

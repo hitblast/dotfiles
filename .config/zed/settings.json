@@ -82,9 +82,9 @@
   "buffer_line_height": "comfortable",
   "relative_line_numbers": "enabled",
   "theme": {
-    "mode": "system",
-    "light": "Xcode Classic Light",
-    "dark": "Xcode High Contrast Darker",
+    "mode": "light",
+    "light": "Xcode Spartan",
+    "dark": "Xcode Spartan",
   },
   "minimap": {
     "show": "never",
@@ -135,5 +135,5 @@
   ],
   "remove_trailing_whitespace_on_save": true,
   "always_treat_brackets_as_autoclosed": true,
-  "restore_on_startup": "none",
+  "restore_on_startup": "empty_tab",
 }

@@ -6,6 +6,7 @@ add_newline = false
 format = """
 $username\
 $hostname\
+$battery\
 $localip\
 $shlvl\
 $directory\
@@ -20,6 +21,10 @@ $sudo\
 $cmd_duration\
 $shell\
 $character"""
+
+[[battery.display]]
+threshold = 100
+style = 'dimmed white'
 
 [character]
 success_symbol = '\$'

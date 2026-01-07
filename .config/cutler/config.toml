@@ -102,6 +102,7 @@ run = """
 uv tool install basedpyright
 uv tool install ruff
 uv tool install posting
+uv tool install yt-dlp --with yt-dlp-ejs
 """
 required = ["uv"]
 flag = true
@@ -138,6 +139,7 @@ formulae = [
 	"dust",
 	"fd",
 	"fzf",
+    "ffmpeg",
 	"fastfetch",
 	"git",
 	"lazygit",
