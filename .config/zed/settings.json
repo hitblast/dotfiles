@@ -47,7 +47,6 @@
     "file_icons": true,
     "show_diagnostics": "errors",
   },
-
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
@@ -82,9 +81,9 @@
   "buffer_line_height": "comfortable",
   "relative_line_numbers": "enabled",
   "theme": {
-    "mode": "light",
-    "light": "Xcode Spartan",
-    "dark": "Xcode Spartan",
+    "mode": "system",
+    "light": "Min Light (Solid)",
+    "dark": "Min Dark (Solid)",
   },
   "minimap": {
     "show": "never",
@@ -109,7 +108,7 @@
     "html": true,
     "toml": true,
     "lua": true,
-    "xcode-themes": true,
+    "min-theme": true,
   },
   "file_scan_exclusions": [
     "**/.git",
