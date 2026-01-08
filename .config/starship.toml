@@ -22,6 +22,11 @@ $cmd_duration\
 $shell\
 $character"""
 
+[battery]
+full_symbol = ''
+charging_symbol = ''
+discharging_symbol = ''
+
 [[battery.display]]
 threshold = 100
 style = 'dimmed white'
