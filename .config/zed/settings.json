@@ -77,13 +77,13 @@
   "buffer_font_family": "Liga SFMono Nerd Font",
   "ui_font_family": "SF Pro",
   "ui_font_size": 15.5,
-  "buffer_font_size": 14,
+  "buffer_font_size": 14.5,
   "buffer_line_height": "comfortable",
   "relative_line_numbers": "enabled",
   "theme": {
     "mode": "system",
-    "light": "Min Light (Solid)",
-    "dark": "Min Dark (Solid)",
+    "light": "Fleet Light",
+    "dark": "Fleet Dark",
   },
   "minimap": {
     "show": "never",
@@ -108,7 +108,9 @@
     "html": true,
     "toml": true,
     "lua": true,
-    "min-theme": true,
+    "ruby": true,
+    "make": true,
+    "fleet-themes": true,
   },
   "file_scan_exclusions": [
     "**/.git",
