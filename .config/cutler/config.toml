@@ -146,7 +146,6 @@ formulae = [
 	"libyaml",
 	"mise",
 	"ninja",
-	"neovim",
 	"ripgrep",
 	"sccache",
 	"smartmontools",
