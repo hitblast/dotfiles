@@ -23,9 +23,12 @@ $shell\
 $character"""
 
 [battery]
-full_symbol = ''
-charging_symbol = ''
-discharging_symbol = ''
+full_symbol = 'full'
+charging_symbol = 'up'
+discharging_symbol = 'down'
+unknown_symbol = '?'
+empty_symbol = 'empty'
+format = '[$symbol $percentage]($style) '
 
 [[battery.display]]
 threshold = 100

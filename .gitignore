@@ -27,3 +27,6 @@
 # ssh
 .ssh/id*
 .ssh/known_hosts*
+
+# vim
+*.swp
