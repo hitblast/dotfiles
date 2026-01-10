@@ -23,7 +23,7 @@ window-padding-x = 11
 window-padding-y = 11
 
 # macOS-specific settings
-macos-titlebar-style = transparent
+macos-titlebar-style = hidden
 macos-titlebar-proxy-icon = hidden
 macos-window-shadow = true
 

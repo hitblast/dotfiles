@@ -34,6 +34,8 @@ default-root-container-orientation = 'horizontal'
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 automatically-unhide-macos-hidden-apps = false
 
+persistent-workspaces = ["0", "1", "2", "3", "4"]
+
 [key-mapping]
 preset = 'qwerty'
 
