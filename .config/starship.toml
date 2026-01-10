@@ -42,7 +42,7 @@ error_symbol = '[\$](bold red)'
 style = 'dimmed white'
 
 [git_branch]
-symbol = ''
+format = '[$branch(:$remote_branch)]($style) '
 style = 'white'
 
 [python]
