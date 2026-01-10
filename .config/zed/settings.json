@@ -1,4 +1,5 @@
 {
+  "base_keymap": "VSCode",
   "disable_ai": true,
   "title_bar": {
     "show_menus": false,
@@ -73,12 +74,15 @@
     "use_system_clipboard": "always",
   },
   "confirm_quit": true,
+  "cursor_blink": false,
   "seed_search_query_from_cursor": "selection",
   "buffer_font_family": "Liga SFMono Nerd Font",
   "ui_font_family": "SF Pro",
   "ui_font_size": 15.5,
   "buffer_font_size": 14.5,
-  "buffer_line_height": "comfortable",
+  "buffer_line_height": {
+    "custom": 1.6,
+  },
   "relative_line_numbers": "enabled",
   "theme": {
     "mode": "system",
@@ -89,6 +93,11 @@
     "show": "never",
   },
   "terminal": {
+    "font_family": "Liga SFMono Nerd Font",
+    "font_size": 16,
+    "line_height": {
+      "custom": 1.6,
+    },
     "dock": "bottom",
     "blinking": "on",
     "copy_on_select": true,

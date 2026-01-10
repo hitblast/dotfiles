@@ -5,17 +5,42 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown"
-    }
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "space s s": "zed::OpenSettingsFile",
+      "space s k": "zed::OpenKeymapFile",
+      "space e": "workspace::ToggleRightDock",
+    },
   },
   {
-    "context": "Editor",
+    "context": "Editor && !menu",
     "bindings": {
       "ctrl-c": "workspace::ToggleCenteredLayout",
       "ctrl-n h": "pane::SplitLeft",
       "ctrl-n j": "pane::SplitDown",
       "ctrl-n k": "pane::SplitUp",
-      "ctrl-n l": "pane::SplitRight"
-    }
-  }
+      "ctrl-n l": "pane::SplitRight",
+    },
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      "K": "editor::Hover",
+      "space l a": "editor::ToggleCodeActions",
+      "space l f": "editor::Format",
+      "space l r": "editor::Rename",
+      "space l d": "diagnostics::Deploy",
+      "space f": "file_finder::Toggle",
+      "space o": "tab_switcher::Toggle",
+      "space p": "outline::Toggle",
+      "g d": "editor::GoToDefinitionSplit",
+      "g c c": "vim::ToggleComments",
+      "g r": "editor::FindAllReferences",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      "j j": "vim::NormalBefore",
+    },
+  },
 ]
