@@ -6,9 +6,6 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
-      "space s s": "zed::OpenSettingsFile",
-      "space s k": "zed::OpenKeymapFile",
-      "space e": "workspace::ToggleRightDock",
     },
   },
   {
@@ -25,6 +22,9 @@
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
       "K": "editor::Hover",
+      "space s s": "zed::OpenSettingsFile",
+      "space s k": "zed::OpenKeymapFile",
+      "space e": "workspace::ToggleRightDock",
       "space l a": "editor::ToggleCodeActions",
       "space l f": "editor::Format",
       "space l r": "editor::Rename",
