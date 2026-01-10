@@ -9,3 +9,9 @@ set relativenumber
 let &t_SI = "\e[6 q"  " SI = Start Insert mode (beam)  
 let &t_EI = "\e[2 q"  " EI = End Insert mode (block)  
  
+" Plugins
+call plug#begin()
+
+Plug 'airblade/vim-gitgutter'
+
+call plug#end()
