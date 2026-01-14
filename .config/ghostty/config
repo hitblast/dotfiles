@@ -36,6 +36,8 @@ keybind = ctrl+j=goto_split:bottom
 keybind = ctrl+k=goto_split:top
 keybind = ctrl+l=goto_split:right
 
+keybind = ctrl+opt+cmd+'=toggle_quick_terminal
+
 keybind = ctrl+n>h=new_split:left
 keybind = ctrl+n>j=new_split:down
 keybind = ctrl+n>k=new_split:up
