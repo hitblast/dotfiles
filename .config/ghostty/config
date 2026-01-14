@@ -27,6 +27,10 @@ macos-titlebar-style = hidden
 macos-titlebar-proxy-icon = hidden
 macos-window-shadow = true
 
+# quick terminal
+quick-terminal-animation-duration = 0
+quick-terminal-autohide = true
+
 # misc.
 alpha-blending = native
 
@@ -36,7 +40,7 @@ keybind = ctrl+j=goto_split:bottom
 keybind = ctrl+k=goto_split:top
 keybind = ctrl+l=goto_split:right
 
-keybind = ctrl+opt+cmd+'=toggle_quick_terminal
+keybind = global:ctrl+opt+cmd+'=toggle_quick_terminal
 
 keybind = ctrl+n>h=new_split:left
 keybind = ctrl+n>j=new_split:down
