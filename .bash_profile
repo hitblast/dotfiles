@@ -5,7 +5,7 @@ export LC_COLLATE=en_US.UTF-8
 
 # If not already set, set EDITOR to be nvim.
 if [ -z "$EDITOR" ]; then
-    export EDITOR="nvim"
+    export EDITOR="vim"
 fi
 
 # Load local binaries to PATH.

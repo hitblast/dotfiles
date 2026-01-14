@@ -3,8 +3,8 @@ set -o vi
 
 # disable lazygit if I'm using code editor
 # this is I think going to be zed by default
-if [[ "$EDITOR" != "nvim" ]]; then
-    function nvim {
+if [[ "$EDITOR" != "vim" ]]; then
+    function vim {
         echo "git gud, nvim disabled in other editors"
         return 1
     }
