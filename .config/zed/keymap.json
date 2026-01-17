@@ -9,6 +9,15 @@
     },
   },
   {
+    "context": "ProjectPanel || (Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting)",
+    "bindings": {
+      "space e": "workspace::ToggleRightDock",
+      "space f": "file_finder::Toggle",
+      "space t": "tab_switcher::Toggle",
+      "space o": "workspace::Open",
+    },
+  },
+  {
     "context": "Editor && !menu",
     "bindings": {
       "ctrl-c": "workspace::ToggleCenteredLayout",
@@ -24,13 +33,10 @@
       "K": "editor::Hover",
       "space s s": "zed::OpenSettingsFile",
       "space s k": "zed::OpenKeymapFile",
-      "space e": "workspace::ToggleRightDock",
       "space l a": "editor::ToggleCodeActions",
       "space l f": "editor::Format",
       "space l r": "editor::Rename",
       "space l d": "diagnostics::Deploy",
-      "space f": "file_finder::Toggle",
-      "space o": "tab_switcher::Toggle",
       "space p": "outline::Toggle",
       "g d": "editor::GoToDefinitionSplit",
       "g c c": "vim::ToggleComments",

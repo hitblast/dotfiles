@@ -1,12 +1,11 @@
 {
-  "base_keymap": "VSCode",
   "disable_ai": true,
+  "base_keymap": "VSCode",
   "title_bar": {
-    "show_menus": false,
-    "show_sign_in": false,
-    "show_user_picture": true,
+    "show_user_menu": false,
     "show_onboarding_banner": false,
     "show_branch_icon": true,
+    "show_project_items": false,
     "show_branch_name": true,
   },
   "max_tabs": 5,
@@ -14,12 +13,14 @@
     "button": false,
   },
   "tab_bar": {
-    "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": false,
+    "show": false,
+  },
+  "toolbar": {
+    "quick_actions": false,
   },
   "git_panel": {
+    "dock": "left",
     "collapse_untracked_diff": true,
-    "sort_by_path": true,
     "fallback_branch_name": "master",
     "button": false,
   },
@@ -30,14 +31,19 @@
     "button": false,
   },
   "outline_panel": {
-    "indent_size": 25,
+    "indent_size": 35,
     "button": false,
   },
   "project_panel": {
-    "default_width": 300,
-    "entry_spacing": "comfortable",
-    "auto_fold_dirs": true,
+    "default_width": 350,
+    "hide_root": true,
+    "auto_fold_dirs": false,
     "dock": "right",
+    "starts_open": false,
+    "sticky_scroll": false,
+    "indent_guides": {
+      "show": "never",
+    },
   },
   "indent_guides": {
     "enabled": true,

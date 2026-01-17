@@ -167,6 +167,7 @@ casks = [
 	"hot",
 	"helium-browser",
 	"iina",
+	"keepassxc",
 	"karabiner-elements",
 	"keyboardcleantool",
 	"nikitabobko/tap/aerospace",
