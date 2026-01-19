@@ -17,7 +17,7 @@ autohide-delay = 0
 autohide-time-modifier = 0.6
 expose-group-apps = true
 mineffect = "suck"
-magnification = true
+magnification = false
 orientation = "right"
 show-recents = false
 autohide = true
@@ -145,6 +145,7 @@ formulae = [
 	"lazygit",
 	"libyaml",
 	"mise",
+    "mactop",
 	"ninja",
 	"ripgrep",
 	"sccache",
