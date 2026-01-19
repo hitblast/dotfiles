@@ -119,7 +119,6 @@
     },
   },
   "auto_install_extensions": {
-    "git-firefly": true,
     "html": true,
     "toml": true,
     "lua": true,
