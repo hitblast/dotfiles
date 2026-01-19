@@ -8,7 +8,7 @@
     "show_project_items": false,
     "show_branch_name": true,
   },
-  "max_tabs": 5,
+  "max_tabs": 10,
   "search": {
     "button": false,
   },
