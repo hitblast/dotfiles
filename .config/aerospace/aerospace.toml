@@ -66,6 +66,7 @@ cmd-alt-ctrl-shift-k = 'move up'
 cmd-alt-ctrl-shift-l = 'move right'
 
 cmd-alt-ctrl-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
+cmd-alt-ctrl-backslash = 'exec-and-forget open -a Launchpad'
 
 cmd-alt-ctrl-shift-minus = 'resize smart -50'
 cmd-alt-ctrl-shift-equal = 'resize smart +50'
@@ -106,6 +107,10 @@ cmd-alt-ctrl-shift-l = ['join-with right', 'mode main']
 # Executed when an app instance has been initiated
 
 [[on-window-detected]]
+if.app-name-regex-substring = 'steam'
+run = 'move-node-to-workspace G'
+
+[[on-window-detected]]
 if.app-id = 'com.colliderli.iina'
 run = 'move-node-to-workspace 0'
 
@@ -114,15 +119,23 @@ if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace 0'
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'steam'
-run = 'move-node-to-workspace G'
-
-[[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
+if.app-id = 'dev.kdrag0n.MacVirt'
+run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+if.app-id = 'com.google.android.studio'
+run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
 if.app-name-regex-substring = 'xcode'
+run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+if.app-id = 'org.libreoffice.script'
 run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
@@ -138,10 +151,6 @@ if.app-name-regex-substring = 'aseprite'
 run = 'move-node-to-workspace 3'
 
 [[on-window-detected]]
-if.app-id = 'com.bohemiancoding.sketch3'
-run = 'move-node-to-workspace 3'
-
-[[on-window-detected]]
 if.app-id = 'com.blackmagic-design.DaVinciResolveLite'
 run = 'move-node-to-workspace 3'
 
@@ -150,9 +159,6 @@ if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
-if.app-id = 'dev.vencord.vesktop'
+if.app-id = 'net.whatsapp.WhatsApp'
 run = 'move-node-to-workspace 4'
 
-[[on-window-detected]]
-if.app-id = 'com.apple.mail'
-run = 'move-node-to-workspace 4'
