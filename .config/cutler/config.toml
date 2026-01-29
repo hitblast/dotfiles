@@ -142,6 +142,7 @@ formulae = [
     "ffmpeg",
 	"fastfetch",
 	"git",
+    "hitblast/tap/cornelli",
 	"lazygit",
 	"libyaml",
 	"mise",
@@ -171,6 +172,7 @@ casks = [
 	"keepassxc",
 	"karabiner-elements",
 	"keyboardcleantool",
+    "libreoffice",
 	"nikitabobko/tap/aerospace",
 	"orbstack",
 	"protonvpn",
@@ -178,9 +180,11 @@ casks = [
 	"spotify",
 	"transmission",
 	"zed",
+    "zulu@25",
 ]
 taps = [
 	"machlit/tap",
 	"nikitabobko/tap",
+    "hitblast/tap",
 ]
 no_deps = true

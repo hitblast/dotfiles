@@ -9,7 +9,7 @@
     },
   },
   {
-    "context": "ProjectPanel || (Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting)",
+    "context": "EmptyPane || ProjectPanel || (Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting)",
     "bindings": {
       "space e": "workspace::ToggleRightDock",
       "space p": "file_finder::Toggle",
@@ -29,7 +29,7 @@
       "space l f": "editor::Format",
       "space l r": "editor::Rename",
       "space o": "outline::Toggle",
-      "g d": "editor::GoToDefinitionSplit",
+      "g d": "editor::GoToDefinition",
       "g c c": "vim::ToggleComments",
       "g r": "editor::FindAllReferences",
     },

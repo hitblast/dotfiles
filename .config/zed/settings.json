@@ -13,7 +13,7 @@
     "button": false,
   },
   "tab_bar": {
-    "show": false,
+    "show": true,
   },
   "toolbar": {
     "quick_actions": false,
@@ -49,6 +49,11 @@
     "enabled": true,
     "coloring": "fixed",
   },
+  "gutter": {
+    "min_line_number_digits": 0,
+    "folds": false,
+    "runnables": false,
+  },
   "tabs": {
     "git_status": true,
     "file_icons": true,
@@ -79,9 +84,11 @@
   "vim": {
     "use_system_clipboard": "always",
   },
+  "current_line_highlight": "none",
+  "multi_cursor_modifier": "cmd_or_ctrl",
   "confirm_quit": true,
   "cursor_blink": false,
-  "seed_search_query_from_cursor": "selection",
+  "seed_search_query_from_cursor": "never",
   "buffer_font_family": "Liga SFMono Nerd Font",
   "ui_font_family": "SF Pro",
   "ui_font_size": 15.5,
