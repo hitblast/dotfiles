@@ -1,6 +1,6 @@
 # font
 font-feature = liga
-font-size = 16
+font-size = 14
 font-thicken = true
 
 # shell integrations
