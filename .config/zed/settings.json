@@ -9,12 +9,12 @@
     "show_project_items": false,
     "show_branch_name": true,
   },
-  "max_tabs": 10,
+  "max_tabs": 8,
   "search": {
     "button": false,
   },
   "tab_bar": {
-    "show": true,
+    "show": false,
   },
   "toolbar": {
     "quick_actions": false,
