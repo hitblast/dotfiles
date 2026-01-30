@@ -107,7 +107,6 @@
   },
   "terminal": {
     "font_family": "Liga SFMono Nerd Font",
-    "font_size": 15,
     "line_height": {
       "custom": 1.6,
     },
