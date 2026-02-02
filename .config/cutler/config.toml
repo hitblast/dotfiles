@@ -176,11 +176,11 @@ casks = [
 	"nikitabobko/tap/aerospace",
 	"orbstack",
 	"protonvpn",
+    "prismlauncher",
 	"steam",
 	"spotify",
 	"transmission",
 	"zed",
-    "zulu@25",
 ]
 taps = [
 	"machlit/tap",
