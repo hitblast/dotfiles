@@ -111,7 +111,7 @@ if.app-name-regex-substring = 'steam'
 run = 'move-node-to-workspace G'
 
 [[on-window-detected]]
-if.app-id = 'io.github.Mrmayman.QuantumLauncher'
+if.app-id = 'org.prismlauncher.PrismLauncher'
 run = 'move-node-to-workspace G'
 
 [[on-window-detected]]
