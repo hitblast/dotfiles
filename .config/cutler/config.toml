@@ -172,7 +172,6 @@ casks = [
 	"keepassxc",
 	"karabiner-elements",
 	"keyboardcleantool",
-    "libreoffice",
 	"nikitabobko/tap/aerospace",
 	"orbstack",
 	"protonvpn",
