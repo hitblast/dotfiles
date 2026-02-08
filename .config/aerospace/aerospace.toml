@@ -115,10 +115,6 @@ if.app-id = 'io.github.Mrmayman.QuantumLauncher'
 run = 'move-node-to-workspace G'
 
 [[on-window-detected]]
-if.app-name-regex-substring = 'minecraft'
-run = 'move-node-to-workspace G'
-
-[[on-window-detected]]
 if.app-id = 'com.colliderli.iina'
 run = 'move-node-to-workspace 0'
 
