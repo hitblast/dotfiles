@@ -75,14 +75,14 @@ cmd-alt-ctrl-u = 'workspace 0'
 cmd-alt-ctrl-i = 'workspace 1'
 cmd-alt-ctrl-o = 'workspace 2'
 cmd-alt-ctrl-p = 'workspace 3'
-cmd-alt-ctrl-y = 'workspace M'
+cmd-alt-ctrl-m = 'workspace M'
 cmd-alt-ctrl-g = 'workspace G'
 
 cmd-alt-ctrl-shift-u = 'move-node-to-workspace 0'
 cmd-alt-ctrl-shift-i = 'move-node-to-workspace 1'
 cmd-alt-ctrl-shift-o = 'move-node-to-workspace 2'
 cmd-alt-ctrl-shift-p = 'move-node-to-workspace 3'
-cmd-alt-ctrl-shift-y = 'move-node-to-workspace M'
+cmd-alt-ctrl-shift-m = 'move-node-to-workspace M'
 cmd-alt-ctrl-shift-g = 'move-node-to-workspace G'
 
 cmd-alt-ctrl-leftSquareBracket = 'workspace-back-and-forth'
@@ -91,12 +91,12 @@ cmd-alt-ctrl-shift-semicolon = 'mode service'
 # 'service' mode bindings
 
 [mode.service.binding]
-esc = ['flatten-workspace-tree', 'mode main'] 
-r = ['reload-config', 'mode main'] 
+esc = ['flatten-workspace-tree', 'mode main']
+r = ['reload-config', 'mode main']
 f = [
     'layout floating tiling',
     'mode main',
-] 
+]
 
 cmd-alt-ctrl-shift-h = ['join-with left', 'mode main']
 cmd-alt-ctrl-shift-j = ['join-with down', 'mode main']
@@ -161,4 +161,3 @@ run = 'move-node-to-workspace 3'
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
 run = 'move-node-to-workspace 3'
-
