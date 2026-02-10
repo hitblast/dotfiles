@@ -74,7 +74,7 @@
   "git": {
     "inline_blame": {
       "enabled": true,
-      "delay_ms": 500,
+      "delay_ms": 300,
       "min_column": 80,
     },
   },
