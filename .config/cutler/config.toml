@@ -135,6 +135,7 @@ formulae = [
 	"bash",
 	"bash-completion@2",
 	"cargo-edit",
+	"cargo-msrv",
 	"cmake",
 	"dust",
 	"fd",
@@ -159,7 +160,7 @@ formulae = [
     "zoxide",
 ]
 casks = [
-	"android-studio",
+    "android-platform-tools",
 	"appcleaner",
 	"cloudflare-warp",
 	"discord",
