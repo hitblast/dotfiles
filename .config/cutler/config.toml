@@ -177,7 +177,6 @@ casks = [
 	"orbstack",
 	"protonvpn",
 	"steam",
-	"spotify",
 	"transmission",
 	"zed",
 ]

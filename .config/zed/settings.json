@@ -1,4 +1,7 @@
 {
+  "session": {
+    "trust_all_worktrees": true
+  },
   "disable_ai": true,
   "confirm_quit": false,
   "base_keymap": "VSCode",
