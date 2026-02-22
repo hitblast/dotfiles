@@ -21,6 +21,7 @@ export HOMEBREW_NO_ANALYTICS=1
 
 # This is to ensure compliance with the custom cargo configuration.
 export CARGO_HOME="$HOME/.config/cargo"
+export PATH="$PATH:$HOME/.cargo/bin/"
 
 # Cache preprocessor steps in sccache for even faster compile times.
 export SCCACHE_DIRECT=true
