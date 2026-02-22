@@ -34,7 +34,7 @@ default-root-container-orientation = 'horizontal'
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 automatically-unhide-macos-hidden-apps = false
 
-persistent-workspaces = ["0", "1", "2", "3", "4"]
+persistent-workspaces = ["U", "I", "O", "P", "4"]
 
 [key-mapping]
 preset = 'qwerty'
@@ -71,17 +71,17 @@ alt-backslash = 'exec-and-forget open -a Launchpad'
 alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
-alt-u = 'workspace 0'
-alt-i = 'workspace 1'
-alt-o = 'workspace 2'
-alt-p = 'workspace 3'
+alt-u = 'workspace U'
+alt-i = 'workspace I'
+alt-o = 'workspace O'
+alt-p = 'workspace P'
 alt-m = 'workspace M'
 alt-g = 'workspace G'
 
-alt-shift-u = 'move-node-to-workspace 0'
-alt-shift-i = 'move-node-to-workspace 1'
-alt-shift-o = 'move-node-to-workspace 2'
-alt-shift-p = 'move-node-to-workspace 3'
+alt-shift-u = 'move-node-to-workspace U'
+alt-shift-i = 'move-node-to-workspace I'
+alt-shift-o = 'move-node-to-workspace O'
+alt-shift-p = 'move-node-to-workspace P'
 alt-shift-m = 'move-node-to-workspace M'
 alt-shift-g = 'move-node-to-workspace G'
 
@@ -124,40 +124,40 @@ run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
 if.app-id = 'dev.zed.Zed'
-run = 'move-node-to-workspace 0'
+run = 'move-node-to-workspace U'
 
 [[on-window-detected]]
 if.app-id = 'dev.kdrag0n.MacVirt'
-run = 'move-node-to-workspace 0'
+run = 'move-node-to-workspace U'
 
 [[on-window-detected]]
 if.app-id = 'com.google.android.studio'
-run = 'move-node-to-workspace 0'
+run = 'move-node-to-workspace U'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'xcode'
-run = 'move-node-to-workspace 0'
+run = 'move-node-to-workspace U'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
-run = 'move-node-to-workspace 1'
+run = 'move-node-to-workspace I'
 
 [[on-window-detected]]
 if.app-id = 'net.imput.helium'
-run = 'move-node-to-workspace 1'
+run = 'move-node-to-workspace I'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'aseprite'
-run = 'move-node-to-workspace 2'
+run = 'move-node-to-workspace O'
 
 [[on-window-detected]]
 if.app-id = 'com.blackmagic-design.DaVinciResolveLite'
-run = 'move-node-to-workspace 2'
+run = 'move-node-to-workspace O'
 
 [[on-window-detected]]
 if.app-id = 'com.hnc.Discord'
-run = 'move-node-to-workspace 3'
+run = 'move-node-to-workspace P'
 
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
-run = 'move-node-to-workspace 3'
+run = 'move-node-to-workspace P'
