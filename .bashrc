@@ -23,3 +23,11 @@ eval "$(fzf --bash)"
 
 # zoxide integration
 eval "$(zoxide init --cmd cd bash)"
+
+# cult of done
+out1=$(pgrep -a bash)
+out2=$(echo $$)
+
+if [[ "$out1" == "$out2" ]]; then
+    fastfetch
+fi

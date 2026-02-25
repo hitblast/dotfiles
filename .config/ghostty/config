@@ -40,7 +40,7 @@ keybind = ctrl+j=goto_split:bottom
 keybind = ctrl+k=goto_split:top
 keybind = ctrl+l=goto_split:right
 
-keybind = global:ctrl+opt+cmd+'=toggle_quick_terminal
+keybind = global:opt+'=toggle_quick_terminal
 
 keybind = ctrl+n>h=new_split:left
 keybind = ctrl+n>j=new_split:down
