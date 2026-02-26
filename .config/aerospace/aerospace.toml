@@ -131,7 +131,7 @@ if.app-id = 'dev.kdrag0n.MacVirt'
 run = 'move-node-to-workspace U'
 
 [[on-window-detected]]
-if.app-id = 'com.google.android.studio'
+if.app-id = 'org.keepassxc.keepassxc'
 run = 'move-node-to-workspace U'
 
 [[on-window-detected]]
@@ -159,5 +159,5 @@ if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace P'
 
 [[on-window-detected]]
-if.app-id = 'net.whatsapp.WhatsApp'
+if.app-id = 'im.riot.app'
 run = 'move-node-to-workspace P'
