@@ -1,6 +1,6 @@
 {
   "session": {
-    "trust_all_worktrees": true
+    "trust_all_worktrees": true,
   },
   "disable_ai": true,
   "confirm_quit": false,
@@ -159,5 +159,4 @@
   ],
   "remove_trailing_whitespace_on_save": true,
   "always_treat_brackets_as_autoclosed": true,
-  "restore_on_startup": "empty_tab",
 }
