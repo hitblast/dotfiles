@@ -15,7 +15,7 @@
     statusHints = false
 
 [url "git@codeberg.org:"]
-    insteadOf = "bur:"
+    insteadOf = "berg:"
 
 [url "git@github.com:"]
     insteadOf = "hub:"
