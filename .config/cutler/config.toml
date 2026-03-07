@@ -42,7 +42,7 @@ FirstClickThreshold = 0
 TrackpadThreeFingerDrag = true
 
 [set.HIToolbox]
-AppleFnUsageType = 0
+AppleFnUsageType = 1
 
 [set.finder]
 FXDefaultSearchScope = "SCcf"
@@ -130,7 +130,7 @@ required = ["mise"]
 # homebrew backup
 
 [brew]
-formulae = ["ninja", "stow", "lazygit", "mactop", "uv", "hitblast/tap/cornelli", "cmake", "mise", "fd", "batt", "git", "dust", "fzf", "sccache", "cargo-edit", "bash", "starship", "bash-completion@2", "ffmpeg", "ripgrep", "zoxide", "cargo-msrv", "libyaml", "tokei", "fastfetch", "smartmontools", "machlit/tap/drs", "bat"]
-casks = ["hot", "keyboardcleantool", "iina", "whatsapp", "nikitabobko/tap/aerospace", "cloudflare-warp", "android-platform-tools", "element", "font-sf-mono-nerd-font-ligaturized", "ghostty", "karabiner-elements", "keepassxc", "steam", "appcleaner", "orbstack", "protonvpn", "transmission", "font-sf-pro", "zed", "helium-browser", "discord"]
-taps = ["nikitabobko/tap", "hitblast/tap", "machlit/tap"]
+formulae = ["bash", "ffmpeg", "cargo-msrv", "fzf", "lazygit", "libyaml", "mise", "hitblast/tap/cornelli", "ripgrep", "batt", "cmake", "git", "fastfetch", "bat", "fd", "sccache", "stow", "machlit/tap/drs", "starship", "bash-completion@2", "cargo-edit", "mactop", "protobuf", "tokei", "dust", "uv", "ninja", "smartmontools", "zoxide"]
+casks = ["karabiner-elements", "cloudflare-warp", "steam", "appcleaner", "protonvpn", "element", "raycast", "transmission", "hot", "nikitabobko/tap/aerospace", "font-sf-mono-nerd-font-ligaturized", "android-platform-tools", "discord", "helium-browser", "iina", "ghostty", "keyboardcleantool", "pika", "zed", "keepassxc", "font-sf-pro", "orbstack", "whatsapp", "localsend"]
+taps = ["hitblast/tap", "machlit/tap", "nikitabobko/tap"]
 no_deps = true
