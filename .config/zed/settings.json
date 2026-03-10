@@ -1,8 +1,18 @@
 {
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini",
+      "enable_thinking": false
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
   "session": {
     "trust_all_worktrees": true,
   },
-  "disable_ai": true,
+  "disable_ai": false,
   "confirm_quit": false,
   "base_keymap": "VSCode",
   "title_bar": {
@@ -94,8 +104,8 @@
   "seed_search_query_from_cursor": "never",
   "buffer_font_family": "Liga SFMono Nerd Font",
   "ui_font_family": "SF Pro",
-  "ui_font_size": 14.5,
-  "buffer_font_size": 13.5,
+  "ui_font_size": 14,
+  "buffer_font_size": 13,
   "buffer_line_height": {
     "custom": 1.6,
   },
