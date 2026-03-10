@@ -17,6 +17,7 @@
   "base_keymap": "VSCode",
   "title_bar": {
     "show_user_menu": false,
+    "show_sign_in": false,
     "show_onboarding_banner": false,
     "show_branch_icon": true,
     "show_project_items": false,
