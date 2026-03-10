@@ -26,7 +26,7 @@ start-at-login = true
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 
-accordion-padding = 80
+accordion-padding = 40
 
 default-root-container-layout = 'tiles'
 default-root-container-orientation = 'horizontal'
@@ -154,10 +154,6 @@ run = 'move-node-to-workspace N'
 
 [[on-window-detected]]
 if.app-id = 'com.colliderli.iina'
-run = 'move-node-to-workspace M'
-
-[[on-window-detected]]
-if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace M'
 
 [[on-window-detected]]
