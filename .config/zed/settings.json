@@ -116,7 +116,7 @@
   "theme": {
     "mode": "system",
     "light": "Xcode Spartan",
-    "dark": "Xcode High Contrast Darker",
+    "dark": "Gruber Darker",
   },
   "minimap": {
     "show": "never",
@@ -147,6 +147,7 @@
     "ruby": true,
     "make": true,
     "xcode-themes": true,
+    "gruber-darker": true,
   },
   "file_scan_exclusions": [
     "**/.git",
