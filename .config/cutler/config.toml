@@ -130,7 +130,7 @@ required = ["mise"]
 # homebrew backup
 
 [brew]
-formulae = ["bash", "ffmpeg", "cargo-msrv", "fzf", "lazygit", "libyaml", "mise", "hitblast/tap/cornelli", "ripgrep", "batt", "cmake", "git", "fastfetch", "bat", "fd", "sccache", "stow", "machlit/tap/drs", "starship", "bash-completion@2", "cargo-edit", "mactop", "protobuf", "tokei", "dust", "uv", "ninja", "smartmontools", "zoxide"]
-casks = ["karabiner-elements", "cloudflare-warp", "steam", "appcleaner", "protonvpn", "element", "raycast", "transmission", "hot", "nikitabobko/tap/aerospace", "font-sf-mono-nerd-font-ligaturized", "android-platform-tools", "discord", "helium-browser", "iina", "ghostty", "keyboardcleantool", "pika", "zed", "keepassxc", "font-sf-pro", "orbstack", "whatsapp", "localsend"]
-taps = ["hitblast/tap", "machlit/tap", "nikitabobko/tap"]
+formulae = ["uv", "ripgrep", "fd", "ninja", "machlit/tap/drs", "cargo-msrv", "bat", "cmake", "bash-completion@2", "dust", "fastfetch", "sccache", "lazygit", "fzf", "git", "ffmpeg", "libyaml", "bash", "stow", "hitblast/tap/cornelli", "mactop", "protobuf", "smartmontools", "cargo-edit", "starship", "mise", "tokei", "zoxide", "batt"]
+casks = ["pika", "android-platform-tools", "element", "protonvpn", "transmission", "zed", "hitblast/tap/quantumlauncher", "hot", "font-sf-pro", "font-sf-mono-nerd-font-ligaturized", "keepassxc", "localsend", "karabiner-elements", "raycast", "steam", "whatsapp", "cloudflare-warp", "ghostty", "appcleaner", "iina", "telegram", "orbstack", "keyboardcleantool", "helium-browser", "discord", "nikitabobko/tap/aerospace"]
+taps = ["machlit/tap", "hitblast/tap", "nikitabobko/tap"]
 no_deps = true

@@ -146,7 +146,6 @@
     "lua": true,
     "ruby": true,
     "make": true,
-    "xcode-themes": true,
     "gruber-darker": true,
   },
   "file_scan_exclusions": [
