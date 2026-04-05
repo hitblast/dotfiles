@@ -1,18 +1,8 @@
 {
-  "agent": {
-    "default_profile": "ask",
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5-mini",
-      "enable_thinking": false,
-    },
-    "favorite_models": [],
-    "model_parameters": [],
-  },
   "session": {
     "trust_all_worktrees": true,
   },
-  "disable_ai": false,
+  "disable_ai": true,
   "confirm_quit": false,
   "base_keymap": "VSCode",
   "title_bar": {
@@ -20,7 +10,7 @@
     "show_sign_in": false,
     "show_onboarding_banner": false,
     "show_branch_icon": true,
-    "show_project_items": false,
+    "show_project_items": true,
     "show_branch_name": true,
     "show_user_picture": false,
     "show_menus": false,
