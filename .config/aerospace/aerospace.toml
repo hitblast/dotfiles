@@ -42,10 +42,10 @@ preset = 'qwerty'
 [gaps]
 inner.horizontal = 8
 inner.vertical = 8
-outer.left = 0
-outer.bottom = 0
-outer.top = 0
-outer.right = 0
+outer.left = 25
+outer.bottom = 20
+outer.top = 20
+outer.right = 25
 
 # main mode bindings
 
