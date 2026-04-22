@@ -1,4 +1,5 @@
 {
+  "icon_theme": "Zed (Default)",
   "session": {
     "trust_all_worktrees": true,
   },
@@ -20,7 +21,7 @@
     "button": false,
   },
   "tab_bar": {
-    "show": false,
+    "show": true,
   },
   "toolbar": {
     "quick_actions": false,
@@ -97,15 +98,15 @@
   "seed_search_query_from_cursor": "never",
   "buffer_font_family": "Liga SFMono Nerd Font",
   "ui_font_family": "SF Pro",
-  "ui_font_size": 14,
-  "buffer_font_size": 13,
+  "ui_font_size": 13,
+  "buffer_font_size": 12,
   "buffer_line_height": {
     "custom": 1.6,
   },
   "relative_line_numbers": "enabled",
   "theme": {
     "mode": "system",
-    "light": "Xcode Low Key",
+    "light": "Xcode Spartan",
     "dark": "Gruber Darker",
   },
   "minimap": {
