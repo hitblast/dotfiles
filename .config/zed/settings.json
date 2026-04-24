@@ -7,10 +7,10 @@
   "confirm_quit": false,
   "base_keymap": "VSCode",
   "title_bar": {
+    "show_branch_status_icon": true,
     "show_user_menu": false,
     "show_sign_in": false,
     "show_onboarding_banner": false,
-    "show_branch_icon": true,
     "show_project_items": true,
     "show_branch_name": true,
     "show_user_picture": false,
@@ -31,9 +31,6 @@
     "collapse_untracked_diff": true,
     "fallback_branch_name": "master",
     "button": false,
-  },
-  "notification_panel": {
-    "dock": "right",
   },
   "collaboration_panel": {
     "button": false,
