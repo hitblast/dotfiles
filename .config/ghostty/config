@@ -9,6 +9,8 @@ shell-integration-features = no-cursor
 # cursor
 cursor-style-blink = true
 
+minimum-contrast = 2
+
 # mouse
 mouse-hide-while-typing = true
 
