@@ -95,7 +95,7 @@
   "seed_search_query_from_cursor": "never",
   "buffer_font_family": "Liga SFMono Nerd Font",
   "ui_font_family": "SF Pro",
-  "ui_font_size": 13,
+  "ui_font_size": 12,
   "buffer_font_size": 12,
   "buffer_line_height": {
     "custom": 1.6,
