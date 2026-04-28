@@ -1,6 +1,5 @@
 [tools]
 "cargo:trimsec" = "latest"
-rust = { version = "latest", components = "rust-analyzer,clippy"}
 github-cli = "latest"
 bun = "latest"
 
