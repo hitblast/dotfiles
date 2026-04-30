@@ -24,3 +24,5 @@ eval "$(fzf --bash)"
 # zoxide integration
 eval "$(zoxide init --cmd cd bash)"
 
+# cargo env
+. "/Users/hitblast/.config/cargo/env"
