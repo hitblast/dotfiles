@@ -1,4 +1,5 @@
 {
+  "cli_default_open_behavior": "existing_window",
   "icon_theme": "Zed (Default)",
   "session": {
     "trust_all_worktrees": true,
