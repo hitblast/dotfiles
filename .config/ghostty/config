@@ -1,4 +1,5 @@
 # font
+font-family = "Menlo"
 font-feature = liga
 font-size = 13
 font-thicken = true
