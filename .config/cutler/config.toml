@@ -130,7 +130,7 @@ required = ["mise"]
 # homebrew backup
 
 [brew]
-formulae = ["hitblast/tap/cornelli", "fzf", "lazygit", "ninja", "sccache", "ffmpeg", "smartmontools", "stow", "uv", "starship", "fd", "libyaml", "bash", "fastfetch", "bat", "ripgrep", "mise", "cargo-msrv", "protobuf", "zoxide", "machlit/tap/drs", "dust", "mactop", "bash-completion@2", "cargo-edit", "cmake", "git", "tokei"]
-casks = ["font-sf-mono-nerd-font-ligaturized", "transmission", "whatsapp", "android-platform-tools", "nikitabobko/tap/aerospace", "iina", "cloudflare-warp", "appcleaner", "ghostty", "keepassxc", "zed", "protonvpn", "steam", "keyboardcleantool", "orbstack", "handbrake-app", "font-sf-pro", "localsend", "helium-browser", "raycast", "hitblast/tap/quantum-launcher", "android-file-transfer", "pika", "hot", "discord", "element", "telegram"]
-taps = ["nikitabobko/tap", "machlit/tap", "hitblast/tap"]
+formulae = ["lazygit", "starship", "ninja", "protobuf", "machlit/tap/drs", "fd", "tokei", "smartmontools", "mise", "mingw-w64", "uv", "zoxide", "mactop", "bash", "cargo-edit", "fzf", "ffmpeg", "hitblast/tap/cornelli", "dust", "sccache", "fastfetch", "bash-completion@2", "cargo-msrv", "libyaml", "bat", "cmake", "stow", "ripgrep", "git"]
+casks = ["cloudflare-warp", "pika", "hitblast/tap/quantum-launcher", "vesktop", "handbrake-app", "steam", "whatsapp", "nikitabobko/tap/aerospace", "android-platform-tools", "ghostty", "font-sf-pro", "zed", "keyboardcleantool", "localsend", "orbstack", "transmission", "discord", "protonvpn", "keepassxc", "appcleaner", "iina", "alacritty", "helium-browser", "hot", "telegram"]
+taps = ["hitblast/tap", "machlit/tap", "nikitabobko/tap"]
 no_deps = true
