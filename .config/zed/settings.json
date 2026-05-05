@@ -111,7 +111,7 @@
     "show": "never",
   },
   "terminal": {
-    "font_family": "Liga SFMono Nerd Font",
+    "font_family": "Menlo",
     "line_height": {
       "custom": 1.6,
     },
