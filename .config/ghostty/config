@@ -3,6 +3,8 @@ font-family = "Menlo"
 font-feature = liga
 font-size = 13
 font-thicken = true
+font-feature = -calt, -liga
+adjust-font-baseline = 1
 
 # shell integrations
 shell-integration-features = no-cursor
@@ -16,10 +18,8 @@ minimum-contrast = 2
 # mouse
 mouse-hide-while-typing = true
 
-# cell 
-
-adjust-cell-width = -1
-adjust-cell-height = -1
+# cell
+adjust-cell-height = 2
 
 # theme
 theme = light:"Xcode Light",dark:gruber-darker-cst
