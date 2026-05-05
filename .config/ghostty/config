@@ -16,6 +16,11 @@ minimum-contrast = 2
 # mouse
 mouse-hide-while-typing = true
 
+# cell 
+
+adjust-cell-width = -1
+adjust-cell-height = -1
+
 # theme
 theme = light:"Xcode Light",dark:gruber-darker-cst
 
