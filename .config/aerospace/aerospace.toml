@@ -130,7 +130,7 @@ run = 'move-node-to-workspace U'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Notes'
-run = 'move-node-to-workspace U'
+run = 'move-node-to-workspace N'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'xcode'
