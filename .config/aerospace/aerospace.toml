@@ -65,7 +65,7 @@ alt-shift-j = 'move down'
 alt-shift-k = 'move up'
 alt-shift-l = 'move right'
 
-alt-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
+alt-enter = 'exec-and-forget open -a /Applications/Alacritty.app'
 alt-backslash = 'exec-and-forget open -a Launchpad'
 
 alt-shift-minus = 'resize smart -50'
