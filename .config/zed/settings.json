@@ -41,7 +41,7 @@
     "button": false,
   },
   "project_panel": {
-    "default_width": 350,
+    "default_width": 300,
     "hide_root": true,
     "auto_fold_dirs": false,
     "dock": "right",
