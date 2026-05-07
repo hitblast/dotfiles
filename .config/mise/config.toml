@@ -2,6 +2,7 @@
 "cargo:trimsec" = "latest"
 github-cli = "latest"
 bun = "latest"
+mdbook = "latest"
 
 [settings]
 python.uv_venv_auto = true
