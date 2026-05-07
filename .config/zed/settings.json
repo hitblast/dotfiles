@@ -22,7 +22,7 @@
     "button": false,
   },
   "tab_bar": {
-    "show": true,
+    "show": false,
   },
   "toolbar": {
     "quick_actions": false,
