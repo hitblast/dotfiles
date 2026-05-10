@@ -1,16 +1,7 @@
 {
-  "cli_default_open_behavior": "existing_window",
-  "icon_theme": "Zed (Default)",
-  "session": {
-    "trust_all_worktrees": true,
-  },
-  "disable_ai": true,
   "confirm_quit": false,
   "base_keymap": "VSCode",
   "title_bar": {
-    "show_branch_status_icon": true,
-    "show_user_menu": false,
-    "show_sign_in": false,
     "show_onboarding_banner": false,
     "show_project_items": true,
     "show_branch_name": true,
@@ -28,13 +19,9 @@
     "quick_actions": false,
   },
   "git_panel": {
-    "starts_open": false,
     "dock": "left",
     "collapse_untracked_diff": true,
     "fallback_branch_name": "master",
-    "button": false,
-  },
-  "collaboration_panel": {
     "button": false,
   },
   "outline_panel": {
@@ -65,10 +52,6 @@
     "git_status": true,
     "file_icons": true,
     "show_diagnostics": "errors",
-  },
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false,
   },
   "inlay_hints": {
     "enabled": true,
@@ -106,7 +89,7 @@
   "relative_line_numbers": "enabled",
   "theme": {
     "mode": "system",
-    "light": "Xcode Spartan",
+    "light": "Alabaster",
     "dark": "Gruber Darker",
   },
   "minimap": {
@@ -131,15 +114,13 @@
       },
     },
   },
-  "auto_install_extensions": {
-    "html": true,
-    "toml": true,
-    "git-firefly": true,
-    "lua": true,
-    "ruby": true,
-    "gruber-darker": true,
-    "xcode-themes": true,
-    "typst": true,
+  "lsp": {
+    "json-language-server": {
+      "binary": {
+        "path": "vscode-json-language-server",
+        "arguments": ["--stdio"],
+      },
+    },
   },
   "file_scan_exclusions": [
     "**/.git",

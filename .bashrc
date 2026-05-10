@@ -15,9 +15,6 @@ alias lz="lazygit"
 # enable starship prompt
 eval "$(starship init bash)"
 
-# mise integration
-eval "$(mise activate bash)"
-
 # fzf integration
 eval "$(fzf --bash)"
 
