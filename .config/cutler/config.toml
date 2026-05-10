@@ -85,12 +85,6 @@ required = [
 ]
 flag = true
 
-[command.mise]
-run = "mise install"
-ensure_first = true
-required = ["mise"]
-flag = true
-
 [command.touchid]
 run = """
 sed "s/^#auth/auth/" /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
@@ -123,14 +117,10 @@ required = ["uv"]
 run = "brew update && brew upgrade"
 required = ["brew"]
 
-[command.mise-upgrade]
-run = "mise up"
-required = ["mise"]
-
 # homebrew backup
 
 [brew]
-formulae = ["lazygit", "starship", "ninja", "protobuf", "machlit/tap/drs", "fd", "tokei", "smartmontools", "mise", "mingw-w64", "uv", "zoxide", "mactop", "bash", "cargo-edit", "fzf", "ffmpeg", "hitblast/tap/cornelli", "dust", "sccache", "fastfetch", "bash-completion@2", "cargo-msrv", "libyaml", "bat", "cmake", "stow", "ripgrep", "git"]
-casks = ["cloudflare-warp", "pika", "hitblast/tap/quantum-launcher", "vesktop", "handbrake-app", "steam", "whatsapp", "nikitabobko/tap/aerospace", "android-platform-tools", "ghostty", "font-sf-pro", "zed", "keyboardcleantool", "localsend", "orbstack", "transmission", "discord", "protonvpn", "keepassxc", "appcleaner", "iina", "alacritty", "helium-browser", "hot", "telegram"]
-taps = ["hitblast/tap", "machlit/tap", "nikitabobko/tap"]
+formulae = ["lazygit", "stow", "mactop", "git", "fd", "ripgrep", "uv", "libyaml", "cmake", "smartmontools", "ninja", "dust", "fzf", "vscode-langservers-extracted", "bash-language-server", "bash", "tokei", "oven-sh/bun/bun", "cargo-edit", "bat", "ffmpeg", "mingw-w64", "hitblast/tap/cornelli", "zoxide", "bash-completion@2", "typst", "protobuf", "yaml-language-server", "sccache", "machlit/tap/drs", "gh", "fastfetch", "starship"]
+casks = ["appcleaner", "discord", "gram", "zed", "hitblast/tap/quantum-launcher", "nikitabobko/tap/aerospace", "handbrake-app", "keepassxc", "orbstack", "iina", "protonvpn", "font-sf-pro", "transmission", "hot", "keyboardcleantool", "alacritty", "ghostty", "helium-browser", "cloudflare-warp", "pika", "vesktop", "android-platform-tools", "localsend", "telegram", "whatsapp"]
+taps = ["machlit/tap", "hitblast/tap", "nikitabobko/tap", "oven-sh/bun"]
 no_deps = true
