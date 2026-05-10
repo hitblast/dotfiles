@@ -6,6 +6,9 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-=": "vim::ResizePaneRight",
+      "ctrl--": "vim::ResizePaneLeft",
+      "ctrl-c": "workspace::ToggleCenteredLayout",
     },
   },
   {

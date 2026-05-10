@@ -28,6 +28,7 @@
     "quick_actions": false,
   },
   "git_panel": {
+    "starts_open": false,
     "dock": "left",
     "collapse_untracked_diff": true,
     "fallback_branch_name": "master",
@@ -72,9 +73,10 @@
   "inlay_hints": {
     "enabled": true,
   },
+  "bottom_dock_layout": "right_aligned",
   "centered_layout": {
     "left_padding": 0.15,
-    "right_padding": 0.15,
+    "right_padding": 0,
   },
   "git": {
     "inline_blame": {
@@ -132,10 +134,12 @@
   "auto_install_extensions": {
     "html": true,
     "toml": true,
+    "git-firefly": true,
     "lua": true,
     "ruby": true,
-    "make": true,
     "gruber-darker": true,
+    "xcode-themes": true,
+    "typst": true,
   },
   "file_scan_exclusions": [
     "**/.git",
