@@ -3,7 +3,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_COLLATE=en_US.UTF-8
 
-# If not already set, set EDITOR to be nvim.
+# If not already set, set EDITOR to be vim.
 if [ -z "$EDITOR" ]; then
     export EDITOR="vim"
 fi
