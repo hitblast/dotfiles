@@ -96,6 +96,9 @@
   "minimap": {
     "show": "never",
   },
+  "auto_install_extensions": {
+    "git-firefly": true,
+  },
   "terminal": {
     "font_family": "Menlo",
     "line_height": {
