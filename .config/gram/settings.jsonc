@@ -13,6 +13,10 @@
   "search": {
     "button": false,
   },
+  "file_finder": {
+    "file_icons": false,
+    "modal_max_width": "large",
+  },
   "tab_bar": {
     "show": false,
   },
@@ -39,6 +43,8 @@
     "indent_guides": {
       "show": "never",
     },
+    "file_icons": false,
+    "folder_icons": false,
   },
   "indent_guides": {
     "enabled": true,

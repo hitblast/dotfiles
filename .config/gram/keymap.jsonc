@@ -7,7 +7,6 @@
       "ctrl-j": "workspace::ActivatePaneDown",
       "ctrl-=": "vim::ResizePaneRight",
       "ctrl--": "vim::ResizePaneLeft",
-      "ctrl-c": "workspace::ToggleCenteredLayout",
     },
   },
   {
@@ -19,6 +18,12 @@
       "space s s": "gram::OpenSettingsFile",
       "space s k": "gram::OpenKeymapFile",
       "space l d": "diagnostics::Deploy",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-c": "workspace::ToggleCenteredLayout",
     },
   },
   {
