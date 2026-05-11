@@ -109,7 +109,7 @@ alt-shift-l = ['join-with right', 'mode main']
 # Executed when an app instance has been initiated
 
 [[on-window-detected]]
-if.app-id = 'dev.zed.Zed'
+if.app-id = 'app.liten.Gram'
 run = 'move-node-to-workspace U'
 
 [[on-window-detected]]
