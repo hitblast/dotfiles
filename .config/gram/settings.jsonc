@@ -143,5 +143,6 @@
   "show_completions_on_input": true,
   "show_completion_documentation": true,
   "remove_trailing_whitespace_on_save": true,
-  "always_treat_brackets_as_autoclosed": true,
+  "use_auto_surround": true,
+  "use_autoclose": true,
 }

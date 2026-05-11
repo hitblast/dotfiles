@@ -9,6 +9,7 @@ if [ -z "$EDITOR" ]; then
 fi
 
 # Load local binaries to PATH.
+# NOTE: This is needed especially for uv tools.
 export PATH="$HOME/.local/bin:$PATH"
 
 # ---
@@ -23,10 +24,24 @@ export HOMEBREW_NO_ANALYTICS=1
 export CARGO_HOME="$HOME/.config/cargo"
 export PATH="$PATH:$HOME/.cargo/bin/"
 
+# ---
+
+# Custom SDKs
+export CUSTOM_SDK_PATH="$HOME/.sdks"
+
+# Flutter path.
+export PATH="$PATH:$CUSTOM_SDK_PATH/flutter/bin/"
+
+# ---
+
 # Cache preprocessor steps in sccache for even faster compile times.
 export SCCACHE_DIRECT=true
+export SCCACHE_CACHE_SIZE="40G"
 
-# Faster C/C++ compile times by utilizing sccache.
+# rust
+export RUSTC_WRAPPER="sccache"
+
+# c/cpp
 export CC="sccache clang"
 export CXX="sccache clang++"
 
