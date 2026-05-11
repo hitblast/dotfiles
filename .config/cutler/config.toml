@@ -120,7 +120,7 @@ required = ["brew"]
 # homebrew backup
 
 [brew]
-formulae = ["lazygit", "stow", "mactop", "git", "fd", "ripgrep", "uv", "libyaml", "cmake", "smartmontools", "ninja", "dust", "fzf", "vscode-langservers-extracted", "bash-language-server", "bash", "tokei", "oven-sh/bun/bun", "cargo-edit", "bat", "ffmpeg", "mingw-w64", "hitblast/tap/cornelli", "zoxide", "bash-completion@2", "typst", "protobuf", "yaml-language-server", "sccache", "machlit/tap/drs", "gh", "fastfetch", "starship"]
-casks = ["appcleaner", "discord", "gram", "zed", "hitblast/tap/quantum-launcher", "nikitabobko/tap/aerospace", "handbrake-app", "keepassxc", "orbstack", "iina", "protonvpn", "font-sf-pro", "transmission", "hot", "keyboardcleantool", "alacritty", "ghostty", "helium-browser", "cloudflare-warp", "pika", "vesktop", "android-platform-tools", "localsend", "telegram", "whatsapp"]
-taps = ["machlit/tap", "hitblast/tap", "nikitabobko/tap", "oven-sh/bun"]
+formulae = ["git", "cargo-edit", "mingw-w64", "machlit/tap/drs", "uv", "typst", "fzf", "fastfetch", "mpfr", "stow", "cmake", "mactop", "hitblast/tap/cornelli", "oven-sh/bun/bun", "tokei", "smartmontools", "libyaml", "bash", "gh", "bash-completion@2", "starship", "bash-language-server", "vscode-langservers-extracted", "bat", "lazygit", "zoxide", "ninja", "ripgrep", "sccache", "fd", "yaml-language-server", "ffmpeg", "gmp", "protobuf", "dust"]
+casks = ["orbstack", "alacritty", "whatsapp", "keyboardcleantool", "handbrake-app", "ghostty", "localsend", "pika", "discord", "hot", "protonvpn", "transmission", "nikitabobko/tap/aerospace", "hitblast/tap/quantum-launcher", "gram", "telegram", "iina", "cloudflare-warp", "android-platform-tools", "vesktop", "helium-browser", "font-sf-pro", "zed", "keepassxc", "appcleaner"]
+taps = ["machlit/tap", "hitblast/tap", "oven-sh/bun", "nikitabobko/tap"]
 no_deps = true
