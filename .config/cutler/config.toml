@@ -120,7 +120,7 @@ required = ["brew"]
 # homebrew backup
 
 [brew]
-formulae = ["git", "cargo-edit", "mingw-w64", "machlit/tap/drs", "uv", "typst", "fzf", "fastfetch", "mpfr", "stow", "cmake", "mactop", "hitblast/tap/cornelli", "oven-sh/bun/bun", "tokei", "smartmontools", "libyaml", "bash", "gh", "bash-completion@2", "starship", "bash-language-server", "vscode-langservers-extracted", "bat", "lazygit", "zoxide", "ninja", "ripgrep", "sccache", "fd", "yaml-language-server", "ffmpeg", "gmp", "protobuf", "dust"]
-casks = ["orbstack", "alacritty", "whatsapp", "keyboardcleantool", "handbrake-app", "ghostty", "localsend", "pika", "discord", "hot", "protonvpn", "transmission", "nikitabobko/tap/aerospace", "hitblast/tap/quantum-launcher", "gram", "telegram", "iina", "cloudflare-warp", "android-platform-tools", "vesktop", "helium-browser", "font-sf-pro", "zed", "keepassxc", "appcleaner"]
-taps = ["machlit/tap", "hitblast/tap", "oven-sh/bun", "nikitabobko/tap"]
+formulae = ["yaml-language-server", "cmake", "bash-completion@2", "fastfetch", "fzf", "libyaml", "protobuf", "mactop", "uv", "starship", "dust", "cargo-edit", "smartmontools", "bash", "gradle", "gh", "ffmpeg", "bash-language-server", "tokei", "hitblast/tap/cornelli", "lazygit", "jdtls", "mpfr", "gmp", "ripgrep", "machlit/tap/drs", "stow", "bat", "git", "vscode-langservers-extracted", "fd", "ninja", "sccache", "mingw-w64", "typst", "zoxide", "oven-sh/bun/bun"]
+casks = ["pika", "nikitabobko/tap/aerospace", "handbrake-app", "keepassxc", "vesktop", "hot", "discord", "zed", "android-platform-tools", "keyboardcleantool", "ghostty", "helium-browser", "gram", "localsend", "orbstack", "protonvpn", "transmission", "whatsapp", "zulu@25", "iina", "alacritty", "hitblast/tap/quantum-launcher", "cloudflare-warp", "font-sf-pro", "telegram", "appcleaner"]
+taps = ["nikitabobko/tap", "machlit/tap", "hitblast/tap", "oven-sh/bun"]
 no_deps = true
