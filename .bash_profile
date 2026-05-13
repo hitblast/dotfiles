@@ -32,6 +32,9 @@ export CUSTOM_SDK_PATH="$HOME/.sdks"
 # Flutter path.
 export PATH="$PATH:$CUSTOM_SDK_PATH/flutter/bin/"
 
+# Java path.
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-25.jdk/Contents/Home"
+
 # ---
 
 # Cache preprocessor steps in sccache for even faster compile times.

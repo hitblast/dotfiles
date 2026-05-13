@@ -96,7 +96,7 @@
   "relative_line_numbers": "enabled",
   "theme": {
     "mode": "system",
-    "light": "Fleet Light",
+    "light": "Alabaster",
     "dark": "Gruber Darker",
   },
   "minimap": {
