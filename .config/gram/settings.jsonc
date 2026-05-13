@@ -115,7 +115,7 @@
     "copy_on_select": true,
     "default_height": 500,
     "env": {
-      "EDITOR": "zed --wait",
+      "EDITOR": "gram --wait",
     },
     "detect_venv": {
       "on": {
