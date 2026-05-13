@@ -12,6 +12,7 @@
   {
     "context": "EmptyPane || ProjectPanel || (Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting)",
     "bindings": {
+      "space r": "task::Spawn",
       "space e": "workspace::ToggleRightDock",
       "space f": "file_finder::Toggle",
       "space t": "tab_switcher::Toggle",
