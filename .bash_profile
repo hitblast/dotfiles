@@ -69,3 +69,6 @@ source ~/.orbstack/shell/init.bash 2>/dev/null || :
 
 # Add CARGO env.
 . "/Users/hitblast/.config/cargo/env"
+
+# Added by `rbenv init` on Sat May 16 13:55:24 +06 2026
+eval "$(rbenv init - --no-rehash bash)"
