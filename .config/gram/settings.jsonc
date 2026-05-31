@@ -1,4 +1,5 @@
 {
+  "use_system_window_tabs": true,
   "confirm_quit": false,
   "base_keymap": "VSCode",
   "title_bar": {

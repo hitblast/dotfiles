@@ -1,0 +1,12 @@
+{
+  "settings": [
+    {
+      "domain": "com.apple.screencapture",
+      "key": "target",
+      "original_value": "file"
+    }
+  ],
+  "exec_run_count": 0,
+  "version": "0.19.7",
+  "digest": "78ddaa3676fbf5571a3d1b459249a98e31dddf49c8f38e36bdd08c89799837a3"
+}
