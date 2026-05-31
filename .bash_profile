@@ -38,15 +38,10 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-25.jdk/Contents/Home"
 # ---
 
 # Cache preprocessor steps in sccache for even faster compile times.
-export SCCACHE_DIRECT=true
 export SCCACHE_CACHE_SIZE="40G"
 
 # rust
 export RUSTC_WRAPPER="sccache"
-
-# c/cpp
-export CC="sccache clang"
-export CXX="sccache clang++"
 
 # ---
 
