@@ -4,9 +4,14 @@
       "domain": "com.apple.screencapture",
       "key": "target",
       "original_value": "file"
+    },
+    {
+      "domain": "com.apple.dock",
+      "key": "tilesize",
+      "original_value": 64.0
     }
   ],
   "exec_run_count": 0,
   "version": "0.19.7",
-  "digest": "78ddaa3676fbf5571a3d1b459249a98e31dddf49c8f38e36bdd08c89799837a3"
+  "digest": "eebbba31195a359bb813ade664db695656451820f426072340ac279b27dd0e8b"
 }
