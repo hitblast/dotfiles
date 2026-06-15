@@ -31,6 +31,7 @@ export CUSTOM_SDK_PATH="$HOME/.sdks"
 
 # Flutter path.
 export PATH="$PATH:$CUSTOM_SDK_PATH/flutter/bin/"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Java path.
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-25.jdk/Contents/Home"

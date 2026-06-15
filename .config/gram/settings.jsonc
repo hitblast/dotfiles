@@ -1,4 +1,8 @@
 {
+  "smooth_scroll": {
+    "duration": 100,
+    "enabled": false
+  },
   "use_system_window_tabs": true,
   "confirm_quit": false,
   "base_keymap": "VSCode",
