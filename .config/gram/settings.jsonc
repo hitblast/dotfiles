@@ -94,7 +94,7 @@
   "buffer_font_family": "Menlo",
   "ui_font_family": "SF Pro Text",
   "ui_font_size": 12,
-  "buffer_font_size": 14,
+  "buffer_font_size": 12.5,
   "buffer_line_height": {
     "custom": 1.6,
   },
