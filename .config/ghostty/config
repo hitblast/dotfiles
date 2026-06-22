@@ -1,6 +1,6 @@
 # font
 font-family = "Menlo"
-font-size = 13
+font-size = 14
 font-thicken = true
 font-feature = -calt, -liga
 
