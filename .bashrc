@@ -18,6 +18,9 @@ eval "$(starship init bash)"
 # fzf integration
 eval "$(fzf --bash)"
 
+# auto-set env vars
+eval "$(direnv hook bash)"
+
 # zoxide integration
 eval "$(zoxide init --cmd cd bash)"
 
