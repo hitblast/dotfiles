@@ -1,7 +1,7 @@
 {
   "smooth_scroll": {
     "duration": 100,
-    "enabled": false
+    "enabled": false,
   },
   "use_system_window_tabs": true,
   "confirm_quit": false,
@@ -94,7 +94,7 @@
   "buffer_font_family": "Menlo",
   "ui_font_family": "SF Pro Text",
   "ui_font_size": 12,
-  "buffer_font_size": 12,
+  "buffer_font_size": 13.5,
   "buffer_line_height": {
     "custom": 1.6,
   },
