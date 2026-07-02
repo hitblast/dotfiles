@@ -1,0 +1,163 @@
+{
+  "disable_ai": true,
+  "use_system_window_tabs": true,
+  "confirm_quit": false,
+  "base_keymap": "VSCode",
+  "title_bar": {
+    "show_onboarding_banner": false,
+    "show_sign_in": false,
+    "show_user_menu": false,
+    "button_layout": "platform_default",
+    "show_project_items": true,
+    "show_branch_status_icon": true,
+    "show_branch_name": true,
+    "show_user_picture": false,
+    "show_menus": false,
+  },
+  "max_tabs": 8,
+  "search": {
+    "button": false,
+  },
+  "file_finder": {
+    "file_icons": false,
+    "modal_max_width": "large",
+  },
+  "tab_bar": {
+    "show": false,
+  },
+  "toolbar": {
+    "quick_actions": false,
+  },
+  "git_panel": {
+    "dock": "left",
+    "collapse_untracked_diff": true,
+    "fallback_branch_name": "master",
+    "button": false,
+  },
+  "outline_panel": {
+    "indent_size": 35,
+    "button": false,
+  },
+  "project_panel": {
+    "default_width": 300,
+    "hide_root": true,
+    "auto_fold_dirs": false,
+    "dock": "right",
+    "starts_open": false,
+    "sticky_scroll": false,
+    "indent_guides": {
+      "show": "never",
+    },
+    "file_icons": false,
+    "folder_icons": false,
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "fixed",
+  },
+  "gutter": {
+    "min_line_number_digits": 0,
+    "folds": false,
+    "runnables": false,
+  },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true,
+    "show_diagnostics": "errors",
+  },
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "bottom_dock_layout": "right_aligned",
+  "centered_layout": {
+    "left_padding": 0.15,
+    "right_padding": 0,
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 300,
+      "min_column": 80,
+    },
+  },
+  "scrollbar": {
+    "show": "never",
+  },
+  "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "always",
+  },
+  "current_line_highlight": "none",
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "cursor_blink": false,
+  "seed_search_query_from_cursor": "never",
+  "buffer_font_family": "Menlo",
+  "ui_font_family": "SF Pro Text",
+  "ui_font_size": 15,
+  "buffer_font_size": 13,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "buffer_line_height": {
+    "custom": 1.6,
+  },
+  "relative_line_numbers": "enabled",
+  "theme": {
+    "mode": "dark",
+    "light": "Alabaster",
+    "dark": "Gruber Darker",
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "auto_install_extensions": {
+    "git-firefly": true,
+  },
+  "terminal": {
+    "font_family": "Menlo",
+    "line_height": {
+      "custom": 1.6,
+    },
+    "dock": "bottom",
+    "blinking": "on",
+    "copy_on_select": true,
+    "default_height": 500,
+    "env": {
+      "EDITOR": "zed --wait",
+    },
+    "detect_venv": {
+      "on": {
+        "directories": [".venv", "venv"],
+        "activate_script": "default",
+      },
+    },
+  },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/out",
+    "**/dist",
+    "**/.husky",
+    "**/.turbo",
+    "**/.vscode-test",
+    "**/.vscode",
+    "**/.next",
+    "**/.storybook",
+    "**/.tap",
+    "**/.nyc_output",
+    "**/report",
+    "**/node_modules",
+  ],
+  "show_completions_on_input": true,
+  "show_completion_documentation": true,
+  "remove_trailing_whitespace_on_save": true,
+  "use_auto_surround": true,
+  "use_autoclose": true,
+}
