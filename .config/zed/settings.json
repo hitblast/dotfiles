@@ -18,6 +18,7 @@
   "search": {
     "button": false,
   },
+  "close_panel_on_toggle": true,
   "file_finder": {
     "file_icons": false,
     "modal_max_width": "large",
@@ -49,6 +50,7 @@
       "show": "never",
     },
     "file_icons": false,
+    "entry_spacing": "standard",
     "folder_icons": false,
   },
   "indent_guides": {
@@ -93,7 +95,7 @@
   "seed_search_query_from_cursor": "never",
   "buffer_font_family": "Menlo",
   "ui_font_family": "SF Pro Text",
-  "ui_font_size": 15,
+  "ui_font_size": 14,
   "buffer_font_size": 13,
   "telemetry": {
     "diagnostics": false,
