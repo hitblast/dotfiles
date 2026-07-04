@@ -34,8 +34,6 @@ default-root-container-orientation = 'horizontal'
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 automatically-unhide-macos-hidden-apps = false
 
-persistent-workspaces = ["U", "I", "O", "P", "N", "M", "G"]
-
 on-window-detected = [
     {
         if = '''
