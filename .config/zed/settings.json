@@ -104,7 +104,7 @@
   },
   "relative_line_numbers": "enabled",
   "theme": {
-    "mode": "dark",
+    "mode": "system",
     "light": "Alabaster",
     "dark": "Gruber Darker",
   },
