@@ -42,6 +42,7 @@ on-window-detected = [
             || test %{app-bundle-id} = com.mitchellh.ghostty \
             || test %{app-bundle-id} = dev.kdrag0n.MacVirt \
             || test %{app-name} ~= xcode \
+            || test %{app-bundle-id} = com.apple.systempreferences \
             || test %{app-bundle-id} = org.keepassxc.keepassxc
         ''',
         run = 'move-node-to-workspace U',
