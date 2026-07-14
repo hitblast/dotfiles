@@ -14,6 +14,7 @@
     "show_user_picture": false,
     "show_menus": false,
   },
+  "format_on_save": "on",
   "max_tabs": 8,
   "search": {
     "button": false,
