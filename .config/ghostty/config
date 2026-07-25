@@ -1,6 +1,6 @@
 # font
-font-family = "Menlo"
-font-size = 13
+font-family = "SF Mono Regular"
+font-size = 11
 font-thicken = true
 font-feature = -calt, -liga
 
@@ -15,10 +15,6 @@ minimum-contrast = 2
 
 # mouse
 mouse-hide-while-typing = true
-
-# cell
-adjust-cell-height = 1
-adjust-cell-width = -1
 
 # theme
 theme = light:"Xcode Light",dark:gruber-darker-cst
