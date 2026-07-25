@@ -1,6 +1,6 @@
 # font
 font-family = "SF Mono Regular"
-font-size = 11
+font-size = 14
 font-thicken = true
 font-feature = -calt, -liga
 
