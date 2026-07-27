@@ -1,7 +1,7 @@
-# Vi mode
+# vi mode
 bindkey -v
 
-# Aliases
+# aliases
 bundle() {
     osascript -e "id of app \"$1\""
 }
@@ -11,7 +11,7 @@ alias cat='bat'
 alias fd='fd --color=never'
 alias lz='lazygit'
 
-# Starship
+# starship
 eval "$(starship init zsh)"
 
 # fzf
@@ -22,3 +22,11 @@ eval "$(direnv hook zsh)"
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
+
+# homebrew completions
+eval "$(/opt/homebrew/bin/brew shellenv)"
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# call compinit
+autoload -Uz compinit
+compinit
