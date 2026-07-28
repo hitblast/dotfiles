@@ -28,5 +28,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # call compinit
+fpath=(~/.zsh/completions $fpath)
 autoload -Uz compinit
 compinit

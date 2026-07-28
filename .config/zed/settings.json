@@ -95,7 +95,7 @@
   "multi_cursor_modifier": "cmd_or_ctrl",
   "cursor_blink": false,
   "seed_search_query_from_cursor": "never",
-  "buffer_font_family": "Menlo",
+  "buffer_font_family": "Liga SFMono Nerd Font",
   "ui_font_family": "SF Pro Text",
   "ui_font_size": 13,
   "buffer_font_size": 12,

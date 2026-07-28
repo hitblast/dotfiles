@@ -120,7 +120,7 @@ required = ["brew"]
 # homebrew backup
 
 [brew]
-formulae = ["ninja", "cargo-edit", "mdbook", "zoxide", "mingw-w64", "mpfr", "fd", "zsh-autosuggestions", "lazygit", "dust", "tokei", "zola", "sccache", "hitblast/tap/trimsec", "uv", "fzf", "fastfetch", "git", "starship", "machlit/tap/drs", "gmp", "ripgrep", "bat", "mactop", "stow", "gh", "libyaml", "ffmpeg", "cmake", "direnv", "oven-sh/bun/bun", "jdtls"]
-casks = ["ghostty", "keyboardcleantool", "android-platform-tools", "telegram", "helium-browser", "zulu@25", "vesktop", "font-sf-pro", "keepassxc", "hot", "protonvpn", "iina", "spotify", "cloudflare-warp", "zed", "appcleaner", "localsend", "transmission", "nikitabobko/tap/aerospace"]
-taps = ["osx-cross/avr", "nikitabobko/tap", "oven-sh/bun", "hitblast/tap", "machlit/tap"]
+formulae = ["libyaml", "gh", "gmp", "direnv", "fastfetch", "cargo-edit", "machlit/tap/drs", "starship", "mactop", "ninja", "jdtls", "uv", "lazygit", "ffmpeg", "cmake", "git", "fzf", "oven-sh/bun/bun", "mdbook", "tokei", "zoxide", "zola", "fd", "sccache", "mingw-w64", "ripgrep", "dust", "hitblast/tap/trimsec", "zsh-autosuggestions", "stow", "mpfr", "bat"]
+casks = ["zed", "transmission", "spotify", "font-sf-mono-nerd-font-ligaturized", "helium-browser", "android-platform-tools", "appcleaner", "ghostty", "hot", "iina", "keyboardcleantool", "font-sf-pro", "vesktop", "cloudflare-warp", "zulu@25", "keepassxc", "hitblast/tap/quantum-launcher", "telegram", "nikitabobko/tap/aerospace", "protonvpn", "localsend"]
+taps = ["hitblast/tap", "machlit/tap", "osx-cross/avr", "oven-sh/bun", "nikitabobko/tap"]
 no_deps = true
