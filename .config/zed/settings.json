@@ -1,4 +1,9 @@
 {
+  "icon_theme": {
+    "mode": "light",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
   "cli_default_open_behavior": "existing_window",
   "disable_ai": true,
   "use_system_window_tabs": true,
@@ -74,8 +79,8 @@
   },
   "bottom_dock_layout": "right_aligned",
   "centered_layout": {
-    "left_padding": 0.15,
-    "right_padding": 0,
+    "left_padding": 0.2,
+    "right_padding": 0.2,
   },
   "git": {
     "inline_blame": {
