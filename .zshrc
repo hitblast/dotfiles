@@ -1,5 +1,5 @@
-# vi mode
-bindkey -v
+# keybindings
+bindkey -v  # vi mode
 
 # aliases
 bundle() {
@@ -26,6 +26,8 @@ eval "$(zoxide init --cmd cd zsh)"
 # homebrew completions
 eval "$(/opt/homebrew/bin/brew shellenv)"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+bindkey -M viins '^[[27;5;13~' autosuggest-accept
 
 # call compinit
 fpath=(~/.zsh/completions $fpath)
