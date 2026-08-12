@@ -68,7 +68,8 @@ on-window-detected = [
     {
         if = '''
         test %{app-bundle-id} = dev.vencord.vesktop \
-            || test %{app-bundle-id} = ru.keepcoder.Telegram
+            || test %{app-bundle-id} = ru.keepcoder.Telegram \
+            || test %{app-bundle-id} = com.apple.mail
         ''',
         run = 'move-node-to-workspace P',
     },
