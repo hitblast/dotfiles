@@ -7,8 +7,6 @@ bundle() {
 }
 
 alias finder='open -a Finder .'
-alias cat='bat'
-alias fd='fd --color=never'
 alias lz='lazygit'
 
 # starship
@@ -33,3 +31,5 @@ bindkey -M viins '^[[27;5;13~' autosuggest-accept
 fpath=(~/.zsh/completions $fpath)
 autoload -Uz compinit
 compinit
+
+export STM32CubeMX_PATH=/Applications/STMicroelectronics/STM32CubeMX.app/Contents/Resources
