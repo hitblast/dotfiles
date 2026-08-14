@@ -25,7 +25,7 @@ eval "$(zoxide init --cmd cd zsh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-bindkey -M viins '^[[27;5;13~' autosuggest-accept
+bindkey -M viins '^P' autosuggest-accept
 
 # call compinit
 fpath=(~/.zsh/completions $fpath)
