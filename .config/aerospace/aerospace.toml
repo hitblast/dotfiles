@@ -93,8 +93,8 @@ on-window-detected = [
     preset = 'qwerty'
 
 [gaps]
-    inner.horizontal = 8
-    inner.vertical = 8
+    inner.horizontal = 3
+    inner.vertical = 3
     outer.top = 0
     outer.bottom = 0
     outer.left = 0
