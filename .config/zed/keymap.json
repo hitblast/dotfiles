@@ -14,7 +14,7 @@
     "bindings": {
       "space r": "task::Spawn",
       "space h": "workspace::NewCenterTerminal",
-      "space e": "workspace::ToggleRightDock",
+      "space e": "workspace::ToggleLeftDock",
       "space f": "file_finder::Toggle",
       "space t": "tab_switcher::Toggle",
       "space s s": "zed::OpenSettingsFile",
