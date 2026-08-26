@@ -1,4 +1,5 @@
 # keybindings
+KEYTIMEOUT=1
 bindkey -v  # vi mode
 
 # aliases
