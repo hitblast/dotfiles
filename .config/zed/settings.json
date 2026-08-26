@@ -1,6 +1,6 @@
 {
   "icon_theme": {
-    "mode": "light",
+    "mode": "dark",
     "light": "Zed (Default)",
     "dark": "Zed (Default)",
   },
@@ -47,10 +47,10 @@
     "button": false,
   },
   "project_panel": {
-    "default_width": 300,
+    "default_width": 200,
     "hide_root": true,
     "auto_fold_dirs": false,
-    "dock": "right",
+    "dock": "left",
     "starts_open": false,
     "sticky_scroll": false,
     "indent_guides": {
@@ -114,8 +114,8 @@
   "relative_line_numbers": "enabled",
   "theme": {
     "mode": "system",
-    "light": "Alabaster",
-    "dark": "Gruber Darker",
+    "light": "Xcode Classic Light",
+    "dark": "Xcode Midnight",
   },
   "minimap": {
     "show": "never",
@@ -164,13 +164,13 @@
     "**/report",
     "**/node_modules",
   ],
-  "lsp": {
-    "arduino-language-server": {
-      "binary": {
-        "arguments": ["-cli-config", "/opt/homebrew/bin/arduino-cli"],
-      },
-    },
-  },
+  // "lsp": {
+  //   "arduino-language-server": {
+  //     "binary": {
+  //       "arguments": ["-cli-config", "/opt/homebrew/bin/arduino-cli"],
+  //     },
+  //   },
+  // },
   "show_completions_on_input": true,
   "show_completion_documentation": true,
   "remove_trailing_whitespace_on_save": true,
