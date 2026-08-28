@@ -1,5 +1,5 @@
 # Editor
-export EDITOR="vim"
+export EDITOR="hx"
 
 # Cargo
 export CARGO_HOME="$HOME/.config/cargo"
