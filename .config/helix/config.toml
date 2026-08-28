@@ -4,6 +4,19 @@ theme = "gruber-darker"
 line-number = "relative"
 mouse = false
 
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+"'" = "'"
+'`' = '`'
+
 [editor.soft-wrap]
 enable = true
 
