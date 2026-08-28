@@ -115,7 +115,7 @@
   "theme": {
     "mode": "system",
     "light": "Xcode Classic Light",
-    "dark": "Xcode Midnight",
+    "dark": "Gruber Darker",
   },
   "minimap": {
     "show": "never",
