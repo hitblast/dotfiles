@@ -122,6 +122,8 @@
   },
   "auto_install_extensions": {
     "git-firefly": true,
+    "xcode-themes": true,
+    "gruber-darker": true,
   },
   "terminal": {
     "font_family": "Menlo",
