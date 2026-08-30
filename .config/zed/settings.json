@@ -104,6 +104,9 @@
   "ui_font_family": "SF Pro Text",
   "ui_font_size": 13,
   "buffer_font_size": 13,
+  "buffer_font_features": {
+    "calt": false,
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
