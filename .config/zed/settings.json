@@ -133,6 +133,7 @@
     "show": "never",
   },
   "auto_install_extensions": {
+    "marksman": true,
     "git-firefly": true,
     "xcode-themes": true,
     "gruber-darker": true,
