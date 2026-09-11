@@ -64,6 +64,7 @@
     "folder_icons": false,
   },
   "status_bar": {
+    "experimental.show": false,
     "show_active_file": true,
   },
   "indent_guides": {
