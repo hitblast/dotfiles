@@ -19,3 +19,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$CUSTOM_SDK_PATH/flutter/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
+
+# Cargo
+. "$HOME/.cargo/env"

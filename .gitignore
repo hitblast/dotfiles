@@ -1,35 +1,32 @@
 .DS_Store
 
 # cargo
-.config/cargo/*
-!.config/cargo/config.toml
+config/.cargo/*
+!config/.cargo/config.toml
 
 # zed
-.config/zed/*
-!.config/zed/*.json
-
-# github copilot
-.config/github-copilot
+config/.config/zed/*
+!config/.config/zed/*.json
 
 # ncspot
-.config/ncspot/userstate.cbor
+config/.config/ncspot/userstate.cbor
 
 # cutler
-.config/cutler/snapshot.json
+config/.config/cutler/snapshot.json
 
 # flutter
-.config/flutter/*
+config/.config/flutter/*
 
 # configstore (gemini-cli)
-.config/configstore/*
+config/.config/configstore/*
 
 # karabiner
-.config/karabiner/automatic_backups
-.config/karabiner/assets
+config/.config/karabiner/automatic_backups
+config/.config/karabiner/assets
 
 # ssh
-.ssh/id*
-.ssh/known_hosts*
+config/.ssh/id*
+config/.ssh/known_hosts*
 
 # vim
 *.swp
