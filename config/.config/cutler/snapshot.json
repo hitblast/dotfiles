@@ -1,0 +1,197 @@
+{
+  "settings": [
+    {
+      "domain": "NSGlobalDomain",
+      "key": "ApplePressAndHoldEnabled",
+      "original_value": null
+    },
+    {
+      "domain": "NSGlobalDomain",
+      "key": "InitialKeyRepeat",
+      "original_value": 15.0
+    },
+    {
+      "domain": "NSGlobalDomain",
+      "key": "KeyRepeat",
+      "original_value": 2.0
+    },
+    {
+      "domain": "NSGlobalDomain",
+      "key": "NSAutoFillHeuristicControllerEnabled",
+      "original_value": null
+    },
+    {
+      "domain": "NSGlobalDomain",
+      "key": "NSDocumentSaveNewDocumentsToCloud",
+      "original_value": null
+    },
+    {
+      "domain": "NSGlobalDomain",
+      "key": "NSWindowShouldDragOnGesture",
+      "original_value": null
+    },
+    {
+      "domain": "NSGlobalDomain",
+      "key": "com.apple.keyboard.fnState",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.WindowManager",
+      "key": "EnableTilingByEdgeDrag",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.WindowManager",
+      "key": "StageManagerHideWidgets",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.WindowManager",
+      "key": "StandardHideDesktopIcons",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.WindowManager",
+      "key": "StandardHideWidgets",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.HIToolbox",
+      "key": "AppleFnUsageType",
+      "original_value": 0
+    },
+    {
+      "domain": "com.apple.menuextra.clock",
+      "key": "FlashDateSeparators",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.menuextra.clock",
+      "key": "Show24Hour",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.menuextra.clock",
+      "key": "ShowAMPM",
+      "original_value": true
+    },
+    {
+      "domain": "com.apple.menuextra.clock",
+      "key": "ShowDate",
+      "original_value": 0
+    },
+    {
+      "domain": "com.apple.menuextra.clock",
+      "key": "ShowDayOfWeek",
+      "original_value": true
+    },
+    {
+      "domain": "com.apple.menuextra.clock",
+      "key": "ShowSeconds",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.dock",
+      "key": "autohide-delay",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.dock",
+      "key": "autohide-time-modifier",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.dock",
+      "key": "expose-group-apps",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.dock",
+      "key": "magnification",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.dock",
+      "key": "mineffect",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.dock",
+      "key": "orientation",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.dock",
+      "key": "show-recents",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.dock",
+      "key": "static-only",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.dock",
+      "key": "tilesize",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.screencapture",
+      "key": "show-thumbnail",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.screencapture",
+      "key": "target",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.screencapture",
+      "key": "type",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.finder",
+      "key": "AppleShowAllFiles",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.finder",
+      "key": "CreateDesktop",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.finder",
+      "key": "FXDefaultSearchScope",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.finder",
+      "key": "FXEnableExtensionChangeWarning",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.finder",
+      "key": "FXRemoveOldTrashItems",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.finder",
+      "key": "ShowExternalHardDrivesOnDesktop",
+      "original_value": true
+    },
+    {
+      "domain": "com.apple.finder",
+      "key": "ShowPathbar",
+      "original_value": null
+    },
+    {
+      "domain": "com.apple.AppleMultitouchTrackpad",
+      "key": "FirstClickThreshold",
+      "original_value": 1
+    }
+  ],
+  "exec_run_count": 0,
+  "version": "0.19.8",
+  "digest": "f43fdfcbb1b3d70ed2a83246ea23edfa605a90e8ffc2527362e79d746c4a175a"
+}

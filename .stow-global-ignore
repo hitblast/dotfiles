@@ -1,7 +1,6 @@
 \.DS_Store
 \.git
 \.gitignore
-\.luarc.json
 
 README.md
 LICENSE

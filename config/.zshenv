@@ -1,9 +1,6 @@
 # Editor
 export EDITOR="hx"
 
-# Cargo
-export CARGO_HOME="$HOME/.config/cargo"
-
 # Java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-25.jdk/Contents/Home"
 
@@ -22,4 +19,3 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$CUSTOM_SDK_PATH/flutter/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
-

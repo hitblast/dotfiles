@@ -11,8 +11,7 @@ These are the primary programs that are used in this configuration:
 - Tiling Window Manager: [AeroSpace](https://github.com/nikitabobko/AeroSpace)
 - Default Shell: `/opt/homebrew/bin/bash`
 - Development Tools:
-  1. [mise](https://mise.jdx.dev) (view [mise.toml](.config/mise/config.toml))
-  2. [uv](https://astral.sh/uv) (for Python projects and tools)
+  - 1. [uv](https://astral.sh/uv) (for Python projects and tools)
 
 ## Installation
 
