@@ -4,6 +4,7 @@
 	signingkey = /Users/hitblast/.ssh/id_ed25519_code.pub
 
 [core]
+    pager = delta
     compression = 9
     whitespace = error
     preloadindex = true
@@ -20,50 +21,62 @@
 [url "git@github.com:"]
     insteadOf = "hub:"
 
+[diff]
+    algorithm = histogram
+
+[rerere]
+    enabled = true
+
 [gpg]
 	format = "ssh"
 
 [gpg.ssh]
     allowedSignersFile = "~/.config/git/allowed-signers"
 
-# $ git init
 [init]
     defaultBranch = master
 
-# $ git status
 [status]
     branch = true
     showStash = true
     showUntrackedFiles = all
 
-# $ git push
 [push]
     autoSetupRemote = true
     default = current
     followTags = true
 
-# $ git tag
 [tag]
     gpgSign = true
 
-# $ git commit
 [commit]
 	gpgsign = true
 
-# $ git fetch
 [fetch]
 	prune = true
 
-# $ git pull
 [pull]
     default = current
 	rebase = true
 
-# $ git rebase
 [rebase]
-    autoStash = true
+	autostash = true
     missingCommitsCheck = warn
 
-# $ git log
 [log]
     abbrevCommit = true
+
+[branch "master"]
+	rebase = true
+[branch "main"]
+	rebase = true
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    side-by-side = true
+
+[merge]
+	conflictstyle = zdiff3
