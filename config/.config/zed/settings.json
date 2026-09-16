@@ -50,6 +50,7 @@
     "button": false,
   },
   "project_panel": {
+    "folder_indicator": "chevron",
     "default_width": 220,
     "hide_root": true,
     "auto_fold_dirs": false,
@@ -61,10 +62,8 @@
     },
     "file_icons": false,
     "entry_spacing": "standard",
-    "folder_icons": false,
   },
   "status_bar": {
-    "experimental.show": false,
     "show_active_file": true,
   },
   "indent_guides": {

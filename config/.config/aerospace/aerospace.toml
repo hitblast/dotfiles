@@ -77,7 +77,8 @@ on-window-detected = [
     {
         if = '''
         test %{app-bundle-id} = com.colliderli.iina \
-            || test %{app-bundle-id} = com.spotify.client
+            || test %{app-bundle-id} = com.spotify.client \
+            || test %{app-bundle-id} = com.apple.Music
         ''',
         run = 'move-node-to-workspace M',
     },
