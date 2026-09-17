@@ -6,28 +6,17 @@ Configuration files for my local development environment.
 
 These are the primary programs that are used in this configuration:
 
-- Setup Wrapper: [cutler](https://github.com/machlit/cutler)
 - Package Manager: [Homebrew](https://brew.sh)
 - Tiling Window Manager: [AeroSpace](https://github.com/nikitabobko/AeroSpace)
-- Default Shell: `/opt/homebrew/bin/bash`
+- Default Shell: `zsh` (System)
 - Development Tools:
   - 1. [uv](https://astral.sh/uv) (for Python projects and tools)
+  - 2. [rustup]
 
-## Installation
+## Applying this Configuration
 
-1. Install the `cutler` CLI:
-
-```bash
-curl -fsSL https://machlit.github.io/cutler/install.sh | /bin/bash
-```
-
-2. Run the following command:
-
-```bash
-cutler apply -a --url https://raw.githubusercontent.com/hitblast/dotfiles/refs/heads/master/.config/cutler/config.toml --brew -y
-```
-
-3. Wait for all the processes to complete.
+> [!WARNING]
+> This configuration is currently being reorganized, so even though you can access and setup the "dotfiles" (i.e. configuration files for CLIs and apps), you might not be able to install the apps themselves _yet_. 
 
 ## Contributing
 
