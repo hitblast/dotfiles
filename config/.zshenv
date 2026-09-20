@@ -1,5 +1,5 @@
 # Editor
-export EDITOR="hx"
+export EDITOR="vim"
 
 # Java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-25.jdk/Contents/Home"
