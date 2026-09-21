@@ -72,7 +72,7 @@
 	rebase = true
 
 [interactive]
-    diffFilter = delta --color-only
+    diffFilter = delta --paging=never
 
 [delta]
     navigate = true  # use n and N to move between diff sections
