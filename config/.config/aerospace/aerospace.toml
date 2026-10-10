@@ -44,7 +44,8 @@ on-window-detected = [
             || test %{app-name} ~= xcode \
             || test %{app-bundle-id} = com.apple.systempreferences \
             || test %{app-bundle-id} = org.keepassxc.keepassxc \
-            || test %{app-bundle-id} = com.apple.TextEdit
+            || test %{app-bundle-id} = com.apple.TextEdit \
+            || test %{app-bundle-id} = com.apple.Preview
         ''',
         run = 'move-node-to-workspace U',
     },
