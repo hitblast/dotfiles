@@ -28,5 +28,8 @@ config/.config/karabiner/assets
 config/.ssh/id*
 config/.ssh/known_hosts*
 
+# copilot
+config/.config/github-copilot
+
 # vim
 *.swp

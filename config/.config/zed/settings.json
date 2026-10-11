@@ -5,7 +5,7 @@
     "dark": "Zed (Default)",
   },
   "cli_default_open_behavior": "existing_window",
-  "disable_ai": true,
+  "disable_ai": false,
   "use_system_window_tabs": true,
   "confirm_quit": false,
   "base_keymap": "VSCode",
