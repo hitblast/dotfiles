@@ -4,6 +4,15 @@
     "light": "Zed (Default)",
     "dark": "Zed (Default)",
   },
+  "agent": {
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-3.6-flash",
+      "enable_thinking": true,
+      "effort": "medium",
+    },
+    "dock": "right",
+  },
   "cli_default_open_behavior": "existing_window",
   "disable_ai": false,
   "use_system_window_tabs": true,
