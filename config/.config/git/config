@@ -74,7 +74,11 @@
 [interactive]
     diffFilter = delta --paging=never
 
+[include]
+    path = ~/.config/git/themes.gitconfig
+
 [delta]
+    features = colibri
     navigate = true  # use n and N to move between diff sections
     side-by-side = true
 
