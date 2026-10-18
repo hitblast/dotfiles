@@ -135,7 +135,7 @@
   "relative_line_numbers": "enabled",
   "theme": {
     "mode": "system",
-    "light": "One Light",
+    "light": "Xcode Default Light",
     "dark": "Gruber Darker",
   },
   "minimap": {
