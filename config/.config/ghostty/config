@@ -17,7 +17,7 @@ minimum-contrast = 2
 mouse-hide-while-typing = true
 
 # theme
-theme = light:"Xcode Light",dark:gruber-darker-cst
+theme = light:"Atom One Light",dark:gruber-darker-cst
 
 # window
 window-colorspace = display-p3
