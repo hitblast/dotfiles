@@ -24,13 +24,8 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # homebrew completions
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# zsh autosuggestions
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 bindkey -M viins '^P' autosuggest-accept
-
-# call compinit
-fpath=(~/.zsh/completions $fpath)
-autoload -Uz compinit
-compinit
-
-export STM32CubeMX_PATH=/Applications/STMicroelectronics/STM32CubeMX.app/Contents/Resources
