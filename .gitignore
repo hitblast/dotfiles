@@ -24,6 +24,9 @@ config/.config/configstore/*
 config/.config/karabiner/automatic_backups
 config/.config/karabiner/assets
 
+# lazygit
+config/Library/Application Support/lazygit/state.yml
+
 # ssh
 config/.ssh/id*
 config/.ssh/known_hosts*
