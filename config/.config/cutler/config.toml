@@ -120,7 +120,7 @@ required = ["brew"]
 # homebrew backup
 
 [brew]
-formulae = ["fzf", "mactop", "ca-certificates", "starship", "zoxide", "direnv", "readline", "libunistring", "machlit/tap/cutler", "git", "bash", "libssh2", "json-c", "oniguruma", "openssl@4", "pcre2", "ncurses", "git-delta", "stow", "lazygit", "gettext", "llhttp", "libgit2"]
-casks = ["ghostty", "nikitabobko/tap/aerospace", "appcleaner", "zed", "vorssaint", "hot"]
-taps = ["hitblast/tap", "sabbirba/tap", "oven-sh/bun", "machlit/tap", "nikitabobko/tap"]
+formulae = ["readline", "direnv", "git", "zsh-autosuggestions", "machlit/tap/cutler", "fzf", "zoxide", "stow", "gettext", "json-c", "llhttp", "oniguruma", "openssl@4", "libgit2", "bash", "mactop", "ca-certificates", "lazygit", "libssh2", "starship", "git-delta", "libunistring", "ncurses", "pcre2"]
+casks = ["hot", "vorssaint", "font-sf-mono-nerd-font-ligaturized", "appcleaner", "nikitabobko/tap/aerospace", "zed", "font-sf-pro", "ghostty"]
+taps = ["nikitabobko/tap", "oven-sh/bun", "sabbirba/tap", "hitblast/tap", "machlit/tap"]
 no_deps = true
