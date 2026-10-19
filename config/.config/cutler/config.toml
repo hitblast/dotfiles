@@ -120,7 +120,7 @@ required = ["brew"]
 # homebrew backup
 
 [brew]
-formulae = ["libyaml", "glib", "llhttp", "openjdk", "pixman", "zstd", "machlit/tap/drs", "libvmaf", "ripgrep", "json-c", "starship", "zig", "mpdecimal", "jdtls", "libxext", "opus", "fzf", "mpg123", "harfbuzz", "ca-certificates", "direnv", "gmp", "lame", "smartmontools", "dav1d", "svt-av1", "x265", "bat", "jpeg-turbo", "freetype", "python@3.14", "readline", "stow", "libssh2", "oniguruma", "libxdmcp", "lz4", "sqlite", "machlit/tap/cutler", "libxcb", "icu4c@78", "mactop", "libvpx", "uv", "gettext", "cargo-edit", "yyjson", "mpfr", "ffmpeg", "libgit2", "git", "lzo", "ninja", "little-cms2", "libunistring", "bash", "libxau", "sdl2-compat", "watch", "libtiff", "libxrender", "lld@21", "openssl@3", "giflib", "lazygit", "cairo", "ncurses", "sdl3", "xz", "zoxide", "sabbirba/tap/preprinttui", "oven-sh/bun/bun", "xorgproto", "sccache", "graphite2", "fd", "pcre2", "llvm@21", "x264", "git-delta", "gh", "git-filter-repo", "fastfetch", "tokei", "dust", "libpng", "webp", "fontconfig", "serie", "libx11", "mdbook", "zsh-autosuggestions", "cmake", "hitblast/tap/trimsec"]
-casks = ["keyboardcleantool", "helium-browser", "cloudflare-warp", "localsend", "transmission", "zed", "zulu@25", "font-sf-mono-nerd-font-ligaturized", "vesktop", "font-sf-pro", "ghostty", "android-platform-tools", "protonvpn", "iina", "appcleaner", "hot", "telegram", "spotify", "keepassxc", "nikitabobko/tap/aerospace"]
-taps = ["oven-sh/bun", "machlit/tap", "nikitabobko/tap", "sabbirba/tap", "hitblast/tap"]
+formulae = ["fzf", "mactop", "ca-certificates", "starship", "zoxide", "direnv", "readline", "libunistring", "machlit/tap/cutler", "git", "bash", "libssh2", "json-c", "oniguruma", "openssl@4", "pcre2", "ncurses", "git-delta", "stow", "lazygit", "gettext", "llhttp", "libgit2"]
+casks = ["ghostty", "nikitabobko/tap/aerospace", "appcleaner", "zed", "vorssaint", "hot"]
+taps = ["hitblast/tap", "sabbirba/tap", "oven-sh/bun", "machlit/tap", "nikitabobko/tap"]
 no_deps = true
