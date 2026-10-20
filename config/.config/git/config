@@ -78,7 +78,7 @@
     path = ~/.config/git/themes.gitconfig
 
 [delta]
-    features = colibri
+    features = hoopoe
     navigate = true  # use n and N to move between diff sections
     side-by-side = true
 
