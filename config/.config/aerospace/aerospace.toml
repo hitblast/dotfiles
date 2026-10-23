@@ -143,6 +143,8 @@ on-window-detected = [
     alt-shift-g = 'move-node-to-workspace G'
 
     alt-leftSquareBracket = 'workspace-back-and-forth'
+    alt-shift-leftSquareBracket = 'move-workspace-to-monitor --wrap-around next'
+
     alt-shift-semicolon = 'mode service'
 
 [mode.service.binding]
