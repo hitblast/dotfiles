@@ -36,3 +36,6 @@ config/.config/github-copilot
 
 # vim
 *.swp
+
+# uv
+config/.config/uv/uv-receipt.json
