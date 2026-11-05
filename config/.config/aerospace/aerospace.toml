@@ -40,6 +40,7 @@ on-window-detected = [
         test %{app-bundle-id} = dev.zed.Zed \
             || test %{app-bundle-id} = com.mitchellh.ghostty \
             || test %{app-bundle-id} = dev.kdrag0n.MacVirt \
+            || test %{app-bundle-id} = com.apple.Preview \
             || test %{app-name} ~= xcode 
         ''',
         run = 'move-node-to-workspace U',
