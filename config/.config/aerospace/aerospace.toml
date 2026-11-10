@@ -67,7 +67,8 @@ on-window-detected = [
         test %{app-bundle-id} = dev.vencord.vesktop \
             || test %{app-bundle-id} = ru.keepcoder.Telegram \
             || test %{app-bundle-id} = com.apple.mail \
-            || test %{app-bundle-id} = net.whatsapp.WhatsApp
+            || test %{app-bundle-id} = net.whatsapp.WhatsApp \
+            || test %{app-bundle-id} = com.tinyspeck.slackmacgap
         ''',
         run = 'move-node-to-workspace P',
     },
