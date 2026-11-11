@@ -47,7 +47,8 @@ on-window-detected = [
     },
     {
         if = '''
-        test %{app-bundle-id} = com.apple.Notes
+        test %{app-bundle-id} = com.apple.Notes \
+            || test ${app-bundle-id} = notion.id
         ''',
         run = 'move-node-to-workspace N',
     },

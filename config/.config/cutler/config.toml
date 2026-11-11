@@ -117,47 +117,7 @@ required = ["brew"]
 # homebrew backup
 
 [brew]
-formulae = [
-    "readline",
-    "direnv",
-    "git",
-    "zsh-autosuggestions",
-    "machlit/tap/cutler",
-    "fzf",
-    "zoxide",
-    "stow",
-    "gettext",
-    "json-c",
-    "llhttp",
-    "oniguruma",
-    "openssl@4",
-    "libgit2",
-    "bash",
-    "mactop",
-    "ca-certificates",
-    "lazygit",
-    "libssh2",
-    "starship",
-    "git-delta",
-    "libunistring",
-    "ncurses",
-    "pcre2",
-]
-casks = [
-    "hot",
-    "vorssaint",
-    "font-sf-mono-nerd-font-ligaturized",
-    "appcleaner",
-    "nikitabobko/tap/aerospace",
-    "zed",
-    "font-sf-pro",
-    "ghostty",
-]
-taps = [
-    "nikitabobko/tap",
-    "oven-sh/bun",
-    "sabbirba/tap",
-    "hitblast/tap",
-    "machlit/tap",
-]
+formulae = ["ninja", "dust", "libpsl", "llhttp", "libssh2", "openssl@4", "zsh-autosuggestions", "cargo-binstall", "cargo-edit", "mpdecimal", "gmp", "bash", "curl", "lazygit", "git-lfs", "m4", "zola", "sabbirba/tap/preprinttui", "sqlite", "bdw-gc", "mactop", "git", "libgit2", "sccache", "lz4", "zstd", "libnghttp2", "ncurses", "guile", "starship", "libngtcp2", "messense/macos-cross-toolchains/aarch64-unknown-linux-gnu", "libunistring", "readline", "json-c", "git-delta", "tokei", "oniguruma", "libtool", "brotli", "zoxide", "yyjson", "hitblast/tap/trimsec", "pkgconf", "stow", "machlit/tap/cutler", "gettext", "libnghttp3", "cmake", "fzf", "python@3.14", "fastfetch", "direnv", "bun", "pcre2", "xz", "ca-certificates", "libyaml"]
+casks = ["antigravity-cli", "cloudflare-warp", "zed", "appcleaner", "orbstack", "arahim3/lekho/lekho", "font-sf-mono-nerd-font-ligaturized", "android-platform-tools", "ghostty", "nolight132/tap/sonora", "localsend", "telegram", "vesktop", "keyboardcleantool", "notion", "font-sf-pro", "slack", "hitblast/tap/quantum-launcher", "discord", "nikitabobko/tap/aerospace", "zulu@25"]
+taps = ["nolight132/tap", "oven-sh/bun", "d99kris/nchat", "arahim3/lekho", "hitblast/tap", "messense/macos-cross-toolchains", "machlit/tap", "nikitabobko/tap", "sabbirba/tap"]
 no_deps = true
